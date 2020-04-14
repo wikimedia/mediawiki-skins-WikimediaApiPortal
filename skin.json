@@ -1,0 +1,32 @@
+{
+	"name": "WikimediaApiPortal",
+	"version": "1.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"Dejan Savuljesku",
+		"Robert Vogel"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:WikimediaApiPortal",
+	"descriptionmsg": "wikimediaapiportal-skin-desc",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"ValidSkinNames": {
+		"wikimediaapiportal": {
+			"DisplayName": "WikimediaApiPortal",
+			"class": "MediaWiki\\Skin\\WikimediaApiPortal\\Skin"
+		}
+	},
+	"MessagesDirs": {
+		"WikimediaApiPortal": "i18n"
+	},
+	"callback": "MediaWiki\\Skin\\WikimediaApiPortal\\Skin::init",
+	"AutoloadNamespaces": {
+		"MediaWiki\\Skin\\WikimediaApiPortal\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Skin\\WikimediaApiPortal\\Tests\\": "tests/phpunit/"
+	},
+	"manifest_version": 2
+}
