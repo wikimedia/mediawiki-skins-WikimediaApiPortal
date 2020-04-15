@@ -1,13 +1,6 @@
 # Installation
 
-## Install and enable skin
-
-First install the Bootstrap and SCSS extensions (run from the MediaWiki directory):
-
-  COMPOSER=composer.local.json composer require --no-update mediawiki/bootstrap:4.2
-  composer update mediawiki/bootstrap --no-dev -o
-
-Add to `LocalSettings.php`:
+### Load and enable skin
 
 	wfLoadSkin( 'WikimediaApiPortal' );
 	$wgDefaultSkin = 'wikimediaapiportal';
@@ -18,7 +11,10 @@ Add to `LocalSettings.php`:
 	$wgUseMediaWikiUIEverywhere = true;
 
 	// Needed to enable subpage navigation and shortened display titles
-  $wgNamespacesWithSubpages[NS_MAIN] = true;
+	$wgNamespacesWithSubpages[NS_MAIN] = true;
+
+	// To enable a complex Main Page
+	$wgRawHtml = true;
 
 ## Site customization
 
@@ -27,3 +23,7 @@ Add to `LocalSettings.php`:
 
 * `MediaWiki:FooterLinks`: This this to control the footer area, will
   be empty otherwise.
+
+## FancyCaptcha
+
+Install it as described in https://www.mediawiki.org/wiki/Extension:ConfirmEdit#FancyCaptcha

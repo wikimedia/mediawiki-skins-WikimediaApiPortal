@@ -54,9 +54,9 @@
 		},
 		"skin.wikimediaapiportal.mainpage": {
 			"styles": {
-				"resources/stylesheets/mainpage/xl.less": { "media": "all and ( min-width: 1301px )" },
-				"resources/stylesheets/mainpage/lg.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1300px )" },
-				"resources/stylesheets/mainpage/sm.less": { "media": "all and ( max-width: 991px )" }
+				"resources/stylesheets/mainpage-xl.less": { "media": "all and ( min-width: 1301px )" },
+				"resources/stylesheets/mainpage-lg.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1300px )" },
+				"resources/stylesheets/mainpage-sm.less": { "media": "all and ( max-width: 991px )" }
 			}
 		}
 	},

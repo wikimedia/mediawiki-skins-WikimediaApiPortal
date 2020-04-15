@@ -249,8 +249,38 @@
 				}
 			}
 		}
+		.pagination {
+			.page-item {
+				&.active {
+					a {
+						background-color: @color-accent-30;
+						border-color: @color-accent-30;
+						color: @color-base-90;
+						&:hover {
+							background-color: @color-accent-30;
+						}
+					}
+				}
+				a {
+					color: @color-base-10;
+					&:focus {
+						box-shadow: none;
+						text-decoration: none;
+					}
+					&:hover {
+						background-color: @color-base-80;
+					}
+				}
+			}
+		}
+		.oo-ui-buttonWidget {
+			&.oo-ui-flaggedElement-primary {
+				a {
+					background-color: @color-accent-30;
+				}
+			}
+		}
 	}
-
 	div.thumbinner {
 		box-sizing: content-box;
 		max-width: 100%;

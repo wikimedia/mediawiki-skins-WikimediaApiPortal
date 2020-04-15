@@ -2,6 +2,8 @@
 	"@metadata": {
 		"authors": []
 	},
+	"action-wikimediaapiportal-see-page-actions": "FIXME: DOCUMENT ME",
+	"right-wikimediaapiportal-see-page-actions": "FIXME: DOCUMENT ME",
 	"wikimediaapiportal-skin-desc": "Custom skin for the Wikimedia API Developer portal",
 	"wikimediaapiportal-skin-site-name-main": "Wikimedia",
 	"wikimediaapiportal-skin-site-name-sub": "API Portal",
@@ -13,6 +15,7 @@
 	"wikimediaapiportal-skin-button-clear-search-label": "Clear search",
 	"wikimediaapiportal-skin-wikimedia-info": "The Wikimedia Foundation, Inc is a nonprofit charitable organization dedicated to encouraging the growth, development and distribution of free, multilingual content, and to providing the full content of these wiki-based projects to the public free of charge.",
 	"wikimediaapiportal-skin-disclaimer": "Text is available under the [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Attribution-ShareAlike License]; additional terms may apply. See [https://foundation.wikimedia.org/wiki/Terms_of_Use Terms of Use] for details.",
+	"wikimediaapiportal-skin-page-nav-predefines": "* DevCenter\n** Special:Notifications|Notifications\n** Special:AppManagement|App management",
 	"wikimediaapiportal-skin-return-to-page-label": "Return to page",
 	"wikimediaapiportal-skin-updated-ts-label": "Updated $1"
 }
