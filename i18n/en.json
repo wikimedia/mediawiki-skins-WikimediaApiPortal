@@ -1,7 +1,11 @@
 {
+	"@metadata": {
+		"authors": []
+	},
 	"wikimediaapiportal-skin-desc": "Custom skin for the Wikimedia API Developer portal",
 	"wikimediaapiportal-skin-site-name-main": "Wikimedia",
 	"wikimediaapiportal-skin-site-name-sub": "API Portal",
+	"wikimediaapiportal-jumpto-content": "Jump to content",
 	"wikimediaapiportal-skin-login-link-label": "Log in",
 	"wikimediaapiportal-skin-personal-tools-label": "My Account",
 	"wikimediaapiportal-skin-button-contact-label": "Contact",

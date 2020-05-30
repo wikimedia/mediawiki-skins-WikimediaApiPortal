@@ -1,14 +1,14 @@
-( function( $ ) {
-	$( function() {
+( function () {
+	$( function () {
 		var $header = $( '.wm-header.fixed-top:visible' );
 		if ( !$header.length ) {
 			return;
 		}
-		$( 'a[href*="#"]:not([href="#"])' ).click( function() {
+		$( 'a[href*="#"]:not([href="#"])' ).click( function () {
 			adjustScroll( $header, this.hash );
 		} );
 
-		$( window ).on( 'hashchange', function( e ) {
+		$( window ).on( 'hashchange', function ( e ) {
 			adjustScroll( $header );
 		} );
 	} );
@@ -25,4 +25,4 @@
 			return false;
 		}
 	}
-} )( jQuery );
+}() );

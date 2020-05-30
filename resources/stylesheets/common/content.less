@@ -56,9 +56,10 @@
 			display: none;
 		}
 	}
-	#firstHeading {
+	.firstHeading {
 		border-bottom: none;
 		margin-top: 0;
+		margin-bottom: 1rem;
 	}
 
 	h1 {
@@ -122,6 +123,10 @@
 				}
 			}
 		}
+	}
+	.toc ul {
+		// This duplicates the MW style but needs to be repeated due to the above rule.
+		list-style: none;
 	}
 	code, pre {
 		font-family: 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
@@ -246,6 +251,14 @@
 		}
 	}
 
+	div.thumbinner {
+		box-sizing: content-box;
+		max-width: 100%;
+		height: auto;
+	}
+	div.thumb,
+	img.thumbimage {
+		max-width: 100%;
+		height: auto;
+	}
 }
-
-

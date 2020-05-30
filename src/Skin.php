@@ -2,34 +2,88 @@
 
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
-use Skins\Chameleon\Chameleon;
+use Bootstrap\BootstrapManager;
+use SkinTemplate;
+use Title;
 
-class Skin extends Chameleon {
+class Skin extends SkinTemplate {
 	public $skinname = 'wikimediaapiportal';
 	public $template = WikimediaApiPortalTemplate::class;
 
-	public static function init() {
-		$GLOBALS['egChameleonLayoutFile'] = dirname( __DIR__ ) . '/layouts/default.xml';
-		$GLOBALS['wgUseMediaWikiUIEverywhere'] = true;
-		$GLOBALS['wgSkipSkins'][] = 'chameleon';
-		$GLOBALS['wgLogo'] = $GLOBALS['wgScriptPath'] . "/skins/WikimediaApiPortal/resources/images/icon/wikimedia-black.svg";
+	/**
+	 * @return string[] Modules
+	 */
+	public function getDefaultModules() {
+		$modules = parent::getDefaultModules();
 
-		parent::init();
-		static::overrideSCSSVariables();
+		$modules['styles']['skin'][] = 'mediawiki.skinning.content';
+		$modules['styles']['skin'][] = 'zzz.ext.bootstrap.styles';
+
+		return $modules;
 	}
 
-	protected static function overrideSCSSVariables() {
-		$GLOBALS['egChameleonExternalStyleVariables'] = [
-			'container-max-widths' => '(sm: 899px, md: 1150px, lg: 1300px, xl: 1440px)',
-			'cmln-collapse-point' => '992px',
-		];
+	/**
+	 * @param \OutputPage $out
+	 */
+	public function initPage( \OutputPage $out ) {
+		parent::initPage( $out );
+
+		// Enable responsive behaviour on mobile browsers
+		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, shrink-to-fit=no' );
 	}
 
-	public function addSkinModulesToOutput() {
-		parent::addSkinModulesToOutput();
+	/** @return string */
+	public function getRequestedAction() {
+		return $this->getRequest()->getRawVal( 'action', 'view' );
+	}
 
-		$this->getOutput()->enableOOUI();
-		$this->getOutput()->addModuleStyles( [
+	/** @return bool */
+	public function isViewAction() {
+		return $this->getRequestedAction() === 'view';
+	}
+
+	/**
+	 * Whether the link points to the current title (or a subpage thereof).
+	 * @param string $link
+	 * @return bool
+	 */
+	public function isActiveLink( string $link ) {
+		$currentTitle = $this->getTitle();
+		if ( !$currentTitle ) {
+			return false;
+		}
+		// Match logic in Skin::addToSidebarPlain
+		$currentLink = $currentTitle->fixSpecialName()->getLinkURL();
+
+		return $link === $currentLink || strpos( $currentLink, "$link/" ) === 0;
+	}
+
+	/**
+	 * Whether the Title points to the current title (or a subpage thereof).
+	 * @param Title $title
+	 * @return bool
+	 */
+	public function isActiveTitle( Title $title ) {
+		$currentTitle = $this->getTitle();
+		if ( !$currentTitle ) {
+			return false;
+		}
+		// Match logic in Skin::addToSidebarPlain
+		$currentTitle = $currentTitle->fixSpecialName();
+
+		return $title->equals( $currentTitle ) || $currentTitle->isSubpageOf( $title );
+	}
+
+	/** @return \QuickTemplate */
+	protected function setupTemplateForOutput() : \QuickTemplate {
+		$template = parent::setupTemplateForOutput();
+		$template->set( 'skin', $this );
+
+		$output = $this->getOutput();
+		$output->addModules( 'ext.bootstrap.scripts' );
+
+		$output->enableOOUI();
+		$output->addModuleStyles( [
 			'oojs-ui.styles.icons-user',
 			'oojs-ui.styles.icons-content',
 			'oojs-ui.styles.icons-editing-core',
@@ -37,19 +91,30 @@ class Skin extends Chameleon {
 			'oojs-ui.styles.icons-movement',
 			'skin.wikimediaapiportal.styles'
 		] );
-		$this->getOutput()->addModules( [
-			"skin.wikimediaapiportal.searchform",
-			"skin.wikimediaapiportal.scrollAdjust"
-		] );
-
-		if ( $this->getTitle()->isMainPage() && $this->isViewMode() ) {
-			$this->getOutput()->addModuleStyles( [
+		$output->addModules( "skin.wikimediaapiportal" );
+		if ( $this->getTitle()->isMainPage() && $this->isViewAction() ) {
+			$output->addModuleStyles( [
 				"skin.wikimediaapiportal.mainpage",
 			] );
 		}
+
+		return $template;
 	}
 
-	public function isViewMode() {
-		return $this->getRequest()->getText( 'action', 'view' ) === 'view';
+	/**
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ResourceLoaderRegisterModules
+	 * @param \ResourceLoader $rl
+	 */
+	public static function onResourceLoaderRegisterModules( \ResourceLoader $rl ) {
+		// Prepend our Bootstrap theme variables to the 'ext.bootstrap.styles' module.
+		$bootstrapManager = BootstrapManager::getInstance();
+		$bootstrapManager->addAllBootstrapModules();
+		$bootstrapManager->addStyleFile( dirname( __DIR__ ) . '/resources/bootstrap.scss', 'variables' );
+
+		// This module is a duplicate with no changes. It exist solely for the purpose of making
+		// it apply after 'mediawiki.skinning.content', because the styles are sorted alphabetically.
+		// https://github.com/ProfessionalWiki/chameleon/commit/7e4259db8f78ff
+		$rl->register( 'zzz.ext.bootstrap.styles',
+			$GLOBALS['wgResourceModules']['ext.bootstrap.styles'] );
 	}
 }

@@ -1,0 +1,90 @@
+{{{html-headelement}}}
+	<div class="flex-fill wm-container container">
+		<div class="wm-header fixed-top d-none d-md-none d-lg-flex d-xl-flex row">
+			<div class="wm-header-inner col">
+				<a class="mw-jump-link" href="#content">{{jumptocontent}}</a>
+				<div class="row">
+					<div class="flex-grow-0 col">
+						{{>Logo args-logo}}
+					</div>
+					<div class="col">
+						{{>NavbarHorizontal args-navmenu id="mw-navigation"}}
+					</div>
+					<div class="ml-auto col-12 col-lg col">
+						<div class="flex-row-reverse row">
+							{{>UserMenu args-usermenu}}
+							{{>NotificationAlert args-notification}}
+							{{>SearchBar args-searchBar id="searchform" class="d-none d-md-none d-sm-none d-lg-none d-xl-flex"}}
+							{{>SearchBar args-searchBar id="searchform--large" class="search-lg d-none d-sm-none d-xl-none d-md-flex d-lg-flex" hidden="1"}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wm-header fixed-top d-block d-sm-block d-md-block d-lg-none d-xl-none row">
+			<div class="wm-header-inner col">
+				<a class="mw-jump-link" href="#content">{{jumptocontent}}</a>
+				<div class="row">
+					<div class="wm-nav col">
+						{{>NavbarHorizontal args-navmenu id="mw-navigation--small" pagenav=args-pagenav pageToolsMobile=args-pageToolsMobile}}
+					</div>
+					<div class="col">
+						{{>Logo args-logo}}
+					</div>
+					<div class="wm-tools col">
+						<div class="flex-row-reverse row">
+							{{>UserMenu args-usermenu}}
+							{{>NotificationAlert args-notification}}
+							{{>SearchBar args-searchBar id="searchform--small" class="search-sm" hidden="1"}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wm-content row">
+			<div class="col-md-auto no-gutters page-nav-cnt d-none d-lg-block d-xl-block col">
+				{{#if args-pagenav}}
+				{{>PageNav args-pagenav}}
+				{{/if}}
+			</div>
+			<div class="col-lg wm-main-content col">
+				{{>MainContent}}
+			</div>
+		</div>
+	</div>
+
+	<div class="mt-4 wm-footer-grid container-fluid container">
+		<div class="wm-footer row">
+			<div class="col">
+				<div class="row">
+					<div class="col">
+						{{>FooterWikimediaInfo args-footerInfo}}
+					</div>
+					<div class="d-none d-lg-block d-xl-block col">
+						<div class="wm-footer-buttons row">
+							<div class="col">
+								{{>LinkButton wmlinks.contact}}
+								{{>LinkButton wmlinks.about-wm}}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						{{>FooterLinks args-footerLinks}}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						{{>FooterDisclaimer}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{{{html-trail}}}
+</body>
+</html>

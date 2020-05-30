@@ -1,20 +1,30 @@
 # Installation
 
-### Prerequisites
-Chameleon skin (2.x) must be installed https://github.com/ProfessionalWiki/chameleon/blob/master/docs/installation.md
+## Install and enable skin
 
-### Load and enable skin
-      wfLoadSkin( 'WikimediaApiPortal' );
-      $wgDefaultSkin = 'wikimediaapiportal';
-      
-Note: Installation procedure will change depending on the outcome of Chameleon installation improvements
+First install the Bootstrap and SCSS extensions (run from the MediaWiki directory):
 
-### Config
+  COMPOSER=composer.local.json composer require --no-update mediawiki/bootstrap:4.2
+  composer update mediawiki/bootstrap --no-dev -o
 
-    $wgRawHtml = true; // To enable complex pages in HTML
-    $wgWikimediaApiPortalSkinAdjustPageTitle = true; //If true, all subpages, will display only the last part of the page as the page title. This is done to allow for the site to be structured using subpages, while still keeping the page names that are display nice
-    $wgWikimediaApiPortalSkinAllowedPersonalUrls = [ 'uls', 'logout' ]; // Links that will be displayed in user menu (after clicking on the user icon). All others are discarted
+Add to `LocalSettings.php`:
 
-## FancyCaptcha
+	wfLoadExtension( 'Bootstrap' );
+	wfLoadSkin( 'WikimediaApiPortal' );
+	$wgDefaultSkin = 'wikimediaapiportal';
 
-Install it as described in https://www.mediawiki.org/wiki/Extension:ConfirmEdit#FancyCaptcha
+## Recommended configuration
+
+	// Needed (TODO: Document why).
+	$wgUseMediaWikiUIEverywhere = true;
+
+	// Needed to enable subpage navigation and shortened display titles
+  $wgNamespacesWithSubpages[NS_MAIN] = true;
+
+## Site customization
+
+* `MediaWiki:Sidebar`: Use this to control the header navigation bar,
+  e.g. set to plain list of main-namespace articles (instead of the default sections).
+
+* `MediaWiki:FooterLinks`: This this to control the footer area, will
+  be empty otherwise.

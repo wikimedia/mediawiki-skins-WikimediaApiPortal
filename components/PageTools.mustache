@@ -1,0 +1,21 @@
+{{! See also PageToolsMobile. }}
+<div class="wm-page-actions container d-none d-md-none d-lg-block d-xl-block">
+	<div class="row">
+		<div class="discussion-switch col">{{{html-discussionSwitch}}}</div>
+		<div class="last-edit col">{{{html-lastEdit}}}</div>
+		<div class="page-actions col no-gutters">
+			{{{html-primaryButtons}}}
+			{{~#if secondaryButtons~}}
+			<div class="btn-group">
+				<button id="wm-page-tools-more" type="button" class="btn dropdown-toggle wm-page-actions-more oo-ui-icon-ellipsis"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+				<div class="dropdown-menu" aria-labelledby="wm-page-tools-more">
+					{{#each secondaryButtons}}
+						{{{.}}}
+					{{/each}}
+				</div>
+			</div>
+			{{/if}}
+		</div>
+	</div>
+</div>

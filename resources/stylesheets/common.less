@@ -1,3 +1,4 @@
+@import 'mediawiki.mixins.less';
 @import "common/variables.less";
 @import "common/pagenav.less";
 @import "common/header.less";
@@ -7,6 +8,10 @@
 
 body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	min-height: 100vh;
 }
 
 .btn.wm-button {
@@ -49,4 +54,14 @@ body {
 
 .wm-hidden {
 	display: none !important;
+}
+
+.mw-jump-link:not( :focus ) {
+	.mixin-screen-reader-text;
+}
+
+// fix dropdown width for RTL languages
+.rtl .dropdown-menu {
+	/* @noflip */
+	left: inherit !important;
 }

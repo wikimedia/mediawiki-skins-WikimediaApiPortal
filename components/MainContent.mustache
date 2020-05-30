@@ -1,0 +1,20 @@
+<div id="content" class="mw-body content">
+	<a id="top" class="top"></a>
+
+	<div class="contentHeader">
+		<h1 id="firstHeading" class="firstHeading">{{{html-title}}}</h1>
+		<div id="contentSub" class="small">{{{html-subtitle}}}</div>
+		{{#html-undelete}}<div id="contentSub2" class="small">{{{html-undelete}}}</div>{{/html-undelete}}
+
+		{{#if args-pageTools}}
+		{{>PageTools args-pageTools}}
+		{{/if}}
+	</div>
+
+	<div id="bodyContent" class="bodyContent">
+		{{{html-bodyContent}}}
+		{{{html-afterContent}}}
+	</div>
+
+	{{{html-catlinks}}}
+</div>

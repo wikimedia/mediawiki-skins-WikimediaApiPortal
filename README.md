@@ -1,3 +1,3 @@
-# mediawiki-skin-WikimediaApiPortal
+# WikimediaApiPortal skin
 
-Custom skin for WMF API Portal, based on chameleon
+Skin for Wikimedia's API portal.

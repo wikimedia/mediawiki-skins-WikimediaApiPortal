@@ -1,0 +1,31 @@
+{{!
+A horizontal navbar containing the items that are traditionally placed in a sidebar.
+}}
+<nav class="p-navbar collapsible navbar navbar-expand-lg" role="navigation" id="{{id}}">
+	<button class="wm-icon-button wm-navbar-button" data-toggle="collapse" data-target="#{{id}}--collapse"></button>
+	<div class="collapse navbar-collapse" id="{{id}}--collapse"><div class="navbar-nav">
+	{{#if pagenav}}
+		{{#if pageToolsMobile}}
+		{{>PageToolsMobile pageToolsMobile}}
+		{{/if}}
+		<div class="wm-main-page"><a href="{{mainpage-href}}">{{mainpage-text}}</a></div>
+		{{>PageNav pagenav}}
+	{{/if}}
+	{{#unless pagenav}}{{#each items}}
+		{{#isLink}}
+			<div class="nav-item{{#isActive}} active{{/isActive}}"><a class="nav-item nav-link" href="{{href}}">{{header}}</a></div>
+		{{/isLink}}
+		{{#isDropdown}}
+			<!-- {{menuKey}} -->
+			<div class="nav-item dropdown{{#hasActive}} active{{/hasActive}}">
+				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-boundary="viewport">{{header}}</a>
+				<div class="dropdown-menu" id="{{id}}">
+				{{#each items}}
+					{{{.}}}
+				{{/each}}
+				</div>
+			</div>
+		{{/isDropdown}}
+	{{/each}}{{/unless}}
+	</div></div>
+</nav>

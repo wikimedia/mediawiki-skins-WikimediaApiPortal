@@ -1,24 +1,23 @@
-( function( $, d ) {
-	$( function() {
+( function () {
+	$( function () {
 		var $element,
 			$trigger,
 			$form,
 			$clearButton,
 			$input;
 
-		$( '.wm-search-container' ).each( function( key, element ) {
-			if ( !$( element ).is( ':visible') ) {
+		$( '.wm-search-container' ).each( function ( key, element ) {
+			if ( !$( element ).is( ':visible' ) ) {
 				return;
 			}
 			$element = $( element );
-			$trigger = $element.find( '.wm-search-trigger' ),
-			$form = $element.find( 'form.mw-search' ),
-			$clearButton = $form.find( '.wm-search-clear-button' ),
+			$trigger = $element.find( '.wm-search-trigger' );
+			$form = $element.find( 'form.mw-search' );
+			$clearButton = $form.find( '.wm-search-clear-button' );
 			$input = $form.find( 'input[name="search"]' );
 
-			$input.attr( 'id', 'searchInput' );
 			if ( $clearButton.length > 0 ) {
-				$clearButton.on( 'click', function() {
+				$clearButton.on( 'click', function () {
 					$input.val( '' );
 					if ( $trigger.length > 0 ) {
 						hideForm();
@@ -26,7 +25,7 @@
 				} );
 			}
 			if ( $trigger.length > 0 ) {
-				$trigger.on( 'click', function() {
+				$trigger.on( 'click', function () {
 					if ( $form.hasClass( 'wm-hidden' ) ) {
 						showForm();
 					} else {
@@ -44,6 +43,7 @@
 			if ( $element.hasClass( 'search-lg' ) ) {
 				$( '#mw-navigation' ).addClass( 'wm-hidden' );
 			} else {
+				// eslint-disable-next-line no-undef
 				if ( $( d ).width() > 600 ) {
 					return;
 				}
@@ -62,4 +62,4 @@
 			}
 		}
 	} );
-} )( jQuery, document );
+}() );

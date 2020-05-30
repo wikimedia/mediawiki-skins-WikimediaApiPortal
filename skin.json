@@ -11,8 +11,8 @@
 	"descriptionmsg": "wikimediaapiportal-skin-desc",
 	"requires": {
 		"MediaWiki": ">= 1.35.0",
-		"skins": {
-			"Chameleon": ">= 3.0"
+		"extensions": {
+			"Bootstrap": "4.2"
 		}
 	},
 	"ValidSkinNames": {
@@ -24,7 +24,6 @@
 	"MessagesDirs": {
 		"WikimediaApiPortal": "i18n"
 	},
-	"callback": "MediaWiki\\Skin\\WikimediaApiPortal\\Skin::init",
 	"AutoloadNamespaces": {
 		"MediaWiki\\Skin\\WikimediaApiPortal\\": "src/"
 	},
@@ -32,11 +31,11 @@
 		"MediaWiki\\Skin\\WikimediaApiPortal\\Tests\\": "tests/phpunit/"
 	},
 	"AvailableRights": [
-		"wa-see-page-actions"
+		"wikimediaapiportal-see-page-actions"
 	],
 	"GroupPermissions": {
 		"user": {
-			"wa-see-page-actions": true
+			"wikimediaapiportal-see-page-actions": true
 		}
 	},
 	"ResourceModules": {
@@ -44,16 +43,13 @@
 			"styles": {
 				"stylesheets/xl.less": { "media": "all and ( min-width: 1301px )" },
 				"stylesheets/lg.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1300px )" },
-				"stylesheets/sm.less": { "media": "all and ( max-width: 991px )" }
+				"stylesheets/sm.less": { "media": "all and ( max-width: 991px )" },
+				"stylesheets/print.less": { "media": "print" }
 			}
 		},
-		"skin.wikimediaapiportal.searchform": {
+		"skin.wikimediaapiportal": {
 			"scripts": [
-				"script/searchform.js"
-			]
-		},
-		"skin.wikimediaapiportal.scrollAdjust": {
-			"scripts": [
+				"script/searchform.js",
 				"script/scrollAdjust.js"
 			]
 		},
@@ -70,19 +66,8 @@
 		"remoteSkinPath": "WikimediaApiPortal/resources"
 	},
 	"Hooks": {
-		"AuthChangeFormFields": "MediaWiki\\Skin\\WikimediaApiPortal\\Hook\\AuthChangeFormFields\\RemoveRealName::callback"
-	},
-	"config": {
-		"WikimediaApiPortalSkinAllowedPersonalUrls": {
-			"description": "Personal url keys that will be allowed in the user menu",
-			"value": [
-				"logout",
-				"uls"
-			]
-		},
-		"WikimediaApiPortalSkinAdjustPageTitle": {
-			"value": true
-		}
+		"AuthChangeFormFields": "MediaWiki\\Skin\\WikimediaApiPortal\\Hook\\AuthChangeFormFields\\RemoveRealName::callback",
+		"ResourceLoaderRegisterModules": "MediaWiki\\Skin\\WikimediaApiPortal\\Skin::onResourceLoaderRegisterModules"
 	},
 	"manifest_version": 2
 }
