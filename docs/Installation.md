@@ -9,7 +9,6 @@ First install the Bootstrap and SCSS extensions (run from the MediaWiki director
 
 Add to `LocalSettings.php`:
 
-	wfLoadExtension( 'Bootstrap' );
 	wfLoadSkin( 'WikimediaApiPortal' );
 	$wgDefaultSkin = 'wikimediaapiportal';
 

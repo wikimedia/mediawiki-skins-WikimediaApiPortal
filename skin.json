@@ -10,10 +10,7 @@
 	"url": "https://www.mediawiki.org/wiki/Skin:WikimediaApiPortal",
 	"descriptionmsg": "wikimediaapiportal-skin-desc",
 	"requires": {
-		"MediaWiki": ">= 1.35.0",
-		"extensions": {
-			"Bootstrap": "4.2"
-		}
+		"MediaWiki": ">= 1.35.0"
 	},
 	"ValidSkinNames": {
 		"wikimediaapiportal": {
@@ -41,33 +38,34 @@
 	"ResourceModules": {
 		"skin.wikimediaapiportal.styles": {
 			"styles": {
-				"stylesheets/xl.less": { "media": "all and ( min-width: 1301px )" },
-				"stylesheets/lg.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1300px )" },
-				"stylesheets/sm.less": { "media": "all and ( max-width: 991px )" },
-				"stylesheets/print.less": { "media": "print" }
+				"resources/stylesheets/xl.less": { "media": "all and ( min-width: 1301px )" },
+				"resources/stylesheets/lg.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1300px )" },
+				"resources/stylesheets/sm.less": { "media": "all and ( max-width: 991px )" },
+				"resources/stylesheets/print.less": { "media": "print" },
+				"dist/bootstrap.css": {}
 			}
 		},
 		"skin.wikimediaapiportal": {
 			"scripts": [
-				"script/searchform.js",
-				"script/scrollAdjust.js"
+				"dist/bootstrap.bundle.js",
+				"resources/script/searchform.js",
+				"resources/script/scrollAdjust.js"
 			]
 		},
 		"skin.wikimediaapiportal.mainpage": {
 			"styles": {
-				"stylesheets/mainpage/xl.less": { "media": "all and ( min-width: 1301px )" },
-				"stylesheets/mainpage/lg.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1300px )" },
-				"stylesheets/mainpage/sm.less": { "media": "all and ( max-width: 991px )" }
+				"resources/stylesheets/mainpage/xl.less": { "media": "all and ( min-width: 1301px )" },
+				"resources/stylesheets/mainpage/lg.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1300px )" },
+				"resources/stylesheets/mainpage/sm.less": { "media": "all and ( max-width: 991px )" }
 			}
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "resources",
-		"remoteSkinPath": "WikimediaApiPortal/resources"
+		"localBasePath": "",
+		"remoteSkinPath": "WikimediaApiPortal"
 	},
 	"Hooks": {
-		"AuthChangeFormFields": "MediaWiki\\Skin\\WikimediaApiPortal\\Hook\\AuthChangeFormFields\\RemoveRealName::callback",
-		"ResourceLoaderRegisterModules": "MediaWiki\\Skin\\WikimediaApiPortal\\Skin::onResourceLoaderRegisterModules"
+		"AuthChangeFormFields": "MediaWiki\\Skin\\WikimediaApiPortal\\Hook\\AuthChangeFormFields\\RemoveRealName::callback"
 	},
 	"manifest_version": 2
 }
