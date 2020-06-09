@@ -1,3 +1,14 @@
 {
-	"wikimediaapiportal-skin-desc": "Description of WikimediaApiPortal skin for [[Special:Version]]"
+	"wikimediaapiportal-skin-desc": "Description of WikimediaApiPortal skin for [[Special:Version]]",
+	"wikimediaapiportal-skin-site-name-main": "{{notranslate}}",
+	"wikimediaapiportal-skin-site-name-sub": "{{notranslate}}",
+	"wikimediaapiportal-skin-login-link-label": "Label for the log in button",
+	"wikimediaapiportal-skin-personal-tools-label": "Tooltip text for the user profile management page button",
+	"wikimediaapiportal-skin-button-contact-label": "Label for the \"Contact\" button",
+	"wikimediaapiportal-skin-button-about-wm-label": "Label for the \"About Wikimedia\" button",
+	"wikimediaapiportal-skin-button-clear-search-label": "Tooltip for the button that clears the search input",
+	"wikimediaapiportal-skin-wikimedia-info": "Info text on WikimediaFoundation",
+	"wikimediaapiportal-skin-disclaimer": "Disclaimer text for API portal site",
+	"wikimediaapiportal-skin-return-to-page-label": "Label for the button that returns user to the subject page, when on talk page",
+	"wikimediaapiportal-skin-updated-ts-label": "Label for the last update date. \n$1 - date formatted in user's format"
 }

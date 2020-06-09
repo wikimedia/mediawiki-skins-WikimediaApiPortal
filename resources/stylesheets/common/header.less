@@ -1,0 +1,59 @@
+@import "header/search.less";
+@import "header/logo.less";
+
+/* Header */
+.wm-header {
+	background-color: @color-header-background;
+	font-size: @size-header-font;
+	-webkit-box-shadow: 0 2px 2px -2px @color-base-50;
+	-moz-box-shadow: 0 2px 2px -2px @color-base-50;
+	box-shadow: 0 2px 2px -2px @color-base-50;
+	.wm-header-item {
+		line-height: 40px;
+	}
+	.wm-header-inner {
+		padding: 20px @size-padding-main-left-right 0 @size-padding-main-left-right;
+	}
+	.wm-header-border-box {
+		border: 1px solid @color-base-50;
+		border-radius: 2px;
+	}
+
+	.wm-user-button:after, .wm-personal-tools-icon:after {
+		/* @embed */
+		background-image: url( '../images/icon/user.svg' );
+	}
+
+	.wm-notification-button {
+		position: relative;
+		.wm-notification-count-badge {
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: @color-accent-30;
+			color: white;
+			border-radius: 100px;
+			padding: 10px 4px 10px 4px;
+			line-height: 0;
+		}
+		.wm-icon-button:after {
+			/* @embed */
+			background-image: url( '../images/icon/notification.svg' );
+		}
+	}
+
+	.wm-search-clear-button {
+		height: 100%;
+		a {
+			height: inherit;
+			&:focus, &:active {
+				border: none;
+				box-shadow: none;
+			}
+		}
+
+	}
+}
+
+
+

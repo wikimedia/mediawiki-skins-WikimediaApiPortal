@@ -1,0 +1,251 @@
+.wm-content {
+	.wm-page-actions {
+		border-top: 2px solid @color-base-80;
+		border-bottom: 2px solid @color-base-80;
+		margin: 5px 0 20px 0;
+		.page-actions {
+			text-align: right;
+			.oo-ui-buttonWidget.selected a {
+				text-decoration: underline;
+			}
+			.btn-group {
+				.wm-page-actions-more {
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: 20px;
+					&:after {
+						border: none;
+						background-repeat: no-repeat;
+					}
+					&:focus, &:active, &:focus-within, &:visited {
+						text-decoration: none;
+						outline: none;
+						box-shadow: none;
+					}
+				}
+				&.show {
+					position: relative;
+					.dropdown-toggle {
+						text-decoration: none;
+						outline: none;
+						box-shadow: none;
+					}
+					.dropdown-menu {
+						left: unset !important;
+						right: 0;
+						top: 5px !important;
+						padding: 0;
+						box-shadow: none;
+						.oo-ui-buttonWidget {
+							display: block;
+							margin: 0;
+							width: 100%;
+							text-align: right;
+							a {
+								width: inherit;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#contentSub {
+		.subpages {
+			/* Dedicated navigation is present */
+			display: none;
+		}
+	}
+	#firstHeading {
+		border-bottom: none;
+		margin-top: 0;
+	}
+
+	h1 {
+		font-family: 'Charter Regular', sans-serif;
+		font-size: 32sp;
+	}
+	h2, h3, h4, h5, h6 {
+		font-family: 'Lato Bold', sans-serif;
+		font-weight: 600;
+	}
+	h2 {
+		font-size: 24sp;
+	}
+	h3 {
+		font-size: 20sp;
+	}
+	h4 {
+		font-size: 18sp;
+	}
+	h5 {
+		font-size: 16sp;
+	}
+	h6 {
+		font-size: 16sp;
+		font-weight: normal;
+	}
+	p {
+		font-family: 'Lato Regular', sans-serif;
+		font-size: 16sp;
+		color: @color-base-10;
+	}
+
+	blockquote.templatequote {
+		font-family: 'Charter Italic', sans-serif;
+		font-size: 20sp;
+		.templatequitecite {
+			font-family: 'Lato Regular', sans-serif;
+			font-size: 14sp;
+		}
+		&:before {
+			border: 3px solid @color-base-70;
+		}
+	}
+	figure {
+		font-family: 'Lato Italic', sans-serif;
+		font-style: italic;
+		font-size: 13sp;
+		color: @color-base-30;
+	}
+
+	ul, ol {
+		font-family: 'Lato Regular', sans-serif;
+		font-size: 16sp;
+		list-style-position: outside;
+		ul {
+			list-style-type: disc;
+			ul {
+				list-style-type: circle;
+				ul {
+					list-style-type: square;
+				}
+			}
+		}
+	}
+	code, pre {
+		font-family: 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+		font-size: 14px;
+	}
+
+	#bodyContent {
+		pre {
+			border: none;
+			border-radius: 0;
+		}
+		table.wikitable, table.wm-table {
+			&.fullwidth {
+				width: 100%;
+			}
+			th, td {
+				padding: 0.8rem;
+				border-color: @color-base-80;
+				font-size: 1rem;
+			}
+			th {
+				text-align: left;
+				background-color: @color-base-90;
+
+			}
+			td {
+				background-color: @color-base-100;
+			}
+		}
+		/** Overrides for the bootstrap values */
+		.jumbotron {
+			background-color: @color-base-90;
+		}
+		h1 {
+			margin-top: 0;
+		}
+		.wm-bold {
+			font-weight: 600;
+		}
+		.btn {
+			border: none;
+			border-radius: 0;
+			background: none;
+			box-shadow: none !important;
+			padding: 0.8rem 3rem 0.8rem 3rem;
+			&.btn-primary {
+				background: none;
+				background-color: @color-accent-30;
+				&:hover {
+					background-color: @color-accent-50;
+				}
+			}
+			&.btn-secondary {
+				background: none;
+				color: @color-accent-30;
+				background-color: @color-accent-90;
+				&:hover {
+					color: @color-accent-50;
+				}
+			}
+			&.btn-success {
+				background: none;
+				border: 1px solid @color-green-30;
+				color: @color-green-50;
+				background-color: @color-green-90;
+			}
+			&.btn-danger {
+				background: none;
+				background-color: @color-red-30;
+				&:hover {
+					background-color: @color-red-50;
+				}
+			}
+			&.btn-warning {
+				background: none;
+				border: 1px solid @color-red-30;
+				color: @color-red-50;
+				background-color: @color-red-90;
+			}
+			&.btn-link {
+				color: @color-accent-30;
+				padding: 0.8rem;
+			}
+		}
+		.card {
+			box-shadow: none;
+			border: none;
+			background: none;
+			border-radius: 0;
+			background-color: @color-accent-90;
+			&.transparent {
+				background-color: transparent;
+			}
+		}
+		.list-group {
+			.list-group-item {
+				border-radius: 0;
+				&.active {
+					background-color: @color-accent-90;
+					color: @color-accent-50;
+					border-color: @color-accent-50;
+				}
+			}
+		}
+		.nav.nav-tabs {
+			margin-left: 0;
+			border: none;
+			.nav-item .nav-link {
+				border: 1px solid @color-base-100;
+				border-radius: 0;
+				background-color: @color-base-80;
+				color: @color-base-10;
+				&:hover, &:focus, &:visited {
+					color: @color-base-10;
+					text-decoration: none;
+				}
+				&.active {
+					background-color: @color-base-10;
+					color: @color-base-100;
+				}
+			}
+		}
+	}
+
+}
+
+

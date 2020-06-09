@@ -1,0 +1,34 @@
+@import "../common.less";
+
+.wm-container {
+	max-width: unset !important;
+	margin: 0 !important;
+	width: 100%;
+	.wm-header {
+		box-shadow: none;
+	}
+	.wm-content {
+		padding: 90px 0 0 0;
+		.contentHeader {
+			display: none;
+		}
+		.wm-page-actions {
+			display: none !important;
+		}
+		.wm-main-content {
+			padding: 0;
+			#content {
+				padding: 0;
+			}
+			.wm-mainpage-content {
+				max-width: 1440px;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 20px @size-padding-main-left-right 20px @size-padding-main-left-right;
+			}
+			.jumbotron {
+				padding: 0;
+			}
+		}
+	}
+}

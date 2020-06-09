@@ -1,0 +1,33 @@
+/* Footer */
+.wm-footer {
+	padding: 20px @size-padding-main-left-right 50px @size-padding-main-left-right;
+	font-size: 0.8rem;
+	.wm-footer-link-container {
+		.col {
+			flex: unset;
+			display: block;
+			max-width: 100%;
+			.wm-footer-link-group-name {
+				h3 {
+					font-size: 0.9rem;
+				}
+			}
+			&.col-6 .wm-footer-link-group-links {
+				.wm-button {
+					width: 30%;
+				}
+			}
+			.wm-footer-link-group-links {
+				.wm-button {
+					font-size: 0.8rem;
+					width: 100%;
+				}
+			}
+		}
+	}
+	.wm-footer-disclaimer {
+		a {
+			text-decoration: underline !important;
+		}
+	}
+}

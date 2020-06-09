@@ -6,11 +6,14 @@
 		"Dejan Savuljesku",
 		"Robert Vogel"
 	],
+	"type": "skin",
 	"url": "https://www.mediawiki.org/wiki/Skin:WikimediaApiPortal",
 	"descriptionmsg": "wikimediaapiportal-skin-desc",
-	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.35.0",
+		"skins": {
+			"Chameleon": ">= 3.0"
+		}
 	},
 	"ValidSkinNames": {
 		"wikimediaapiportal": {
@@ -27,6 +30,59 @@
 	},
 	"TestAutoloadNamespaces": {
 		"MediaWiki\\Skin\\WikimediaApiPortal\\Tests\\": "tests/phpunit/"
+	},
+	"AvailableRights": [
+		"wa-see-page-actions"
+	],
+	"GroupPermissions": {
+		"user": {
+			"wa-see-page-actions": true
+		}
+	},
+	"ResourceModules": {
+		"skin.wikimediaapiportal.styles": {
+			"styles": {
+				"stylesheets/xl.less": { "media": "all and ( min-width: 1301px )" },
+				"stylesheets/lg.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1300px )" },
+				"stylesheets/sm.less": { "media": "all and ( max-width: 991px )" }
+			}
+		},
+		"skin.wikimediaapiportal.searchform": {
+			"scripts": [
+				"script/searchform.js"
+			]
+		},
+		"skin.wikimediaapiportal.scrollAdjust": {
+			"scripts": [
+				"script/scrollAdjust.js"
+			]
+		},
+		"skin.wikimediaapiportal.mainpage": {
+			"styles": {
+				"stylesheets/mainpage/xl.less": { "media": "all and ( min-width: 1301px )" },
+				"stylesheets/mainpage/lg.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1300px )" },
+				"stylesheets/mainpage/sm.less": { "media": "all and ( max-width: 991px )" }
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteSkinPath": "WikimediaApiPortal/resources"
+	},
+	"Hooks": {
+		"AuthChangeFormFields": "MediaWiki\\Skin\\WikimediaApiPortal\\Hook\\AuthChangeFormFields\\RemoveRealName::callback"
+	},
+	"config": {
+		"WikimediaApiPortalSkinAllowedPersonalUrls": {
+			"description": "Personal url keys that will be allowed in the user menu",
+			"value": [
+				"logout",
+				"uls"
+			]
+		},
+		"WikimediaApiPortalSkinAdjustPageTitle": {
+			"value": true
+		}
 	},
 	"manifest_version": 2
 }

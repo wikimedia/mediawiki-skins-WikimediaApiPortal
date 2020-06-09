@@ -1,0 +1,67 @@
+/* Footer */
+.wm-footer-grid {
+	max-width: unset !important;
+	background-color: @color-footer-background;
+}
+
+.wm-footer {
+	min-height: 90px;
+	max-width: 1440px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	.wm-footer-wikimedia-info {
+		.wmf-logo {
+			width: 170px;
+			height: 35px;
+			background-image: url( '../images/wmf_footer_logo.svg' );
+			background-size: 150px;
+			background-repeat: no-repeat;
+		}
+		span {
+			margin: 10px 0 30px 0;
+			color: @color-base-80;
+			font-size: .9375rem;
+		}
+	}
+	.wm-footer-link-group {
+		margin-top: 10px;
+		border-top: 2px solid @color-base-30;
+		.wm-footer-link-group-name {
+			h3 {
+				color: @color-base-80;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			padding-right: 20px;
+		}
+		.wm-footer-link-group-links {
+			.wm-button {
+				color: @color-base-80;
+				text-align: left;
+				word-break: normal;
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+		}
+	}
+	.wm-footer-disclaimer {
+		padding: 20px 0 0 10px;
+		margin: 20px 0 0 0;
+		border-top: 2px solid @color-base-30;
+		color: @color-base-80;
+		font-size: .8125rem;
+		a {
+			color: @color-base-80 !important;
+			&:hover, &:focus, &:visited {
+				color: @color-base-80;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+

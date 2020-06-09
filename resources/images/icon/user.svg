@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="account" fill="#222222" fill-rule="nonzero">
+            <path d="M9,8 C10.7,8 12.06,6.65 12.06,5 C12.06,3.35 10.7,2 9,2 C7.3,2 5.94,3.35 5.94,5 C5.94,6.65 7.3,8 9,8 Z M9,10 C6.2,10 3.94,7.76 3.94,5 C3.94,2.24 6.2,0 9,0 C11.8,0 14.06,2.24 14.06,5 C14.06,7.76 11.8,10 9,10 Z M2,18 L16,18 L16,16.67 C16,14.92 13.69,13.11 9,13.11 C4.31,13.11 2,14.92 2,16.67 L2,18 Z M9,11.11 C15.66,11.11 18,14.44 18,16.67 L18,20 L0,20 L0,16.67 C0,14.44 2.34,11.11 9,11.11 L9,11.11 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

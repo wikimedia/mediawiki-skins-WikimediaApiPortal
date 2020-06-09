@@ -1,0 +1,54 @@
+.wm-page-nav {
+	margin: 20px 0 0 0;
+	list-style-type: none;
+	>.nav-item {
+		min-width: 220px;
+	}
+	.nav-item {
+		a.nav-link {
+			width: 100%;
+			color: @color-base-10;
+			&:focus, &:visited {
+				color: @color-base-10;
+			}
+			&:hover {
+				color: @color-accent-50;
+			}
+
+		}
+		&.active {
+			>a.nav-link {
+				font-weight: 700;
+				color: @color-accent-50;
+				background-color: @color-accent-90;
+			}
+
+		}
+		.wm-page-nav-sub {
+			list-style-type: none;
+			margin: 10px 0 10px 25px;
+			&.collapsed {
+				display: none;
+			}
+			.nav-item {
+				margin-bottom: 0;
+				font-size: 14px;
+				>a.nav-link {
+					border-left: 1px solid @color-base-70;
+				}
+				&.active {
+					>a.nav-link {
+						color: @color-base-10;
+						font-weight: 600;
+						background-color: transparent;
+						border-left: 1px solid @color-base-10;
+					}
+
+				}
+			}
+		}
+
+	}
+}
+
+
