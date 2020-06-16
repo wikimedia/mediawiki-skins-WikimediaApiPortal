@@ -1,4 +1,4 @@
-( function () {
+( function ( d ) {
 	$( function () {
 		var $element,
 			$trigger,
@@ -43,7 +43,6 @@
 			if ( $element.hasClass( 'search-lg' ) ) {
 				$( '#mw-navigation' ).addClass( 'wm-hidden' );
 			} else {
-				// eslint-disable-next-line no-undef
 				if ( $( d ).width() > 600 ) {
 					return;
 				}
@@ -62,4 +61,4 @@
 			}
 		}
 	} );
-}() );
+}( document ) );

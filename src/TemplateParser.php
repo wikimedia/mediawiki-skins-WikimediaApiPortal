@@ -3,8 +3,9 @@
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
 use LightnCandy\LightnCandy;
+use TemplateParser as TemplateParserBase;
 
-class TemplateParser extends \TemplateParser {
+class TemplateParser extends TemplateParserBase {
 
 	/**
 	 * @param string $templateDir

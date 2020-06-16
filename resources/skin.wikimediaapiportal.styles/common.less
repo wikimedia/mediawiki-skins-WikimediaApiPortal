@@ -1,11 +1,3 @@
-@import 'mediawiki.mixins.less';
-@import "common-variables.less";
-@import "common-pagenav.less";
-@import "common-header.less";
-@import "common-footer.less";
-@import "common-content.less";
-@import "common-fixes.less";
-
 body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
 	display: flex;
@@ -19,8 +11,8 @@ body {
 	margin: 0 10px 0 10px;
 	padding: 0;
 	&:focus, &:visited, &:hover {
-		outline: none;
-		box-shadow: none;
+		outline: none !important;
+		box-shadow: none !important;
 		text-decoration: none;
 		color: @color-base-10;
 	}

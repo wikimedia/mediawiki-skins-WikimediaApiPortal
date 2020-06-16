@@ -2,6 +2,9 @@
 
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
+use OutputPage;
+use ParserOptions;
+use QuickTemplate;
 use SkinTemplate;
 use Title;
 
@@ -10,9 +13,9 @@ class Skin extends SkinTemplate {
 	public $template = WikimediaApiPortalTemplate::class;
 
 	/**
-	 * @param \OutputPage $out
+	 * @param OutputPage $out
 	 */
-	public function initPage( \OutputPage $out ) {
+	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
 
 		// Enable responsive behaviour on mobile browsers
@@ -57,12 +60,15 @@ class Skin extends SkinTemplate {
 		}
 		// Match logic in Skin::addToSidebarPlain
 		$currentTitle = $currentTitle->fixSpecialName();
+		$this->getOutput()->getWikiPage()->getParserOutput(
+			ParserOptions::newFromContext( $this->getContext() )
+		);
 
 		return $title->equals( $currentTitle ) || $currentTitle->isSubpageOf( $title );
 	}
 
-	/** @return \QuickTemplate */
-	protected function setupTemplateForOutput() : \QuickTemplate {
+	/** @return QuickTemplate */
+	protected function setupTemplateForOutput() : QuickTemplate {
 		$template = parent::setupTemplateForOutput();
 		$template->set( 'skin', $this );
 
@@ -77,7 +83,7 @@ class Skin extends SkinTemplate {
 			'oojs-ui.styles.icons-movement',
 			'skin.wikimediaapiportal.styles'
 		] );
-		$output->addModules( "skin.wikimediaapiportal" );
+		$output->addModules( "skin.wikimediaapiportal.scripts" );
 		if ( $this->getTitle()->isMainPage() && $this->isViewAction() ) {
 			$output->addModuleStyles( [
 				"skin.wikimediaapiportal.mainpage",

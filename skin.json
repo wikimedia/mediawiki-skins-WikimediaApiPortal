@@ -38,34 +38,26 @@
 	"ResourceModules": {
 		"skin.wikimediaapiportal.styles": {
 			"styles": {
-				"resources/stylesheets/xl.less": { "media": "all and ( min-width: 1301px )" },
-				"resources/stylesheets/lg.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1300px )" },
-				"resources/stylesheets/sm.less": { "media": "all and ( max-width: 991px )" },
-				"resources/stylesheets/print.less": { "media": "print" },
-				"dist/bootstrap.css": {}
+				"skin.wikimediaapiportal.styles/entry.less": {},
+				"skin.wikimediaapiportal.styles/dist/bootstrap.css": {}
 			}
 		},
-		"skin.wikimediaapiportal": {
+		"skin.wikimediaapiportal.scripts": {
 			"scripts": [
-				"dist/bootstrap.bundle.js",
-				"resources/script/searchform.js",
-				"resources/script/scrollAdjust.js"
+				"skin.wikimediaapiportal.scripts/dist/bootstrap.bundle.js",
+				"skin.wikimediaapiportal.scripts/searchform.js",
+				"skin.wikimediaapiportal.scripts/scrollAdjust.js"
 			]
 		},
 		"skin.wikimediaapiportal.mainpage": {
 			"styles": {
-				"resources/stylesheets/mainpage-xl.less": { "media": "all and ( min-width: 1301px )" },
-				"resources/stylesheets/mainpage-lg.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1300px )" },
-				"resources/stylesheets/mainpage-sm.less": { "media": "all and ( max-width: 991px )" }
+				"skin.wikimediaapiportal.mainpage/mainpage.less": {}
 			}
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteSkinPath": "WikimediaApiPortal"
-	},
-	"Hooks": {
-		"AuthChangeFormFields": "MediaWiki\\Skin\\WikimediaApiPortal\\Hook\\AuthChangeFormFields\\RemoveRealName::callback"
+		"localBasePath": "resources",
+		"remoteSkinPath": "WikimediaApiPortal/resources"
 	},
 	"manifest_version": 2
 }

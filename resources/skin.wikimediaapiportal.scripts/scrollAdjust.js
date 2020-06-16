@@ -15,12 +15,12 @@
 
 	function adjustScroll( $header, hash, animate ) {
 		hash = hash || window.location.hash;
-		var target = $( hash ),
+		var $target = $( hash ),
 			headerHeight = $header.height() + 5;
 
-		if ( target.length ) {
+		if ( $target.length ) {
 			$( 'html,body' ).animate( {
-				scrollTop: target.offset().top - headerHeight
+				scrollTop: $target.offset().top - headerHeight
 			}, 500 );
 			return false;
 		}

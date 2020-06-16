@@ -10,12 +10,7 @@ use OOUI\ButtonWidget;
 use SpecialPage;
 use Title;
 
-/**
- * @method Skin getSkin()
- */
 class WikimediaApiPortalTemplate extends \BaseTemplate {
-	private const ENABLE_SUBPAGE_DISPLAY_TITLE = true;
-
 	// Personal url keys that will be allowed in the user menu
 	private const PERSONAL_LINKS_WHITELIST = [ 'logout', 'uls' ];
 
@@ -27,20 +22,19 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 				 'icon' => 'edit',
 				 'group' => 'primary',
 			 ],
-
 		 ],
-		 'actions' => [
-			 'move' => [
-				 'visible' => [ 'view' ],
-				 'group' => 'secondary',
+		'actions' => [
+			'move' => [
+				'visible' => [ 'view' ],
+				'group' => 'secondary',
 
-			 ],
+			],
 			 'delete' => [
-				 'visible' => [ 'view' ],
-				 'flags' => 'destructive',
-				 'group' => 'secondary',
+				'visible' => [ 'view' ],
+				'flags' => 'destructive',
+				'group' => 'secondary',
 			 ],
-		 ],
+		],
 	 ];
 
 	public function execute() {
@@ -79,14 +73,22 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	}
 
 	/**
+	 * Get correct return type
+	 *
+	 * @return Skin
+	 */
+	public function getSkin() {
+		return $this->data['skin'];
+	}
+
+	/**
 	 * @see components/Logo.mustache
 	 * @return array
 	 */
 	private function getLogoArgs() : array {
-		global $wgStylePath;
-
 		// Ignore wgLogo and 'logopath' from SkinTemplate
-		$logoPath = $wgStylePath . '/WikimediaApiPortal/resources/images/icon/wikimedia-black.svg';
+		$stylePath = $this->getSkin()->getConfig()->get( 'StylePath' );
+		$logoPath = $stylePath . '/WikimediaApiPortal/resources/images/icon/wikimedia-black.svg';
 
 		return [
 			'logopath' => $logoPath,
@@ -121,7 +123,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 					/** @var array $item See Skin::addToSidebarPlain */
 					$hasActive = $hasActive || $this->getSkin()->isActiveLink( $item['href'] );
 					// @phan-suppress-next-line SecurityCheck-DoubleEscaped
-					$subitems[] = $this->makeListItem( $key, $item, [
+					$subitems[] = $this->getSkin()->makeListItem( $key, $item, [
 						'tag' => 'div',
 						'class' => 'nav-item',
 						'link-class' => 'nav-link',
@@ -129,20 +131,20 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 				}
 
 				$items[] = [
-						'isDropdown' => true,
-						'hasActive' => $hasActive,
-						'menuKey' => $menuKey,
-						'id' => $menu['id'],
-						'header' => $menu['header'],
-						'items' => $subitems,
+					'isDropdown' => true,
+					'hasActive' => $hasActive,
+					'menuKey' => $menuKey,
+					'id' => $menu['id'],
+					'header' => $menu['header'],
+					'items' => $subitems,
 				];
 			} else {
 				$isActive = $this->getSkin()->isActiveLink( $menu['content'][0]['href'] );
 				$items[] = [
-						'isLink' => true,
-						'isActive' => $isActive,
-						'header' => $menu['header'],
-						'href' => $menu['content'][0]['href'],
+					'isLink' => true,
+					'isActive' => $isActive,
+					'header' => $menu['header'],
+					'href' => $menu['content'][0]['href'],
 				];
 			}
 		}
@@ -160,6 +162,11 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 * @return array|false
 	 */
 	private function getPageNavArgs() {
+		$predefined = $this->getPredefinedNavStructure();
+		if ( $predefined ) {
+			return [ 'items' => $predefined ];
+		}
+
 		$title = $this->getSkin()->getTitle();
 		if ( $title->isTalkPage() ) {
 			$subjectNS = MediaWikiServices::getInstance()->getNamespaceInfo()
@@ -199,11 +206,47 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 				'isActive' => $this->getSkin()->isActiveTitle( $page ),
 				'href' => $page->getLocalURL(),
 				'text' => $page->getSubpageText(),
-					// Recursion
 				'subpages' => $this->getPageNav( $page ) ?: false,
 			];
 		}
 		return $nav;
+	}
+
+	/**
+	 * Get page navigation hierarchy from predefined list
+	 *
+	 * @return array|null
+	 */
+	private function getPredefinedNavStructure() {
+		$predefined = [];
+		$this->getSkin()->addToSidebarPlain(
+			$predefined,
+			$this->getSkin()->msg(
+				'wikimediaapiportal-skin-page-nav-predefines'
+			)->inContentLanguage()->plain()
+		);
+
+		foreach ( $predefined as $root => $subpages ) {
+			$currentURL = $this->getSkin()->getTitle()->getLocalURL();
+			$matches = array_filter( $subpages, function ( $item ) use ( $currentURL ) {
+				return $item['href'] === $currentURL;
+			} );
+			foreach ( $subpages as &$subpage ) {
+				$subpage['isActive'] = $this->getSkin()->isActiveLink( $subpage['href'] );
+				$subpage['subpages'] = false;
+			}
+
+			if ( !empty( $matches ) ) {
+				return [ [
+					'text' => $root,
+					'href' => '#',
+					'isActive' => true,
+					'subpages' => $subpages
+				] ];
+			}
+		}
+
+		return null;
 	}
 
 	/**
@@ -215,7 +258,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 		$hasActive = false;
 		foreach ( $this->get( 'personal_urls' ) as $key => $item ) {
 			/** @var array $item See Skin::addToSidebarPlain */
-			$items[] = $this->makeListItem( $key, $item,
+			$items[] = $this->getSkin()->makeListItem( $key, $item,
 				[ 'tag' => 'div', 'link-class' => 'dropdown-item' ]
 			);
 		}
@@ -541,10 +584,6 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 * while still keeping the page names that are display nice
 	 */
 	private function setSubpageDisplayTitle() {
-		// @phan-suppress-next-line PhanImpossibleCondition
-		if ( !self::ENABLE_SUBPAGE_DISPLAY_TITLE ) {
-			return;
-		}
 		if ( !$this->getSkin()->isViewAction() ) {
 			return;
 		}

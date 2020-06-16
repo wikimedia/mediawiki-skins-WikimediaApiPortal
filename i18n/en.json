@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": []
 	},
-	"action-wikimediaapiportal-see-page-actions": "FIXME: DOCUMENT ME",
-	"right-wikimediaapiportal-see-page-actions": "FIXME: DOCUMENT ME",
+	"action-wikimediaapiportal-see-page-actions": "see page actions",
+	"right-wikimediaapiportal-see-page-actions": "See page actions",
 	"wikimediaapiportal-skin-desc": "Custom skin for the Wikimedia API Developer portal",
 	"wikimediaapiportal-skin-site-name-main": "Wikimedia",
 	"wikimediaapiportal-skin-site-name-sub": "API Portal",

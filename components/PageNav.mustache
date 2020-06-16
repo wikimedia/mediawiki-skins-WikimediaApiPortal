@@ -1,9 +1,9 @@
 <ul class="nav flex-column wm-page-nav{{#isSub}}-sub{{/isSub}}">
 {{#each items}}
 	<li class="nav-item{{#isActive}} active{{/isActive}}"><a class="nav-link" href="{{href}}">{{text}}</a>
-	{{#if subpages}}
-	{{>PageNav items=subpages isSub=1}}
-	{{/if}}
+		{{#if subpages}}
+			{{>PageNav items=subpages isSub=1}}
+		{{/if}}
 	</li>
 {{/each}}
 </ul>

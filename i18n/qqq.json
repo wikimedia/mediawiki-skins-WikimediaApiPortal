@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": []
 	},
-	"action-wikimediaapiportal-see-page-actions": "FIXME: DOCUMENT ME",
-	"right-wikimediaapiportal-see-page-actions": "FIXME: DOCUMENT ME",
+	"action-wikimediaapiportal-see-page-actions": "{{Doc-action|wikimediaapiportal-see-page-actions}}\n{{Identical|See page actions}}",
+	"right-wikimediaapiportal-see-page-actions": "Message for wikimediaapiportal-see-page-actions right\n{{Doc-right|wikimediaapiportal-see-page-actions}}",
 	"wikimediaapiportal-skin-desc": "Description of WikimediaApiPortal skin for [[Special:Version]]",
 	"wikimediaapiportal-skin-site-name-main": "{{notranslate}}",
 	"wikimediaapiportal-skin-site-name-sub": "{{notranslate}}",
@@ -15,7 +15,7 @@
 	"wikimediaapiportal-skin-button-clear-search-label": "Tooltip for the button that clears the search input",
 	"wikimediaapiportal-skin-wikimedia-info": "Info text on Wikimedia Foundation",
 	"wikimediaapiportal-skin-disclaimer": "Disclaimer text for API portal site",
-	"wikimediaapiportal-skin-page-nav-predefines": "FIXME: DOCUMENT ME",
+	"wikimediaapiportal-skin-page-nav-predefines": "Predefined list of page structures. Much like Sidebar",
 	"wikimediaapiportal-skin-return-to-page-label": "Label for the button that returns user to the subject page, when on talk page",
 	"wikimediaapiportal-skin-updated-ts-label": "Label for the last update date. \n$1 - date formatted in user's format"
 }
