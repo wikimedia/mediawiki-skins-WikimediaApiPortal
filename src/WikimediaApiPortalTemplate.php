@@ -10,6 +10,9 @@ use OOUI\ButtonWidget;
 use SpecialPage;
 use Title;
 
+/**
+ * @method Skin getSkin()
+ */
 class WikimediaApiPortalTemplate extends \BaseTemplate {
 	private const ENABLE_SUBPAGE_DISPLAY_TITLE = true;
 
@@ -117,6 +120,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 				foreach ( $menu['content'] as $key => $item ) {
 					/** @var array $item See Skin::addToSidebarPlain */
 					$hasActive = $hasActive || $this->getSkin()->isActiveLink( $item['href'] );
+					// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 					$subitems[] = $this->makeListItem( $key, $item, [
 						'tag' => 'div',
 						'class' => 'nav-item',
@@ -268,7 +272,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	/**
 	 * Helper for PageTools.
 	 *
-	 * @return OOUI\ButtonWidget|string
+	 * @return ButtonWidget|string
 	 */
 	private function getDiscussionSwitch() {
 		// See SkinTemplate::buildContentNavigationUrls
@@ -295,7 +299,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	/**
 	 * Helper for PageTools.
 	 *
-	 * @return OOUI\ButtonWidget|string
+	 * @return ButtonWidget|string
 	 */
 	private function getLastEdit() {
 		// See SkinTemplate::buildContentNavigationUrls
@@ -330,7 +334,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 *
 	 * @param string $group One of 'primary', 'secondary', or 'all'
 	 * @param array $oouiOptions
-	 * @return OOUI\ButtonWidget[]
+	 * @return ButtonWidget[]
 	 */
 	private function getContentNavButtons( $group, $oouiOptions = [] ) {
 		$requestedAction = $this->getSkin()->getRequestedAction();
@@ -369,7 +373,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 * @see SkinTemplate::buildContentNavigationUrls
 	 * @param array $action Data from 'content_navigation' entry
 	 * @param array $oouiOptions Override
-	 * @return OOUI\ButtonWidget
+	 * @return ButtonWidget
 	 */
 	private function getButtonForContentAction( $action, $oouiOptions = [] ) {
 		return new ButtonWidget( $oouiOptions + [
@@ -537,6 +541,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 * while still keeping the page names that are display nice
 	 */
 	private function setSubpageDisplayTitle() {
+		// @phan-suppress-next-line PhanImpossibleCondition
 		if ( !self::ENABLE_SUBPAGE_DISPLAY_TITLE ) {
 			return;
 		}
