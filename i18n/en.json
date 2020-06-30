@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
+	"skinname-wikimediaapiportal": "WikimediaAPIPortal",
 	"action-wikimediaapiportal-see-page-actions": "see page actions",
 	"right-wikimediaapiportal-see-page-actions": "See page actions",
 	"wikimediaapiportal-skin-desc": "Custom skin for the Wikimedia API Developer portal",
