@@ -21,7 +21,7 @@
 * `MediaWiki:Sidebar`: Use this to control the header navigation bar,
   e.g. set to plain list of main-namespace articles (instead of the default sections).
 
-* `MediaWiki:FooterLinks`: This this to control the footer area, will
+* `MediaWiki:FooterLinks`: This is to control the footer area, will
   be empty otherwise.
 
 ## FancyCaptcha
