@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bugoslav"
+		]
+	},
+	"action-wikimediaapiportal-see-page-actions": "vidi stranične radnje",
+	"wikimediaapiportal-jumpto-content": "Prijeđi na sadržaj",
+	"wikimediaapiportal-skin-login-link-label": "Prijavi se",
+	"wikimediaapiportal-skin-personal-tools-label": "Moj račun",
+	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
+	"wikimediaapiportal-skin-button-about-wm-label": "O Wikimediji",
+	"wikimediaapiportal-skin-button-clear-search-label": "Prazni unesenu pretragu",
+	"wikimediaapiportal-skin-wikimedia-info": "Zaklada Wikimedija (The Wikimedia Foundation, Inc) neprofitna je dobrotvorna organizacija posvećena ohrabrivanju rasta, razvoja i dijeljenja slobodnoga višejezičnog sadržaja, kao i pružanju javnosti otvorenoga cjelokupnog sadržaja njenih projekata zasnovanih na wikiju, potpuno besplatno.",
+	"wikimediaapiportal-skin-page-nav-predefines": "* Razvojno sjedište\n** Special:Notifications|Obavijesti\n** Special:AppManagement|Upravljanje aplikacijama",
+	"wikimediaapiportal-skin-return-to-page-label": "Povratak na stranicu",
+	"wikimediaapiportal-skin-updated-ts-label": "Ažurirano: $1"
+}

@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"action-wikimediaapiportal-see-page-actions": "преглед на дејства на страница",
+	"right-wikimediaapiportal-see-page-actions": "Преглед на дејства на страница",
+	"wikimediaapiportal-skin-desc": "Прилагодено руво за Разработувачкиот портал на Викимедииниот приложник",
+	"wikimediaapiportal-jumpto-content": "Прејди на содржината",
+	"wikimediaapiportal-skin-login-link-label": "Најава",
+	"wikimediaapiportal-skin-personal-tools-label": "Мојата сметка",
+	"wikimediaapiportal-skin-button-contact-label": "Контакт",
+	"wikimediaapiportal-skin-button-about-wm-label": "За Викимедија",
+	"wikimediaapiportal-skin-button-clear-search-label": "Исчисти пребарување",
+	"wikimediaapiportal-skin-wikimedia-info": "Фондацијата ВИкимеидја е непрофитна добротворна организација посветена на поттикнување на растот, развојот и распространувањето на слободна повеќејазична содржина, нудејќи ја бесплатно целосната содржина на сите википроекти за јавноста.",
+	"wikimediaapiportal-skin-disclaimer": "Текстот е достапен под условите на лиценцата [https://creativecommons.org/licenses/by-sa/3.0/deed.mk Криејтив комонс Наведи извор - Сподели под исти услови]. Може да важат и дополнителни услви. За повеќе информации, погледајте ги [https://foundation.wikimedia.org/wiki/Услови_на_употреба Условите на употреба].",
+	"wikimediaapiportal-skin-page-nav-predefines": "* Разработувачко седиште\n** Special:Notifications|Известувања\n** Special:AppManagement|Приложно раководство",
+	"wikimediaapiportal-skin-return-to-page-label": "Назад на страницата",
+	"wikimediaapiportal-skin-updated-ts-label": "Подновено на $1"
+}
