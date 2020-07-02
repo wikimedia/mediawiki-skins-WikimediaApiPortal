@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"wikimediaapiportal-skin-login-link-label": "Entra",
+	"wikimediaapiportal-skin-button-contact-label": "Contatti",
+	"wikimediaapiportal-skin-button-about-wm-label": "Informazioni su Wikimedia",
+	"wikimediaapiportal-skin-disclaimer": "Il testo è disponibile secondo la [https://creativecommons.org/licenses/by-sa/3.0/deed.it licenza Creative Commons Attribuzione-Condividi allo stesso modo]; possono applicarsi condizioni ulteriori. Vedi le [https://foundation.wikimedia.org/wiki/Special:MyLanguage/Terms_of_Use/it condizioni d'uso] per i dettagli.",
+	"wikimediaapiportal-skin-updated-ts-label": "Aggiornato il $1"
+}

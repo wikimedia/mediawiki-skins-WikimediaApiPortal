@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"action-wikimediaapiportal-see-page-actions": "przeglądu akcji strony",
+	"right-wikimediaapiportal-see-page-actions": "Przegląd akcji strony",
+	"wikimediaapiportal-skin-desc": "Niestandardowa skórka portali API Wikimedii",
+	"wikimediaapiportal-jumpto-content": "Przejdź do zawartości",
+	"wikimediaapiportal-skin-login-link-label": "Zaloguj się",
+	"wikimediaapiportal-skin-personal-tools-label": "Moje konto",
+	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
+	"wikimediaapiportal-skin-button-about-wm-label": "O Wikimedii",
+	"wikimediaapiportal-skin-button-clear-search-label": "Wyczyść tekst wyszukiwania",
+	"wikimediaapiportal-skin-wikimedia-info": "Fundacja Wikimedia jest organizacją non-profit, której celem jest wspieranie wzrostu, rozwoju i dystrybucji darmowych treści w wielu językach oraz bezpłatne udostępnianie pełnej zawartości projektów wiki.",
+	"wikimediaapiportal-skin-disclaimer": "Tekst udostępniany na [https://creativecommons.org/licenses/by-sa/3.0/deed.pl licencji Creative Commons Attribution-ShareAlike], z możliwością obowiązywania dodatkowych ograniczeń.\nZobacz szczegółowe informacje o [https://foundation.wikimedia.org/wiki/Terms_of_Use/pl warunkach korzystania].",
+	"wikimediaapiportal-skin-page-nav-predefines": "* DevCenter\n** Special:Notifications|Powiadomienia\n** Special:AppManagement|Zarządzanie aplikacją",
+	"wikimediaapiportal-skin-return-to-page-label": "Powróć do strony",
+	"wikimediaapiportal-skin-updated-ts-label": "Uaktualniono dnia $1"
+}
