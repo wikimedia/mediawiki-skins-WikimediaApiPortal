@@ -4,15 +4,18 @@
 			"Bxalber"
 		]
 	},
-	"action-wikimediaapiportal-see-page-actions": "siehe Seitenaktionen",
-	"right-wikimediaapiportal-see-page-actions": "Siehe Seite Aktionen",
-	"wikimediaapiportal-skin-desc": "Benutzerdefinierte Skin für das Wikimedia API-Entwicklerportal",
+	"action-wikimediaapiportal-see-page-actions": "Seitenaktionen ansehen",
+	"right-wikimediaapiportal-see-page-actions": "Seitenaktionen ansehen",
+	"wikimediaapiportal-skin-desc": "Benutzerdefinierter Skin für das Wikimedia API-Entwicklerportal",
 	"wikimediaapiportal-jumpto-content": "Zum Inhalt springen",
 	"wikimediaapiportal-skin-login-link-label": "Anmelden",
 	"wikimediaapiportal-skin-personal-tools-label": "Mein Benutzerkonto",
 	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
+	"wikimediaapiportal-skin-button-about-wm-label": "Über Wikimedia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Suche bereinigen",
 	"wikimediaapiportal-skin-wikimedia-info": "Die Wikimedia Foundation, Inc. ist eine gemeinnützige Wohltätigkeitsorganisation, die sich der Förderung des Wachstums, der Entwicklung und der Verbreitung kostenloser, mehrsprachiger Inhalte widmet und der Öffentlichkeit den gesamten Inhalt dieser Wiki-basierten Projekte kostenlos zur Verfügung stellt.",
 	"wikimediaapiportal-skin-disclaimer": "Der Text ist unter der Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/3.0/deed.de\">Creative Commons Namensnennung – Weitergabe unter gleichen Bedingungen</a> verfügbar. Zusätzliche Bedingungen können gelten.\nEinzelheiten sind in den <a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use/de\">Nutzungsbedingungen</a> beschrieben.",
-	"wikimediaapiportal-skin-updated-ts-label": "$1 aktualisiert"
+	"wikimediaapiportal-skin-page-nav-predefines": "* DevCenter\n** Special:Notifications|Benachrichtigungen\n** Special:AppManagement|App-Management",
+	"wikimediaapiportal-skin-return-to-page-label": "Zurück zur Seite",
+	"wikimediaapiportal-skin-updated-ts-label": "Aktualisiert am $1"
 }
