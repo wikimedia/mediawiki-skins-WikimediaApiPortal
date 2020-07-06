@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"wikimediaapiportal-skin-login-link-label": "Aloggen",
+	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
+	"wikimediaapiportal-skin-button-about-wm-label": "Iwwer Wikipedia",
+	"wikimediaapiportal-skin-updated-ts-label": "Aktualiséiert de(n) $1"
+}

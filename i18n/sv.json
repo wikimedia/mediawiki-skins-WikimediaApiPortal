@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	},
+	"action-wikimediaapiportal-see-page-actions": "se sidåtgärder",
+	"right-wikimediaapiportal-see-page-actions": "Se sidåtgärder",
+	"wikimediaapiportal-jumpto-content": "Hoppa till innehållet",
+	"wikimediaapiportal-skin-login-link-label": "Logga in",
+	"wikimediaapiportal-skin-personal-tools-label": "Mitt konto",
+	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
+	"wikimediaapiportal-skin-button-about-wm-label": "Om Wikimedia",
+	"wikimediaapiportal-skin-button-clear-search-label": "Rensa sökning",
+	"wikimediaapiportal-skin-return-to-page-label": "Återgå till sidan",
+	"wikimediaapiportal-skin-updated-ts-label": "Uppdaterades $1"
+}
