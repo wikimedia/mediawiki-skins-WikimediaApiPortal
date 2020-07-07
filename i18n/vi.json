@@ -1,10 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Leducthn"
+			"Leducthn",
+			"Minh Nguyen"
 		]
 	},
+	"action-wikimediaapiportal-see-page-actions": "xem các tác vụ trang",
+	"right-wikimediaapiportal-see-page-actions": "Xem các tác vụ trang",
+	"wikimediaapiportal-skin-desc": "Giao diện tùy biến cho cổng Nhà phát triển API Wikimedia",
+	"wikimediaapiportal-jumpto-content": "Bước tới nội dung",
 	"wikimediaapiportal-skin-login-link-label": "Đăng nhập",
 	"wikimediaapiportal-skin-personal-tools-label": "Tài khoản của tôi",
-	"wikimediaapiportal-skin-button-about-wm-label": "Giới thiệu về Wikimedia"
+	"wikimediaapiportal-skin-button-contact-label": "Liên lạc",
+	"wikimediaapiportal-skin-button-about-wm-label": "Giới thiệu về Wikimedia",
+	"wikimediaapiportal-skin-button-clear-search-label": "Tẩy trống tìm kiếm",
+	"wikimediaapiportal-skin-disclaimer": "Văn bản được phát hành theo <a href=\"https://creativecommons.org/licenses/by-sa/3.0/deed.vi\">Giấy phép Creative Commons Ghi công–Chia sẻ tương tự</a>; có thể áp dụng điều khoản bổ sung. Xem <a href=\"https://foundation.wikimedia.org/wiki/Điều_khoản_Sử_dụng?uselang=vi\">Điều khoản Sử dụng</a> để biết thêm chi tiết.",
+	"wikimediaapiportal-skin-page-nav-predefines": "* Trung tâm phát triển\n** Special:Notifications|Thông báo\n** Special:AppManagement|Quản lý ứng dụng",
+	"wikimediaapiportal-skin-return-to-page-label": "Quay lại trang",
+	"wikimediaapiportal-skin-updated-ts-label": "Cập nhật lần cuối cùng vào $1"
 }
