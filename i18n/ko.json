@@ -1,17 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ellif"
+			"Ellif",
+			"Ykhwong"
 		]
 	},
 	"action-wikimediaapiportal-see-page-actions": "페이지 행동 보기",
 	"right-wikimediaapiportal-see-page-actions": "페이지 행동 보기",
+	"wikimediaapiportal-skin-desc": "위키미디어 API 개발자 포털용 사용자 지정 스킨",
+	"wikimediaapiportal-jumpto-content": "내용으로 건너뛰기",
 	"wikimediaapiportal-skin-login-link-label": "로그인",
+	"wikimediaapiportal-skin-personal-tools-label": "내 계정",
 	"wikimediaapiportal-skin-button-contact-label": "연락하기",
 	"wikimediaapiportal-skin-button-about-wm-label": "위키미디어 소개",
-	"wikimediaapiportal-skin-button-clear-search-label": "검색창 비우기",
+	"wikimediaapiportal-skin-button-clear-search-label": "검색 입력 지우기",
 	"wikimediaapiportal-skin-wikimedia-info": "위키미디어 재단은 자유로운 다언어 콘텐트의 성장, 개발, 배포를 촉진하고, 이들 공공 무료 위키기반 프로젝트들의 전체 콘텐트를 제공하는 데 전념하는 비영리자선단체입니다.",
 	"wikimediaapiportal-skin-disclaimer": "내용은 [https://creativecommons.org/licenses/by-sa/3.0/deed.ko 크리에이티브 커먼즈 저작자표시-동일조건변경허락 라이선스]에 따라 사용할 수 있으며 부가 조건이 적용될 수 있습니다. 관련 내용은 [https://foundation.wikimedia.org/wiki/Terms_of_Use/ko 이용 약관]을 참조하십시오.",
+	"wikimediaapiportal-skin-page-nav-predefines": "* DevCenter\n** Special:Notifications|알림\n** Special:AppManagement|앱 관리",
 	"wikimediaapiportal-skin-return-to-page-label": "페이지로 돌아가기",
 	"wikimediaapiportal-skin-updated-ts-label": "$1{{#을를}} 업데이트함"
 }
