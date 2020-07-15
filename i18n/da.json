@@ -4,8 +4,12 @@
 			"Saederup92"
 		]
 	},
+	"action-wikimediaapiportal-see-page-actions": "se side handlinger",
+	"right-wikimediaapiportal-see-page-actions": "Se side handlinger",
 	"wikimediaapiportal-jumpto-content": "Spring til indhold",
 	"wikimediaapiportal-skin-personal-tools-label": "Min konto",
 	"wikimediaapiportal-skin-button-about-wm-label": "Om Wikimedia",
-	"wikimediaapiportal-skin-return-to-page-label": "Tilbage til siden"
+	"wikimediaapiportal-skin-button-clear-search-label": "Ryd søgning",
+	"wikimediaapiportal-skin-return-to-page-label": "Tilbage til siden",
+	"wikimediaapiportal-skin-updated-ts-label": "Opdaterede $1"
 }

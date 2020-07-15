@@ -8,5 +8,7 @@
 	"wikimediaapiportal-skin-login-link-label": "Aanmelden",
 	"wikimediaapiportal-skin-personal-tools-label": "Mijn account",
 	"wikimediaapiportal-skin-button-contact-label": "Contact",
-	"wikimediaapiportal-skin-button-about-wm-label": "Over Wikimedia"
+	"wikimediaapiportal-skin-button-about-wm-label": "Over Wikimedia",
+	"wikimediaapiportal-skin-return-to-page-label": "Terug naar pagina",
+	"wikimediaapiportal-skin-updated-ts-label": "Bijgewerkt op $1"
 }
