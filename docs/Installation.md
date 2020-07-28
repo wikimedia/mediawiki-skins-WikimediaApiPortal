@@ -13,9 +13,6 @@
 	// Needed to enable subpage navigation and shortened display titles
 	$wgNamespacesWithSubpages[NS_MAIN] = true;
 
-	// To enable a complex Main Page
-	$wgRawHtml = true;
-
 ## Site customization
 
 * `MediaWiki:Sidebar`: Use this to control the header navigation bar,
@@ -23,7 +20,3 @@
 
 * `MediaWiki:FooterLinks`: This is to control the footer area, will
   be empty otherwise.
-
-## FancyCaptcha
-
-Install it as described in https://www.mediawiki.org/wiki/Extension:ConfirmEdit#FancyCaptcha

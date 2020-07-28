@@ -5,9 +5,9 @@
 		"build:copy": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.js dist/",
 		"build": "npm -s run build:bootstrap && npm -s run build:copy",
 		"test": "npm -s run lint",
-		"lint": "npm -s run lint:js && npm -s run lint:i18n",
+		"lint": "npm -s run lint:js && npm -s run lint:i18n && npm -s run lint:styles",
 		"lint:js": "eslint --cache --max-warnings 0 .",
-		"lint:styles:failing": "stylelint \"**/*.{less,css}\"",
+		"lint:styles": "stylelint \"**/*.{less,css}\"",
 		"lint:i18n": "banana-checker --requireLowerCase=0 i18n/"
 	},
 	"devDependencies": {

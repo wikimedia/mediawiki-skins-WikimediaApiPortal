@@ -1,6 +1,3 @@
-# git-deploy status file:
-/.deploy
-
 # Editors
 *.kate-swp
 *~
@@ -18,8 +15,8 @@ sublime-*
 sftp-config.json
 
 # Building & testing
+/.eslintcache
 /composer.lock
-/docs
 /node_modules
 /vendor
 
@@ -28,19 +25,3 @@ sftp-config.json
 .DS_Store
 ## Windows
 Thumbs.db
-
-# Misc
-.buildpath
-.classpath
-.idea
-.metadata*
-.settings
-/static*
-/tags
-/.htaccess
-/.htpasswd
-.eslintcache
-
-# storybook
-/.storybook/resolve-less-imports/
-/.storybook/integration.less
