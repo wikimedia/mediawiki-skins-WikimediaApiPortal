@@ -47,7 +47,6 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 		echo $componentParser->processTemplate( 'default', [
 			'html-headelement' => $this->get( 'headelement' ),
 			'html-trail' => $this->getTrail(),
-			// 'html-indicators' => $this->getSkin()->getIndicatorsHTML( $this->get( 'indicators' ) ),
 			'html-title' => $this->get( 'title' ),
 			'html-subtitle' => $this->get( 'subtitle' ),
 			'html-undelete' => $this->get( 'undelete' ) ?: null,
