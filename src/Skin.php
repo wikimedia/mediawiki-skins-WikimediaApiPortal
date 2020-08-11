@@ -3,7 +3,6 @@
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
 use OutputPage;
-use ParserOptions;
 use QuickTemplate;
 use SkinTemplate;
 use Title;
@@ -60,9 +59,6 @@ class Skin extends SkinTemplate {
 		}
 		// Match logic in Skin::addToSidebarPlain
 		$currentTitle = $currentTitle->fixSpecialName();
-		$this->getOutput()->getWikiPage()->getParserOutput(
-			ParserOptions::newFromContext( $this->getContext() )
-		);
 
 		return $title->equals( $currentTitle ) || $currentTitle->isSubpageOf( $title );
 	}
