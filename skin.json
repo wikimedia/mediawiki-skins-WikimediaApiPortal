@@ -9,6 +9,7 @@
 	"type": "skin",
 	"url": "https://www.mediawiki.org/wiki/Skin:WikimediaApiPortal",
 	"descriptionmsg": "wikimediaapiportal-skin-desc",
+	"namemsg": "skinname-wikimediaapiportal",
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
