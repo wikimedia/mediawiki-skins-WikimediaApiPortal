@@ -24,9 +24,6 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Skin\\WikimediaApiPortal\\": "src/"
 	},
-	"TestAutoloadNamespaces": {
-		"MediaWiki\\Skin\\WikimediaApiPortal\\Tests\\": "tests/phpunit/"
-	},
 	"AvailableRights": [
 		"wikimediaapiportal-see-page-actions"
 	],
