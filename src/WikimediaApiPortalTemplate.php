@@ -322,7 +322,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 		if ( !$this->getSkin()->getTitle()->isTalkPage() ) {
 			if ( isset( $actions['namespaces']['talk'] ) ) {
 				return $this->getButtonForContentAction( $actions['namespaces']['talk'], [
-					'icon' => 'userTalk',
+					'icon' => 'speechBubbles',
 				] );
 			}
 		} else {
