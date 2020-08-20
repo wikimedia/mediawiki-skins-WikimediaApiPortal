@@ -26,11 +26,11 @@
 		"MediaWiki\\Skin\\WikimediaApiPortal\\": "src/"
 	},
 	"AvailableRights": [
-		"wikimediaapiportal-see-page-actions"
+		"docseditor"
 	],
 	"GroupPermissions": {
-		"user": {
-			"wikimediaapiportal-see-page-actions": true
+		"docseditor": {
+			"docseditor": true
 		}
 	},
 	"ResourceModules": {

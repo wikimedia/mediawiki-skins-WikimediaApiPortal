@@ -12,10 +12,10 @@ use Title;
 
 class WikimediaApiPortalTemplate extends \BaseTemplate {
 	// Personal url keys that will be allowed in the user menu
-	private const PERSONAL_LINKS_WHITELIST = [ 'logout', 'uls' ];
+	private const PERSONAL_LINKS_ALLOWED_LIST = [ 'logout', 'uls' ];
 
 	// Allowed page actions with config overrides
-	private const PAGE_TOOLS_WHITELIST = [
+	private const PAGE_TOOLS_ALLOWED_LIST = [
 		'views' => [
 			 'edit' => [
 				 'visible' => [ 'view' ],
@@ -278,7 +278,12 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 * @return array|false
 	 */
 	private function getPageToolsArgs() {
-		if ( !$this->shouldShowPageTools() ) {
+		if ( $this->getSkin()->getTitle()->isSpecialPage() ) {
+			return false;
+		}
+
+		$requestedAction = $this->getSkin()->getRequestedAction();
+		if ( $requestedAction === 'delete' ) {
 			return false;
 		}
 
@@ -298,7 +303,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 * @return array|false
 	 */
 	private function getPageToolsMobileArgs() {
-		if ( !$this->shouldShowPageTools() ) {
+		if ( $this->getSkin()->getTitle()->isSpecialPage() ) {
 			return false;
 		}
 
@@ -318,8 +323,9 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 */
 	private function getDiscussionSwitch() {
 		// See SkinTemplate::buildContentNavigationUrls
+		$requestedAction = $this->getSkin()->getRequestedAction();
 		$actions = $this->get( 'content_navigation', null );
-		if ( !$this->getSkin()->getTitle()->isTalkPage() ) {
+		if ( !$this->getSkin()->getTitle()->isTalkPage() && $requestedAction === 'view' ) {
 			if ( isset( $actions['namespaces']['talk'] ) ) {
 				return $this->getButtonForContentAction( $actions['namespaces']['talk'], [
 					'icon' => 'speechBubbles',
@@ -344,6 +350,13 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 * @return ButtonWidget|string
 	 */
 	private function getLastEdit() {
+		$requestedAction = $this->getSkin()->getRequestedAction();
+		if ( $requestedAction !== 'view' ) {
+			return '';
+		}
+		if ( $this->getSkin()->getTitle()->isTalkPage() ) {
+			return '';
+		}
 		// See SkinTemplate::buildContentNavigationUrls
 		$actions = $this->get( 'content_navigation', null );
 		if ( !isset( $actions['views']['history'] ) ) {
@@ -379,6 +392,14 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 * @return ButtonWidget[]
 	 */
 	private function getContentNavButtons( $group, $oouiOptions = [] ) {
+		if ( $this->getSkin()->getTitle()->isTalkPage() ) {
+			return [];
+		}
+		$permissions = MediaWikiServices::getInstance()->getPermissionManager();
+		$user = $this->getSkin()->getUser();
+		if ( !$permissions->userHasRight( $user, 'docseditor' ) ) {
+			return [];
+		}
 		$requestedAction = $this->getSkin()->getRequestedAction();
 		$actions = $this->get( 'content_navigation', null );
 		if ( !$actions ) {
@@ -387,20 +408,20 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 		$buttons = [];
 		foreach ( $actions as $sectionKey => $section ) {
 			foreach ( $section as $actionKey => $action ) {
-				if ( !isset( self::PAGE_TOOLS_WHITELIST[$sectionKey][$actionKey] ) ) {
+				if ( !isset( self::PAGE_TOOLS_ALLOWED_LIST[$sectionKey][$actionKey] ) ) {
 					continue;
 				}
 
-				$whitelistData = self::PAGE_TOOLS_WHITELIST[$sectionKey][$actionKey];
-				if ( $group !== 'all' && $group !== $whitelistData['group'] ) {
+				$allowedListData = self::PAGE_TOOLS_ALLOWED_LIST[$sectionKey][$actionKey];
+				if ( $group !== 'all' && $group !== $allowedListData['group'] ) {
 					continue;
 				}
-				if ( !in_array( $requestedAction, $whitelistData['visible'] ) ) {
+				if ( !in_array( $requestedAction, $allowedListData['visible'] ) ) {
 					continue;
 				}
 
 				$buttons[] = $this->getButtonForContentAction( $action, array_merge(
-					$whitelistData,
+					$allowedListData,
 					$oouiOptions
 				) );
 			}
@@ -424,24 +445,6 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 			'label' => $action['text'],
 			'framed' => false,
 		] );
-	}
-
-	/**
-	 * Whether PageTools buttons should be shown.
-	 * @return bool
-	 */
-	private function shouldShowPageTools() {
-		if ( $this->getSkin()->getTitle()->isSpecialPage() ) {
-			return false;
-		}
-
-		$permissions = MediaWikiServices::getInstance()->getPermissionManager();
-		$user = $this->getSkin()->getUser();
-		if ( !$permissions->userHasRight( $user, 'wikimediaapiportal-see-page-actions' ) ) {
-			return false;
-		}
-
-		return true;
 	}
 
 	/**
@@ -548,7 +551,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 			]
 		];
 		foreach ( $this->data['personal_urls'] as $key => $data ) {
-			if ( in_array( $key, self::PERSONAL_LINKS_WHITELIST ) ) {
+			if ( in_array( $key, self::PERSONAL_LINKS_ALLOWED_LIST ) ) {
 				$filteredUrls[$key] = $data;
 			}
 		}
