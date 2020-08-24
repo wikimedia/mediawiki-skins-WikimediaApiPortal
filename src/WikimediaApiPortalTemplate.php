@@ -540,7 +540,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 		}
 
 		// This behaviour may change later on, when other DevCenter functionality is implemented
-		$devCenterTitle = Title::newFromText( 'DevCenter' );
+		$devCenterTitle = Title::newFromText( 'Dashboard' );
 		$filteredUrls = [
 			'devcenter' => [
 				'text' => $devCenterTitle->getText(),
