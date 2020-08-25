@@ -15,7 +15,7 @@
 	"wikimediaapiportal-skin-button-clear-search-label": "Suche bereinigen",
 	"wikimediaapiportal-skin-wikimedia-info": "Die Wikimedia Foundation, Inc. ist eine gemeinnützige Wohltätigkeitsorganisation, die sich der Förderung des Wachstums, der Entwicklung und der Verbreitung kostenloser, mehrsprachiger Inhalte widmet und der Öffentlichkeit den gesamten Inhalt dieser Wiki-basierten Projekte kostenlos zur Verfügung stellt.",
 	"wikimediaapiportal-skin-disclaimer": "Der Text ist unter der Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/3.0/deed.de\">Creative Commons Namensnennung – Weitergabe unter gleichen Bedingungen</a> verfügbar. Zusätzliche Bedingungen können gelten.\nEinzelheiten sind in den <a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use/de\">Nutzungsbedingungen</a> beschrieben.",
-	"wikimediaapiportal-skin-page-nav-predefines": "* DevCenter\n** Special:Notifications|Benachrichtigungen\n** Special:AppManagement|App-Management",
+	"wikimediaapiportal-skin-page-nav-predefines": "* Dashboard\n** Special:Notifications|Benachrichtigungen\n** Special:AppManagement|App-Management",
 	"wikimediaapiportal-skin-return-to-page-label": "Zurück zur Seite",
 	"wikimediaapiportal-skin-updated-ts-label": "Aktualisiert am $1"
 }
