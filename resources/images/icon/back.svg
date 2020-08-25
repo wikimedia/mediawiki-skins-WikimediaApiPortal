@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,34 +7,35 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="128"
-   height="128"
-   viewBox="0 0 33.866666 33.866668"
-   version="1.1"
+   sodipodi:docname="back.svg"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
    id="svg8"
-   inkscape:version="0.92.4 (fd57863, 2020-04-02)"
-   sodipodi:docname="bakc.svg">
+   version="1.1"
+   viewBox="0 0 33.866666 33.866668"
+   height="128"
+   width="128">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="36.356331"
-     inkscape:cy="65.436713"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     units="px"
-     inkscape:window-width="3840"
-     inkscape:window-height="2123"
+     inkscape:document-rotation="0"
+     inkscape:window-maximized="1"
+     inkscape:window-y="23"
      inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1" />
+     inkscape:window-height="780"
+     inkscape:window-width="1440"
+     units="px"
+     showgrid="false"
+     inkscape:current-layer="layer1-6"
+     inkscape:document-units="mm"
+     inkscape:cy="68.293856"
+     inkscape:cx="35.642045"
+     inkscape:zoom="5.6"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -45,24 +44,24 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Ebene 1"
-     inkscape:groupmode="layer"
+     transform="translate(0,-263.13332)"
      id="layer1"
-     transform="translate(0,-263.13332)">
+     inkscape:groupmode="layer"
+     inkscape:label="Ebene 1">
     <g
-       transform="matrix(0,7.1111112,-6.3741403,0,1892.0995,260.9853)"
+       inkscape:label="Ebene 1"
        id="layer1-6"
-       inkscape:label="Ebene 1">
+       transform="matrix(0,7.1111112,-6.3741403,0,1892.0995,260.9853)">
       <path
-         style="stroke-width:0.26458332"
-         inkscape:connector-curvature="0"
+         id="path5141"
          d="m 4.6570702,292.8714 -1.9843749,1.98438 -1.98437499,-1.98438 -0.396875,0.39688 2.38124999,2.38125 2.3812499,-2.38125 z"
-         id="path5141" />
+         inkscape:connector-curvature="0"
+         style="stroke-width:0.26458332;fill:#202122;fill-opacity:1" />
     </g>
   </g>
 </svg>
