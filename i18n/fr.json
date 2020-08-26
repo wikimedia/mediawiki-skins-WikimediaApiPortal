@@ -17,7 +17,7 @@
 	"wikimediaapiportal-skin-button-clear-search-label": "Effacer la recherche",
 	"wikimediaapiportal-skin-wikimedia-info": "La fondation Wikimédia, Inc. est une organisation à but non lucratif destinée à encourager la croissance, le développement et la distribution de contenu libre et multi-langues, et à rendre disponible au public sans frais, le contenu complet de ces projets basés sur wiki.",
 	"wikimediaapiportal-skin-disclaimer": "Le texte est disponible sous la [https://creativecommons.org/licenses/by-sa/3.0/ licence Creative Commons Attribution-ShareAlike] ; des conditions supplémentaires peuvent s’appliquer. Voir [https://foundation.wikimedia.org/wiki/Terms_of_Use les conditions d’utilisation] pour plus de détails.",
-	"wikimediaapiportal-skin-page-nav-predefines": "* DevCenter\n** Special:Notifications|Notifications\n** Special:AppManagement|Gestion d’application",
+	"wikimediaapiportal-skin-page-nav-predefines": "* Dashboard\n** Special:Notifications|Notifications\n** Special:AppManagement|Gestion d’application",
 	"wikimediaapiportal-skin-return-to-page-label": "Revenir à la page",
 	"wikimediaapiportal-skin-updated-ts-label": "$1 mis à jour"
 }
