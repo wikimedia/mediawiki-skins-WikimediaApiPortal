@@ -195,19 +195,31 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 */
 	private function getPageNav( Title $parent ) {
 		$nav = [];
-		foreach ( $parent->getSubpages() as $page ) {
+		$subpages = $parent->getSubpages();
+		if ( !count( $subpages ) ) {
+			return $nav;
+		}
+		$pageProps = MediaWikiServices::getInstance()->getPageProps();
+		$defaultsort = $pageProps->getProperties( $subpages, 'defaultsort' );
+		foreach ( $subpages as $page ) {
 			if ( $page->getBaseText() !== $parent->getText() ) {
 				// Not direct sub
 				continue;
 			}
 
-			$nav[] = [
+			if ( $defaultsort && array_key_exists( $page->getArticleID(), $defaultsort ) ) {
+				$key = $defaultsort[$page->getArticleID()];
+			} else {
+				$key = $page->getSubpageText();
+			}
+			$nav[$key] = [
 				'isActive' => $this->getSkin()->isActiveTitle( $page ),
 				'href' => $page->getLocalURL(),
 				'text' => $page->getSubpageText(),
 				'subpages' => $this->getPageNav( $page ) ?: false,
 			];
 		}
+		ksort( $nav );
 		return $nav;
 	}
 
