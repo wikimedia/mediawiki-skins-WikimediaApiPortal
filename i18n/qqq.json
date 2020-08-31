@@ -5,8 +5,8 @@
 		]
 	},
 	"skinname-wikimediaapiportal": "{{name}}",
-	"action-wikimediaapiportal-see-page-actions": "{{Doc-action|wikimediaapiportal-see-page-actions}}\n{{Identical|See page actions}}",
-	"right-wikimediaapiportal-see-page-actions": "Message for wikimediaapiportal-see-page-actions right\n{{Doc-right|wikimediaapiportal-see-page-actions}}",
+	"action-docseditor": "{{Doc-action|wikimediaapiportal-see-page-actions}}\n{{Identical|Edit documentation}}",
+	"right-docseditor": "Message for wikimediaapiportal-see-page-actions right\n{{Doc-right|docseditor}}",
 	"wikimediaapiportal-skin-desc": "{{desc|name=WikimediaApiPortal|url=https://www.mediawiki.org/wiki/Skin:WikimediaApiPortal|what=skin}}",
 	"wikimediaapiportal-skin-site-name-main": "{{optional}}",
 	"wikimediaapiportal-skin-site-name-sub": "{{optional}}",
