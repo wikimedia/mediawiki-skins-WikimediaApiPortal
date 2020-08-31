@@ -50,6 +50,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 			'html-title' => $this->get( 'title' ),
 			'html-subtitle' => $this->get( 'subtitle' ),
 			'html-undelete' => $this->get( 'undelete' ) ?: null,
+			'html-siteNotice' => $this->data['sitenotice'],
 			'html-bodyContent' => $this->get( 'bodytext' ),
 			'html-afterContent' => $this->get( 'dataAfterContent' ),
 			'html-catlinks' => $this->get( 'catlinks' ),

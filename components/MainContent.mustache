@@ -1,6 +1,10 @@
 <div id="content" class="mw-body content">
 	<a id="top" class="top"></a>
 
+	{{#if html-siteNotice}}
+		<div id="siteNotice" class="mw-body-content">{{{html-siteNotice}}}</div>
+	{{/if}}
+
 	<div class="contentHeader">
 		<h1 id="firstHeading" class="firstHeading">{{{html-title}}}</h1>
 		<div id="contentSub" class="small">{{{html-subtitle}}}</div>
