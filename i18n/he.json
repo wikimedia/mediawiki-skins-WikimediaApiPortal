@@ -4,8 +4,8 @@
 			"Amire80"
 		]
 	},
-	"action-wikimediaapiportal-see-page-actions": "לראות את פעולות הדף",
-	"right-wikimediaapiportal-see-page-actions": "הצגת פעולות פעולות הדף",
+	"action-docseditor": "לערוך תיעוד",
+	"right-docseditor": "עריכת תיעוד",
 	"wikimediaapiportal-skin-desc": "עיצוב מותאם לפורטל ה־API למפתחים של ויקימדיה",
 	"wikimediaapiportal-jumpto-content": "לדלג לתוכן",
 	"wikimediaapiportal-skin-login-link-label": "כניסה לחשבון",

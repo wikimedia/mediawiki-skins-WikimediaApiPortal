@@ -6,8 +6,8 @@
 			"Wladek92"
 		]
 	},
-	"action-wikimediaapiportal-see-page-actions": "voir les actions de la page",
-	"right-wikimediaapiportal-see-page-actions": "Voir les actions de la page",
+	"action-docseditor": "modifier la documentation",
+	"right-docseditor": "Modifier la documentation",
 	"wikimediaapiportal-skin-desc": "Habillage personnalisé pour le portail développeur API de Wikimédia",
 	"wikimediaapiportal-jumpto-content": "Aller au contenu",
 	"wikimediaapiportal-skin-login-link-label": "Connexion",

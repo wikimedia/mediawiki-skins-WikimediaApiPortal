@@ -4,11 +4,12 @@
 			"Shuiwater",
 			"SkEy",
 			"Ssc",
+			"列维劳德",
 			"沈澄心"
 		]
 	},
-	"action-wikimediaapiportal-see-page-actions": "查看页面活动",
-	"right-wikimediaapiportal-see-page-actions": "观察页面动作",
+	"action-docseditor": "编辑文档",
+	"right-docseditor": "编辑文档",
 	"wikimediaapiportal-skin-desc": "为Wikimedia API开发人员门户的定制的皮肤",
 	"wikimediaapiportal-jumpto-content": "跳到内容",
 	"wikimediaapiportal-skin-login-link-label": "登录",

@@ -4,8 +4,8 @@
 			"Rail"
 		]
 	},
-	"action-wikimediaapiportal-see-page-actions": "przeglądu akcji strony",
-	"right-wikimediaapiportal-see-page-actions": "Przegląd akcji strony",
+	"action-docseditor": "edytowania dokumentacji",
+	"right-docseditor": "Edytuj dokumentację",
 	"wikimediaapiportal-skin-desc": "Niestandardowa skórka portali API Wikimedii",
 	"wikimediaapiportal-jumpto-content": "Przejdź do zawartości",
 	"wikimediaapiportal-skin-login-link-label": "Zaloguj się",

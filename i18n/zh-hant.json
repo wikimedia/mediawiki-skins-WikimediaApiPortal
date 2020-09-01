@@ -5,8 +5,8 @@
 			"沈澄心"
 		]
 	},
-	"action-wikimediaapiportal-see-page-actions": "查看頁面操作",
-	"right-wikimediaapiportal-see-page-actions": "查看頁面操作",
+	"action-docseditor": "編輯文件",
+	"right-docseditor": "編輯文件",
 	"wikimediaapiportal-skin-desc": "用於維基媒體 API 開發者入口的自定義外觀",
 	"wikimediaapiportal-jumpto-content": "前往內容",
 	"wikimediaapiportal-skin-login-link-label": "登入",

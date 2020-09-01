@@ -4,8 +4,8 @@
 			"Jon Harald Søby"
 		]
 	},
-	"action-wikimediaapiportal-see-page-actions": "se sidehandlinger",
-	"right-wikimediaapiportal-see-page-actions": "Se sidehandlinger",
+	"action-docseditor": "redigere dokumentasjon",
+	"right-docseditor": "Redigere dokumentasjon",
 	"wikimediaapiportal-skin-desc": "Tilpasset drakt for Wikimedia API Developer-portalen",
 	"wikimediaapiportal-jumpto-content": "Hopp til innhold",
 	"wikimediaapiportal-skin-login-link-label": "Logg inn",

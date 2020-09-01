@@ -5,8 +5,8 @@
 			"WikiPhoenix"
 		]
 	},
-	"action-wikimediaapiportal-see-page-actions": "se sidåtgärder",
-	"right-wikimediaapiportal-see-page-actions": "Se sidåtgärder",
+	"action-docseditor": "redigera dokumentation",
+	"right-docseditor": "Redigera dokumentation",
 	"wikimediaapiportal-skin-desc": "Anpassat utseende för Wikimedia API:s utvecklarportal",
 	"wikimediaapiportal-jumpto-content": "Hoppa till innehållet",
 	"wikimediaapiportal-skin-login-link-label": "Logga in",
