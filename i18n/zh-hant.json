@@ -16,7 +16,7 @@
 	"wikimediaapiportal-skin-button-clear-search-label": "清除搜尋",
 	"wikimediaapiportal-skin-wikimedia-info": "維基媒體基金會是一個非營利性慈善組織，致力於自由多語言內容的成長、發展與分發，並向公眾免費提供基於 Wiki 專案的完整內容",
 	"wikimediaapiportal-skin-disclaimer": "文字在基於[https://creativecommons.org/licenses/by-sa/3.0/deed.zh_TW 創用 CC 姓名標示-相同方式分享 3.0 未本地化]下可用，另可能適用其它額外條款。請參考 [https://foundation.wikimedia.org/wiki/Terms_of_Use 使用條款]瞭解詳情。",
-	"wikimediaapiportal-skin-page-nav-predefines": "* DevCenter\n** Special:Notifications|通知\n** Special:AppManagement|應用程式管理",
+	"wikimediaapiportal-skin-page-nav-predefines": "* 面板\n** Special:Notifications|通知\n** Special:AppManagement|應用程式管理",
 	"wikimediaapiportal-skin-return-to-page-label": "返回頁面",
 	"wikimediaapiportal-skin-updated-ts-label": "更新於：$1"
 }
