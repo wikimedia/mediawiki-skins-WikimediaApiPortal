@@ -4,6 +4,8 @@
 			"1917 Ekim Devrimi"
 		]
 	},
+	"action-docseditor": "Dokumani bıvurne",
+	"right-docseditor": "Dokumani bıvurne",
 	"wikimediaapiportal-skin-desc": "Wikimedia API developeri seba ğprtali asayışo hususi",
 	"wikimediaapiportal-jumpto-content": "Ravêr zerreki",
 	"wikimediaapiportal-skin-login-link-label": "Cı kewe",
@@ -13,7 +15,7 @@
 	"wikimediaapiportal-skin-button-clear-search-label": "Cıgeyrayışi pak kerê",
 	"wikimediaapiportal-skin-wikimedia-info": "Wikimedia Foundation, Inc, ücretsiz, çok dilli içeriğin büyümesini, geliştirilmesini ve dağıtılmasını teşvik etmeye ve bu viki tabanlı projelerin tüm içeriğini halka ücretsiz olarak sunmaya adanmış, kar amacı gütmeyen bir yardım kuruluşudur.",
 	"wikimediaapiportal-skin-disclaimer": "Nuşte <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Atıf-Zey Pê vılakerdış</a>'i de yo; şertê bini tetbiq benê. Detayan rê <a href=\"https://foundation.wikimedia.org/wiki/Special:MyLanguage/Terms_of_Use\">Şertanê karkerdışi</a> bıvênên.",
-	"wikimediaapiportal-skin-page-nav-predefines": "* DevCenter\n** Special:Notifications|Peyhesnayış \n** Special:AppManagement|İdareuiy aplikasyoni",
+	"wikimediaapiportal-skin-page-nav-predefines": "* Panela mocneyi\n** Special:Notifications|Peyhesnayış \n** Special:AppManagement|İdareyê aplikasyoni",
 	"wikimediaapiportal-skin-return-to-page-label": "Peyser şo pela",
 	"wikimediaapiportal-skin-updated-ts-label": "$1 de bi rocane"
 }

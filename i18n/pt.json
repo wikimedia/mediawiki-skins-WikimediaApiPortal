@@ -4,6 +4,8 @@
 			"Hamilton Abreu"
 		]
 	},
+	"action-docseditor": "editar documentação",
+	"right-docseditor": "Editar documentação",
 	"wikimediaapiportal-skin-desc": "Tema personalizado para o portal do Programador da API da Wikimedia",
 	"wikimediaapiportal-jumpto-content": "Saltar para conteúdo",
 	"wikimediaapiportal-skin-login-link-label": "Entrar",
@@ -13,7 +15,7 @@
 	"wikimediaapiportal-skin-button-clear-search-label": "Limpar pesquisa",
 	"wikimediaapiportal-skin-wikimedia-info": "A Wikimedia Foundation, Inc., é uma organização sem fins lucrativos dedicada a incentivar o crescimento, desenvolvimento e distribuição de conteúdo gratuito e multilingue, e a fornecer gratuitamente ao público em geral o conteúdo completo destes projetos, criados com base em wikis.",
 	"wikimediaapiportal-skin-disclaimer": "Este texto é disponibilizado nos termos da licença [https://creativecommons.org/licenses/by-sa/3.0/deed.pt\">Atribuição-CompartilhaIgual 3.0 Não Adaptada (CC BY-SA 3.0) da Creative Commons];\npode estar sujeito a condições adicionais. Para mais detalhes, consulte as [https://foundation.wikimedia.org/wiki/Condições_de_Uso\">condições de utilização].",
-	"wikimediaapiportal-skin-page-nav-predefines": "* DevCenter\n** Special:Notifications|Notificações\n** Special:AppManagement|Gestão da aplicação",
+	"wikimediaapiportal-skin-page-nav-predefines": "* Painel de controlo\n** Special:Notifications|Notificações\n** Special:AppManagement|Gestão da aplicação",
 	"wikimediaapiportal-skin-return-to-page-label": "Voltar à página",
 	"wikimediaapiportal-skin-updated-ts-label": "Última atualização $1"
 }
