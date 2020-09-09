@@ -12,7 +12,6 @@
 	"wikimediaapiportal-skin-site-name-sub": "{{optional}}",
 	"wikimediaapiportal-jumpto-content": "Accessibility link for jumping to the content area. Visually hidden by default.\n\nSee also\n* {{msg-mw|vector-jumptonavigation}}",
 	"wikimediaapiportal-skin-login-link-label": "Label for the log in button",
-	"wikimediaapiportal-skin-personal-tools-label": "Tooltip text for the user profile management page button",
 	"wikimediaapiportal-skin-button-contact-label": "Label for the \"Contact\" button",
 	"wikimediaapiportal-skin-button-about-wm-label": "Label for the \"About Wikimedia\" button",
 	"wikimediaapiportal-skin-button-clear-search-label": "Tooltip for the button that clears the search input",

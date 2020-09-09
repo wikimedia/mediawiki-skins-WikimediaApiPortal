@@ -8,6 +8,7 @@ use MediaWiki\MediaWikiServices;
 use Message;
 use OOUI\ButtonGroupWidget;
 use OOUI\ButtonWidget;
+use RawMessage;
 use SpecialPage;
 use Title;
 
@@ -276,13 +277,14 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 			);
 		}
 
+		$user = $this->getSkin()->getUser();
 		return [
-			'isAnon' => $this->getSkin()->getUser()->isAnon(),
+			'isAnon' => $user->isAnon(),
 			'login-href' => SpecialPage::getTitleFor( 'Userlogin' )->getLocalURL( [
 				'returnto' => $this->getSkin()->getTitle()
 			] ),
 			'login-label' => Message::newFromKey( 'wikimediaapiportal-skin-login-link-label' )->text(),
-			'tools-label' => Message::newFromKey( 'wikimediaapiportal-skin-personal-tools-label' )->text(),
+			'tools-label' => new RawMessage( $user->getName() ),
 			'tools-items' => $items,
 		];
 	}
