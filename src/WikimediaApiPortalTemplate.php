@@ -14,7 +14,7 @@ use Title;
 
 class WikimediaApiPortalTemplate extends \BaseTemplate {
 	// Personal url keys that will be allowed in the user menu
-	private const PERSONAL_LINKS_ALLOWED_LIST = [ 'logout', 'uls' ];
+	private const PERSONAL_LINKS_ALLOWED_LIST = [ 'logout', 'preferences', 'uls' ];
 
 	// Allowed page actions with config overrides
 	private const PAGE_TOOLS_ALLOWED_LIST = [
