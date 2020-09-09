@@ -410,7 +410,7 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 		}
 		$permissions = MediaWikiServices::getInstance()->getPermissionManager();
 		$user = $this->getSkin()->getUser();
-		if ( !$permissions->userHasRight( $user, 'docseditor' ) ) {
+		if ( !$permissions->userHasRight( $user, 'edit-docs' ) ) {
 			return [];
 		}
 		$requestedAction = $this->getSkin()->getRequestedAction();
