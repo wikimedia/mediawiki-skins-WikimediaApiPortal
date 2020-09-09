@@ -26,11 +26,11 @@
 		"MediaWiki\\Skin\\WikimediaApiPortal\\": "src/"
 	},
 	"AvailableRights": [
-		"docseditor"
+		"edit-docs"
 	],
 	"GroupPermissions": {
 		"docseditor": {
-			"docseditor": true
+			"edit-docs": true
 		}
 	},
 	"ResourceModules": {

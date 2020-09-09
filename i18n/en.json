@@ -3,8 +3,8 @@
 		"authors": []
 	},
 	"skinname-wikimediaapiportal": "WikimediaAPIPortal",
-	"action-docseditor": "edit documentation",
-	"right-docseditor": "Edit documentation",
+	"action-edit-docs": "edit documentation",
+	"right-edit-docs": "Edit documentation",
 	"wikimediaapiportal-skin-desc": "Custom skin for the Wikimedia API Developer portal",
 	"wikimediaapiportal-skin-site-name-main": "Wikimedia",
 	"wikimediaapiportal-skin-site-name-sub": "API Portal",
