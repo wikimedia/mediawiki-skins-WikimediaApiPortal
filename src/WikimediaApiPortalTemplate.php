@@ -514,8 +514,8 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 			'searchTitle' => $this->get( 'searchtitle' ),
 			'searchButtonLabel' => $this->getMsg( 'searchbutton' )->text(),
 			'searchButtonTooltip' => Linker::titleAttrib( 'search-fulltext' ),
-			'searchPlaceholder' => $this->getMsg( 'searchsuggest-search' )->text(),
-			'searchTooltip' => Linker::titleAttrib( 'search' ),
+			'searchPlaceholder' => $this->getMsg( 'wikimediaapiportal-skin-search-placeholder' )->text(),
+			'searchTooltip' => Linker::titleAttrib( 'wikimediaapiportal-skin-search-title' ),
 			'url-wgScript' => $this->get( 'wgScript' ),
 			'html-clearButton' => $clearButton,
 		];
