@@ -13,7 +13,9 @@
 					<div class="ml-auto col-12 col-lg col">
 						<div class="flex-row-reverse row">
 							{{>UserMenu args-usermenu}}
-							{{>NotificationAlert args-notification}}
+							{{#if args-notification}}
+								{{>NotificationAlert args-notification}}
+							{{/if}}
 							{{>SearchBar args-searchBar id="searchform" class="d-none d-md-none d-sm-none d-lg-none d-xl-flex"}}
 							{{>SearchBar args-searchBar id="searchform--large" class="search-lg d-none d-sm-none d-xl-none d-md-flex d-lg-flex" hidden="1"}}
 						</div>

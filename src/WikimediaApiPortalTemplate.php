@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
+use ExtensionRegistry;
 use Linker;
 use MediaWiki\MediaWikiServices;
 use Message;
@@ -466,6 +467,15 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 */
 	private function getNotificationArgs() {
 		// Support: Echo extension
+
+		if ( !$this->getSkin()->getUser()->isLoggedIn() ) {
+			return false;
+		}
+
+		if ( !ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) ) {
+			return false;
+		}
+
 		$data = $this->get( 'notification-alert' );
 		if ( !$data ) {
 			return false;
