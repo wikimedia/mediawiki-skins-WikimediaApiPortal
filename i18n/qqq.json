@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Raymond",
 			"Umherirrender"
 		]
 	},
 	"skinname-wikimediaapiportal": "{{name}}",
-	"action-edit-docs": "{{Doc-action|edit-docs}}\n{{Identical|Edit documentation}}",
-	"right-edit-docs": "Message for edit-docs right\n{{Doc-right|edit-docs}}",
+	"action-edit-docs": "{{Doc-action|docseditor}}\n{{Identical|Edit documentation}}",
 	"wikimediaapiportal-skin-desc": "{{desc|name=WikimediaApiPortal|url=https://www.mediawiki.org/wiki/Skin:WikimediaApiPortal|what=skin}}",
 	"wikimediaapiportal-skin-site-name-main": "{{optional}}",
 	"wikimediaapiportal-skin-site-name-sub": "{{optional}}",

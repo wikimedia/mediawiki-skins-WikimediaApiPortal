@@ -4,12 +4,10 @@
 			"Eduardo Addad de Oliveira"
 		]
 	},
-	"action-docseditor": "editar documentação",
-	"right-docseditor": "Editar documentação",
+	"action-edit-docs": "editar documentação",
 	"wikimediaapiportal-skin-desc": "Tema personalizado para o portal do desenvolvedor da API da Wikimedia",
 	"wikimediaapiportal-jumpto-content": "Ir para o conteúdo",
 	"wikimediaapiportal-skin-login-link-label": "Entrar",
-	"wikimediaapiportal-skin-personal-tools-label": "Minha conta",
 	"wikimediaapiportal-skin-button-contact-label": "Contato",
 	"wikimediaapiportal-skin-button-about-wm-label": "Sobre Wikimedia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Limpar pesquisa",

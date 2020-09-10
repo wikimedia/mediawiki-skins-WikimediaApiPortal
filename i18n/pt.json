@@ -4,12 +4,10 @@
 			"Hamilton Abreu"
 		]
 	},
-	"action-docseditor": "editar documentação",
-	"right-docseditor": "Editar documentação",
+	"action-edit-docs": "editar documentação",
 	"wikimediaapiportal-skin-desc": "Tema personalizado para o portal do Programador da API da Wikimedia",
 	"wikimediaapiportal-jumpto-content": "Saltar para conteúdo",
 	"wikimediaapiportal-skin-login-link-label": "Entrar",
-	"wikimediaapiportal-skin-personal-tools-label": "Conta",
 	"wikimediaapiportal-skin-button-contact-label": "Contacto",
 	"wikimediaapiportal-skin-button-about-wm-label": "Sobre a Wikimedia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Limpar pesquisa",

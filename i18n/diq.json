@@ -4,12 +4,10 @@
 			"1917 Ekim Devrimi"
 		]
 	},
-	"action-docseditor": "Dokumani bıvurne",
-	"right-docseditor": "Dokumani bıvurne",
+	"action-edit-docs": "Dokumani bıvurne",
 	"wikimediaapiportal-skin-desc": "Wikimedia API developeri seba ğprtali asayışo hususi",
 	"wikimediaapiportal-jumpto-content": "Ravêr zerreki",
 	"wikimediaapiportal-skin-login-link-label": "Cı kewe",
-	"wikimediaapiportal-skin-personal-tools-label": "Hesabê mı",
 	"wikimediaapiportal-skin-button-contact-label": "İrtıbat",
 	"wikimediaapiportal-skin-button-about-wm-label": "Heqê Wikipedia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Cıgeyrayışi pak kerê",

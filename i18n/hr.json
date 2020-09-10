@@ -4,11 +4,9 @@
 			"Bugoslav"
 		]
 	},
-	"action-docseditor": "uređivanje dokumentacije",
-	"right-docseditor": "Uređivanje dokumentacije",
+	"action-edit-docs": "uređivanje dokumentacije",
 	"wikimediaapiportal-jumpto-content": "Prijeđi na sadržaj",
 	"wikimediaapiportal-skin-login-link-label": "Prijavi se",
-	"wikimediaapiportal-skin-personal-tools-label": "Moj račun",
 	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
 	"wikimediaapiportal-skin-button-about-wm-label": "O Wikimediji",
 	"wikimediaapiportal-skin-button-clear-search-label": "Prazni unesenu pretragu",

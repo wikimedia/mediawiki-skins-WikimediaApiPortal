@@ -4,6 +4,5 @@
 			"Tofeiku"
 		]
 	},
-	"action-docseditor": "sunting pendokumenan",
-	"right-docseditor": "Sunting pendokumenan"
+	"action-edit-docs": "sunting pendokumenan"
 }

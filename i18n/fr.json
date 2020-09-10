@@ -6,12 +6,10 @@
 			"Wladek92"
 		]
 	},
-	"action-docseditor": "modifier la documentation",
-	"right-docseditor": "Modifier la documentation",
+	"action-edit-docs": "modifier la documentation",
 	"wikimediaapiportal-skin-desc": "Habillage personnalisé pour le portail développeur API de Wikimédia",
 	"wikimediaapiportal-jumpto-content": "Aller au contenu",
 	"wikimediaapiportal-skin-login-link-label": "Connexion",
-	"wikimediaapiportal-skin-personal-tools-label": "Mon compte",
 	"wikimediaapiportal-skin-button-contact-label": "Contact",
 	"wikimediaapiportal-skin-button-about-wm-label": "À propos de Wikimédia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Effacer la recherche",

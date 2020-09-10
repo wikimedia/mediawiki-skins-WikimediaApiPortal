@@ -4,12 +4,11 @@
 			"Bxalber"
 		]
 	},
-	"action-docseditor": "Dokumentation bearbeiten",
-	"right-docseditor": "Bearbeiten der Dokumentation",
+	"action-edit-docs": "Dokumentation bearbeiten",
+	"right-edit-docs": "Bearbeiten der Dokumentation",
 	"wikimediaapiportal-skin-desc": "Benutzerdefinierter Skin für das Wikimedia API-Entwicklerportal",
 	"wikimediaapiportal-jumpto-content": "Zum Inhalt springen",
 	"wikimediaapiportal-skin-login-link-label": "Anmelden",
-	"wikimediaapiportal-skin-personal-tools-label": "Mein Benutzerkonto",
 	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
 	"wikimediaapiportal-skin-button-about-wm-label": "Über Wikimedia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Suche bereinigen",
@@ -17,5 +16,7 @@
 	"wikimediaapiportal-skin-disclaimer": "Der Text ist unter der Lizenz <a href=\"https://creativecommons.org/licenses/by-sa/3.0/deed.de\">Creative Commons Namensnennung – Weitergabe unter gleichen Bedingungen</a> verfügbar. Zusätzliche Bedingungen können gelten.\nEinzelheiten sind in den <a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use/de\">Nutzungsbedingungen</a> beschrieben.",
 	"wikimediaapiportal-skin-page-nav-predefines": "* Dashboard\n** Special:Notifications|Benachrichtigungen\n** Special:AppManagement|App-Management",
 	"wikimediaapiportal-skin-return-to-page-label": "Zurück zur Seite",
-	"wikimediaapiportal-skin-updated-ts-label": "Aktualisiert am $1"
+	"wikimediaapiportal-skin-updated-ts-label": "Aktualisiert am $1",
+	"wikimediaapiportal-skin-search-placeholder": "Suchen",
+	"tooltip-wikimediaapiportal-skin-search-title": "Suchen"
 }

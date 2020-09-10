@@ -4,12 +4,10 @@
 			"Amire80"
 		]
 	},
-	"action-docseditor": "לערוך תיעוד",
-	"right-docseditor": "עריכת תיעוד",
+	"action-edit-docs": "לערוך תיעוד",
 	"wikimediaapiportal-skin-desc": "עיצוב מותאם לפורטל ה־API למפתחים של ויקימדיה",
 	"wikimediaapiportal-jumpto-content": "לדלג לתוכן",
 	"wikimediaapiportal-skin-login-link-label": "כניסה לחשבון",
-	"wikimediaapiportal-skin-personal-tools-label": "החשבון שלי",
 	"wikimediaapiportal-skin-button-contact-label": "יצירת קשר",
 	"wikimediaapiportal-skin-button-about-wm-label": "אודות ויקימדיה",
 	"wikimediaapiportal-skin-button-clear-search-label": "ניקוי החיפוש",

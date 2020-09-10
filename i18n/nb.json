@@ -4,12 +4,11 @@
 			"Jon Harald Søby"
 		]
 	},
-	"action-docseditor": "redigere dokumentasjon",
-	"right-docseditor": "Redigere dokumentasjon",
+	"action-edit-docs": "redigere dokumentasjon",
+	"right-edit-docs": "Redigere dokumentasjon",
 	"wikimediaapiportal-skin-desc": "Tilpasset drakt for Wikimedia API Developer-portalen",
 	"wikimediaapiportal-jumpto-content": "Hopp til innhold",
 	"wikimediaapiportal-skin-login-link-label": "Logg inn",
-	"wikimediaapiportal-skin-personal-tools-label": "Min konto",
 	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
 	"wikimediaapiportal-skin-button-about-wm-label": "Om Wikimedia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Tøm søk",
@@ -17,5 +16,7 @@
 	"wikimediaapiportal-skin-disclaimer": "Teksten er tilgjengelig under lisensen [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Navngivelse-DelPåSammeVilkår], men ytterligere betingelser kan gjelde. Se [https://foundation.wikimedia.org/wiki/Terms_of_Use bruksvilkårene] for detaljer.",
 	"wikimediaapiportal-skin-page-nav-predefines": "* Dashbord\n** Special:Notifications|Varsler\n** Special:AppManagement|Appbehandling",
 	"wikimediaapiportal-skin-return-to-page-label": "Tilbake til siden",
-	"wikimediaapiportal-skin-updated-ts-label": "Oppdatert $1"
+	"wikimediaapiportal-skin-updated-ts-label": "Oppdatert $1",
+	"wikimediaapiportal-skin-search-placeholder": "Søk",
+	"tooltip-wikimediaapiportal-skin-search-title": "Søk"
 }

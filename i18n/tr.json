@@ -5,12 +5,10 @@
 			"MuratTheTurkish"
 		]
 	},
-	"action-docseditor": "belgeyi düzenle",
-	"right-docseditor": "Belgeyi düzenle",
+	"action-edit-docs": "belgeyi düzenle",
 	"wikimediaapiportal-skin-desc": "Wikimedia API Geliştirici portali için özel görünüm",
 	"wikimediaapiportal-jumpto-content": "İçeriğe atla",
 	"wikimediaapiportal-skin-login-link-label": "Oturum aç",
-	"wikimediaapiportal-skin-personal-tools-label": "Hesabım",
 	"wikimediaapiportal-skin-button-contact-label": "İletişim",
 	"wikimediaapiportal-skin-button-about-wm-label": "Wikimedia hakkında",
 	"wikimediaapiportal-skin-button-clear-search-label": "Aramayı temizle",

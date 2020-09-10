@@ -5,12 +5,10 @@
 			"沈澄心"
 		]
 	},
-	"action-docseditor": "編輯文件",
-	"right-docseditor": "編輯文件",
+	"action-edit-docs": "編輯文件",
 	"wikimediaapiportal-skin-desc": "用於維基媒體 API 開發者入口的自定義外觀",
 	"wikimediaapiportal-jumpto-content": "前往內容",
 	"wikimediaapiportal-skin-login-link-label": "登入",
-	"wikimediaapiportal-skin-personal-tools-label": "我的帳號",
 	"wikimediaapiportal-skin-button-contact-label": "聯絡",
 	"wikimediaapiportal-skin-button-about-wm-label": "關於維基媒體",
 	"wikimediaapiportal-skin-button-clear-search-label": "清除搜尋",

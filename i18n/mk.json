@@ -4,12 +4,10 @@
 			"Bjankuloski06"
 		]
 	},
-	"action-docseditor": "уредување на документација",
-	"right-docseditor": "Уредување на документација",
+	"action-edit-docs": "уредување на документација",
 	"wikimediaapiportal-skin-desc": "Прилагодено руво за Разработувачкиот портал на Викимедииниот приложник",
 	"wikimediaapiportal-jumpto-content": "Прејди на содржината",
 	"wikimediaapiportal-skin-login-link-label": "Најава",
-	"wikimediaapiportal-skin-personal-tools-label": "Мојата сметка",
 	"wikimediaapiportal-skin-button-contact-label": "Контакт",
 	"wikimediaapiportal-skin-button-about-wm-label": "За Викимедија",
 	"wikimediaapiportal-skin-button-clear-search-label": "Исчисти пребарување",

@@ -4,11 +4,9 @@
 			"Mainframe98"
 		]
 	},
-	"action-docseditor": "documentatie te bewerken",
-	"right-docseditor": "Documentatie bewerken",
+	"action-edit-docs": "documentatie te bewerken",
 	"wikimediaapiportal-jumpto-content": "Naar inhoud springen",
 	"wikimediaapiportal-skin-login-link-label": "Aanmelden",
-	"wikimediaapiportal-skin-personal-tools-label": "Mijn account",
 	"wikimediaapiportal-skin-button-contact-label": "Contact",
 	"wikimediaapiportal-skin-button-about-wm-label": "Over Wikimedia",
 	"wikimediaapiportal-skin-return-to-page-label": "Terug naar pagina",

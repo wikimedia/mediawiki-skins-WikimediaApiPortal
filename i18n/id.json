@@ -4,6 +4,5 @@
 			"Kenrick95"
 		]
 	},
-	"action-docseditor": "sunting dokumentasi",
-	"right-docseditor": "Sunting dokumentasi"
+	"action-edit-docs": "sunting dokumentasi"
 }
