@@ -2,13 +2,13 @@
 	<a class="btn wm-button wm-header-item" href="{{login-href}}">{{login-label}}</a>
 {{/isAnon}}
 {{^isAnon}}
-	<div class="wm-dropdown wm-personal-tools wm-header-item">
-		<div class="dropdown">
-			<div class="wm-icon-button dropdown-toggle wm-personal-tools-icon"
-				title="{{tools-label}}" href="#" role="button" id="wm-personal-tools-trigger"
-				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
-			<div class="dropdown-menu wm-dropdown-menu-auto dropdown-menu-right" aria-labelledby="wm-personal-tools-trigger">
-				{{#each tools-items}}{{{.}}}{{/each}}
+	<div class="wm-header-item wm-user-menu">
+		<div class="user-menu">
+			{{{user-menu-label}}}
+			<div class="d-none">
+				{{#each user-menu-items}}
+					{{{.}}}
+				{{/each}}
 			</div>
 		</div>
 	</div>

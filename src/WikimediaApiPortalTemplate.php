@@ -8,13 +8,13 @@ use MediaWiki\MediaWikiServices;
 use Message;
 use OOUI\ButtonGroupWidget;
 use OOUI\ButtonWidget;
-use RawMessage;
+use OOUI\IconWidget;
 use SpecialPage;
 use Title;
 
 class WikimediaApiPortalTemplate extends \BaseTemplate {
 	// Personal url keys that will be allowed in the user menu
-	private const PERSONAL_LINKS_ALLOWED_LIST = [ 'logout', 'preferences', 'uls' ];
+	private const PERSONAL_LINKS_ALLOWED_LIST = [ 'logout', 'preferences' ];
 
 	// Allowed page actions with config overrides
 	private const PAGE_TOOLS_ALLOWED_LIST = [
@@ -268,24 +268,31 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 * @return array
 	 */
 	private function getUserMenuArgs() : array {
-		$items = [];
-		$hasActive = false;
-		foreach ( $this->get( 'personal_urls' ) as $key => $item ) {
-			/** @var array $item See Skin::addToSidebarPlain */
-			$items[] = $this->getSkin()->makeListItem( $key, $item,
-				[ 'tag' => 'div', 'link-class' => 'dropdown-item' ]
-			);
+		$user = $this->getSkin()->getUser();
+		if ( $user->isAnon() ) {
+			return [
+				'isAnon' => true,
+				'login-href' => SpecialPage::getTitleFor( 'Userlogin' )->getLocalURL( [
+					'returnto' => $this->getSkin()->getTitle()
+				] ),
+				'login-label' => Message::newFromKey( 'wikimediaapiportal-skin-login-link-label' )->text(),
+			];
 		}
 
-		$user = $this->getSkin()->getUser();
+		$items = [];
+		foreach ( $this->get( 'personal_urls' ) as $key => $item ) {
+			$items[] = $this->getSkin()->makeListItem( $key, $item );
+		}
+
+		$label = new IconWidget( [
+			'icon' => 'userAvatarOutline',
+			'title' => $user->getName()
+		] );
+
 		return [
-			'isAnon' => $user->isAnon(),
-			'login-href' => SpecialPage::getTitleFor( 'Userlogin' )->getLocalURL( [
-				'returnto' => $this->getSkin()->getTitle()
-			] ),
-			'login-label' => Message::newFromKey( 'wikimediaapiportal-skin-login-link-label' )->text(),
-			'tools-label' => new RawMessage( $user->getName() ),
-			'tools-items' => $items,
+			'isAnon' => false,
+			'user-menu-label' => $label,
+			'user-menu-items' => $items,
 		];
 	}
 
