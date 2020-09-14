@@ -37,7 +37,9 @@
 					<div class="wm-tools col">
 						<div class="flex-row-reverse row">
 							{{>UserMenu args-usermenu}}
-							{{>NotificationAlert args-notification}}
+							{{#if args-notification}}
+								{{>NotificationAlert args-notification}}
+							{{/if}}
 							{{>SearchBar args-searchBar id="searchform--small" class="search-sm" hidden="1"}}
 						</div>
 					</div>
