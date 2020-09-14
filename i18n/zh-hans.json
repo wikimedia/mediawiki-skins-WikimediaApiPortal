@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"AYZ04",
 			"Shuiwater",
 			"SkEy",
 			"Ssc",
@@ -19,5 +20,7 @@
 	"wikimediaapiportal-skin-disclaimer": "文字内容采用<a href=\"https://creativecommons.org/licenses/by-sa/3.0/deed.zh\">知识共享署名-相同方式共享许可协议</a>授权，其他附加条款可能适用。详情请见<a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use\">使用条款</a>。",
 	"wikimediaapiportal-skin-page-nav-predefines": "* 面板\n** Special:Notifications|通知\n** Special:AppManagement|APP管理",
 	"wikimediaapiportal-skin-return-to-page-label": "返回页面",
-	"wikimediaapiportal-skin-updated-ts-label": "更新于$1"
+	"wikimediaapiportal-skin-updated-ts-label": "更新于$1",
+	"wikimediaapiportal-skin-search-placeholder": "搜索",
+	"tooltip-wikimediaapiportal-skin-search-title": "搜索"
 }

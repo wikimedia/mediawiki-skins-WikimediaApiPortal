@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"MuratTheTurkish",
 			"Raymond",
 			"Umherirrender"
 		]
 	},
 	"skinname-wikimediaapiportal": "{{name}}",
-	"action-edit-docs": "{{Doc-action|edit-docs}}\n{{Identical|Edit documentation}}",
+	"action-edit-docs": "{{Doc-action|edit-docs}}",
 	"right-edit-docs": "Message for edit-docs right\n{{Doc-right|edit-docs}}",
 	"wikimediaapiportal-skin-desc": "{{desc|name=WikimediaApiPortal|url=https://www.mediawiki.org/wiki/Skin:WikimediaApiPortal|what=skin}}",
 	"wikimediaapiportal-skin-site-name-main": "{{optional}}",

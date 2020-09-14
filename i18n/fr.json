@@ -7,6 +7,7 @@
 		]
 	},
 	"action-edit-docs": "modifier la documentation",
+	"right-edit-docs": "Modifier la documentation",
 	"wikimediaapiportal-skin-desc": "Habillage personnalisé pour le portail développeur API de Wikimédia",
 	"wikimediaapiportal-jumpto-content": "Aller au contenu",
 	"wikimediaapiportal-skin-login-link-label": "Connexion",
@@ -17,5 +18,7 @@
 	"wikimediaapiportal-skin-disclaimer": "Le texte est disponible sous la [https://creativecommons.org/licenses/by-sa/3.0/ licence Creative Commons Attribution-ShareAlike] ; des conditions supplémentaires peuvent s’appliquer. Voir [https://foundation.wikimedia.org/wiki/Terms_of_Use les conditions d’utilisation] pour plus de détails.",
 	"wikimediaapiportal-skin-page-nav-predefines": "* Dashboard\n** Special:Notifications|Notifications\n** Special:AppManagement|Gestion d’application",
 	"wikimediaapiportal-skin-return-to-page-label": "Revenir à la page",
-	"wikimediaapiportal-skin-updated-ts-label": "$1 mis à jour"
+	"wikimediaapiportal-skin-updated-ts-label": "$1 mis à jour",
+	"wikimediaapiportal-skin-search-placeholder": "Chercher",
+	"tooltip-wikimediaapiportal-skin-search-title": "Chercher"
 }

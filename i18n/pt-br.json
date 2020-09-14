@@ -15,5 +15,7 @@
 	"wikimediaapiportal-skin-disclaimer": "Este texto é disponibilizado nos termos da licença [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Atribuição-CompartilhaIgual]; termos adicionais podem ser aplicados. VejA [https://foundation.wikimedia.org/wiki/Terms_of_Use/pt-br Termos de uso] para detalhes.",
 	"wikimediaapiportal-skin-page-nav-predefines": "* Painel de controle\n** Special:Notifications|Notificações\n** Special:AppManagement|Gerenciamento de aplicativos",
 	"wikimediaapiportal-skin-return-to-page-label": "Voltar para página",
-	"wikimediaapiportal-skin-updated-ts-label": "Atualizar $1"
+	"wikimediaapiportal-skin-updated-ts-label": "Atualizar $1",
+	"wikimediaapiportal-skin-search-placeholder": "Pesquisar",
+	"tooltip-wikimediaapiportal-skin-search-title": "Pesquisar"
 }

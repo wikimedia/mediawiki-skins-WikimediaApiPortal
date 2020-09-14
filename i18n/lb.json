@@ -10,5 +10,7 @@
 	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
 	"wikimediaapiportal-skin-button-about-wm-label": "Iwwer Wikipedia",
 	"wikimediaapiportal-skin-return-to-page-label": "Zréck op d'Säit",
-	"wikimediaapiportal-skin-updated-ts-label": "Aktualiséiert de(n) $1"
+	"wikimediaapiportal-skin-updated-ts-label": "Aktualiséiert de(n) $1",
+	"wikimediaapiportal-skin-search-placeholder": "Sichen",
+	"tooltip-wikimediaapiportal-skin-search-title": "Sichen"
 }

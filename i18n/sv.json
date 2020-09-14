@@ -6,6 +6,7 @@
 		]
 	},
 	"action-edit-docs": "redigera dokumentation",
+	"right-edit-docs": "Redigera dokumentation",
 	"wikimediaapiportal-skin-desc": "Anpassat utseende för Wikimedia API:s utvecklarportal",
 	"wikimediaapiportal-jumpto-content": "Hoppa till innehållet",
 	"wikimediaapiportal-skin-login-link-label": "Logga in",
@@ -16,5 +17,7 @@
 	"wikimediaapiportal-skin-disclaimer": "Texten är tillgänglig under licensen [https://creativecommons.org/licenses/by-sa/3.0/Creative Commons Erkännande-Dela Lika]; ytterligare villkor kan gälla. Se [https://foundation.wikimedia.org/wiki/Terms_of_Use användarvillkoren] för detaljer.",
 	"wikimediaapiportal-skin-page-nav-predefines": "* Instrumentpanel\n** Special:Notifications|Aviseringar\n** Special:AppManagement|Apphantering",
 	"wikimediaapiportal-skin-return-to-page-label": "Återgå till sidan",
-	"wikimediaapiportal-skin-updated-ts-label": "Uppdaterades $1"
+	"wikimediaapiportal-skin-updated-ts-label": "Uppdaterades $1",
+	"wikimediaapiportal-skin-search-placeholder": "Sök",
+	"tooltip-wikimediaapiportal-skin-search-title": "Sök"
 }

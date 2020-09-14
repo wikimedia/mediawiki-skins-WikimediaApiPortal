@@ -5,6 +5,7 @@
 		]
 	},
 	"action-edit-docs": "уредување на документација",
+	"right-edit-docs": "Уреди документација",
 	"wikimediaapiportal-skin-desc": "Прилагодено руво за Разработувачкиот портал на Викимедииниот приложник",
 	"wikimediaapiportal-jumpto-content": "Прејди на содржината",
 	"wikimediaapiportal-skin-login-link-label": "Најава",
@@ -15,5 +16,7 @@
 	"wikimediaapiportal-skin-disclaimer": "Текстот е достапен под условите на лиценцата [https://creativecommons.org/licenses/by-sa/3.0/deed.mk Криејтив комонс Наведи извор - Сподели под исти услови]. Може да важат и дополнителни услви. За повеќе информации, погледајте ги [https://foundation.wikimedia.org/wiki/Услови_на_употреба Условите на употреба].",
 	"wikimediaapiportal-skin-page-nav-predefines": "* Управувачница\n** Special:Notifications|Известувања\n** Special:AppManagement|Приложно раководство",
 	"wikimediaapiportal-skin-return-to-page-label": "Назад на страницата",
-	"wikimediaapiportal-skin-updated-ts-label": "Подновено на $1"
+	"wikimediaapiportal-skin-updated-ts-label": "Подновено на $1",
+	"wikimediaapiportal-skin-search-placeholder": "Пребарај",
+	"tooltip-wikimediaapiportal-skin-search-title": "Пребарај"
 }

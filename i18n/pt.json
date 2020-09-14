@@ -5,6 +5,7 @@
 		]
 	},
 	"action-edit-docs": "editar documentação",
+	"right-edit-docs": "Editar a documentação",
 	"wikimediaapiportal-skin-desc": "Tema personalizado para o portal do Programador da API da Wikimedia",
 	"wikimediaapiportal-jumpto-content": "Saltar para conteúdo",
 	"wikimediaapiportal-skin-login-link-label": "Entrar",
@@ -15,5 +16,7 @@
 	"wikimediaapiportal-skin-disclaimer": "Este texto é disponibilizado nos termos da licença [https://creativecommons.org/licenses/by-sa/3.0/deed.pt\">Atribuição-CompartilhaIgual 3.0 Não Adaptada (CC BY-SA 3.0) da Creative Commons];\npode estar sujeito a condições adicionais. Para mais detalhes, consulte as [https://foundation.wikimedia.org/wiki/Condições_de_Uso\">condições de utilização].",
 	"wikimediaapiportal-skin-page-nav-predefines": "* Painel de controlo\n** Special:Notifications|Notificações\n** Special:AppManagement|Gestão da aplicação",
 	"wikimediaapiportal-skin-return-to-page-label": "Voltar à página",
-	"wikimediaapiportal-skin-updated-ts-label": "Última atualização $1"
+	"wikimediaapiportal-skin-updated-ts-label": "Última atualização $1",
+	"wikimediaapiportal-skin-search-placeholder": "Pesquisar",
+	"tooltip-wikimediaapiportal-skin-search-title": "Pesquisar"
 }

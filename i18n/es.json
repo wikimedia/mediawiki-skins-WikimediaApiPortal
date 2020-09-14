@@ -6,5 +6,7 @@
 	},
 	"wikimediaapiportal-skin-login-link-label": "Acceder",
 	"wikimediaapiportal-skin-button-contact-label": "Contacto",
-	"wikimediaapiportal-skin-button-about-wm-label": "Acerca de Wikimedia"
+	"wikimediaapiportal-skin-button-about-wm-label": "Acerca de Wikimedia",
+	"wikimediaapiportal-skin-search-placeholder": "Buscar",
+	"tooltip-wikimediaapiportal-skin-search-title": "Buscar"
 }

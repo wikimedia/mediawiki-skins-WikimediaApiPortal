@@ -15,5 +15,7 @@
 	"wikimediaapiportal-skin-disclaimer": "내용은 [https://creativecommons.org/licenses/by-sa/3.0/deed.ko 크리에이티브 커먼즈 저작자표시-동일조건변경허락 라이선스]에 따라 사용할 수 있으며 부가 조건이 적용될 수 있습니다. 관련 내용은 [https://foundation.wikimedia.org/wiki/Terms_of_Use/ko 이용 약관]을 참조하십시오.",
 	"wikimediaapiportal-skin-page-nav-predefines": "* DevCenter\n** Special:Notifications|알림\n** Special:AppManagement|앱 관리",
 	"wikimediaapiportal-skin-return-to-page-label": "페이지로 돌아가기",
-	"wikimediaapiportal-skin-updated-ts-label": "$1{{#을를}} 업데이트함"
+	"wikimediaapiportal-skin-updated-ts-label": "$1{{#을를}} 업데이트함",
+	"wikimediaapiportal-skin-search-placeholder": "검색",
+	"tooltip-wikimediaapiportal-skin-search-title": "검색"
 }
