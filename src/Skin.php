@@ -76,6 +76,7 @@ class Skin extends SkinTemplate {
 			'oojs-ui.styles.icons-content',
 			'oojs-ui.styles.icons-alerts',
 			'oojs-ui.styles.icons-editing-core',
+			'oojs-ui.styles.icons-editing-advanced',
 			'oojs-ui.styles.icons-interactions',
 			'oojs-ui.styles.icons-movement',
 			'skin.wikimediaapiportal.styles'
