@@ -4,7 +4,12 @@
 			"Amire80"
 		]
 	},
+	"skinname-wikimediaapiportal": "פורטל ב־API של ויקימדיה",
+	"action-edit-docs": "לערוך תיעוד",
+	"right-edit-docs": "עריכת תיעוד",
 	"wikimediaapiportal-skin-desc": "עיצוב מותאם לפורטל ה־API למפתחים של ויקימדיה",
+	"wikimediaapiportal-skin-site-name-main": "ויקימדיה",
+	"wikimediaapiportal-skin-site-name-sub": "פורטל ה־API",
 	"wikimediaapiportal-jumpto-content": "לדלג לתוכן",
 	"wikimediaapiportal-skin-login-link-label": "כניסה לחשבון",
 	"wikimediaapiportal-skin-button-contact-label": "יצירת קשר",
