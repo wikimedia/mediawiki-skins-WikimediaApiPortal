@@ -4,10 +4,14 @@
 			"Mainframe98"
 		]
 	},
+	"action-edit-docs": "documentatie te bewerken",
+	"right-edit-docs": "Documentatie bewerken",
 	"wikimediaapiportal-jumpto-content": "Naar inhoud springen",
 	"wikimediaapiportal-skin-login-link-label": "Aanmelden",
 	"wikimediaapiportal-skin-button-contact-label": "Contact",
 	"wikimediaapiportal-skin-button-about-wm-label": "Over Wikimedia",
 	"wikimediaapiportal-skin-return-to-page-label": "Terug naar pagina",
-	"wikimediaapiportal-skin-updated-ts-label": "Bijgewerkt op $1"
+	"wikimediaapiportal-skin-updated-ts-label": "Bijgewerkt op $1",
+	"wikimediaapiportal-skin-search-placeholder": "Zoeken",
+	"tooltip-wikimediaapiportal-skin-search-title": "Zoeken"
 }
