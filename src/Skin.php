@@ -77,7 +77,9 @@ class Skin extends SkinTemplate {
 			'oojs-ui.styles.icons-editing-core',
 			'oojs-ui.styles.icons-editing-advanced',
 			'oojs-ui.styles.icons-interactions',
+			'oojs-ui.styles.icons-layout',
 			'oojs-ui.styles.icons-movement',
+			'oojs-ui.styles.icons-wikimedia',
 			'skin.wikimediaapiportal.styles'
 		] );
 		$output->addModules( "skin.wikimediaapiportal.scripts" );

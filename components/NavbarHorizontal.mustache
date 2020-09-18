@@ -2,13 +2,20 @@
 A horizontal navbar containing the items that are traditionally placed in a sidebar.
 }}
 <nav class="p-navbar collapsible navbar navbar-expand-lg" role="navigation" id="{{id}}">
-	<button class="wm-icon-button wm-navbar-button" data-toggle="collapse" data-target="#{{id}}--collapse"></button>
+	<button class="wm-navbar-button" data-toggle="collapse" data-target="#{{id}}--collapse">
+		{{{menuIcon}}}
+	</button>
 	<div class="collapse navbar-collapse" id="{{id}}--collapse"><div class="navbar-nav">
 	{{#if pagenav}}
 		{{#if pageToolsMobile}}
 			{{>PageToolsMobile pageToolsMobile}}
 		{{/if}}
-		<div class="wm-main-page"><a href="{{mainpage-href}}">{{mainpage-text}}</a></div>
+		<div class="wm-main-page">
+			<a href="{{mainpage-href}}">
+				{{{previousIcon}}}
+				{{mainpage-text}}
+			</a>
+		</div>
 		{{>PageNav pagenav}}
 	{{/if}}
 	{{#unless pagenav}}{{#each items}}
@@ -18,7 +25,10 @@ A horizontal navbar containing the items that are traditionally placed in a side
 		{{#isDropdown}}
 			<!-- {{menuKey}} -->
 			<div class="nav-item dropdown{{#hasActive}} active{{/hasActive}}">
-				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-boundary="viewport">{{header}}</a>
+				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-boundary="viewport">
+					{{header}}
+					{{{dropDownIndicator}}}
+				</a>
 				<div class="dropdown-menu" id="{{id}}">
 				{{#each items}}
 					{{{.}}}

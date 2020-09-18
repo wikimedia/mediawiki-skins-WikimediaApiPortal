@@ -19,19 +19,14 @@
 					background-color: transparent;
 					border: none;
 					height: 1.875rem;
-					&:after {
-						width: 1.875rem;
-						background-size: 1.875rem;
-					}
 				}
 			}
 		}
-		.p-logo {
-			a {
-				img {
-					height: 4.375rem;
-				}
-			}
+		.wm-notification-button {
+			padding-top: 0.8125rem;
+		}
+		.p-logo a .wm-logo-icon {
+			height: 4.375rem;
 		}
 		.wm-tools {
 			.flex-row-reverse {
@@ -54,6 +49,7 @@
 				}
 				a.wm-header-item {
 					padding-top: 0.8125rem;
+					margin-left: 0 !important;
 				}
 				.wm-icon-button {
 					height: 100%;
@@ -64,6 +60,7 @@
 				}
 				.wm-search-button {
 					height: 100%;
+					padding: 0.8125rem 0.3125rem 0 0;
 				}
 			}
 		}
@@ -98,17 +95,9 @@
 						&:focus, &:visited {
 							color: @color-base-10;
 						}
-						&:before {
-							content: '';
-							/* @embed */
-							background-image: url( '../images/icon/back.svg' );
-							background-size: 1.25rem;
-							background-repeat: no-repeat;
-							height: 1.25rem;
-							display: inline-block;
+						span {
+							font-size: 0.875rem;
 							margin: 0 0.625rem 0 0.625rem;
-							width: 1.25rem;
-							vertical-align: middle;
 						}
 					}
 

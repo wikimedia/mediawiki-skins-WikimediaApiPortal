@@ -16,16 +16,19 @@
 		border-radius: 0.125rem;
 	}
 
-	.wm-navbar-button:after {
-		/* @embed */
-		background-image: url( '../images/icon/menu.svg' );
+	.wm-navbar-button span {
+		font-size: 1.3125rem;
+	}
+
+	.navbar-nav .nav-item a.dropdown-toggle::after {
+		// default caret from bootstrap
+		display: none;
 	}
 
 	.wm-notification-button {
 		position: relative;
 		.wm-notification-count-badge {
 			position: absolute;
-			top: 0;
 			right: 0;
 			background-color: @color-accent-30;
 			color: white;
@@ -33,9 +36,8 @@
 			padding: 0.625rem 0.25rem 0.625rem 0.25rem;
 			line-height: 0;
 		}
-		.wm-icon-button:after {
-			/* @embed */
-			background-image: url( '../images/icon/notification.svg' );
+		a span {
+			font-size: 1.125rem;
 		}
 	}
 

@@ -3,8 +3,7 @@
 	<form id="{{id}}" class="mw-search" action="{{url-wgScript}}">
 		<div class="row no-gutters wm-header-border-box p-search" role="search">
 			<div class="col col-1">
-				<button value="{{searchButtonLabel}}" name="fulltext" type="submit" class="wm-search-button-submit wm-icon-button"
-					title="{{searchButtonTooltip}}"></button>
+				{{{searchSubmitButton}}}
 			</div>
 			<div class="col col-11">
 				<input name="search" placeholder="{{searchPlaceholder}}" title="{{searchTooltip}}" class="form-control" autocomplete="off">
@@ -15,13 +14,12 @@
 {{/unless}}
 {{#if hidden}}
 	<div class="wm-search-button wm-header-item">
-		<a class="wm-icon-button wm-search-trigger" href="#"></a>
+		{{{searchButton}}}
 	</div>
 	<form id="{{id}}" class="mw-search wm-hidden" action="{{url-wgScript}}">
 		<div class="row no-gutters wm-header-border-box p-search" role="search">
 			<div class="col col-1">
-				<button value="{{searchButtonLabel}}" name="fulltext" type="submit" class="wm-search-button-submit wm-icon-button"
-					title="{{searchButtonTooltip}}"></button>
+				{{{searchSubmitButton}}}
 			</div>
 			<div class="col col-10">
 				<input name="search" placeholder="{{searchPlaceholder}}" title="{{searchTooltip}}" class="form-control" autocomplete="off">

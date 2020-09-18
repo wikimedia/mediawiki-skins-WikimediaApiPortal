@@ -4,7 +4,8 @@
 			$trigger,
 			$form,
 			$clearButton,
-			$input;
+			$input,
+			$searchSubmitButton;
 
 		$( '.wm-search-container' ).each( function ( key, element ) {
 			if ( !$( element ).is( ':visible' ) ) {
@@ -14,6 +15,7 @@
 			$trigger = $element.find( '.wm-search-trigger' );
 			$form = $element.find( 'form.mw-search' );
 			$clearButton = $form.find( '.wm-search-clear-button' );
+			$searchSubmitButton = $form.find( '.wm-search-button-submit' );
 			$input = $form.find( 'input[name="search"]' );
 
 			if ( $clearButton.length > 0 ) {
@@ -31,6 +33,12 @@
 					} else {
 						hideForm();
 					}
+				} );
+			}
+
+			if ( $searchSubmitButton.length > 0 ) {
+				$searchSubmitButton.on( 'click', function () {
+					$form.submit();
 				} );
 			}
 

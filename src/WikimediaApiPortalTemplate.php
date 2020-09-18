@@ -9,6 +9,7 @@ use Message;
 use OOUI\ButtonGroupWidget;
 use OOUI\ButtonWidget;
 use OOUI\IconWidget;
+use OOUI\IndicatorWidget;
 use SpecialPage;
 use Title;
 
@@ -89,12 +90,13 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 	 */
 	private function getLogoArgs() : array {
 		// Ignore wgLogo and 'logopath' from SkinTemplate
-		$stylePath = $this->getSkin()->getConfig()->get( 'StylePath' );
-		$logoPath = $stylePath . '/WikimediaApiPortal/resources/images/icon/wikimedia-black.svg';
+		$logoIcon = new IconWidget( [
+			'icon' => 'logoWikimedia',
+			'title' => $this->get( 'sitename', '' )
+		] );
 
 		return [
-			'logopath' => $logoPath,
-			'sitename' => $this->get( 'sitename', '' ),
+			'logoIcon' => $logoIcon,
 			'sitename-main' => Message::newFromKey( 'wikimediaapiportal-skin-site-name-main' )->text(),
 			'sitename-sub' => Message::newFromKey( 'wikimediaapiportal-skin-site-name-sub' )->text(),
 			'mainpage-href' => $this->get( 'nav_urls' )['mainpage']['href'] ?? '#',
@@ -152,10 +154,16 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 		}
 
 		$mainPage = Title::newMainPage();
+		$dropDownIndicator = new IndicatorWidget( [ 'indicator' => 'down' ] );
+		$menuIcon = new IconWidget( [ 'icon' => 'menu' ] );
+		$previousIcon = new IconWidget( [ 'icon' => 'previous' ] );
 		return [
 			'mainpage-href' => $mainPage->getLinkURL(),
 			'mainpage-text' => $mainPage->getText(),
 			'items' => $items,
+			'dropDownIndicator' => $dropDownIndicator,
+			'menuIcon' => $menuIcon,
+			'previousIcon' => $previousIcon,
 		];
 	}
 
@@ -493,11 +501,14 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 		/** @var Message $actionMsg */
 		$actionMsg = $data['text'];
 
+		$notificationIcon = new IconWidget( [ 'icon' => 'bellOutline' ] );
+
 		return [
 			'hasCount' => $data['data']['counter-num'] > 0,
 			'count' => $data['data']['counter-text'],
 			'href' => $data['href'],
 			'label' => $actionMsg->text(),
+			'notificationIcon' => $notificationIcon,
 		];
 	}
 
@@ -517,12 +528,32 @@ class WikimediaApiPortalTemplate extends \BaseTemplate {
 			'icon' => 'close',
 		] );
 
+		$searchOptions = [
+			'name' => 'Search',
+			'framed' => false,
+			'icon' => 'search',
+		];
+
+		$searchSubmitButton = new ButtonWidget( array_merge(
+			$searchOptions,
+			[
+				'title' => Linker::titleAttrib( 'search-fulltext' ),
+				'classes' => [ 'wm-search-button-submit' ],
+				'disabled' => true,
+			]
+		) );
+
+		$searchButton = new ButtonWidget( array_merge(
+			$searchOptions,
+			[
+				'title' => $this->getMsg( 'searchbutton' )->text(),
+				'classes' => [ 'wm-search-trigger' ],
+			]
+		) );
+
 		return [
-			'searchTitle' => $this->get( 'searchtitle' ),
-			'searchButtonLabel' => $this->getMsg( 'searchbutton' )->text(),
-			'searchButtonTooltip' => Linker::titleAttrib( 'search-fulltext' ),
-			'searchPlaceholder' => $this->getMsg( 'wikimediaapiportal-skin-search-placeholder' )->text(),
-			'searchTooltip' => Linker::titleAttrib( 'wikimediaapiportal-skin-search-title' ),
+			'searchSubmitButton' => $searchSubmitButton,
+			'searchButton' => $searchButton,
 			'url-wgScript' => $this->get( 'wgScript' ),
 			'html-clearButton' => $clearButton,
 		];
