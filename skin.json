@@ -35,6 +35,7 @@
 	},
 	"ResourceModules": {
 		"skin.wikimediaapiportal.styles": {
+			"class": "ResourceLoaderSkinModule",
 			"styles": {
 				"skin.wikimediaapiportal.styles/entry.less": {},
 				"skin.wikimediaapiportal.styles/dist/bootstrap.css": {}

@@ -71,7 +71,6 @@ class Skin extends SkinTemplate {
 		$output = $this->getOutput();
 		$output->enableOOUI();
 		$output->addModuleStyles( [
-			'mediawiki.skinning.content',
 			'oojs-ui.styles.icons-user',
 			'oojs-ui.styles.icons-content',
 			'oojs-ui.styles.icons-alerts',
