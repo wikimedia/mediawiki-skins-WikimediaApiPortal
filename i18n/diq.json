@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"1917 Ekim Devrimi"
+			"1917 Ekim Devrimi",
+			"Orbot707"
 		]
 	},
+	"action-edit-docs": "Dokumani bıvurne",
+	"right-edit-docs": "Dokumani bıvurne",
 	"wikimediaapiportal-skin-desc": "Wikimedia API developeri seba ğprtali asayışo hususi",
 	"wikimediaapiportal-jumpto-content": "Ravêr zerreki",
 	"wikimediaapiportal-skin-login-link-label": "Cı kewe",
@@ -14,5 +17,7 @@
 	"wikimediaapiportal-skin-disclaimer": "Nuşte <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Atıf-Zey Pê vılakerdış</a>'i de yo; şertê bini tetbiq benê. Detayan rê <a href=\"https://foundation.wikimedia.org/wiki/Special:MyLanguage/Terms_of_Use\">Şertanê karkerdışi</a> bıvênên.",
 	"wikimediaapiportal-skin-page-nav-predefines": "* Panela mocneyi\n** Special:Notifications|Peyhesnayış \n** Special:AppManagement|İdareyê aplikasyoni",
 	"wikimediaapiportal-skin-return-to-page-label": "Peyser şo pela",
-	"wikimediaapiportal-skin-updated-ts-label": "$1 de bi rocane"
+	"wikimediaapiportal-skin-updated-ts-label": "$1 de bi rocane",
+	"wikimediaapiportal-skin-search-placeholder": "Cı geyre",
+	"tooltip-wikimediaapiportal-skin-search-title": "Cı geyre"
 }
