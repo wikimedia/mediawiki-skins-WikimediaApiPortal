@@ -1,24 +1,24 @@
 /* Header */
 .wm-header {
-	min-height: 90px;
+	min-height: 5.625rem;
 	.wm-navbar-button {
 		display: none;
 	}
 	.wm-header-inner {
-		max-width: 1440px;
+		max-width: 90rem;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 20px 100px 0 100px;
+		padding: 1.25rem 6.25rem 0 6.25rem;
 	}
 	.wm-header-item {
-		margin: 20px 10px 0 10px;
+		margin: 1.25rem 0.625rem 0 0.625rem;
 	}
 	/* rules below can be confusing, it's due to complex default rules */
 	#mw-navigation, div.wm-dropdown {
 		background-color: transparent;
 		&#mw-navigation  {
 			margin-bottom: 0 !important;
-			padding: 20px 0 0 0;
+			padding: 1.25rem 0 0 0;
 		}
 		a.dropdown-toggle {
 			color: @color-base-10;
@@ -36,20 +36,20 @@
 				content: '';
 				/* @embed */
 				background-image: url( '../images/icon/caret_down.svg' );
-				background-size: 14px;
-				width:14px;
-				height: 14px;
+				background-size: 0.875rem;
+				width: 0.875rem;
+				height: 0.875rem;
 				border: none;
 				display: inline-block;
 				vertical-align: middle;
-				margin-left: 10px;
+				margin-left: 0.625rem;
 			}
 		}
 		a.dropdown-toggle[aria-expanded="true"]:after {
 			transform: rotate(180deg);
 		}
 		div.nav-item {
-			padding: 0 1rem 8px 1rem;
+			padding: 0 1rem 0.5rem 1rem;
 			white-space: nowrap;
 			a.nav-link {
 				color: @color-base-10;
@@ -57,7 +57,7 @@
 				padding-right: 0;
 			}
 			&.active {
-				border-bottom: 2px solid @color-base-10;
+				border-bottom: 0.125rem solid @color-base-10;
 			}
 		}
 		div.dropdown {
@@ -72,19 +72,19 @@
 				background-color: @color-base-10;
 				padding: 0;
 				border-radius: 0;
-				min-width: 250px;
-				top: 4px !important; //Dynamically set, has to be !important :(
-				left: -1px !important; //Dynamically set, has to be !important :(
+				min-width: 15.625rem;
+				top: 0.25rem !important; //Dynamically set, has to be !important :(
+				left: -0.0625rem !important; //Dynamically set, has to be !important :(
 				&.wm-dropdown-menu-auto {
 					min-width: auto;
 					.dropdown-item {
-						padding-right: 40px;
-						padding-left: 20px;
+						padding-right: 2.5rem;
+						padding-left: 1.25rem;
 					}
 					&.dropdown-menu-right {
 						.dropdown-item {
-							padding-left: 40px;
-							padding-right: 20px;
+							padding-left: 2.5rem;
+							padding-right: 1.25rem;
 						}
 					}
 
@@ -93,7 +93,7 @@
 					min-width: inherit;
 				}
 				div a, a {
-					padding: 10px 20px 10px 20px;
+					padding: 0.625rem 1.25rem 0.625rem 1.25rem;
 					color: @color-base-90;
 					&:hover, &:active, &:focus, &:focus-within {
 						background: none;
@@ -109,15 +109,15 @@
 		}
 		&.wm-dropdown {
 			.dropdown-toggle {
-				padding-right: 5px;
-				padding-left: 5px;
+				padding-right: 0.3125rem;
+				padding-left: 0.3125rem;
 			}
 			.dropdown-menu {
-				border: 1px solid @color-base-10;
+				border: 0.0625rem solid @color-base-10;
 			}
 		}
 	}
 	form.mw-search {
-		margin: 20px 10px 0 10px;
+		margin: 1.25rem 0.625rem 0 0.625rem;
 	}
 }
