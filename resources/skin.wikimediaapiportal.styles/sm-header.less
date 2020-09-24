@@ -10,8 +10,7 @@
 			flex-grow: 0;
 			.p-navbar {
 				padding: 0;
-				background: none;
-				background-color: transparent;
+				background: transparent none;
 				height: 4.375rem;
 				.wm-navbar-button {
 					margin-left: 0.375rem !important;
@@ -25,43 +24,40 @@
 		.wm-notification-button {
 			padding-top: 0.8125rem;
 		}
-		.p-logo a .wm-logo-icon {
-			height: 4.375rem;
+		.p-logo {
+			height: 100%;
+			a .wm-logo-icon {
+				height: 4.375rem;
+			}
 		}
-		.wm-tools {
-			.flex-row-reverse {
-				height: 100%;
+		.wm-tools .flex-row-reverse {
+			height: 100%;
+			margin-right: 0.625rem;
+			.wm-header-item {
 				margin-right: 0.625rem;
-				.wm-header-item {
-					margin-right: 0.625rem;
+			}
+			.wm-user-menu {
+				span a {
+					height: 4.375rem;
 				}
-				.wm-user-menu {
-					span {
-						a {
-							height: 4.375rem;
-						}
-					}
-					.user-menu {
-						span {
-							height: 4.375rem;
-						}
-					}
+				.user-menu span {
+					height: 4.375rem;
 				}
-				a.wm-header-item {
-					padding-top: 0.8125rem;
-					margin-left: 0 !important;
-				}
-				.wm-icon-button {
+			}
+			a.wm-header-item {
+				padding-top: 0.8125rem;
+				margin-left: 0 !important;
+			}
+			.wm-icon-button {
+				height: 100%;
+				&:after {
+					width: 1.4375rem;
 					height: 100%;
-					&:after {
-						width: 1.4375rem;
-						height: 100%;
-					}
 				}
-				.wm-search-button {
-					height: 100%;
-					padding: 0.8125rem 0.3125rem 0 0;
-				}
+			}
+			.wm-search-button {
+				height: 100%;
+				padding: 0.8125rem 0.3125rem 0 0;
 			}
 		}
 		div.dropdown-menu, .p-navbar .navbar-collapse {
@@ -137,9 +133,6 @@
 					text-decoration: none;
 				}
 			}
-		}
-		.p-logo {
-			height: 100%;
 		}
 		.wm-search-container {
 			position: relative;
