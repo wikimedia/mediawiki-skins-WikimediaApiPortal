@@ -1,3 +1,4 @@
+<?php
 /**
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,31 +16,18 @@
  *
  * @file
  */
-( function () {
-	$( function () {
-		var $header = $( '.wm-header.fixed-top:visible' );
-		if ( !$header.length ) {
-			return;
-		}
-		$( 'a[href*="#"]:not([href="#"])' ).click( function () {
-			adjustScroll( $header, this.hash );
-		} );
+namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
-		$( window ).on( 'hashchange', function ( e ) {
-			adjustScroll( $header );
-		} );
-	} );
-
-	function adjustScroll( $header, hash, animate ) {
-		hash = hash || window.location.hash;
-		var $target = $( hash ),
-			headerHeight = $header.height() + 5;
-
-		if ( $target.length ) {
-			$( 'html,body' ).animate( {
-				scrollTop: $target.offset().top - headerHeight
-			}, 500 );
-			return false;
-		}
+class NavBarComponent extends Component {
+	/**
+	 * @param ?PrimaryNavComponent $primaryNav
+	 */
+	public function __construct(
+		?PrimaryNavComponent $primaryNav
+	) {
+		parent::__construct( 'NavBar' );
+		$this->args = [
+			'PrimaryNav' => $primaryNav
+		];
 	}
-}() );
+}

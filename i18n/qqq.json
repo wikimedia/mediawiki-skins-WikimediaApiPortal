@@ -19,6 +19,7 @@
 	"wikimediaapiportal-skin-button-about-wm-label": "Label for the \"About Wikimedia\" button",
 	"wikimediaapiportal-skin-button-clear-search-label": "Tooltip for the button that clears the search input",
 	"wikimediaapiportal-skin-wikimedia-info": "Info text on Wikimedia Foundation",
+	"wikimediaapiportal-skin-footer-links": "Text containing links to Wikimedia projects in sidebar format",
 	"wikimediaapiportal-skin-disclaimer": "Disclaimer text for API portal site",
 	"wikimediaapiportal-skin-page-nav-predefines": "Predefined list of page structures. Much like Sidebar",
 	"wikimediaapiportal-skin-return-to-page-label": "Label for the button that returns user to the subject page, when on talk page",

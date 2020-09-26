@@ -1,3 +1,4 @@
+<?php
 /**
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,31 +16,28 @@
  *
  * @file
  */
-( function () {
-	$( function () {
-		var $header = $( '.wm-header.fixed-top:visible' );
-		if ( !$header.length ) {
-			return;
-		}
-		$( 'a[href*="#"]:not([href="#"])' ).click( function () {
-			adjustScroll( $header, this.hash );
-		} );
+namespace MediaWiki\Skin\WikimediaApiPortal\Test\Component;
 
-		$( window ).on( 'hashchange', function ( e ) {
-			adjustScroll( $header );
-		} );
-	} );
+use MediaWiki\Skin\WikimediaApiPortal\Component\PrimaryNavComponent;
+use MediaWikiIntegrationTestCase;
 
-	function adjustScroll( $header, hash, animate ) {
-		hash = hash || window.location.hash;
-		var $target = $( hash ),
-			headerHeight = $header.height() + 5;
+/**
+ * @covers \MediaWiki\Skin\WikimediaApiPortal\Component\PrimaryNavComponent
+ */
+class PrimaryNavComponentTest extends MediaWikiIntegrationTestCase {
+	use ComponentTestTrait;
 
-		if ( $target.length ) {
-			$( 'html,body' ).animate( {
-				scrollTop: $target.offset().top - headerHeight
-			}, 500 );
-			return false;
-		}
+	public function testAllComponentArgumentPassedToRender() {
+		$component = new PrimaryNavComponent(
+			$this->newTitle(),
+			'test_id',
+			[],
+			$this->newSkin()
+		);
+		$this->assertNotNull( $component->parseTemplate( $this->newTemplateParser() ) );
 	}
-}() );
+
+	protected function getComponentClass(): string {
+		return PrimaryNavComponent::class;
+	}
+}
