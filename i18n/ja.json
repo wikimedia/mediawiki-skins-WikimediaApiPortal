@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"A2y4",
 			"Bonfire12"
 		]
 	},
@@ -8,5 +9,7 @@
 	"wikimediaapiportal-skin-button-contact-label": "お問い合わせ",
 	"wikimediaapiportal-skin-button-about-wm-label": "ウィキメディアについて",
 	"wikimediaapiportal-skin-return-to-page-label": "ページに戻る",
-	"wikimediaapiportal-skin-updated-ts-label": "最終更新 : $1"
+	"wikimediaapiportal-skin-updated-ts-label": "最終更新 : $1",
+	"wikimediaapiportal-skin-search-placeholder": "検索",
+	"tooltip-wikimediaapiportal-skin-search-title": "検索"
 }
