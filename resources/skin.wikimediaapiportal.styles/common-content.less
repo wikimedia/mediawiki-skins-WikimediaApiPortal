@@ -51,11 +51,9 @@
 	#siteNotice {
 		text-align: center;
 	}
-	#contentSub {
-		.subpages {
-			/* Dedicated navigation is present */
-			display: none;
-		}
+	#contentSub .subpages {
+		/* Dedicated navigation is present */
+		display: none;
 	}
 	.firstHeading {
 		border-bottom: none;
@@ -181,38 +179,33 @@
 			box-shadow: none !important;
 			padding: 0.8rem 3rem 0.8rem 3rem;
 			&.btn-primary {
-				background: none;
-				background-color: @color-accent-30;
+				background: @color-accent-30 none;
 				&:hover {
 					background-color: @color-accent-50;
 				}
 			}
 			&.btn-secondary {
-				background: none;
 				color: @color-accent-30;
-				background-color: @color-accent-90;
+				background: @color-accent-90 none;
 				&:hover {
 					color: @color-accent-50;
 				}
 			}
 			&.btn-success {
-				background: none;
 				border: 0.0625rem solid @color-green-30;
 				color: @color-green-50;
-				background-color: @color-green-90;
+				background: @color-green-90 none;
 			}
 			&.btn-danger {
-				background: none;
-				background-color: @color-red-30;
+				background: @color-red-30 none;
 				&:hover {
 					background-color: @color-red-50;
 				}
 			}
 			&.btn-warning {
-				background: none;
 				border: 0.0625rem solid @color-red-30;
 				color: @color-red-50;
-				background-color: @color-red-90;
+				background: @color-red-90 none;
 			}
 			&.btn-link {
 				color: @color-accent-30;
@@ -222,9 +215,8 @@
 		.card {
 			box-shadow: none;
 			border: none;
-			background: none;
 			border-radius: 0;
-			background-color: @color-accent-90;
+			background: @color-accent-90 none;
 			&.transparent {
 				background-color: transparent;
 			}
@@ -257,35 +249,31 @@
 				}
 			}
 		}
-		.pagination {
-			.page-item {
-				&.active {
-					a {
+		.pagination .page-item {
+			&.active {
+				a {
+					background-color: @color-accent-30;
+					border-color: @color-accent-30;
+					color: @color-base-90;
+					&:hover {
 						background-color: @color-accent-30;
-						border-color: @color-accent-30;
-						color: @color-base-90;
-						&:hover {
-							background-color: @color-accent-30;
-						}
 					}
 				}
-				a {
-					color: @color-base-10;
-					&:focus {
-						box-shadow: none;
-						text-decoration: none;
-					}
-					&:hover {
-						background-color: @color-base-80;
-					}
+			}
+			a {
+				color: @color-base-10;
+				&:focus {
+					box-shadow: none;
+					text-decoration: none;
+				}
+				&:hover {
+					background-color: @color-base-80;
 				}
 			}
 		}
 		.oo-ui-buttonWidget {
-			&.oo-ui-flaggedElement-primary {
-				a {
-					background-color: @color-accent-30;
-				}
+			&.oo-ui-flaggedElement-primary a {
+				background-color: @color-accent-30;
 			}
 		}
 	}

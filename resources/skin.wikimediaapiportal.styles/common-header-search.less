@@ -23,29 +23,25 @@ form.mw-search {
 				color: @color-base-30;
 			}
 		}
-		.p-search {
-			.col-1 {
-				text-align: center;
-			}
+		.p-search .col-1 {
+			text-align: center;
 		}
 	}
 }
 
-.suggestions {
-	.mw-searchSuggest-link {
-		.suggestions-result, .suggestions-special {
+.suggestions .mw-searchSuggest-link {
+	.suggestions-result, .suggestions-special {
+		color: @color-base-90;
+		background-color: @color-base-10;
+		padding: 0.3125rem;
+		.special-label {
 			color: @color-base-90;
-			background-color: @color-base-10;
-			padding: 0.3125rem;
-			.special-label {
-				color: @color-base-90;
-			}
-			.special-query {
-				color: @color-base-80;
-			}
-			&:hover {
-				background-color: @color-base-20;
-			}
+		}
+		.special-query {
+			color: @color-base-80;
+		}
+		&:hover {
+			background-color: @color-base-20;
 		}
 	}
 }
