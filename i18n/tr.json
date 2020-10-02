@@ -5,6 +5,8 @@
 			"MuratTheTurkish"
 		]
 	},
+	"action-edit-docs": "belgeyi düzenle",
+	"right-edit-docs": "Belgeyi düzenle",
 	"wikimediaapiportal-skin-desc": "Wikimedia API Geliştirici portali için özel görünüm",
 	"wikimediaapiportal-jumpto-content": "İçeriğe atla",
 	"wikimediaapiportal-skin-login-link-label": "Oturum aç",
@@ -15,5 +17,7 @@
 	"wikimediaapiportal-skin-disclaimer": "Metin [https://creativecommons.org/licenses/by-sa/3.0/deed.tr Creative Commons Atıf-Benzer Paylaşım Lisansı]; ek şartlar geçerli olabilir. Ayrıntılar için [https://meta.wikimedia.org/wiki/Terms_of_Use/tr Kullanım Şartlarına] bakın.",
 	"wikimediaapiportal-skin-page-nav-predefines": "* Gösterge paneli\n** Special:Notifications|Bildirimler\n** Special:AppManagement|Uygulama yönetimi",
 	"wikimediaapiportal-skin-return-to-page-label": "Sayfaya dön",
-	"wikimediaapiportal-skin-updated-ts-label": "$1 güncellendi"
+	"wikimediaapiportal-skin-updated-ts-label": "$1 güncellendi",
+	"wikimediaapiportal-skin-search-placeholder": "Ara",
+	"tooltip-wikimediaapiportal-skin-search-title": "Ara"
 }
