@@ -1,11 +1,13 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Alex Paskulin"
+		]
 	},
 	"skinname-wikimediaapiportal": "WikimediaAPIPortal",
 	"action-edit-docs": "edit documentation",
 	"right-edit-docs": "Edit documentation",
-	"wikimediaapiportal-skin-desc": "Custom skin for the Wikimedia API Developer portal",
+	"wikimediaapiportal-skin-desc": "Custom skin for the Wikimedia API Portal",
 	"wikimediaapiportal-skin-site-name-main": "Wikimedia",
 	"wikimediaapiportal-skin-site-name-sub": "API Portal",
 	"wikimediaapiportal-jumpto-content": "Jump to content",
@@ -16,7 +18,7 @@
 	"wikimediaapiportal-skin-wikimedia-info": "The Wikimedia Foundation, Inc is a nonprofit charitable organization dedicated to encouraging the growth, development and distribution of free, multilingual content, and to providing the full content of these wiki-based projects to the public free of charge.",
 	"wikimediaapiportal-skin-footer-links": "* Wikimedia Projects\n** https://www.wikipedia.org/|Wikipedia\n**  https://www.wikibooks.org/|Wikibooks\n** https://www.wikiversity.org/|Wikiversity\n** https://www.wikinews.org/|Wikinews\n** https://www.wiktionary.org/|Wiktionary\n** https://www.wikisource.org/|Wikisource\n** https://www.wikiquote.org/|Wikiquote\n** https://www.wikivoyage.org/|Wikivoyage\n** https://commons.wikimedia.org/|Wikimedia Commons\n** https://www.wikidata.org/|Wikidata\n** https://species.wikimedia.org/|Wikispecies\n** https://www.mediawiki.org/|MediaWiki\n* Movement affiliates\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|Wikimedia Chapters\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|Wikimedia Thematic Organizations\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|Wikimedia User Groups\n* OTHER\n** https://foundation.wikimedia.org/wiki/Terms_of_Use|Terms of use\n** https://foundation.wikimedia.org/wiki/Privacy_policy/|Privacy policy\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|Disclaimers\n** https://wikimediafoundation.org/accessibility-statement/|Accessibility statement\n** https://foundation.wikimedia.org/wiki/Cookie_statement|Cookie statement\n** https://www.mediawiki.org/wiki/Code_of_Conduct|Code of conduct\n",
 	"wikimediaapiportal-skin-disclaimer": "Text is available under the [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Attribution-ShareAlike License]; additional terms may apply. See [https://foundation.wikimedia.org/wiki/Terms_of_Use Terms of Use] for details.",
-	"wikimediaapiportal-skin-page-nav-predefines": "* Dashboard\n** Special:Notifications|Notifications\n** Special:AppManagement|App management",
+	"wikimediaapiportal-skin-page-nav-predefines": "* Dashboard\n** Special:AppManagement|My clients\n** Special:Notifications|Notifications\n** Special:Preferences|Preferences",
 	"wikimediaapiportal-skin-return-to-page-label": "Return to page",
 	"wikimediaapiportal-skin-updated-ts-label": "Updated $1",
 	"wikimediaapiportal-skin-search-placeholder": "Search",
