@@ -37,7 +37,6 @@ use MediaWiki\Skin\WikimediaApiPortal\Component\SearchButtonComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\SearchFieldComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\SecondaryNavComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent;
-use MWException;
 use NamespaceInfo;
 use PageProps;
 use TitleFactory;
@@ -96,7 +95,6 @@ class ComponentFactory {
 	/**
 	 * @param WikimediaApiPortalTemplate $template
 	 * @return MainComponent
-	 * @throws MWException
 	 */
 	public function createMainComponent(
 		WikimediaApiPortalTemplate $template
@@ -107,6 +105,7 @@ class ComponentFactory {
 		$bottomelement = Html::closeElement( 'body' ) . Html::closeElement( 'html' );
 
 		$trail = $template->getTrail();
+		$siteNotice = $template->data['sitenotice'];
 		$logo = $this->createLogoComponent( $template );
 		$navMenu = $this->createNavMenuComponent( $template );
 		$navBar = $this->createNavBarComponent( $template );
@@ -123,6 +122,7 @@ class ComponentFactory {
 			$headelement,
 			$bottomelement,
 			$trail,
+			$siteNotice,
 			$logo,
 			$navMenu,
 			$navBar,
@@ -143,7 +143,6 @@ class ComponentFactory {
 	private function createContentComponent(
 		WikimediaApiPortalTemplate $template
 	) : ContentComponent {
-		$siteNotice = $template->data['sitenotice'];
 		$title = $template->get( 'title' );
 		$subtitle = $template->get( 'subtitle' );
 		$undelete = $template->get( 'undelete' ) ?: null;
@@ -152,7 +151,6 @@ class ComponentFactory {
 		$afterContent = $template->get( 'dataAfterContent' );
 		$catlinks = $template->get( 'catlinks' );
 		return new ContentComponent(
-			$siteNotice,
 			$title,
 			$subtitle,
 			$undelete,

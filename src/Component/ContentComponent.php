@@ -20,7 +20,6 @@ namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
 class ContentComponent extends Component {
 	/**
-	 * @param string $sitenotice
 	 * @param string $title
 	 * @param string $subtitle
 	 * @param ?string $undelete
@@ -30,7 +29,6 @@ class ContentComponent extends Component {
 	 * @param string $catlinks
 	 */
 	public function __construct(
-		string $sitenotice,
 		string $title,
 		string $subtitle,
 		?string $undelete,
@@ -41,7 +39,6 @@ class ContentComponent extends Component {
 	) {
 		parent::__construct( 'Content' );
 		$this->args = [
-			'html-siteNotice' => $sitenotice,
 			'html-title' => $title,
 			'html-subtitle' => $subtitle,
 			'html-undelete' => $undelete,

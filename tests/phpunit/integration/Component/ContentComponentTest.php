@@ -28,7 +28,6 @@ class ContentComponentTest extends MediaWikiIntegrationTestCase {
 	use ComponentTestTrait;
 
 	public function testConstructorSetsArgsArrayNull() {
-		$sitenotice = 'sitenotice_test_input';
 		$title = 'title_test_input';
 		$subtitle = 'subtitle_test_input';
 		$undelete = null;
@@ -38,7 +37,6 @@ class ContentComponentTest extends MediaWikiIntegrationTestCase {
 		$catlinks = 'catlinks_test_input';
 
 		$component = new ContentComponent(
-			$sitenotice,
 			$title,
 			$subtitle,
 			$undelete,
@@ -50,7 +48,7 @@ class ContentComponentTest extends MediaWikiIntegrationTestCase {
 
 		$html = $component->parseTemplate( $this->newTemplateParser() );
 
-		$substrings = [ $sitenotice, $title, $subtitle, $bodyContent, $afterContent, $catlinks ];
+		$substrings = [ $title, $subtitle, $bodyContent, $afterContent, $catlinks ];
 		foreach ( $substrings as $substring ) {
 			$this->assertStringContainsString( $substring, $html );
 		}

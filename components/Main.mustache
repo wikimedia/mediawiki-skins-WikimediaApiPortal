@@ -50,12 +50,15 @@
 	</div>
 
 	<div class="wm-content row">
-		<div class="col-md-auto no-gutters page-nav-cnt d-none d-lg-block d-xl-block col">
+		{{#if html-siteNotice}}
+			<div id="siteNotice" class="mw-body-content w-100">{{{html-siteNotice}}}</div>
+		{{/if}}
+		<div class="page-nav-cnt d-none d-lg-block d-xl-block col-2 no-gutters">
 			{{#SecondaryNav}}
 				{{{SecondaryNav}}}
 			{{/SecondaryNav}}
 		</div>
-		<div class="col-lg wm-main-content col">
+		<div class="wm-main-content col-10">
 			{{{Content}}}
 		</div>
 	</div>
