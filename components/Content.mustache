@@ -10,9 +10,9 @@
 		<div id="contentSub" class="small">{{{html-subtitle}}}</div>
 		{{#html-undelete}}<div id="contentSub2" class="small">{{{html-undelete}}}</div>{{/html-undelete}}
 
-		{{#if args-pageTools}}
-			{{>PageTools args-pageTools}}
-		{{/if}}
+		{{#PageTools}}
+			{{{PageTools}}}
+		{{/PageTools}}
 	</div>
 
 	<div id="bodyContent" class="bodyContent">

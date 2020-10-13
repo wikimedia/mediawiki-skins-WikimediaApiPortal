@@ -1,11 +1,26 @@
 <?php
-
+/**
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ *
+ * @file
+ */
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
 use OutputPage;
 use QuickTemplate;
 use SkinTemplate;
-use Title;
 
 class Skin extends SkinTemplate {
 	public $skinname = 'wikimediaapiportal';
@@ -19,48 +34,6 @@ class Skin extends SkinTemplate {
 
 		// Enable responsive behaviour on mobile browsers
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, shrink-to-fit=no' );
-	}
-
-	/** @return string */
-	public function getRequestedAction() {
-		return $this->getRequest()->getRawVal( 'action', 'view' );
-	}
-
-	/** @return bool */
-	public function isViewAction() {
-		return $this->getRequestedAction() === 'view';
-	}
-
-	/**
-	 * Whether the link points to the current title (or a subpage thereof).
-	 * @param string $link
-	 * @return bool
-	 */
-	public function isActiveLink( string $link ) {
-		$currentTitle = $this->getTitle();
-		if ( !$currentTitle ) {
-			return false;
-		}
-		// Match logic in Skin::addToSidebarPlain
-		$currentLink = $currentTitle->fixSpecialName()->getLinkURL();
-
-		return $link === $currentLink || strpos( $currentLink, "$link/" ) === 0;
-	}
-
-	/**
-	 * Whether the Title points to the current title (or a subpage thereof).
-	 * @param Title $title
-	 * @return bool
-	 */
-	public function isActiveTitle( Title $title ) {
-		$currentTitle = $this->getTitle();
-		if ( !$currentTitle ) {
-			return false;
-		}
-		// Match logic in Skin::addToSidebarPlain
-		$currentTitle = $currentTitle->fixSpecialName();
-
-		return $title->equals( $currentTitle ) || $currentTitle->isSubpageOf( $title );
 	}
 
 	/** @return QuickTemplate */
@@ -83,7 +56,8 @@ class Skin extends SkinTemplate {
 			'skin.wikimediaapiportal.styles'
 		] );
 		$output->addModules( "skin.wikimediaapiportal.scripts" );
-		if ( $this->getTitle()->isMainPage() && $this->isViewAction() ) {
+		if ( $this->getTitle()->isMainPage() &&
+			$this->getRequest()->getRawVal( 'action', 'view' ) === 'view' ) {
 			$output->addModuleStyles( [
 				"skin.wikimediaapiportal.mainpage",
 			] );

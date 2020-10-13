@@ -25,6 +25,9 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Skin\\WikimediaApiPortal\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Skin\\WikimediaApiPortal\\Test\\": "tests/phpunit/integration/"
+	},
 	"AvailableRights": [
 		"edit-docs"
 	],
@@ -33,6 +36,9 @@
 			"edit-docs": true
 		}
 	},
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
 	"ResourceModules": {
 		"skin.wikimediaapiportal.styles": {
 			"class": "ResourceLoaderSkinModule",

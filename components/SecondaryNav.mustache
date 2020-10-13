@@ -2,7 +2,7 @@
 {{#each items}}
 	<li class="nav-item{{#isActive}} active{{/isActive}}"><a class="nav-link" href="{{href}}">{{text}}</a>
 		{{#if subpages}}
-			{{>PageNav items=subpages isSub=1}}
+			{{>SecondaryNav items=subpages isSub=1}}
 		{{/if}}
 	</li>
 {{/each}}

@@ -1,0 +1,22 @@
+<nav class="p-navbar collapsible navbar navbar-expand-lg" role="navigation" id="mw-navigation--small">
+	<button class="wm-navbar-button" data-toggle="collapse" data-target="#mw-navigation--small--collapse">
+		{{{menuIcon}}}
+	</button>
+	<div class="collapse navbar-collapse" id="mw-navigation--small--collapse">
+		<div class="navbar-nav">
+			{{#SecondaryNav}}
+				{{{PageToolsMobile}}}
+				<div class="wm-main-page">
+					<a href="{{mainpage-href}}">
+						{{{previousIcon}}}
+						{{mainpage-text}}
+					</a>
+				</div>
+				{{{SecondaryNav}}}
+			{{/SecondaryNav}}
+			{{^SecondaryNav}}
+				{{{PrimaryNav}}}
+			{{/SecondaryNav}}
+		</div>
+	</div>
+</nav>

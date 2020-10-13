@@ -1,3 +1,4 @@
+<?php
 /**
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,31 +16,21 @@
  *
  * @file
  */
-( function () {
-	$( function () {
-		var $header = $( '.wm-header.fixed-top:visible' );
-		if ( !$header.length ) {
-			return;
-		}
-		$( 'a[href*="#"]:not([href="#"])' ).click( function () {
-			adjustScroll( $header, this.hash );
-		} );
+namespace MediaWiki\Skin\WikimediaApiPortal;
 
-		$( window ).on( 'hashchange', function ( e ) {
-			adjustScroll( $header );
-		} );
-	} );
+use ExtensionRegistry;
+use MediaWiki\MediaWikiServices;
 
-	function adjustScroll( $header, hash, animate ) {
-		hash = hash || window.location.hash;
-		var $target = $( hash ),
-			headerHeight = $header.height() + 5;
-
-		if ( $target.length ) {
-			$( 'html,body' ).animate( {
-				scrollTop: $target.offset().top - headerHeight
-			}, 500 );
-			return false;
-		}
-	}
-}() );
+return [
+	'WAPSkinComponentFactory' => function ( MediaWikiServices $services ) : ComponentFactory {
+		return new ComponentFactory(
+			$services->getMainConfig(),
+			$services->getMessageFormatterFactory(),
+			$services->getTitleFactory(),
+			$services->getNamespaceInfo(),
+			$services->getPageProps(),
+			$services->getPermissionManager(),
+			ExtensionRegistry::getInstance()
+		);
+	},
+];

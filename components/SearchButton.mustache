@@ -1,0 +1,17 @@
+<div class="wm-search-button wm-header-item">
+	{{{searchButton}}}
+</div>
+<form class="mw-search wm-hidden" action="{{wgScript}}">
+	<div class="row no-gutters wm-header-border-box p-search" role="search">
+		<div class="col col-1">
+			{{{searchSubmitButton}}}
+		</div>
+		<div class="col col-10">
+			<input name="search" placeholder="{{searchPlaceholder}}" title="{{searchTooltip}}" class="form-control" autocomplete="off">
+		</div>
+		<div class="col col-1">
+			{{{searchClearButton}}}
+		</div>
+	</div>
+	<input type="hidden" value="Special:Search" name="title">
+</form>
