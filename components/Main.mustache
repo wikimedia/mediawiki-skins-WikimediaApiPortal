@@ -53,12 +53,12 @@
 		{{#if html-siteNotice}}
 			<div id="siteNotice" class="mw-body-content w-100">{{{html-siteNotice}}}</div>
 		{{/if}}
-		<div class="page-nav-cnt d-none d-lg-block d-xl-block col-2 no-gutters">
-			{{#SecondaryNav}}
+		{{#SecondaryNav}}
+			<div class="page-nav-cnt d-none d-lg-block d-xl-block col-2 no-gutters">
 				{{{SecondaryNav}}}
-			{{/SecondaryNav}}
-		</div>
-		<div class="wm-main-content col-10">
+			</div>
+		{{/SecondaryNav}}
+		<div class="wm-main-content col{{#SecondaryNav}}-10{{/SecondaryNav}}">
 			{{{Content}}}
 		</div>
 	</div>
