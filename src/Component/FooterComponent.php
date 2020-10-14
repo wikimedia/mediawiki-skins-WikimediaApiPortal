@@ -49,7 +49,7 @@ class FooterComponent extends MessageComponent {
 		}
 
 		$this->args = [
-			'info' => $contextSource->msg( 'wikimediaapiportal-skin-wikimedia-info' )->plain(),
+			'info' => $contextSource->msg( 'wikimediaapiportal-skin-wikimedia-info' )->parse(),
 			'contact' => [
 				'text' => $this->formatMessage( 'wikimediaapiportal-skin-button-contact-label' ),
 				'href' => 'https://wikimediafoundation.org/about/contact/'
@@ -59,7 +59,7 @@ class FooterComponent extends MessageComponent {
 				'href' => 'https://wikimediafoundation.org/about/'
 			],
 			'links' => $links,
-			'disclaimer' => $contextSource->msg( 'wikimediaapiportal-skin-disclaimer' )->plain()
+			'disclaimer' => $contextSource->msg( 'wikimediaapiportal-skin-disclaimer' )->parse()
 		];
 	}
 }

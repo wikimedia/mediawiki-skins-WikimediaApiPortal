@@ -70,8 +70,8 @@ trait ComponentMockTrait {
 		$skin->method( 'getRequest' )->willReturn( $request );
 
 		$skin->method( 'msg' )->willReturnCallback( function ( $msgKey ) {
-			$message = $this->createNoOpMock( Message::class, [ 'plain' ] );
-			$message->method( 'plain' )->willReturn( $msgKey );
+			$message = $this->createNoOpMock( Message::class, [ 'parse' ] );
+			$message->method( 'parse' )->willReturn( $msgKey );
 			return $message;
 		} );
 
