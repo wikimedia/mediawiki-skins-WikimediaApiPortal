@@ -37,6 +37,7 @@ use MediaWiki\Skin\WikimediaApiPortal\Component\SearchButtonComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\SearchFieldComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\SecondaryNavComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent;
+use MediaWiki\Special\SpecialPageFactory;
 use NamespaceInfo;
 use PageProps;
 use TitleFactory;
@@ -52,6 +53,9 @@ class ComponentFactory {
 
 	/** @var TitleFactory */
 	private $titleFactory;
+
+	/** @var SpecialPageFactory */
+	private $specialPageFactory;
 
 	/** @var NamespaceInfo */
 	private $namespaceInfo;
@@ -69,6 +73,7 @@ class ComponentFactory {
 	 * @param Config $config
 	 * @param IMessageFormatterFactory $messageFormatterFactory
 	 * @param TitleFactory $titleFactory
+	 * @param SpecialPageFactory $specialPageFactory
 	 * @param NamespaceInfo $namespaceInfo
 	 * @param PageProps $pageProps
 	 * @param PermissionManager $permissionManager
@@ -78,6 +83,7 @@ class ComponentFactory {
 		Config $config,
 		IMessageFormatterFactory $messageFormatterFactory,
 		TitleFactory $titleFactory,
+		SpecialPageFactory $specialPageFactory,
 		NamespaceInfo $namespaceInfo,
 		PageProps $pageProps,
 		PermissionManager $permissionManager,
@@ -86,6 +92,7 @@ class ComponentFactory {
 		$this->config = $config;
 		$this->messageFormatterFactory = $messageFormatterFactory;
 		$this->titleFactory = $titleFactory;
+		$this->specialPageFactory = $specialPageFactory;
 		$this->namespaceInfo = $namespaceInfo;
 		$this->pageProps = $pageProps;
 		$this->permissionManager = $permissionManager;
@@ -208,18 +215,14 @@ class ComponentFactory {
 	) : SecondaryNavComponent {
 		$skin = $template->getSkin();
 		$title = $skin->getTitle();
-		$predefined = [];
-		$skin->addToSidebarPlain(
-			$predefined,
-			$this->messageFormatterFactory->getTextFormatter(
-				$skin->getLanguage()->getCode()
-			)->format( new MessageValue( 'wikimediaapiportal-skin-page-nav-predefines' ) )
-		);
 		return new SecondaryNavComponent(
+			new ServiceOptions( SecondaryNavComponent::CONSTRUCTOR_OPTIONS, $this->config ),
+			$this->messageFormatterFactory,
+			$skin,
 			$title,
-			$predefined,
 			$this->namespaceInfo,
 			$this->titleFactory,
+			$this->specialPageFactory,
 			$this->pageProps
 		);
 	}
@@ -266,10 +269,11 @@ class ComponentFactory {
 		$title = $skin->getTitle();
 		$personalUrls = $template->data['personal_urls'];
 		return new UserMenuComponent(
+			new ServiceOptions( UserMenuComponent::CONSTRUCTOR_OPTIONS, $this->config ),
 			$this->messageFormatterFactory,
 			$skin,
 			$this->titleFactory,
-			new ServiceOptions( UserMenuComponent::CONSTRUCTOR_OPTIONS, $this->config ),
+			$this->specialPageFactory,
 			$user,
 			$title,
 			$personalUrls

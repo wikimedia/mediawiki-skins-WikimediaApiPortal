@@ -78,6 +78,7 @@ class ComponentFactoryTest extends MediaWikiIntegrationTestCase {
 			$this->newConfig(),
 			$this->newMessageFormatterFactory(),
 			$this->newTitleFactory(),
+			$this->newSpecialPageFactory(),
 			$this->newNamespaceInfo(),
 			$this->newPageProps(),
 			$this->newPermissionManager(),

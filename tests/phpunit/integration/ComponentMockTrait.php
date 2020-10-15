@@ -30,9 +30,11 @@ use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Skin\WikimediaApiPortal\Skin;
 use MediaWiki\Skin\WikimediaApiPortal\TemplateParser;
 use MediaWiki\Skin\WikimediaApiPortal\WikimediaApiPortalTemplate;
+use MediaWiki\Special\SpecialPageFactory;
 use Message;
 use NamespaceInfo;
 use PageProps;
+use SpecialPage;
 use Title;
 use TitleFactory;
 use User;
@@ -149,6 +151,30 @@ trait ComponentMockTrait {
 		);
 		$titleFactory->method( 'newMainPage' )->willReturn( $this->newTitle() );
 		return $titleFactory;
+	}
+
+	/**
+	 * @return SpecialPage
+	 */
+	private function newSpecialPage() : SpecialPage {
+		$specialPage = $this->createNoOpMock(
+			SpecialPage::class,
+			[ 'getDescription' ]
+		);
+		$specialPage->method( 'getDescription' )->willReturn( 'special page description' );
+		return $specialPage;
+	}
+
+	/**
+	 * @return SpecialPageFactory
+	 */
+	private function newSpecialPageFactory() : SpecialPageFactory {
+		$specialPageFactory = $this->createNoOpMock(
+			SpecialPageFactory::class,
+			[ 'getPage' ]
+		);
+		$specialPageFactory->method( 'getPage' )->willReturn( $this->newSpecialPage() );
+		return $specialPageFactory;
 	}
 
 	/**

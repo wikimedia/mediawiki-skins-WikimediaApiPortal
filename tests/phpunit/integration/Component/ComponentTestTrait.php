@@ -26,6 +26,7 @@ use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Skin\WikimediaApiPortal\Component\Component;
 use MediaWiki\Skin\WikimediaApiPortal\Skin;
 use MediaWiki\Skin\WikimediaApiPortal\Test\ComponentMockTrait;
+use MediaWiki\SpecialPage\SpecialPageFactory;
 use NamespaceInfo;
 use PageProps;
 use ReflectionMethod;
@@ -66,6 +67,7 @@ trait ComponentTestTrait {
 			[ IMessageFormatterFactory::class, 'newMessageFormatterFactory' ],
 			[ IContextSource::class, 'newContextSource' ],
 			[ TitleFactory::class, 'newTitleFactory' ],
+			[ SpecialPageFactory::class, 'newSpecialPageFactory' ],
 			[ Title::class, 'newTitle' ],
 			[ ExtensionRegistry::class, 'newExtensionRegistry' ],
 			[ User::class, 'newUser' ],

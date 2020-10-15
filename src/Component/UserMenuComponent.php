@@ -21,6 +21,7 @@ namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 use Html;
 use IContextSource;
 use MediaWiki\Config\ServiceOptions;
+use MediaWiki\SpecialPage\SpecialPageFactory;
 use Message;
 use OOUI\IconWidget;
 use SpecialPage;
@@ -30,27 +31,29 @@ use User;
 use Wikimedia\Message\IMessageFormatterFactory;
 
 class UserMenuComponent extends MessageComponent {
-	// TODO: take DevCenter structure from config
 	public const CONSTRUCTOR_OPTIONS = [
-		];
+		'WMAPIPExtraUserMenuSpecialPages',
+	];
 
 	// Personal url keys that will be allowed in the user menu
 	private const PERSONAL_LINKS_ALLOWED_LIST = [ 'logout', 'preferences' ];
 
 	/**
+	 * @param ServiceOptions $options
 	 * @param IMessageFormatterFactory $messageFormatterFactory
 	 * @param IContextSource $contextSource
 	 * @param TitleFactory $titleFactory
-	 * @param ServiceOptions $options
+	 * @param SpecialPageFactory $specialPageFactory
 	 * @param User $user
 	 * @param Title $title
 	 * @param array $personalUrls
 	 */
 	public function __construct(
+		ServiceOptions $options,
 		IMessageFormatterFactory $messageFormatterFactory,
 		IContextSource $contextSource,
 		TitleFactory $titleFactory,
-		ServiceOptions $options,
+		SpecialPageFactory $specialPageFactory,
 		User $user,
 		Title $title,
 		array $personalUrls
@@ -60,7 +63,9 @@ class UserMenuComponent extends MessageComponent {
 			$messageFormatterFactory,
 			$contextSource
 		);
+
 		$options->assertRequiredOptions( self::CONSTRUCTOR_OPTIONS );
+
 		if ( $user->isAnon() ) {
 			$this->args = [
 				'isAnon' => true,
@@ -74,13 +79,17 @@ class UserMenuComponent extends MessageComponent {
 
 		$items = [];
 
-		// This behaviour may change later on, when other DevCenter functionality is implemented
-		$devCenterTitle = $titleFactory->newFromText( 'Dashboard' );
-		$items[] = Html::element(
-			'a',
-			[ 'href' => $devCenterTitle->getLocalURL() ],
-			$devCenterTitle->getText()
-		);
+		$extraSpecialPages = $options->get( 'WMAPIPExtraUserMenuSpecialPages' );
+		foreach ( $extraSpecialPages as $specialPage ) {
+			$title = $titleFactory->newFromText( $specialPage, NS_SPECIAL );
+			if ( $title ) {
+				$items[] = Html::element(
+					'a',
+					[ 'href' => $title->getLocalURL() ],
+					$specialPageFactory->getPage( $specialPage )->getDescription()
+				);
+			}
+		}
 
 		foreach ( $personalUrls as $key => $data ) {
 			if ( in_array( $key, self::PERSONAL_LINKS_ALLOWED_LIST ) ) {

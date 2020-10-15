@@ -27,6 +27,7 @@ return [
 			$services->getMainConfig(),
 			$services->getMessageFormatterFactory(),
 			$services->getTitleFactory(),
+			$services->getSpecialPageFactory(),
 			$services->getNamespaceInfo(),
 			$services->getPageProps(),
 			$services->getPermissionManager(),

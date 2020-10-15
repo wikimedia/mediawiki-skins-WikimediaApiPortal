@@ -69,5 +69,15 @@
 		"localBasePath": "resources",
 		"remoteSkinPath": "WikimediaApiPortal/resources"
 	},
+	"config": {
+		"WMAPIPExtraUserMenuSpecialPages": {
+			"value": [],
+			"description": "@var array Names of special pages to add as localized links to the user menu. Do not need to start with 'Special:'."
+		},
+		"WMAPIPSidebarSpecialPages": {
+			"value": [],
+			"description": "@var array Names of special pages that form a 'dashboard' on the navigation sidebar. If one of those pages is being rendered, the navigation sidebar will be shown, and the given page will be highlighted. This provides an easy way to navigate between a small set of frequently used special pages on the site. Do not need to start with 'Special:'."
+		}
+	},
 	"manifest_version": 2
 }

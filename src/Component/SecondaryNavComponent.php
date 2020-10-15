@@ -18,31 +18,56 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
+use IContextSource;
+use MediaWiki\Config\ServiceOptions;
+use MediaWiki\Special\SpecialPageFactory;
 use NamespaceInfo;
 use PageProps;
 use Title;
 use TitleFactory;
+use Wikimedia\Message\IMessageFormatterFactory;
 
-class SecondaryNavComponent extends Component {
+class SecondaryNavComponent extends MessageComponent {
+	public const CONSTRUCTOR_OPTIONS = [
+		'WMAPIPSidebarSpecialPages',
+	];
+
 	/**
+	 * @param ServiceOptions $options
+	 * @param IMessageFormatterFactory $messageFormatterFactory
+	 * @param IContextSource $contextSource
 	 * @param Title $title
-	 * @param array $predefined
 	 * @param NamespaceInfo $namespaceInfo
 	 * @param TitleFactory $titleFactory
+	 * @param SpecialPageFactory $specialPageFactory
 	 * @param PageProps $pageProps
 	 */
 	public function __construct(
+		ServiceOptions $options,
+		IMessageFormatterFactory $messageFormatterFactory,
+		IContextSource $contextSource,
 		Title $title,
-		array $predefined,
 		NamespaceInfo $namespaceInfo,
 		TitleFactory $titleFactory,
+		SpecialPageFactory $specialPageFactory,
 		PageProps $pageProps
 	) {
-		parent::__construct( 'SecondaryNav' );
+		parent::__construct( 'SecondaryNav', $messageFormatterFactory, $contextSource );
 
-		$parsed = $this->parsePredefinedNavStructure( $title, $predefined );
-		if ( $parsed ) {
-			$this->args = [ 'items' => $parsed ];
+		$options->assertRequiredOptions( self::CONSTRUCTOR_OPTIONS );
+
+		if ( $title->isSpecialPage() ) {
+			$specialSidebar = $this->getSpecialSidebar(
+				$title,
+				$options->get( 'WMAPIPSidebarSpecialPages' ),
+				$titleFactory,
+				$specialPageFactory
+			);
+			if ( $specialSidebar ) {
+				$this->args = [
+					'items' => $specialSidebar
+				];
+			}
 			return;
 		}
 
@@ -65,6 +90,46 @@ class SecondaryNavComponent extends Component {
 		$this->args = [
 			'items' => $this->getPageNav( $title, $root, $pageProps )
 		];
+	}
+
+	/**
+	 * @param Title $currentTitle
+	 * @param array $sidebarSpecialPages
+	 * @param TitleFactory $titleFactory
+	 * @param SpecialPageFactory $specialPageFactory
+	 * @return ?array
+	 */
+	private function getSpecialSidebar(
+		Title $currentTitle,
+		array $sidebarSpecialPages,
+		TitleFactory $titleFactory,
+		SpecialPageFactory $specialPageFactory
+	) : ?array {
+		$items = [];
+		$found = false;
+		foreach ( $sidebarSpecialPages as $specialPage ) {
+			$title = $titleFactory->newFromText( $specialPage, NS_SPECIAL );
+			if ( $title ) {
+				if ( $this->isActiveTitle( $currentTitle, $title ) ) {
+					$found = true;
+					$isActive = true;
+					$href = '#';
+				} else {
+					$isActive = false;
+					$href = $title->getLocalURL();
+				}
+				$items[] = [
+					'text' => $specialPageFactory->getPage( $specialPage )->getDescription(),
+					'href' => $href,
+					'isActive' => $isActive,
+					'subpages' => false
+				];
+			}
+		}
+		if ( $found ) {
+			return $items;
+		}
+		return null;
 	}
 
 	/**
@@ -107,57 +172,13 @@ class SecondaryNavComponent extends Component {
 	}
 
 	/**
-	 * Get page navigation hierarchy from predefined list
-	 * @param Title $title
-	 * @param array $predefined
-	 * @return ?array
-	 */
-	private function parsePredefinedNavStructure( Title $title, array $predefined ) : ?array {
-		foreach ( $predefined as $root => $subpages ) {
-			$currentURL = $title->getLocalURL();
-			$matches = array_filter( $subpages, function ( $item ) use ( $currentURL ) {
-				return $item['href'] === $currentURL;
-			} );
-			if ( count( $matches ) ) {
-				foreach ( $subpages as &$subpage ) {
-					$subpage['isActive'] = $this->isActiveLink( $title, $subpage['href'] );
-					$subpage['subpages'] = false;
-				}
-				return [ [
-					'text' => $root,
-					'href' => '#',
-					'isActive' => true,
-					'subpages' => $subpages
-				] ];
-			}
-		}
-
-		return null;
-	}
-
-	/**
-	 * Whether the link points to the current title (or a subpage thereof).
-	 * @param Title $title
-	 * @param string $link
-	 * @return bool
-	 */
-	private function isActiveLink( Title $title, string $link ) : bool {
-		// Match logic in Skin::addToSidebarPlain
-		$currentLink = $title->fixSpecialName()->getLinkURL();
-
-		return $link === $currentLink || strpos( $currentLink, "$link/" ) === 0;
-	}
-
-	/**
 	 * Whether the Title points to the current title (or a subpage thereof).
 	 * @param Title $currentTitle
 	 * @param Title $title
 	 * @return bool
 	 */
 	private function isActiveTitle( Title $currentTitle, Title $title ) : bool {
-		// Match logic in Skin::addToSidebarPlain
 		$currentTitle = $currentTitle->fixSpecialName();
-
 		return $currentTitle->equals( $title ) || $currentTitle->isSubpageOf( $title );
 	}
 }
