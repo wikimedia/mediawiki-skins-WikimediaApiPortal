@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"Mpayansilva"
 		]
 	},
+	"action-edit-docs": "editar la documentación",
+	"right-edit-docs": "Editar la documentación",
 	"wikimediaapiportal-skin-login-link-label": "Acceder",
 	"wikimediaapiportal-skin-button-contact-label": "Contacto",
 	"wikimediaapiportal-skin-button-about-wm-label": "Acerca de Wikimedia",

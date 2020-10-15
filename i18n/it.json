@@ -5,6 +5,8 @@
 			"Gianfranco"
 		]
 	},
+	"action-edit-docs": "modificare documentazione",
+	"right-edit-docs": "Modifica documentazione",
 	"wikimediaapiportal-skin-desc": "Skin personalizzata per il portale dei Developer di Wikimedia API",
 	"wikimediaapiportal-jumpto-content": "Vai al contenuto",
 	"wikimediaapiportal-skin-login-link-label": "Entra",
