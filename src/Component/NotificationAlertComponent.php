@@ -19,7 +19,7 @@
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
 use ExtensionRegistry;
-use OOUI\IconWidget;
+use OOUI\ButtonWidget;
 use User;
 
 class NotificationAlertComponent extends Component {
@@ -58,9 +58,12 @@ class NotificationAlertComponent extends Component {
 		$this->args = [
 			'hasCount' => $notificationAlert['data']['counter-num'] > 0,
 			'count' => $notificationAlert['data']['counter-text'],
-			'href' => $notificationAlert['href'],
-			'label' => $notificationAlert['text']->text(),
-			'notificationIcon' => new IconWidget( [ 'icon' => 'bellOutline' ] )
+			'notificationButton' => new ButtonWidget( [
+				'icon' => 'bellOutline',
+				'title' => $notificationAlert['text']->text(),
+				'framed' => false,
+				'href' => $notificationAlert['href']
+			] )
 		];
 	}
 }
