@@ -18,6 +18,7 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Test\Component;
 
+use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Skin\WikimediaApiPortal\Component\SearchFieldComponent;
 use MediaWikiIntegrationTestCase;
 use OOUI\BlankTheme;
@@ -38,5 +39,17 @@ class SearchFieldComponentTest extends MediaWikiIntegrationTestCase {
 
 	protected function getComponentClass(): string {
 		return SearchFieldComponent::class;
+	}
+
+	/**
+	 * @return ServiceOptions
+	 */
+	protected function newServiceOptions() : ServiceOptions {
+		return new ServiceOptions(
+			SearchFieldComponent::CONSTRUCTOR_OPTIONS,
+			[
+				'Script' => 'script'
+			]
+		);
 	}
 }

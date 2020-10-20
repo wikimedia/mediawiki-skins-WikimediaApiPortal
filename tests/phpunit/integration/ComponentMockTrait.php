@@ -223,19 +223,6 @@ trait ComponentMockTrait {
 	}
 
 	/**
-	 * @return ServiceOptions
-	 */
-	private function newServiceOptions() : ServiceOptions {
-		$serviceOptions = $this->createNoOpMock(
-			ServiceOptions::class,
-			[ 'assertRequiredOptions', 'get' ]
-		);
-		$serviceOptions->method( 'assertRequiredOptions' )->willReturn( true );
-		$serviceOptions->method( 'get' )->will( $this->returnArgument( 0 ) );
-		return $serviceOptions;
-	}
-
-	/**
 	 * @return Config
 	 */
 	private function newConfig() : Config {
@@ -284,6 +271,13 @@ trait ComponentMockTrait {
 		$parser = new TemplateParser( __DIR__ . '/../../../components', new EmptyBagOStuff() );
 		$parser->enableRecursivePartials( true );
 		return $parser;
+	}
+
+	/**
+	 * @return ServiceOptions
+	 */
+	protected function newServiceOptions() : ServiceOptions {
+		Assert::fail( 'Must be overridden if required' );
 	}
 
 	/**

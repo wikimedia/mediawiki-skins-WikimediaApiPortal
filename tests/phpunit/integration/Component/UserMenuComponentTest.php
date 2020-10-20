@@ -18,8 +18,11 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Test\Component;
 
+use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent;
 use MediaWikiIntegrationTestCase;
+use OOUI\BlankTheme;
+use OOUI\Theme;
 
 /**
  * @covers \MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent
@@ -27,7 +30,52 @@ use MediaWikiIntegrationTestCase;
 class UserMenuComponentTest extends MediaWikiIntegrationTestCase {
 	use ComponentTestTrait;
 
+	public function setUp() : void {
+		parent::setUp();
+
+		// enable OOUI
+		Theme::setSingleton( new BlankTheme() );
+	}
+
 	protected function getComponentClass(): string {
 		return UserMenuComponent::class;
+	}
+
+	/**
+	 * @return ServiceOptions
+	 */
+	protected function newServiceOptions() : ServiceOptions {
+		return new ServiceOptions(
+			UserMenuComponent::CONSTRUCTOR_OPTIONS,
+			[
+				'WMAPIPExtraUserMenuSpecialPages' => []
+			]
+		);
+	}
+
+	public function testInvalidSpecialPageConfigured() {
+		$component = new UserMenuComponent(
+			new ServiceOptions(
+				UserMenuComponent::CONSTRUCTOR_OPTIONS,
+				[
+					'WMAPIPExtraUserMenuSpecialPages' => [
+						'Version',
+						'Non_Existent',
+						'AllPages'
+					]
+				]
+			),
+			$this->newMessageFormatterFactory(),
+			$this->newContextSource(),
+			$this->getServiceContainer()->getTitleFactory(),
+			$this->getServiceContainer()->getSpecialPageFactory(),
+			$this->getTestUser()->getUser(),
+			$this->getServiceContainer()->getTitleFactory()->makeTitle( NS_SPECIAL, 'Version/Test' ),
+			[]
+		);
+		$output = $component->parseTemplate( $this->newTemplateParser() );
+		$this->assertStringContainsString( 'Version', $output );
+		$this->assertStringContainsString( 'AllPages', $output );
+		$this->assertStringNotContainsString( 'Non_Existent', $output );
 	}
 }

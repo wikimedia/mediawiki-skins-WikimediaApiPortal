@@ -18,6 +18,7 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Test\Component;
 
+use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Skin\WikimediaApiPortal\Component\SearchButtonComponent;
 use MediaWikiIntegrationTestCase;
 use OOUI\BlankTheme;
@@ -38,5 +39,17 @@ class SearchButtonComponentTest extends MediaWikiIntegrationTestCase {
 
 	protected function getComponentClass(): string {
 		return SearchButtonComponent::class;
+	}
+
+	/**
+	 * @return ServiceOptions
+	 */
+	protected function newServiceOptions() : ServiceOptions {
+		return new ServiceOptions(
+			SearchButtonComponent::CONSTRUCTOR_OPTIONS,
+			[
+				'Script' => 'script'
+			]
+		);
 	}
 }

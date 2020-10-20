@@ -32,6 +32,18 @@ class SecondaryNavComponentTest extends MediaWikiIntegrationTestCase {
 		return SecondaryNavComponent::class;
 	}
 
+	/**
+	 * @return ServiceOptions
+	 */
+	protected function newServiceOptions() : ServiceOptions {
+		return new ServiceOptions(
+			SecondaryNavComponent::CONSTRUCTOR_OPTIONS,
+			[
+				'WMAPIPSidebarSpecialPages' => []
+			]
+		);
+	}
+
 	public function testInvalidSpecialPageConfigured() {
 		$component = new SecondaryNavComponent(
 			new ServiceOptions(
