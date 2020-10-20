@@ -3,6 +3,7 @@
 		"authors": [
 			"Gomoko",
 			"Thibaut120094",
+			"Verdy p",
 			"Wladek92"
 		]
 	},
@@ -15,8 +16,8 @@
 	"wikimediaapiportal-skin-button-about-wm-label": "À propos de Wikimédia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Effacer la recherche",
 	"wikimediaapiportal-skin-wikimedia-info": "La fondation Wikimédia, Inc. est une organisation à but non lucratif destinée à encourager la croissance, le développement et la distribution de contenu libre et multi-langues, et à rendre disponible au public sans frais, le contenu complet de ces projets basés sur wiki.",
+	"wikimediaapiportal-skin-footer-links": "* Projets Wikimédia\n** https://www.wikipedia.org/|Wikipédia\n**  https://www.wikibooks.org/|Wikibooks\n** https://www.wikiversity.org/|Wikiversité\n** https://www.wikinews.org/|Wikinews\n** https://www.wiktionary.org/|Wiktionnaire\n** https://www.wikisource.org/|Wikisource\n** https://www.wikiquote.org/|Wikiquote\n** https://www.wikivoyage.org/|Wikivoyage\n** https://commons.wikimedia.org/|Wikimedia Commons\n** https://www.wikidata.org/|Wikidata\n** https://species.wikimedia.org/|Wikispecies\n** https://www.mediawiki.org/|MediaWiki\n* Affiliés au Mouvement\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|Chapitres Wikimédia\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|Organisation thématiques Wikimédia\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|Groupes d’utilisateurs Wikimédia \n* Autres\n** https://foundation.wikimedia.org/wiki/Terms_of_Use|Conditions d’utilisation\n** https://foundation.wikimedia.org/wiki/Privacy_policy/|Politique de confidentialité\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|Dénis\n** https://wikimediafoundation.org/accessibility-statement/|Déclaration concernant l’accessibilité\n** https://foundation.wikimedia.org/wiki/Cookie_statement|Déclaration concernant les cookies\n** https://www.mediawiki.org/wiki/Code_of_Conduct|Code de conduite",
 	"wikimediaapiportal-skin-disclaimer": "Le texte est disponible sous la [https://creativecommons.org/licenses/by-sa/3.0/ licence Creative Commons Attribution-ShareAlike] ; des conditions supplémentaires peuvent s’appliquer. Voir [https://foundation.wikimedia.org/wiki/Terms_of_Use les conditions d’utilisation] pour plus de détails.",
-	"wikimediaapiportal-skin-page-nav-predefines": "* Tableau de bord\n** Special:Notifications|Mes clients\n** Special:Preferences|Préférences",
 	"wikimediaapiportal-skin-return-to-page-label": "Revenir à la page",
 	"wikimediaapiportal-skin-updated-ts-label": "$1 mis à jour",
 	"wikimediaapiportal-skin-search-placeholder": "Chercher",
