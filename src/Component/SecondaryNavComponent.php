@@ -107,9 +107,10 @@ class SecondaryNavComponent extends MessageComponent {
 	) : ?array {
 		$items = [];
 		$found = false;
-		foreach ( $sidebarSpecialPages as $specialPage ) {
-			$title = $titleFactory->newFromText( $specialPage, NS_SPECIAL );
-			if ( $title ) {
+		foreach ( $sidebarSpecialPages as $specialPageName ) {
+			$title = $titleFactory->newFromText( $specialPageName, NS_SPECIAL );
+			$specialPageObj = $specialPageFactory->getPage( $specialPageName );
+			if ( $title && $specialPageObj ) {
 				if ( $this->isActiveTitle( $currentTitle, $title ) ) {
 					$found = true;
 					$isActive = true;
@@ -119,7 +120,7 @@ class SecondaryNavComponent extends MessageComponent {
 					$href = $title->getLocalURL();
 				}
 				$items[] = [
-					'text' => $specialPageFactory->getPage( $specialPage )->getDescription(),
+					'text' => $specialPageObj->getDescription(),
 					'href' => $href,
 					'isActive' => $isActive,
 					'subpages' => false

@@ -18,6 +18,7 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Test\Component;
 
+use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Skin\WikimediaApiPortal\Component\SecondaryNavComponent;
 use MediaWikiIntegrationTestCase;
 
@@ -29,5 +30,31 @@ class SecondaryNavComponentTest extends MediaWikiIntegrationTestCase {
 
 	protected function getComponentClass(): string {
 		return SecondaryNavComponent::class;
+	}
+
+	public function testInvalidSpecialPageConfigured() {
+		$component = new SecondaryNavComponent(
+			new ServiceOptions(
+				SecondaryNavComponent::CONSTRUCTOR_OPTIONS,
+				[
+					'WMAPIPSidebarSpecialPages' => [
+						'Version',
+						'Non_Existent',
+						'AllPages'
+					]
+				]
+			),
+			$this->newMessageFormatterFactory(),
+			$this->newContextSource(),
+			$this->getServiceContainer()->getTitleFactory()->makeTitle( NS_SPECIAL, 'Version/Test' ),
+			$this->newNamespaceInfo(),
+			$this->getServiceContainer()->getTitleFactory(),
+			$this->getServiceContainer()->getSpecialPageFactory(),
+			$this->newPageProps()
+		);
+		$output = $component->parseTemplate( $this->newTemplateParser() );
+		$this->assertStringContainsString( 'Version', $output );
+		$this->assertStringContainsString( 'AllPages', $output );
+		$this->assertStringNotContainsString( 'Non_Existent', $output );
 	}
 }
