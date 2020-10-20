@@ -20,9 +20,26 @@
 		font-size: 1.3125rem;
 	}
 
-	.navbar-nav .nav-item a.dropdown-toggle::after {
-		// default caret from bootstrap
-		display: none;
+	.primary-nav-menu-button {
+		span {
+			font-weight: normal;
+		}
+
+		a.oo-ui-buttonElement-button {
+			padding: .5rem !important;
+		}
+
+		.oo-ui-indicatorElement-indicator.oo-ui-indicator-down {
+			right: -.8rem !important;
+		}
+	}
+
+	.primary-nav-menu {
+		&.active {
+			.oo-ui-buttonElement-frameless.oo-ui-labelElement:first-child {
+				margin-left: -.625rem;
+			}
+		}
 	}
 
 	.wm-notification-button {

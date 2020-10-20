@@ -51,6 +51,7 @@
 			"scripts": [
 				"skin.wikimediaapiportal.scripts/dist/bootstrap.bundle.js",
 				"skin.wikimediaapiportal.scripts/usermenu.js",
+				"skin.wikimediaapiportal.scripts/primarynavmenu.js",
 				"skin.wikimediaapiportal.scripts/searchform.js",
 				"skin.wikimediaapiportal.scripts/scrollAdjust.js"
 			],
