@@ -281,7 +281,9 @@ trait ComponentMockTrait {
 	 * @return TemplateParser
 	 */
 	private function newTemplateParser() : TemplateParser {
-		return new TemplateParser( __DIR__ . '/../../../components', new EmptyBagOStuff() );
+		$parser = new TemplateParser( __DIR__ . '/../../../components', new EmptyBagOStuff() );
+		$parser->enableRecursivePartials( true );
+		return $parser;
 	}
 
 	/**

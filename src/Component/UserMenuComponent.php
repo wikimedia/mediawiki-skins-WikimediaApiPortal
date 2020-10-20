@@ -80,13 +80,14 @@ class UserMenuComponent extends MessageComponent {
 		$items = [];
 
 		$extraSpecialPages = $options->get( 'WMAPIPExtraUserMenuSpecialPages' );
-		foreach ( $extraSpecialPages as $specialPage ) {
-			$title = $titleFactory->newFromText( $specialPage, NS_SPECIAL );
-			if ( $title ) {
+		foreach ( $extraSpecialPages as $specialPageName ) {
+			$title = $titleFactory->newFromText( $specialPageName, NS_SPECIAL );
+			$specialPageObj = $specialPageFactory->getPage( $specialPageName );
+			if ( $title && $specialPageObj ) {
 				$items[] = Html::element(
 					'a',
 					[ 'href' => $title->getLocalURL() ],
-					$specialPageFactory->getPage( $specialPage )->getDescription()
+					$specialPageObj->getDescription()
 				);
 			}
 		}
