@@ -42,7 +42,14 @@
 	"ResourceModules": {
 		"skin.wikimediaapiportal.styles": {
 			"class": "ResourceLoaderSkinModule",
-			"features": { "logo": false },
+			"features": {
+				"normalize": true,
+				"elements": true,
+				"content": true,
+				"interface": true,
+				"logo": false,
+				"legacy": true
+			},
 			"styles": {
 				"skin.wikimediaapiportal.styles/entry.less": {},
 				"skin.wikimediaapiportal.styles/dist/bootstrap.css": {}
