@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robin Owain"
+		]
+	},
+	"action-edit-docs": "golygu dogfen",
+	"right-edit-docs": "Golygu'r ddogfen",
+	"wikimediaapiportal-skin-desc": "Y croen arferol ar gyfer yr Wikimedia API Portal",
+	"wikimediaapiportal-skin-footer-links": "* Prosiectau Wicimedia\n** https://www.wikipedia.org/|Wicipedia\n**  https://www.wikibooks.org/|Wicilyfrau\n** https://www.wikiversity.org/|Wicibrifysgol\n** https://www.wikinews.org/|Wicinewyddion\n** https://www.wiktionary.org/|Wiciadur\n** https://www.wikisource.org/|Wicidestun\n** https://www.wikiquote.org/|Wiciddyfynnu\n** https://www.wikivoyage.org/|Wicidaith\n** https://commons.wikimedia.org/|Comin Wicimedia\n** https://www.wikidata.org/|Wicidata\n** https://species.wikimedia.org/|Wicirhywogaeth\n** https://www.mediawiki.org/|MediaWici\n* Cysylltiadau'r mudiad\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|Siapteri\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|Mudiadau thematig\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|Grwpiau Defnyddwyr\n* ARALL\n** https://foundation.wikimedia.org/wiki/Terms_of_Use|Termau defnydd\n** https://foundation.wikimedia.org/wiki/Privacy_policy/|Polisi Preifatrwydd\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|Gwadiadau\n** https://wikimediafoundation.org/accessibility-statement/|Mynediad\n** https://foundation.wikimedia.org/wiki/Cookie_statement|Cwcis\n** https://www.mediawiki.org/wiki/Code_of_Conduct|Ymddygiad"
+}
