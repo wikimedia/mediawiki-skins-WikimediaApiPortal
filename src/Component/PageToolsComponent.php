@@ -55,7 +55,7 @@ class PageToolsComponent extends MessageComponent {
 	 * @param IContextSource $contextSource
 	 * @param PermissionManager $permissionManager
 	 * @param string $requestedAction
-	 * @param array $actions
+	 * @param array $actions See SkinTemplate::buildContentNavigationUrls for structure
 	 * @param bool $mobile
 	 */
 	public function __construct(
@@ -72,7 +72,7 @@ class PageToolsComponent extends MessageComponent {
 			$contextSource
 		);
 
-		if ( $requestedAction === 'delete' ) {
+		if ( $requestedAction !== 'view' && $requestedAction !== 'history' ) {
 			$this->args = null;
 			return;
 		}
@@ -148,16 +148,22 @@ class PageToolsComponent extends MessageComponent {
 		string $requestedAction,
 		array $actions
 	) : ?ButtonWidget {
-		// See SkinTemplate::buildContentNavigationUrls
-		if ( !$title->isTalkPage() && $requestedAction === 'view' ) {
-			if ( isset( $actions['namespaces']['talk'] ) ) {
+		if ( $requestedAction === 'view' ) {
+			if ( $title->isTalkPage() ) {
+				if ( isset( $actions['namespaces']['main'] ) ) {
+					return $this->getButtonForContentAction( $actions['namespaces']['main'], [
+						'icon' => 'arrowPrevious',
+						'label' => $this->formatMessage( 'wikimediaapiportal-skin-return-to-page-label' )
+					] );
+				}
+			} elseif ( isset( $actions['namespaces']['talk'] ) ) {
 				return $this->getButtonForContentAction(
 					$actions['namespaces']['talk'],
 					[ 'icon' => 'speechBubbles' ]
 				);
 			}
-		} elseif ( isset( $actions['namespaces']['main'] ) ) {
-			return $this->getButtonForContentAction( $actions['namespaces']['main'], [
+		} elseif ( $requestedAction === 'history' ) {
+			return $this->getButtonForContentAction( $actions['views']['view'], [
 				'icon' => 'arrowPrevious',
 				'label' => $this->formatMessage( 'wikimediaapiportal-skin-return-to-page-label' )
 			] );
@@ -180,14 +186,13 @@ class PageToolsComponent extends MessageComponent {
 			return null;
 		}
 
-		// See SkinTemplate::buildContentNavigationUrls
 		if ( !isset( $actions['views']['history'] ) ) {
 			return null;
 		}
 
 		$title = $contextSource->getTitle();
 
-		if ( !$title->exists() || $title->isTalkPage() ) {
+		if ( !$title->exists() ) {
 			return null;
 		}
 
@@ -229,11 +234,7 @@ class PageToolsComponent extends MessageComponent {
 			return [];
 		}
 
-		if ( $title->isTalkPage() ) {
-			return [];
-		}
-
-		if ( !$permissionManager->userHasRight( $user, 'edit-docs' ) ) {
+		if ( !$permissionManager->userHasRight( $user, 'edit-docs' ) && !$title->isTalkPage() ) {
 			return [];
 		}
 
