@@ -18,9 +18,9 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
+use Html;
 use MediaWiki\Skin\WikimediaApiPortal\Skin;
-use OOUI\IconWidget;
-use OOUI\IndicatorWidget;
+use OOUI\ButtonWidget;
 use Title;
 
 class PrimaryNavComponent extends Component {
@@ -37,50 +37,57 @@ class PrimaryNavComponent extends Component {
 		Skin $skin
 	) {
 		parent::__construct( 'PrimaryNav' );
-		$menuIcon = new IconWidget( [ 'icon' => 'menu' ] );
 		$items = [];
-		foreach ( $sidebar as $menuKey => $menu ) {
+		foreach ( $sidebar as $menu ) {
 			/** @var array $menu See BaseTemplate::getSidebar */
 
 			// Dropdown or single link
 			if ( is_array( $menu['content'] ) && count( $menu['content'] ) > 1 ) {
 				$subitems = [];
-				$hasActive = false;
+				$isActive = false;
 				foreach ( $menu['content'] as $key => $item ) {
 					/** @var array $item See Skin::addToSidebarPlain */
-					$hasActive = $hasActive || $this->isActiveLink( $title, $item['href'] );
-					$subitems[] = $skin->makeListItem( $key, $item, [
-						'tag' => 'div',
-						'class' => 'nav-item',
-						'link-class' => 'nav-link',
-					] );
+					$isActive = $isActive || $this->isActiveLink( $title, $item['href'] );
+					$subitems[] = Html::element(
+						'a',
+						[
+							'href' => $item['href'],
+							'class' => 'primary-nav-menu-item'
+						],
+						$item['text']
+					);
 				}
 
+				$header = new ButtonWidget( [
+					'label' => $menu['header'],
+					'framed' => false,
+					'indicator' => 'down',
+					'classes' => [ 'primary-nav-menu-button' ]
+				] );
 				$items[] = [
 					'isDropdown' => true,
-					'hasActive' => $hasActive,
-					'menuKey' => $menuKey,
-					'id' => $menu['id'],
-					'header' => $menu['header'],
+					'isActive' => $isActive,
+					'header' => $header,
 					'items' => $subitems,
 				];
-			} else {
+			} elseif ( isset( $menu['content'][0] ) ) {
 				$isActive = $this->isActiveLink( $title, $menu['content'][0]['href'] );
-				$items[] = [
-					'isLink' => true,
-					'isActive' => $isActive,
-					'header' => $menu['header'],
+				$header = new ButtonWidget( [
+					'label' => $menu['header'],
+					'framed' => false,
 					'href' => $menu['content'][0]['href'],
+					'classes' => [ 'primary-nav-menu-button' ]
+				] );
+				$items[] = [
+					'isDropdown' => false,
+					'isActive' => $isActive,
+					'header' => $header,
 				];
 			}
 		}
 
-		$dropDownIndicator = new IndicatorWidget( [ 'indicator' => 'down' ] );
 		$this->args = [
-			'menuIcon' => $menuIcon,
-			'id' => $id,
-			'items' => $items,
-			'dropDownIndicator' => $dropDownIndicator
+			'items' => $items
 		];
 	}
 

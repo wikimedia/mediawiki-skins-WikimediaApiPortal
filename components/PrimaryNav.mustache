@@ -1,15 +1,11 @@
 {{#each items}}
-	{{#isLink}}
-		<div class="nav-item{{#isActive}} active{{/isActive}}"><a class="nav-item nav-link" href="{{href}}">{{header}}</a></div>
-	{{/isLink}}
+	{{^isDropdown}}
+		<div class="nav-item{{#isActive}} active{{/isActive}}">{{{header}}}</div>
+	{{/isDropdown}}
 	{{#isDropdown}}
-		<!-- {{menuKey}} -->
-		<div class="nav-item dropdown{{#hasActive}} active{{/hasActive}}">
-			<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-boundary="viewport">
-				{{header}}
-				{{{dropDownIndicator}}}
-			</a>
-			<div class="dropdown-menu" id="{{id}}">
+		<div class="nav-item primary-nav-menu{{#isActive}} active{{/isActive}}">
+			{{{header}}}
+			<div class="d-none">
 				{{#each items}}
 					{{{.}}}
 				{{/each}}
