@@ -6,7 +6,9 @@
 			"Ykhwong"
 		]
 	},
-	"wikimediaapiportal-skin-desc": "위키미디어 API 개발자 포털용 사용자 지정 스킨",
+	"action-edit-docs": "설명문 편집",
+	"right-edit-docs": "설명문 편집",
+	"wikimediaapiportal-skin-desc": "위키미디어 API 포털용 사용자 지정 스킨",
 	"wikimediaapiportal-jumpto-content": "내용으로 건너뛰기",
 	"wikimediaapiportal-skin-login-link-label": "로그인",
 	"wikimediaapiportal-skin-button-contact-label": "연락하기",
