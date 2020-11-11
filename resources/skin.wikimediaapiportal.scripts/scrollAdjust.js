@@ -28,6 +28,8 @@
 		$( window ).on( 'hashchange', function ( e ) {
 			adjustScroll( $header );
 		} );
+
+		adjustScroll( $header );
 	} );
 
 	function adjustScroll( $header, hash, animate ) {
