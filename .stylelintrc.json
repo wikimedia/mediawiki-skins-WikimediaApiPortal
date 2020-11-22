@@ -17,7 +17,7 @@
 		"declaration-block-single-line-max-declarations": null,
 		"declaration-colon-space-after": null,
 		"declaration-no-important": null,
-		"declaration-property-value-blacklist": null,
+		"declaration-property-value-disallowed-list": null,
 		"font-family-name-quotes": null,
 		"font-family-no-missing-generic-family-keyword": null,
 		"font-weight-notation": null,
@@ -36,7 +36,7 @@
 		"selector-pseudo-element-colon-notation": null,
 		"selector-type-no-unknown": null,
 		"string-quotes": null,
-		"unit-blacklist": null,
+		"unit-disallowed-list": null,
 		"unit-no-unknown": null,
 		"value-keyword-case": null
 	}
