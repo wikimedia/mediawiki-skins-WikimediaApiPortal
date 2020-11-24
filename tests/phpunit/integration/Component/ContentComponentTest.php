@@ -29,7 +29,7 @@ class ContentComponentTest extends MediaWikiIntegrationTestCase {
 
 	public function testConstructorSetsArgsArrayNull() {
 		$title = 'title_test_input';
-		$subtitle = 'subtitle_test_input';
+		$subtitle = null;
 		$undelete = null;
 		$pageTools = null;
 		$bodyContent = 'bodyContent_test_input';
@@ -48,7 +48,7 @@ class ContentComponentTest extends MediaWikiIntegrationTestCase {
 
 		$html = $component->parseTemplate( $this->newTemplateParser() );
 
-		$substrings = [ $title, $subtitle, $bodyContent, $afterContent, $catlinks ];
+		$substrings = [ $title, $bodyContent, $afterContent, $catlinks ];
 		foreach ( $substrings as $substring ) {
 			$this->assertStringContainsString( $substring, $html );
 		}

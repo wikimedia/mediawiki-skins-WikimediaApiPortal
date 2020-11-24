@@ -151,7 +151,7 @@ class ComponentFactory {
 		WikimediaApiPortalTemplate $template
 	) : ContentComponent {
 		$title = $template->get( 'title' );
-		$subtitle = $template->get( 'subtitle' );
+		$subtitle = $template->get( 'subtitle' ) ?: null;
 		$undelete = $template->get( 'undelete' ) ?: null;
 		$pageTools = $this->createPageToolsComponent( $template, false );
 		$bodyContent = $template->get( 'bodytext' );

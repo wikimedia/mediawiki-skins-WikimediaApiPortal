@@ -21,7 +21,7 @@ namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 class ContentComponent extends Component {
 	/**
 	 * @param string $title
-	 * @param string $subtitle
+	 * @param ?string $subtitle
 	 * @param ?string $undelete
 	 * @param ?PageToolsComponent $pageTools
 	 * @param string $bodyContent
@@ -30,7 +30,7 @@ class ContentComponent extends Component {
 	 */
 	public function __construct(
 		string $title,
-		string $subtitle,
+		?string $subtitle,
 		?string $undelete,
 		?PageToolsComponent $pageTools,
 		string $bodyContent,
