@@ -1,8 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Daud I.F. Argana",
 			"Kenrick95"
 		]
 	},
-	"action-edit-docs": "sunting dokumentasi"
+	"action-edit-docs": "menyunting dokumentasi",
+	"right-edit-docs": "Menyunting dokumentasi",
+	"wikimediaapiportal-skin-desc": "Kulit khusus untuk Wikimedia API Portal",
+	"wikimediaapiportal-jumpto-content": "Lompat ke isi",
+	"wikimediaapiportal-skin-login-link-label": "Masuk log",
+	"wikimediaapiportal-skin-button-contact-label": "Hubungi",
+	"wikimediaapiportal-skin-button-about-wm-label": "Tentang Wikimedia"
 }
