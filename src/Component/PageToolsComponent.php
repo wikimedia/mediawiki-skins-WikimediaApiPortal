@@ -234,6 +234,10 @@ class PageToolsComponent extends MessageComponent {
 			return [];
 		}
 
+		if ( !$permissionManager->userHasRight( $user, 'edit-docs' ) ) {
+			$actions['actions'] = [];
+		}
+
 		if ( !$permissionManager->userHasRight( $user, 'edit-docs' ) && !$title->isTalkPage() ) {
 			return [];
 		}
