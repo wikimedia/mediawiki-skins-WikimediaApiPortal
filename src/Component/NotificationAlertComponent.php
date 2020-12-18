@@ -44,7 +44,7 @@ class NotificationAlertComponent extends Component {
 			return;
 		}
 
-		if ( !$user->isLoggedIn() ) {
+		if ( !$user->isRegistered() ) {
 			$this->args = null;
 			return;
 		}
