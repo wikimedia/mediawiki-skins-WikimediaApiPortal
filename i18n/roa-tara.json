@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"action-edit-docs": "cange 'a documendazione",
+	"right-edit-docs": "Cange 'a documendazione",
+	"wikimediaapiportal-skin-desc": "Skin personalizzate pe Uicchimedia Portale de l'API",
+	"wikimediaapiportal-jumpto-content": "Zumbe a 'u condenute",
+	"wikimediaapiportal-skin-login-link-label": "Tràse",
+	"wikimediaapiportal-skin-button-contact-label": "Condatte",
+	"wikimediaapiportal-skin-button-about-wm-label": "'Mbormaziune sus a Uicchimedie",
+	"wikimediaapiportal-skin-button-clear-search-label": "Sdevache 'a recerche",
+	"wikimediaapiportal-skin-wikimedia-info": "'A Wikimedia Foundation, Inc jè 'n'organizzazzione no-profit caritatevole dedicate a 'ngoraggià 'a crescite, 'u sveluppe e 'a distribbuzione de condenute libbere, multilènghe e a dà 'nu condenute comblete de ste pruggette basate sus a uicchi a 'u pubbleche aggratis.",
+	"wikimediaapiportal-skin-footer-links": "* Pruggette Uicchimedie\n** https://www.wikipedia.org/|Uicchipèdie\n**  https://www.wikibooks.org/|Uicchilibbre\n** https://www.wikiversity.org/|Uicchiversità\n** https://www.wikinews.org/|Uicchinotizie\n** https://www.wiktionary.org/|Uicchizionarie\n** https://www.wikisource.org/|Uicchisurgende\n** https://www.wikiquote.org/|Uicchiquote\n** https://www.wikivoyage.org/|Uicchiviagge\n** https://commons.wikimedia.org/|Uicchimedia Commons\n** https://www.wikidata.org/|Uicchidata\n** https://species.wikimedia.org/|Uicchispecie\n** https://www.mediawiki.org/|MediaUicchi\n* Moveminde affiliate\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|Uicchimedia Capitole\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|Uicchimedia Organizzazziune Temateche\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|Uicchimedia Gruppe Utinde\n* OTRE\n** https://foundation.wikimedia.org/wiki/Terms_of_Use|Termine d'ause\n** https://foundation.wikimedia.org/wiki/Privacy_policy/|Regole pa Privacy\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|Scareca barile\n** https://wikimediafoundation.org/accessibility-statement/|Dichiarazione de accessibbeletà\n** https://foundation.wikimedia.org/wiki/Cookie_statement|Dichiarazione de le cookie\n** https://www.mediawiki.org/wiki/Code_of_Conduct|Codece de condotte",
+	"wikimediaapiportal-skin-disclaimer": "'U teste jè disponibbele sotte a [https://creativecommons.org/licenses/by-sa/3.0/ licenze Creative Commons Attribution/Condivide]; le termine agigundive ponne essere applicate.\n'Ndruche [https://foundation.wikimedia.org/wiki/Terms_of_Use Termine de Ause] pe cchiù 'mbormaziune.",
+	"wikimediaapiportal-skin-return-to-page-label": "Tuèrne a 'a pàgene",
+	"wikimediaapiportal-skin-updated-ts-label": "Aggiornate 'u $1",
+	"wikimediaapiportal-skin-search-placeholder": "Cirche",
+	"tooltip-wikimediaapiportal-skin-search-title": "Cirche"
+}
