@@ -7,7 +7,9 @@
 	"wikimediaapiportal-jumpto-content": "Перейти к содержанию",
 	"wikimediaapiportal-skin-login-link-label": "Войти",
 	"wikimediaapiportal-skin-button-about-wm-label": "О Википедии",
+	"wikimediaapiportal-skin-button-clear-search-label": "Очистить поиск",
 	"wikimediaapiportal-skin-return-to-page-label": "Вернуться на страницу",
+	"wikimediaapiportal-skin-updated-ts-label": "Обновлено $1",
 	"wikimediaapiportal-skin-search-placeholder": "Найти",
 	"tooltip-wikimediaapiportal-skin-search-title": "Найти"
 }
