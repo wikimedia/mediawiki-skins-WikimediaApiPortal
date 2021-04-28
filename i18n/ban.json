@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chinamoonroll"
+		]
+	},
+	"action-edit-docs": "uah dokuméntasi",
+	"right-edit-docs": "Uah dokuméntasi",
+	"wikimediaapiportal-skin-desc": "Kules khusus antuk API Portal Wikimédia",
+	"wikimediaapiportal-jumpto-content": "Macebur nuju daging",
+	"wikimediaapiportal-skin-login-link-label": "Manjing log",
+	"wikimediaapiportal-skin-button-contact-label": "Kontak",
+	"wikimediaapiportal-skin-button-about-wm-label": "Indik Wikimédia",
+	"wikimediaapiportal-skin-button-clear-search-label": "Resik parerehan",
+	"wikimediaapiportal-skin-wikimedia-info": "Yayasan Wikimédia silih tunggil organisasi punia tan malaba sané kadédikasiyang antuk ngalimbakang patumbuhan, pakembangan, miwah pasebaran kontén bébas multibasa, miqah antuk nyadiayang kontén jangkep saking proyék-proyékmabasis wiki puniki majeng umum sacara gratis.",
+	"wikimediaapiportal-skin-footer-links": "* Proyek Wikimedia\n** https://www.wikipedia.org/|Wikipédia\n**  https://www.wikibooks.org/|Wikibuku\n** https://www.wikiversity.org/|Wikiversitas\n** https://www.wikinews.org/|Wikiorti\n** https://www.wiktionary.org/|Wikikruna\n** https://www.wikisource.org/|Wikipustaka\n** https://www.wikiquote.org/|Wikiquote\n** https://www.wikivoyage.org/|Wikivoyage\n** https://commons.wikimedia.org/|Wikimédia Commons\n** https://www.wikidata.org/|Wikidata\n** https://species.wikimedia.org/|Wikispésiés\n** https://www.mediawiki.org/|MédiaWiki\n* Gerakan yang berafiliasi\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|Carang Wikimédia\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|Organisasi Tematik Wikimédia\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|Seka Sang Anganggé Wikimédia\n* Tiosan\n** https://foundation.wikimedia.org/wiki/Terms_of_Use|Katentuan sang anganggé\n** https://foundation.wikimedia.org/wiki/Privacy_policy/|Kawijakan paragaan\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|Penyangkalan\n** https://wikimediafoundation.org/accessibility-statement/|Panyataan aksesibilitas\n** https://foundation.wikimedia.org/wiki/Cookie_statement|Panyataan kuki\n** https://www.mediawiki.org/wiki/Code_of_Conduct|Kode étik",
+	"wikimediaapiportal-skin-disclaimer": "Suratan puniki kasedia ring meten [https://creativecommons.org/licenses/by-sa/3.0/ Lisénsi ''Creative Commons Attribution-ShareAlike'']; pasyaratan tambahan minab wénten. Cingak [https://foundation.wikimedia.org/wiki/Terms_of_Use Syarat Pawigunaan] antuk jangkep nyané.",
+	"wikimediaapiportal-skin-return-to-page-label": "Walik nuju kaca",
+	"wikimediaapiportal-skin-updated-ts-label": "Kaanyarin $1",
+	"wikimediaapiportal-skin-search-placeholder": "Rereh",
+	"tooltip-wikimediaapiportal-skin-search-title": "Rereh"
+}
