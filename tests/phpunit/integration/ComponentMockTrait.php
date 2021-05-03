@@ -91,7 +91,7 @@ trait ComponentMockTrait {
 			[ 'format' ]
 		);
 		$textFormatter->method( 'format' )->willReturnCallback(
-			function ( MessageValue $messageValue ) {
+			static function ( MessageValue $messageValue ) {
 				return $messageValue->getKey();
 			}
 		);
@@ -249,7 +249,7 @@ trait ComponentMockTrait {
 			]
 		);
 		$template->method( 'get' )->willReturnCallback(
-			function ( $param ) {
+			static function ( $param ) {
 				if ( $param === 'content_navigation' ) {
 					return [];
 				}
