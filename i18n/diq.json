@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"1917 Ekim Devrimi",
+			"Cobija",
 			"Orbot707"
 		]
 	},
@@ -13,7 +14,7 @@
 	"wikimediaapiportal-skin-button-contact-label": "İrtıbat",
 	"wikimediaapiportal-skin-button-about-wm-label": "Heqê Wikipedia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Cıgeyrayışi pak kerê",
-	"wikimediaapiportal-skin-wikimedia-info": "Wikimedia Foundation, Inc, ücretsiz, çok dilli içeriğin büyümesini, geliştirilmesini ve dağıtılmasını teşvik etmeye ve bu viki tabanlı projelerin tüm içeriğini halka ücretsiz olarak sunmaya adanmış, kar amacı gütmeyen bir yardım kuruluşudur.",
+	"wikimediaapiportal-skin-wikimedia-info": "Wikimedia Vakfı ücretsiz, çokdilli içeriğin büyümesini, geliştirilmesini ve dağıtılmasını teşvik etmeye ve bu viki tabanlı projelerin tüm içeriğini halka ücretsiz olarak sunmaya adanmış, kâr amacı gütmeyen bir yardım kuruluşudur.",
 	"wikimediaapiportal-skin-footer-links": "* Procey Wikimedia \n** https://www.wikipedia.org/|Wikipedia \n**  https://www.wikibooks.org/|Wikikıtab\n** https://www.wikiversity.org/|Wikiversita\n** https://www.wikinews.org/|Wikixeber\n** https://www.wiktionary.org/|Wikiqısebend \n** https://www.wikisource.org/|Wikiçıme \n** https://www.wikiquote.org/|Wikivate\n** https://www.wikivoyage.org/|Wikigeyrayoğ\n** https://commons.wikimedia.org/|Wikimedia Commons\n** https://www.wikidata.org/|Wikidata \n** https://species.wikimedia.org/|wikibabet\n** https://www.mediawiki.org/|MediaWiki\n* İştirakê hereketan \n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|Letey Wikimedia \n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|Wikimedia Organizasyonê Tematiki\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|Wikimedia Grubê Karberan\n* YEWBİNA \n** https://foundation.wikimedia.org/wiki/Terms_of_Use|Şertê gurenayışi\n** https://foundation.wikimedia.org/wiki/Privacy_policy/|Politikay dızdeyi \n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|Reddiya Mesuliyetê Umumi\n** https://wikimediafoundation.org/accessibility-statement/|Peyhesnayışê Resneyayışi \n** https://foundation.wikimedia.org/wiki/Cookie_statement|Peyhesnayışê Çerezi\n** https://www.mediawiki.org/wiki/Code_of_Conduct|Muameley kodi",
 	"wikimediaapiportal-skin-disclaimer": "Nuşte <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Atıf-Zey Pê vılakerdış</a>'i de yo; şertê bini tetbiq benê. Detayan rê <a href=\"https://foundation.wikimedia.org/wiki/Special:MyLanguage/Terms_of_Use\">Şertanê karkerdışi</a> bıvênên.",
 	"wikimediaapiportal-skin-return-to-page-label": "Peyser şo pela",
