@@ -4,9 +4,12 @@
 			"Joetaras"
 		]
 	},
+	"skinname-wikimediaapiportal": "WikimediaAPIPortal",
 	"action-edit-docs": "cange 'a documendazione",
 	"right-edit-docs": "Cange 'a documendazione",
 	"wikimediaapiportal-skin-desc": "Skin personalizzate pe Uicchimedia Portale de l'API",
+	"wikimediaapiportal-skin-site-name-main": "Uicchimedie",
+	"wikimediaapiportal-skin-site-name-sub": "API Portal",
 	"wikimediaapiportal-jumpto-content": "Zumbe a 'u condenute",
 	"wikimediaapiportal-skin-login-link-label": "Tràse",
 	"wikimediaapiportal-skin-button-contact-label": "Condatte",
