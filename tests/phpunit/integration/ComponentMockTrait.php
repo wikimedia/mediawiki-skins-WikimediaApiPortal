@@ -46,7 +46,7 @@ trait ComponentMockTrait {
 	/**
 	 * @return Skin
 	 */
-	private function newSkin() : Skin {
+	private function newSkin(): Skin {
 		$skin = $this->createNoOpMock(
 			Skin::class,
 			[
@@ -85,7 +85,7 @@ trait ComponentMockTrait {
 	/**
 	 * @return IMessageFormatterFactory
 	 */
-	private function newMessageFormatterFactory() : IMessageFormatterFactory {
+	private function newMessageFormatterFactory(): IMessageFormatterFactory {
 		$textFormatter = $this->createNoOpMock(
 			TextFormatter::class,
 			[ 'format' ]
@@ -107,14 +107,14 @@ trait ComponentMockTrait {
 	/**
 	 * @return IContextSource
 	 */
-	private function newContextSource() : IContextSource {
+	private function newContextSource(): IContextSource {
 		return $this->newSkin();
 	}
 
 	/**
 	 * @return Title
 	 */
-	private function newTitle() : Title {
+	private function newTitle(): Title {
 		$title = $this->createNoOpMock(
 			Title::class,
 			[
@@ -144,7 +144,7 @@ trait ComponentMockTrait {
 	/**
 	 * @return TitleFactory
 	 */
-	private function newTitleFactory() : TitleFactory {
+	private function newTitleFactory(): TitleFactory {
 		$titleFactory = $this->createNoOpMock(
 			TitleFactory::class,
 			[ 'newMainPage' ]
@@ -156,7 +156,7 @@ trait ComponentMockTrait {
 	/**
 	 * @return SpecialPage
 	 */
-	private function newSpecialPage() : SpecialPage {
+	private function newSpecialPage(): SpecialPage {
 		$specialPage = $this->createNoOpMock(
 			SpecialPage::class,
 			[ 'getDescription' ]
@@ -168,7 +168,7 @@ trait ComponentMockTrait {
 	/**
 	 * @return SpecialPageFactory
 	 */
-	private function newSpecialPageFactory() : SpecialPageFactory {
+	private function newSpecialPageFactory(): SpecialPageFactory {
 		$specialPageFactory = $this->createNoOpMock(
 			SpecialPageFactory::class,
 			[ 'getPage' ]
@@ -180,14 +180,14 @@ trait ComponentMockTrait {
 	/**
 	 * @return ExtensionRegistry
 	 */
-	private function newExtensionRegistry() : ExtensionRegistry {
+	private function newExtensionRegistry(): ExtensionRegistry {
 		return $this->createNoOpMock( ExtensionRegistry::class );
 	}
 
 	/**
 	 * @return User
 	 */
-	private function newUser() : User {
+	private function newUser(): User {
 		$user = $this->createNoOpMock(
 			User::class,
 			[ 'isAnon' ]
@@ -199,14 +199,14 @@ trait ComponentMockTrait {
 	/**
 	 * @return NamespaceInfo
 	 */
-	private function newNamespaceInfo() : NamespaceInfo {
+	private function newNamespaceInfo(): NamespaceInfo {
 		return $this->createNoOpMock( NamespaceInfo::class );
 	}
 
 	/**
 	 * @return PermissionManager
 	 */
-	private function newPermissionManager() : PermissionManager {
+	private function newPermissionManager(): PermissionManager {
 		$permissionManager = $this->createNoOpMock(
 			PermissionManager::class,
 			[ 'userHasRight' ]
@@ -218,14 +218,14 @@ trait ComponentMockTrait {
 	/**
 	 * @return PageProps
 	 */
-	private function newPageProps() : PageProps {
+	private function newPageProps(): PageProps {
 		return $this->createNoOpMock( PageProps::class );
 	}
 
 	/**
 	 * @return Config
 	 */
-	private function newConfig() : Config {
+	private function newConfig(): Config {
 		$config = $this->createNoOpMock(
 			Config::class,
 			[ 'has', 'get' ]
@@ -238,7 +238,7 @@ trait ComponentMockTrait {
 	/**
 	 * @return WikimediaApiPortalTemplate
 	 */
-	private function newWikimediaApiPortalTemplate() : WikimediaApiPortalTemplate {
+	private function newWikimediaApiPortalTemplate(): WikimediaApiPortalTemplate {
 		$template = $this->createNoOpMock(
 			WikimediaApiPortalTemplate::class,
 			[
@@ -267,7 +267,7 @@ trait ComponentMockTrait {
 	/**
 	 * @return TemplateParser
 	 */
-	private function newTemplateParser() : TemplateParser {
+	private function newTemplateParser(): TemplateParser {
 		$parser = new TemplateParser( __DIR__ . '/../../../components', new EmptyBagOStuff() );
 		$parser->enableRecursivePartials( true );
 		return $parser;
@@ -276,7 +276,7 @@ trait ComponentMockTrait {
 	/**
 	 * @return ServiceOptions
 	 */
-	protected function newServiceOptions() : ServiceOptions {
+	protected function newServiceOptions(): ServiceOptions {
 		Assert::fail( 'Must be overridden if required' );
 	}
 

@@ -22,7 +22,7 @@ use ExtensionRegistry;
 use MediaWiki\MediaWikiServices;
 
 return [
-	'WAPSkinComponentFactory' => static function ( MediaWikiServices $services ) : ComponentFactory {
+	'WAPSkinComponentFactory' => static function ( MediaWikiServices $services ): ComponentFactory {
 		return new ComponentFactory(
 			$services->getMainConfig(),
 			$services->getMessageFormatterFactory(),

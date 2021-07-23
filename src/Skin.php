@@ -37,7 +37,7 @@ class Skin extends SkinTemplate {
 	}
 
 	/** @return QuickTemplate */
-	protected function setupTemplateForOutput() : QuickTemplate {
+	protected function setupTemplateForOutput(): QuickTemplate {
 		$template = parent::setupTemplateForOutput();
 		$template->set( 'skin', $this );
 

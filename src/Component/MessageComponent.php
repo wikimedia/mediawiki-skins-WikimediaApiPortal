@@ -48,7 +48,7 @@ abstract class MessageComponent extends Component {
 	 * @param array $params
 	 * @return string
 	 */
-	protected function formatMessage( string $msg, array $params = [] ) : string {
+	protected function formatMessage( string $msg, array $params = [] ): string {
 		return $this->textFormatter->format( new MessageValue( $msg, $params ) );
 	}
 }

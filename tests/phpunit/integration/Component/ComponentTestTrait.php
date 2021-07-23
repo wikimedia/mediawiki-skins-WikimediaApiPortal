@@ -50,7 +50,7 @@ trait ComponentTestTrait {
 		return $mock;
 	}
 
-	private function getMockValueForParam( ReflectionParameter $param ) : array {
+	private function getMockValueForParam( ReflectionParameter $param ): array {
 		if ( $param->isArray() ) {
 			return [ null, [] ];
 		}

@@ -147,7 +147,7 @@ class PageToolsComponent extends MessageComponent {
 		Title $title,
 		string $requestedAction,
 		array $actions
-	) : ?ButtonWidget {
+	): ?ButtonWidget {
 		if ( $requestedAction === 'view' ) {
 			if ( $title->isTalkPage() ) {
 				if ( isset( $actions['namespaces']['main'] ) ) {
@@ -181,7 +181,7 @@ class PageToolsComponent extends MessageComponent {
 		string $requestedAction,
 		IContextSource $contextSource,
 		array $actions
-	) : ?ButtonWidget {
+	): ?ButtonWidget {
 		if ( $requestedAction !== 'view' ) {
 			return null;
 		}
@@ -229,7 +229,7 @@ class PageToolsComponent extends MessageComponent {
 		string $group,
 		array $actions,
 		array $oouiOptions = []
-	) : array {
+	): array {
 		if ( !$actions ) {
 			return [];
 		}
@@ -278,7 +278,7 @@ class PageToolsComponent extends MessageComponent {
 	private function getButtonForContentAction(
 		array $action,
 		$oouiOptions = []
-	) : ButtonWidget {
+	): ButtonWidget {
 		return new ButtonWidget( $oouiOptions + [
 			'id' => $action['id'],
 			'href' => $action['href'],

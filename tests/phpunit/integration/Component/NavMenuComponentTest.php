@@ -32,7 +32,7 @@ use OOUI\Theme;
 class NavMenuComponentTest extends MediaWikiIntegrationTestCase {
 	use ComponentTestTrait;
 
-	public function setUp() : void {
+	public function setUp(): void {
 		parent::setUp();
 
 		// enable OOUI

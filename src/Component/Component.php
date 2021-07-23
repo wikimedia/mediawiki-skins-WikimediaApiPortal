@@ -38,7 +38,7 @@ abstract class Component {
 	 * @param TemplateParser $templateParser
 	 * @return ?string
 	 */
-	public function parseTemplate( TemplateParser $templateParser ) : ?string {
+	public function parseTemplate( TemplateParser $templateParser ): ?string {
 		if ( !$this->args ) {
 			return null;
 		}

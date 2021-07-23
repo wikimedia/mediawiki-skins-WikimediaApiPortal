@@ -35,7 +35,7 @@ class SecondaryNavComponentTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @return ServiceOptions
 	 */
-	protected function newServiceOptions() : ServiceOptions {
+	protected function newServiceOptions(): ServiceOptions {
 		return new ServiceOptions(
 			SecondaryNavComponent::CONSTRUCTOR_OPTIONS,
 			[

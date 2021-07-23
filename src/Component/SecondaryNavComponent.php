@@ -104,7 +104,7 @@ class SecondaryNavComponent extends MessageComponent {
 		array $sidebarSpecialPages,
 		TitleFactory $titleFactory,
 		SpecialPageFactory $specialPageFactory
-	) : ?array {
+	): ?array {
 		$items = [];
 		$found = false;
 		foreach ( $sidebarSpecialPages as $specialPageName ) {
@@ -143,7 +143,7 @@ class SecondaryNavComponent extends MessageComponent {
 		Title $currentTitle,
 		Title $parent,
 		PageProps $pageProps
-	) : array {
+	): array {
 		$subpages = $parent->getSubpages();
 		if ( !count( $subpages ) ) {
 			return [];
@@ -178,7 +178,7 @@ class SecondaryNavComponent extends MessageComponent {
 	 * @param Title $title
 	 * @return bool
 	 */
-	private function isActiveTitle( Title $currentTitle, Title $title ) : bool {
+	private function isActiveTitle( Title $currentTitle, Title $title ): bool {
 		$currentTitle = $currentTitle->fixSpecialName();
 		return $currentTitle->equals( $title ) || $currentTitle->isSubpageOf( $title );
 	}

@@ -29,7 +29,7 @@ use OOUI\Theme;
 class LogoComponentTest extends MediaWikiIntegrationTestCase {
 	use ComponentTestTrait;
 
-	public function setUp() : void {
+	public function setUp(): void {
 		parent::setUp();
 
 		// enable OOUI

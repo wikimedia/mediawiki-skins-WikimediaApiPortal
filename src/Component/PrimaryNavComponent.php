@@ -97,7 +97,7 @@ class PrimaryNavComponent extends Component {
 	 * @param string $link
 	 * @return bool
 	 */
-	private function isActiveLink( Title $title, string $link ) : bool {
+	private function isActiveLink( Title $title, string $link ): bool {
 		// Match logic in Skin::addToSidebarPlain
 		$currentLink = $title->fixSpecialName()->getLinkURL();
 

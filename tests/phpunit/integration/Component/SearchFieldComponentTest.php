@@ -30,7 +30,7 @@ use OOUI\Theme;
 class SearchFieldComponentTest extends MediaWikiIntegrationTestCase {
 	use ComponentTestTrait;
 
-	public function setUp() : void {
+	public function setUp(): void {
 		parent::setUp();
 
 		// enable OOUI
@@ -44,7 +44,7 @@ class SearchFieldComponentTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @return ServiceOptions
 	 */
-	protected function newServiceOptions() : ServiceOptions {
+	protected function newServiceOptions(): ServiceOptions {
 		return new ServiceOptions(
 			SearchFieldComponent::CONSTRUCTOR_OPTIONS,
 			[
