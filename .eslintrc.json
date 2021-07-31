@@ -12,7 +12,6 @@
 		"no-jquery/no-sizzle": 0,
 		"no-jquery/variable-pattern": 0,
 		"no-unused-vars": 0,
-		"no-use-before-define": 0,
-		"vars-on-top": 0
+		"no-use-before-define": 0
 	}
 }
