@@ -5,9 +5,12 @@
 			"Ата"
 		]
 	},
+	"skinname-wikimediaapiportal": "WikimediaAPIPortal",
 	"action-edit-docs": "редагування документації",
 	"right-edit-docs": "Редагування документації",
 	"wikimediaapiportal-skin-desc": "Користувацька тема для Wikimedia API Portal",
+	"wikimediaapiportal-skin-site-name-main": "Вікімедіа",
+	"wikimediaapiportal-skin-site-name-sub": "Портал API",
 	"wikimediaapiportal-jumpto-content": "Перейти до вмісту",
 	"wikimediaapiportal-skin-login-link-label": "Увійти",
 	"wikimediaapiportal-skin-button-contact-label": "Контакт",
