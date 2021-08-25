@@ -60,7 +60,7 @@ class NotificationAlertComponent extends Component {
 			'count' => $notificationAlert['data']['counter-text'],
 			'notificationButton' => new ButtonWidget( [
 				'icon' => 'bellOutline',
-				'title' => $notificationAlert['text']->text(),
+				'title' => $notificationAlert['text'],
 				'framed' => false,
 				'href' => $notificationAlert['href']
 			] )
