@@ -3,16 +3,21 @@
 		"authors": [
 			"A2y4",
 			"Bonfire12",
-			"Omotecho"
+			"Omotecho",
+			"しぃ"
 		]
 	},
+	"skinname-wikimediaapiportal": "WikimediaAPIポータル",
 	"action-edit-docs": "解説文を編集",
 	"right-edit-docs": "説明文を編集",
 	"wikimediaapiportal-skin-desc": "Wikimedia API ポータル用カスタム外装",
+	"wikimediaapiportal-skin-site-name-main": "Wikimedia",
+	"wikimediaapiportal-skin-site-name-sub": "API ポータル",
 	"wikimediaapiportal-jumpto-content": "コンテンツにスキップ",
 	"wikimediaapiportal-skin-login-link-label": "ログイン",
 	"wikimediaapiportal-skin-button-contact-label": "お問い合わせ",
 	"wikimediaapiportal-skin-button-about-wm-label": "ウィキメディアについて",
+	"wikimediaapiportal-skin-button-clear-search-label": "検索をクリア",
 	"wikimediaapiportal-skin-wikimedia-info": "Wikimedia Foundation, Inc は非営利公益組織として無料の多言語コンテンツの発展、開発と普及を支援し、これらウィキによるプロジェクト群のコンテンツをすべて無償で一般に提供します。",
 	"wikimediaapiportal-skin-footer-links": "* ウィキメディアのプロジェクト群\n** https://www.wikipedia.org/|Wikipedia\n**  https://www.wikibooks.org/|Wikibooks\n** https://www.wikiversity.org/|Wikiversity\n** https://www.wikinews.org/|Wikinews\n** https://www.wiktionary.org/|Wiktionary\n** https://www.wikisource.org/|Wikisource\n** https://www.wikiquote.org/|Wikiquote\n** https://www.wikivoyage.org/|Wikivoyage\n** https://commons.wikimedia.org/|Wikimedia Commons\n** https://www.wikidata.org/|Wikidata\n** https://species.wikimedia.org/|Wikispecies\n** https://www.mediawiki.org/|MediaWiki\n* 運動の提携組織\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|ウィキメディア国別協会\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|ウィキメディアテーマ別組織\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|ウィキメディア利用者グループ\n* その他\n** https://foundation.wikimedia.org/wiki/Terms_of_Use|利用規約\n** https://foundation.wikimedia.org/wiki/Privacy_policy/|個人情報保護の方針\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|免責事項\n** https://wikimediafoundation.org/accessibility-statement/|アクセシビリティの声明\n** https://foundation.wikimedia.org/wiki/Cookie_statement|クッキーの声明\n** https://www.mediawiki.org/wiki/Code_of_Conduct|行動規範",
 	"wikimediaapiportal-skin-disclaimer": "文章の利用は [https://creativecommons.org/licenses/by-sa/3.0/ クリエイティブコモンズ表示-継承ライセンス]に準拠します。その他の要件が適用される場合があります。詳細は[https://foundation.wikimedia.org/wiki/Terms_of_Use 利用規約]をご参照ください。",
