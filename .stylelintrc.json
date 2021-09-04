@@ -38,6 +38,7 @@
 		"string-quotes": null,
 		"unit-disallowed-list": null,
 		"unit-no-unknown": null,
-		"value-keyword-case": null
+		"value-keyword-case": null,
+		"declaration-property-unit-disallowed-list": null
 	}
 }
