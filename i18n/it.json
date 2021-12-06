@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Gianfranco"
+			"Gianfranco",
+			"Pierpao"
 		]
 	},
 	"right-wikimediaapiportal-see-page-actions": "Vedi le azioni sulla pagina",
 	"wikimediaapiportal-skin-desc": "Skin personalizzata per il portale dei Developer di Wikimedia API",
-	"wikimediaapiportal-jumpto-content": "Vai direttamente al contenuto",
+	"wikimediaapiportal-jumpto-content": "Vai al contenuto",
 	"wikimediaapiportal-skin-login-link-label": "Entra",
 	"wikimediaapiportal-skin-personal-tools-label": "La mia utenza",
 	"wikimediaapiportal-skin-button-contact-label": "Contatti",

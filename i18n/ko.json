@@ -2,13 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"Ellif",
-			"Ykhwong"
+			"Ykhwong",
+			"Apzp79",
+			"Codenstory",
+			"아라"
 		]
 	},
 	"action-wikimediaapiportal-see-page-actions": "페이지 행동 보기",
 	"right-wikimediaapiportal-see-page-actions": "페이지 행동 보기",
 	"wikimediaapiportal-skin-desc": "위키미디어 API 개발자 포털용 사용자 지정 스킨",
-	"wikimediaapiportal-jumpto-content": "내용으로 건너뛰기",
+	"wikimediaapiportal-jumpto-content": "본문으로 이동",
 	"wikimediaapiportal-skin-login-link-label": "로그인",
 	"wikimediaapiportal-skin-personal-tools-label": "내 계정",
 	"wikimediaapiportal-skin-button-contact-label": "연락하기",

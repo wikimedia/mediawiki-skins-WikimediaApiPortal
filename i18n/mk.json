@@ -4,9 +4,12 @@
 			"Bjankuloski06"
 		]
 	},
+	"skinname-wikimediaapiportal": "Портал на Викимедииниот приложник",
 	"action-wikimediaapiportal-see-page-actions": "преглед на дејства на страница",
 	"right-wikimediaapiportal-see-page-actions": "Преглед на дејства на страница",
 	"wikimediaapiportal-skin-desc": "Прилагодено руво за Разработувачкиот портал на Викимедииниот приложник",
+	"wikimediaapiportal-skin-site-name-main": "Викимедија",
+	"wikimediaapiportal-skin-site-name-sub": "Приложнички портал",
 	"wikimediaapiportal-jumpto-content": "Прејди на содржината",
 	"wikimediaapiportal-skin-login-link-label": "Најава",
 	"wikimediaapiportal-skin-personal-tools-label": "Мојата сметка",

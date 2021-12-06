@@ -4,9 +4,11 @@
 			"Rail"
 		]
 	},
+	"skinname-wikimediaapiportal": "Portal API Wikimedii",
 	"action-wikimediaapiportal-see-page-actions": "przeglądu akcji strony",
 	"right-wikimediaapiportal-see-page-actions": "Przegląd akcji strony",
 	"wikimediaapiportal-skin-desc": "Niestandardowa skórka portali API Wikimedii",
+	"wikimediaapiportal-skin-site-name-sub": "Portal API",
 	"wikimediaapiportal-jumpto-content": "Przejdź do zawartości",
 	"wikimediaapiportal-skin-login-link-label": "Zaloguj się",
 	"wikimediaapiportal-skin-personal-tools-label": "Moje konto",

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ата"
+		]
+	},
+	"skinname-wikimediaapiportal": "WikimediaAPIPortal",
+	"wikimediaapiportal-skin-site-name-main": "Вікімедіа",
+	"wikimediaapiportal-skin-site-name-sub": "Портал API",
+	"wikimediaapiportal-jumpto-content": "Перейти до вмісту",
+	"wikimediaapiportal-skin-login-link-label": "Увійти",
+	"wikimediaapiportal-skin-button-contact-label": "Контакт",
+	"wikimediaapiportal-skin-button-about-wm-label": "Про Вікімедіа",
+	"wikimediaapiportal-skin-button-clear-search-label": "Очистити пошук",
+	"wikimediaapiportal-skin-wikimedia-info": "Фонд Вікімедіа (Wikimedia Foundation, Inc) — неприбуткова благодійна організація, присвячена заохоченню зростання, розвитку та поширення вільного багатомовного контенту і безоплатному наданню повного контенту цих вікі-проєктів громадськості.",
+	"wikimediaapiportal-skin-disclaimer": "Текст доступний на умовах ліцензії [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Attribution-ShareAlike License];\nтакож можуть діяти додаткові умови.\nДетальніше див. [https://foundation.wikimedia.org/wiki/Terms_of_Use Умови використання].",
+	"wikimediaapiportal-skin-return-to-page-label": "Повернутися до сторінки",
+	"wikimediaapiportal-skin-updated-ts-label": "Оновлено $1"
+}

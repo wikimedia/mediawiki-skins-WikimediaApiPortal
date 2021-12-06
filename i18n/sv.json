@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Sabelöga"
 		]
 	},
 	"action-wikimediaapiportal-see-page-actions": "se sidåtgärder",
@@ -12,6 +13,8 @@
 	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
 	"wikimediaapiportal-skin-button-about-wm-label": "Om Wikimedia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Rensa sökning",
+	"wikimediaapiportal-skin-wikimedia-info": "Wikimedia Foundation, Inc är en ideell välgörande organisation som är dedikerad till att uppmuntra tillväxt, utveckling och distribution av gratis, flerspråkigt innehåll och att tillhandahålla allt innehåll i dessa wikibaserade projekt till allmänheten utan kostnad.",
+	"wikimediaapiportal-skin-disclaimer": "Texten är tillgänglig under licensen [https://creativecommons.org/licenses/by-sa/3.0/Creative Commons Erkännande-Dela Lika]; ytterligare villkor kan gälla. Se [https://foundation.wikimedia.org/wiki/Terms_of_Use användarvillkoren] för detaljer.",
 	"wikimediaapiportal-skin-return-to-page-label": "Återgå till sidan",
 	"wikimediaapiportal-skin-updated-ts-label": "Uppdaterades $1"
 }

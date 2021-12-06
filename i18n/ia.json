@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"wikimediaapiportal-jumpto-content": "Saltar al contento",
+	"wikimediaapiportal-skin-login-link-label": "Aperir session",
+	"wikimediaapiportal-skin-button-contact-label": "Contactar",
+	"wikimediaapiportal-skin-button-about-wm-label": "A proposito de Wikimedia",
+	"wikimediaapiportal-skin-button-clear-search-label": "Vacuar le recerca",
+	"wikimediaapiportal-skin-wikimedia-info": "Le Fundation Wikimedia, Inc. es un organisation a scopo non lucrative destinate a incoragiar le crescentia, le disveloppamento e le distribution de contento libere e multilingue e a fornir gratuitemente al grande publico le contento complete de iste projectos wiki.",
+	"wikimediaapiportal-skin-disclaimer": "Le texto es disponibile sub le [https://creativecommons.org/licenses/by-sa/3.0/ licentia Creative Commons Attribution-ShareAlike]; additional conditiones pote esser in vigor.\nVide [https://foundation.wikimedia.org/wiki/Terms_of_Use Conditiones de uso] pro detalios.",
+	"wikimediaapiportal-skin-return-to-page-label": "Retornar al pagina",
+	"wikimediaapiportal-skin-updated-ts-label": "Actualisate le $1"
+}

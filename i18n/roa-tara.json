@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"skinname-wikimediaapiportal": "WikimediaAPIPortal",
+	"wikimediaapiportal-skin-site-name-main": "Uicchimedie",
+	"wikimediaapiportal-skin-site-name-sub": "API Portal",
+	"wikimediaapiportal-jumpto-content": "Zumbe a 'u condenute",
+	"wikimediaapiportal-skin-login-link-label": "Tràse",
+	"wikimediaapiportal-skin-button-contact-label": "Condatte",
+	"wikimediaapiportal-skin-button-about-wm-label": "'Mbormaziune sus a Uicchimedie",
+	"wikimediaapiportal-skin-button-clear-search-label": "Sdevache 'a recerche",
+	"wikimediaapiportal-skin-wikimedia-info": "'A Wikimedia Foundation, Inc jè 'n'organizzazzione no-profit caritatevole dedicate a 'ngoraggià 'a crescite, 'u sveluppe e 'a distribbuzione de condenute libbere, multilènghe e a dà 'nu condenute comblete de ste pruggette basate sus a uicchi a 'u pubbleche aggratis.",
+	"wikimediaapiportal-skin-disclaimer": "'U teste jè disponibbele sotte a [https://creativecommons.org/licenses/by-sa/3.0/ licenze Creative Commons Attribution/Condivide]; le termine agigundive ponne essere applicate.\n'Ndruche [https://foundation.wikimedia.org/wiki/Terms_of_Use Termine de Ause] pe cchiù 'mbormaziune.",
+	"wikimediaapiportal-skin-return-to-page-label": "Tuèrne a 'a pàgene",
+	"wikimediaapiportal-skin-updated-ts-label": "Aggiornate 'u $1"
+}

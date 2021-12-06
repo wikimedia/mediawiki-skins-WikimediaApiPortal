@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black"
+		]
+	},
+	"wikimediaapiportal-skin-login-link-label": "အကောင့်ထဲဝင်ရန်",
+	"wikimediaapiportal-skin-button-contact-label": "ဆက်သွယ်ရန်",
+	"wikimediaapiportal-skin-button-about-wm-label": "ဝီကီပီးဒီးယားအကြောင်း",
+	"wikimediaapiportal-skin-return-to-page-label": "စာမျက်နှာသို့ ပြန်သွားရန်",
+	"wikimediaapiportal-skin-updated-ts-label": "မွမ်းမံခဲ့သည် $1"
+}

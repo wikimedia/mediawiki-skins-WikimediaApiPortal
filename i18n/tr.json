@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"Cobija",
+			"MuratTheTurkish"
 		]
 	},
 	"action-wikimediaapiportal-see-page-actions": "sayfa eylemlerine bakın",
@@ -13,7 +15,7 @@
 	"wikimediaapiportal-skin-button-contact-label": "İletişim",
 	"wikimediaapiportal-skin-button-about-wm-label": "Wikimedia hakkında",
 	"wikimediaapiportal-skin-button-clear-search-label": "Aramayı temizle",
-	"wikimediaapiportal-skin-wikimedia-info": "Wikimedia Foundation, Inc, ücretsiz, çok dilli içeriğin büyümesini, geliştirilmesini ve dağıtılmasını teşvik etmeye ve bu viki tabanlı projelerin tüm içeriğini halka ücretsiz olarak sunmaya adanmış, kar amacı gütmeyen bir yardım kuruluşudur.",
+	"wikimediaapiportal-skin-wikimedia-info": "Wikimedia Vakfı, ücretsiz, çokdilli içeriğin büyümesini, geliştirilmesini ve dağıtılmasını teşvik etmeye ve bu viki tabanlı projelerin tüm içeriğini halka ücretsiz olarak sunmaya adanmış, kâr amacı gütmeyen bir yardım kuruluşudur.",
 	"wikimediaapiportal-skin-disclaimer": "Metin [https://creativecommons.org/licenses/by-sa/3.0/deed.tr Creative Commons Atıf-Benzer Paylaşım Lisansı]; ek şartlar geçerli olabilir. Ayrıntılar için [https://meta.wikimedia.org/wiki/Terms_of_Use/tr Kullanım Şartlarına] bakın.",
 	"wikimediaapiportal-skin-page-nav-predefines": "* DevCenter\n** Special:Notifications|Bildirimler\n** Special:AppManagement|Uygulama yönetimi",
 	"wikimediaapiportal-skin-return-to-page-label": "Sayfaya dön",

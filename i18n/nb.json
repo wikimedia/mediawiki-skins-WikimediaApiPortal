@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"wikimediaapiportal-jumpto-content": "Hopp til innhold",
+	"wikimediaapiportal-skin-login-link-label": "Logg inn",
+	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
+	"wikimediaapiportal-skin-button-about-wm-label": "Om Wikimedia",
+	"wikimediaapiportal-skin-button-clear-search-label": "Tøm søk",
+	"wikimediaapiportal-skin-wikimedia-info": "Wikimedia Foundation Inc. er en ideell organisasjon dedikert til å oppfordre til vekst, utvikling og distribusjon av fritt, flerspråklig innhold, og til å gi innholdet i disse wikibasert prosjektene til offentligheten gratis.",
+	"wikimediaapiportal-skin-disclaimer": "Teksten er tilgjengelig under lisensen [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Navngivelse-DelPåSammeVilkår], men ytterligere betingelser kan gjelde. Se [https://foundation.wikimedia.org/wiki/Terms_of_Use bruksvilkårene] for detaljer.",
+	"wikimediaapiportal-skin-return-to-page-label": "Tilbake til siden",
+	"wikimediaapiportal-skin-updated-ts-label": "Oppdatert $1"
+}

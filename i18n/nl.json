@@ -8,5 +8,8 @@
 	"wikimediaapiportal-skin-login-link-label": "Aanmelden",
 	"wikimediaapiportal-skin-personal-tools-label": "Mijn account",
 	"wikimediaapiportal-skin-button-contact-label": "Contact",
-	"wikimediaapiportal-skin-button-about-wm-label": "Over Wikimedia"
+	"wikimediaapiportal-skin-button-about-wm-label": "Over Wikimedia",
+	"wikimediaapiportal-skin-disclaimer": "De tekst is beschikbaar onder de licentie [https://creativecommons.org/licenses/by-sa/3.0/deed.nl Creative Commons Naamsvermelding-Gelijk delen].\nEr kunnen aanvullende voorwaarden van toepassing zijn. Zie de [https://foundation.wikimedia.org/wiki/Gebruiksvoorwaarden Gebruiksvoorwaarden] voor meer informatie.",
+	"wikimediaapiportal-skin-return-to-page-label": "Terug naar pagina",
+	"wikimediaapiportal-skin-updated-ts-label": "Bijgewerkt op $1"
 }

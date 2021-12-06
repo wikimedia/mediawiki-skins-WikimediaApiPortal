@@ -1,12 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Guycn2"
 		]
 	},
+	"skinname-wikimediaapiportal": "פורטל ה־API של ויקימדיה",
 	"action-wikimediaapiportal-see-page-actions": "לראות את פעולות הדף",
 	"right-wikimediaapiportal-see-page-actions": "הצגת פעולות פעולות הדף",
 	"wikimediaapiportal-skin-desc": "עיצוב מותאם לפורטל ה־API למפתחים של ויקימדיה",
+	"wikimediaapiportal-skin-site-name-main": "ויקימדיה",
+	"wikimediaapiportal-skin-site-name-sub": "פורטל ה־API",
 	"wikimediaapiportal-jumpto-content": "לדלג לתוכן",
 	"wikimediaapiportal-skin-login-link-label": "כניסה לחשבון",
 	"wikimediaapiportal-skin-personal-tools-label": "החשבון שלי",
