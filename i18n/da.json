@@ -10,5 +10,7 @@
 	"wikimediaapiportal-skin-button-about-wm-label": "Om Wikimedia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Ryd søgning",
 	"wikimediaapiportal-skin-return-to-page-label": "Tilbage til siden",
-	"wikimediaapiportal-skin-updated-ts-label": "Opdaterede $1"
+	"wikimediaapiportal-skin-updated-ts-label": "Opdaterede $1",
+	"wikimediaapiportal-skin-search-placeholder": "Søg",
+	"tooltip-wikimediaapiportal-skin-search-title": "Søg"
 }

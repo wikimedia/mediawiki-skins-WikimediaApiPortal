@@ -1,8 +1,26 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата"
+			"Ата",
+			"DDPAT"
 		]
 	},
-	"action-edit-docs": "редагування документації"
+	"skinname-wikimediaapiportal": "WikimediaAPIPortal",
+	"action-edit-docs": "редагування документації",
+	"right-edit-docs": "Редагування документації",
+	"wikimediaapiportal-skin-desc": "Користувацька тема для Wikimedia API Portal",
+	"wikimediaapiportal-skin-site-name-main": "Вікімедіа",
+	"wikimediaapiportal-skin-site-name-sub": "Портал API",
+	"wikimediaapiportal-jumpto-content": "Перейти до вмісту",
+	"wikimediaapiportal-skin-login-link-label": "Увійти",
+	"wikimediaapiportal-skin-button-contact-label": "Контакт",
+	"wikimediaapiportal-skin-button-about-wm-label": "Про Вікімедіа",
+	"wikimediaapiportal-skin-button-clear-search-label": "Очистити пошук",
+	"wikimediaapiportal-skin-wikimedia-info": "Фонд Вікімедіа (Wikimedia Foundation, Inc) — неприбуткова благодійна організація, присвячена заохоченню зростання, розвитку та поширення вільного багатомовного контенту і безоплатному наданню повного контенту цих вікі-проєктів громадськості.",
+	"wikimediaapiportal-skin-footer-links": "* Проєкти Вікімедіа\n** https://www.wikipedia.org/|Вікіпедія\n** https://www.wikibooks.org/|Вікіпідручник\n** https://www.wikiversity.org/|Віківерситет\n** https://www.wikinews.org/|Вікіновини\n** https://www.wiktionary.org/|Вікісловник\n** https://www.wikisource.org/|Вікіджерела\n** https://www.wikiquote.org/|Вікіцитати\n** https://www.wikivoyage.org/|Вікімандри\n** https://commons.wikimedia.org/|Вікісховище\n** https://www.wikidata.org/|Вікідані\n** https://species.wikimedia.org/|Віківиди\n** https://www.mediawiki.org/|MediaWiki\n* Афіліати руху\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|Регіональні відділення Вікімедіа\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|Тематичні організації Вікімедіа\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|Групи користувачів Вікімедіа\n* ІНШЕ\n** https://foundation.wikimedia.org/wiki/Terms_of_Use|Умови користування\n** https://foundation.wikimedia.org/wiki/Privacy_policy/|Політика конфіденційності\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|Відмова від відповідальності\n** https://wikimediafoundation.org/accessibility-statement/|Заява про доступність\n** https://foundation.wikimedia.org/wiki/Cookie_statement|Заява про куки\n** https://www.mediawiki.org/wiki/Code_of_Conduct|Кодекс поведінки",
+	"wikimediaapiportal-skin-disclaimer": "Текст доступний на умовах ліцензії [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Attribution-ShareAlike License];\nтакож можуть діяти додаткові умови.\nДетальніше див. [https://foundation.wikimedia.org/wiki/Terms_of_Use Умови використання].",
+	"wikimediaapiportal-skin-return-to-page-label": "Повернутися до сторінки",
+	"wikimediaapiportal-skin-updated-ts-label": "Оновлено $1",
+	"wikimediaapiportal-skin-search-placeholder": "Пошук",
+	"tooltip-wikimediaapiportal-skin-search-title": "Пошук"
 }
