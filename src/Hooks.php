@@ -17,7 +17,12 @@
  * @file
  */
 
-class WikimediaApiPortalHooks {
+namespace MediaWiki\Skin\WikimediaApiPortal;
+
+use OutputPage;
+use Skin;
+
+class Hooks {
 	/**
 	 * @param string &$subpages Subpage links HTML
 	 * @param Skin $skin

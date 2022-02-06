@@ -28,11 +28,8 @@
 	"TestAutoloadNamespaces": {
 		"MediaWiki\\Skin\\WikimediaApiPortal\\Test\\": "tests/phpunit/integration/"
 	},
-	"AutoloadClasses": {
-		"WikimediaApiPortalHooks": "src/WikimediaApiPortalHooks.php"
-	},
 	"Hooks": {
-		"SkinSubPageSubtitle": "WikimediaApiPortalHooks::onSkinSubPageSubtitle"
+		"SkinSubPageSubtitle": "MediaWiki\\Skin\\WikimediaApiPortal\\Hooks::onSkinSubPageSubtitle"
 	},
 	"AvailableRights": [
 		"edit-docs"
