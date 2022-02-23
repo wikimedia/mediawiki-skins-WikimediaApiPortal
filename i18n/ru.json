@@ -2,13 +2,17 @@
 	"@metadata": {
 		"authors": [
 			"Okras",
-			"Urfiner"
+			"Urfiner",
+			"Pacha Tchernof"
 		]
 	},
 	"action-edit-docs": "править документацию",
 	"right-edit-docs": "Править документацию",
+	"wikimediaapiportal-skin-desc": "Пользовательская оболочка для Портала API Викимедиа",
+	"wikimediaapiportal-skin-site-name-main": "Викимедиа",
 	"wikimediaapiportal-jumpto-content": "Перейти к содержанию",
 	"wikimediaapiportal-skin-login-link-label": "Войти",
+	"wikimediaapiportal-skin-button-contact-label": "Контактная информация",
 	"wikimediaapiportal-skin-button-about-wm-label": "О Википедии",
 	"wikimediaapiportal-skin-button-clear-search-label": "Очистить поиск",
 	"wikimediaapiportal-skin-return-to-page-label": "Вернуться на страницу",
