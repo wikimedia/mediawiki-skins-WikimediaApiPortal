@@ -30,7 +30,7 @@ use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Skin\WikimediaApiPortal\Skin;
 use MediaWiki\Skin\WikimediaApiPortal\TemplateParser;
 use MediaWiki\Skin\WikimediaApiPortal\WikimediaApiPortalTemplate;
-use MediaWiki\Special\SpecialPageFactory;
+use MediaWiki\SpecialPage\SpecialPageFactory;
 use Message;
 use NamespaceInfo;
 use PageProps;

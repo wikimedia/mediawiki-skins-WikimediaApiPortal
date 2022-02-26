@@ -20,7 +20,7 @@ namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
 use IContextSource;
 use MediaWiki\Config\ServiceOptions;
-use MediaWiki\Special\SpecialPageFactory;
+use MediaWiki\SpecialPage\SpecialPageFactory;
 use NamespaceInfo;
 use PageProps;
 use Title;

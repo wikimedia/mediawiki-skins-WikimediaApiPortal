@@ -37,7 +37,7 @@ use MediaWiki\Skin\WikimediaApiPortal\Component\SearchButtonComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\SearchFieldComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\SecondaryNavComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent;
-use MediaWiki\Special\SpecialPageFactory;
+use MediaWiki\SpecialPage\SpecialPageFactory;
 use NamespaceInfo;
 use PageProps;
 use TitleFactory;
