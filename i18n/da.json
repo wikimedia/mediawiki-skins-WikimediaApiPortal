@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Saederup92"
+			"Saederup92",
+			"Jan Friberg"
 		]
 	},
 	"wikimediaapiportal-jumpto-content": "Spring til indhold",
+	"wikimediaapiportal-skin-login-link-label": "Log ind",
 	"wikimediaapiportal-skin-personal-tools-label": "Min konto",
+	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
 	"wikimediaapiportal-skin-button-about-wm-label": "Om Wikimedia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Ryd søgning",
 	"wikimediaapiportal-skin-return-to-page-label": "Tilbage til siden",
