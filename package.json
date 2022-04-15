@@ -1,4 +1,5 @@
 {
+	"name": "WikimediaApiPortal",
 	"private": true,
 	"scripts": {
 		"build:bootstrap": "node-sass --output dist/ --output-style compact resources/bootstrap.scss",
