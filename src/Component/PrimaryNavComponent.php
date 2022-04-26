@@ -46,6 +46,10 @@ class PrimaryNavComponent extends Component {
 				$subitems = [];
 				$isActive = false;
 				foreach ( $menu['content'] as $key => $item ) {
+					if ( !isset( $item['href'] ) || !isset( $item['text'] ) ) {
+						// Skip any links without href or text set.
+						continue;
+					}
 					/** @var array $item See Skin::addToSidebarPlain */
 					$isActive = $isActive || $this->isActiveLink( $title, $item['href'] );
 					$subitems[] = Html::element(
