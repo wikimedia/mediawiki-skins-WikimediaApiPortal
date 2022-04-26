@@ -25,9 +25,6 @@ class MainComponent extends MessageComponent {
 	/**
 	 * @param IMessageFormatterFactory $messageFormatterFactory
 	 * @param IContextSource $contextSource
-	 * @param string $headelement
-	 * @param string $bottomelement
-	 * @param string $trail
 	 * @param string $sitenotice
 	 * @param ?LogoComponent $logo
 	 * @param ?NavMenuComponent $navMenu
@@ -43,9 +40,6 @@ class MainComponent extends MessageComponent {
 	public function __construct(
 		IMessageFormatterFactory $messageFormatterFactory,
 		IContextSource $contextSource,
-		string $headelement,
-		string $bottomelement,
-		string $trail,
 		string $sitenotice,
 		?LogoComponent $logo,
 		?NavMenuComponent $navMenu,
@@ -64,10 +58,7 @@ class MainComponent extends MessageComponent {
 			$contextSource
 		);
 		$this->args = [
-			'html-headelement' => $headelement,
-			'html-bottomelement' => $bottomelement,
 			'jumptocontent' => $this->formatMessage( 'wikimediaapiportal-jumpto-content' ),
-			'html-trail' => $trail,
 			'html-siteNotice' => $sitenotice,
 			'Logo' => $logo,
 			'NavMenu' => $navMenu,

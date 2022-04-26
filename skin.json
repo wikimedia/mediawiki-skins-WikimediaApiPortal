@@ -11,12 +11,18 @@
 	"descriptionmsg": "wikimediaapiportal-skin-desc",
 	"namemsg": "skinname-wikimediaapiportal",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"ValidSkinNames": {
 		"wikimediaapiportal": {
 			"DisplayName": "WikimediaApiPortal",
-			"class": "MediaWiki\\Skin\\WikimediaApiPortal\\Skin"
+			"class": "MediaWiki\\Skin\\WikimediaApiPortal\\Skin",
+			"args": [
+				{
+					"name": "wikimediaapiportal",
+					"bodyOnly": true
+				}
+			]
 		}
 	},
 	"MessagesDirs": {
