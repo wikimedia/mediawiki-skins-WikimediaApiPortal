@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"01miki10",
-			"Pyscowicz"
+			"Pyscowicz",
+			"Rönttönen"
 		]
 	},
 	"action-edit-docs": "muokata ohjeistusta",
@@ -13,5 +14,7 @@
 	"wikimediaapiportal-skin-button-about-wm-label": "Tietoja Wikipediasta",
 	"wikimediaapiportal-skin-button-clear-search-label": "Tyhjennä haku",
 	"wikimediaapiportal-skin-return-to-page-label": "Palaa sivulle",
-	"wikimediaapiportal-skin-updated-ts-label": "Päivitetty $1"
+	"wikimediaapiportal-skin-updated-ts-label": "Päivitetty $1",
+	"wikimediaapiportal-skin-search-placeholder": "Etsi",
+	"tooltip-wikimediaapiportal-skin-search-title": "Etsi"
 }
