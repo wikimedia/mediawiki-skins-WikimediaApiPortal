@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Huñvreüs"
+		]
+	},
+	"action-edit-docs": "gemmañ an teuliadur",
+	"right-edit-docs": "Kemmañ an teuliadur",
+	"wikimediaapiportal-jumpto-content": "Mont d’an endalc’had",
+	"wikimediaapiportal-skin-login-link-label": "Kevreañ",
+	"wikimediaapiportal-skin-button-contact-label": "Darempred",
+	"wikimediaapiportal-skin-button-about-wm-label": "Diwar-benn Wikimedia",
+	"wikimediaapiportal-skin-return-to-page-label": "Distreiñ d'ar bajenn",
+	"wikimediaapiportal-skin-search-placeholder": "Klask",
+	"tooltip-wikimediaapiportal-skin-search-title": "Klask"
+}
