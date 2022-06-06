@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"AYZ04",
+			"GuoPC",
 			"Lakejason0",
 			"Shuiwater",
 			"SkEy",
@@ -19,7 +20,7 @@
 	"wikimediaapiportal-skin-button-about-wm-label": "关于维基媒体",
 	"wikimediaapiportal-skin-button-clear-search-label": "清除搜索",
 	"wikimediaapiportal-skin-wikimedia-info": "维基媒体基金会是一个非营利慈善组织，致力于自由多语言内容的成长、发展与分发，并向公众免费提供基于Wiki项目的完整内容",
-	"wikimediaapiportal-skin-footer-links": "* 维基媒体计划\n** https://www.wikipedia.org/|维基百科\n** https://www.wikibooks.org/|维基教科书\n** https://www.wikiversity.org/|维基学院\n** https://www.wikinews.org/|维基新闻\n** https://www.wiktionary.org/|维基词典\n** https://www.wikisource.org/|维基文库\n** https://www.wikiquote.org/|维基语录\n** https://www.wikivoyage.org/|维基导游\n** https://commons.wikimedia.org/|维基共享资源\n** https://www.wikidata.org/|维基数据\n** https://species.wikimedia.org/|维基物种\n** https://www.mediawiki.org/|MediaWiki\n* 运动自治会\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|维基媒体分会\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|维基媒体专题组织\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|维基媒体用户组\n* OTHER\n** https://foundation.wikimedia.org/wiki/Terms_of_Use|使用条款\n** https://foundation.wikimedia.org/wiki/Privacy_policy/|隐私政策\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|免责声明\n** https://wikimediafoundation.org/accessibility-statement/|无障碍声明\n** https://foundation.wikimedia.org/wiki/Cookie_statement|Cookie声明\n** https://www.mediawiki.org/wiki/Code_of_Conduct|行为准则",
+	"wikimediaapiportal-skin-footer-links": "* 维基媒体计划\n** https://www.wikipedia.org/|维基百科\n** https://www.wikibooks.org/|维基教科书\n** https://www.wikiversity.org/|维基学院\n** https://www.wikinews.org/|维基新闻\n** https://www.wiktionary.org/|维基词典\n** https://www.wikisource.org/|维基文库\n** https://www.wikiquote.org/|维基语录\n** https://www.wikivoyage.org/|维基导游\n** https://commons.wikimedia.org/|维基共享资源\n** https://www.wikidata.org/|维基数据\n** https://species.wikimedia.org/|维基物种\n** https://www.mediawiki.org/|MediaWiki\n* 运动自治会\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|维基媒体分会\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|维基媒体专题组织\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|维基媒体用户组\n* OTHER\n** https://foundation.wikimedia.org/wiki/Terms_of_Use|使用条款\n** https://foundation.wikimedia.org/wiki/Privacy_policy|隐私政策\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|免责声明\n** https://wikimediafoundation.org/accessibility-statement/|无障碍声明\n** https://foundation.wikimedia.org/wiki/Cookie_statement|Cookie声明\n** https://www.mediawiki.org/wiki/Code_of_Conduct|行为准则",
 	"wikimediaapiportal-skin-disclaimer": "文字内容采用<a href=\"https://creativecommons.org/licenses/by-sa/3.0/deed.zh\">知识共享署名-相同方式共享许可协议</a>授权，其他附加条款可能适用。详情请见<a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use\">使用条款</a>。",
 	"wikimediaapiportal-skin-return-to-page-label": "返回页面",
 	"wikimediaapiportal-skin-updated-ts-label": "更新于$1",
