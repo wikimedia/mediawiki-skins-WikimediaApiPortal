@@ -3,7 +3,8 @@
 		"authors": [
 			"Okras",
 			"Pacha Tchernof",
-			"Urfiner"
+			"Urfiner",
+			"Kaganer"
 		]
 	},
 	"action-edit-docs": "править документацию",
@@ -15,6 +16,8 @@
 	"wikimediaapiportal-skin-button-contact-label": "Контактная информация",
 	"wikimediaapiportal-skin-button-about-wm-label": "О Википедии",
 	"wikimediaapiportal-skin-button-clear-search-label": "Очистить поиск",
+	"wikimediaapiportal-skin-wikimedia-info": "Фонд Викимедиа (Wikimedia Foundation, Inc) — некоммерческая благотворительная организация, целями которой являются поощрение и поддержка роста, развития и распространения свободного многоязычного контента, а также предоставление бесплатного публичного доступа ко всей информации, собранной в рамках соответствующих вики-проектов.",
+	"wikimediaapiportal-skin-disclaimer": "Текст доступен по [https://creativecommons.org/licenses/by-sa/3.0/deed.ru лицензии Creative Commons Attribution-ShareAlike], в отдельных случаях могут действовать дополнительные условия. Подробнее см. [https://foundation.wikimedia.org/wiki/Terms_of_Use/ru Условия использования].",
 	"wikimediaapiportal-skin-return-to-page-label": "Вернуться на страницу",
 	"wikimediaapiportal-skin-updated-ts-label": "Обновлено $1",
 	"wikimediaapiportal-skin-search-placeholder": "Найти",
