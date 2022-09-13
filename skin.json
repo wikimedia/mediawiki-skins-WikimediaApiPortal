@@ -54,10 +54,16 @@
 			"features": {
 				"normalize": true,
 				"elements": true,
-				"content": true,
 				"interface": true,
 				"logo": false,
-				"legacy": true
+				"content-links": true,
+				"content-media": true,
+				"interface-message-box": true,
+				"interface-category": true,
+				"content-tables": true,
+				"i18n-ordered-lists": true,
+				"i18n-all-lists-margins": true,
+				"i18n-headings": true
 			},
 			"styles": {
 				"skin.wikimediaapiportal.styles/entry.less": {},
