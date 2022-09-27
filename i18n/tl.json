@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jojit fb",
 			"Mrkczr"
 		]
 	},
-	"action-edit-docs": "i-edit ang dokumentasyon",
-	"right-edit-docs": "I-edit ang dokumentasyon"
+	"action-edit-docs": "baguhin ang dokumentasyon",
+	"right-edit-docs": "baguhin ang dokumentasyon"
 }
