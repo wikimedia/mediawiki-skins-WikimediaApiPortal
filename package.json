@@ -6,7 +6,7 @@
 		"build": "npm -s run build:bootstrap && npm -s run build:copy",
 		"test": "npm -s run lint",
 		"lint": "npm -s run lint:js && npm -s run lint:i18n && npm -s run lint:styles",
-		"lint:js": "eslint --cache --max-warnings 0 .",
+		"lint:js": "eslint --cache .",
 		"lint:styles": "stylelint \"**/*.{less,css}\"",
 		"lint:i18n": "banana-checker --requireLowerCase=0 i18n/"
 	},
