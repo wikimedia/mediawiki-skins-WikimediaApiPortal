@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Սերգեյ Սաֆարյան"
 		]
 	},
+	"right-edit-docs": "Խմբագրել փաստաթղթերը",
 	"wikimediaapiportal-skin-search-placeholder": "Որոնել",
 	"tooltip-wikimediaapiportal-skin-search-title": "Որոնել"
 }
