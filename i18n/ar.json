@@ -1,8 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Meno25"
 		]
 	},
-	"wikimediaapiportal-skin-button-about-wm-label": "عن ويكيميديا"
+	"action-edit-docs": "عدل التوثيق",
+	"right-edit-docs": "عدل التوثيق",
+	"wikimediaapiportal-skin-desc": "شكل مخصص لبوابة ويكيميديا API",
+	"wikimediaapiportal-skin-site-name-main": "ويكيميديا",
+	"wikimediaapiportal-skin-site-name-sub": "بوابة API",
+	"wikimediaapiportal-jumpto-content": "انتقل إلى المحتوى",
+	"wikimediaapiportal-skin-login-link-label": "تسجيل الدخول",
+	"wikimediaapiportal-skin-button-contact-label": "اتصل",
+	"wikimediaapiportal-skin-button-about-wm-label": "عن ويكيميديا",
+	"wikimediaapiportal-skin-button-clear-search-label": "مسح البحث",
+	"wikimediaapiportal-skin-wikimedia-info": "مؤسسة ويكيميديا ، Inc هي منظمة خيرية غير ربحية مكرسة لتشجيع نمو وتطوير وتوزيع محتوى مجاني متعدد اللغات ، وتقديم المحتوى الكامل لهذه المشاريع القائمة على الويكي للجمهور مجانًا.",
+	"wikimediaapiportal-skin-disclaimer": "النص متاح بموجب [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Attribution-ShareAlike License] ؛ قد يتم تطبيق شروط إضافية. راجع [https://foundation.wikimedia.org/wiki/Terms_of_Use Terms of Use] للحصول على التفاصيل.",
+	"wikimediaapiportal-skin-return-to-page-label": "العودة إلى الصفحة",
+	"wikimediaapiportal-skin-updated-ts-label": "تم تحديث $1",
+	"wikimediaapiportal-skin-search-placeholder": "يبحث",
+	"tooltip-wikimediaapiportal-skin-search-title": "يبحث"
 }
