@@ -8,5 +8,9 @@
 	"wikimediaapiportal-skin-login-link-label": "Prijavi se",
 	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
 	"wikimediaapiportal-skin-button-about-wm-label": "O Wikimediji",
-	"wikimediaapiportal-skin-wikimedia-info": "Zaklada Wikimedija (The Wikimedia Foundation, Inc) neprofitna je dobrotvorna organizacija posvećena ohrabrivanju rasta, razvoja i dijeljenja slobodnoga višejezičnog sadržaja, kao i pružanju javnosti otvorenoga cjelokupnog sadržaja njenih projekata zasnovanih na wikiju, potpuno besplatno."
+	"wikimediaapiportal-skin-button-clear-search-label": "Očisti pretragu",
+	"wikimediaapiportal-skin-wikimedia-info": "Zaklada Wikimedija (The Wikimedia Foundation, Inc) neprofitna je dobrotvorna organizacija posvećena ohrabrivanju rasta, razvoja i dijeljenja slobodnoga višejezičnog sadržaja, kao i pružanju javnosti otvorenoga cjelokupnog sadržaja njenih projekata zasnovanih na wikiju, potpuno besplatno.",
+	"wikimediaapiportal-skin-disclaimer": "Tekst je dostupan pod licencom [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Attribution-ShareAlike]; mogu se primijeniti i dodatni uslvi.\nZa više informacija pogledajte [https://foundation.wikimedia.org/wiki/Terms_of_Use Uslove upotrebe].",
+	"wikimediaapiportal-skin-return-to-page-label": "Nazad na stranicu",
+	"wikimediaapiportal-skin-updated-ts-label": "Podnovljeno $1"
 }
