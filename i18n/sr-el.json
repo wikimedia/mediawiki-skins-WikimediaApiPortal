@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"wikimediaapiportal-skin-login-link-label": "Prijavi me",
+	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
+	"wikimediaapiportal-skin-button-about-wm-label": "O Vikimediji",
+	"wikimediaapiportal-skin-return-to-page-label": "Nazad na stranicu",
+	"wikimediaapiportal-skin-updated-ts-label": "Ažurirano: $1"
+}
