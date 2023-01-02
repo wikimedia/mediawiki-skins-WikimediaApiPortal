@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kimberli Mäkäräinen (WMNO)"
+			"Kimberli Mäkäräinen (WMNO)",
+			"Yupik"
 		]
 	},
-	"wikimediaapiportal-skin-login-link-label": "Čálit sisa"
+	"wikimediaapiportal-skin-login-link-label": "Čálit sisa",
+	"wikimediaapiportal-skin-search-placeholder": "Oza",
+	"tooltip-wikimediaapiportal-skin-search-title": "Oza"
 }
