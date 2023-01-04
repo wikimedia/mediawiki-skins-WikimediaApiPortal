@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Seipinne"
+			"Seipinne",
+			"Yupik"
 		]
 	},
 	"wikimediaapiportal-skin-login-link-label": "Čáládât siisâ",
-	"wikimediaapiportal-skin-button-about-wm-label": "Tiäđuh Wikimediast"
+	"wikimediaapiportal-skin-button-about-wm-label": "Tiäđuh Wikimediast",
+	"wikimediaapiportal-skin-search-placeholder": "Uusâ",
+	"tooltip-wikimediaapiportal-skin-search-title": "Uusâ"
 }
