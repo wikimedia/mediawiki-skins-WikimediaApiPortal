@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"wikimediaapiportal-jumpto-content": "Pojdi na vsebino",
+	"wikimediaapiportal-skin-login-link-label": "Prijava",
+	"wikimediaapiportal-skin-button-contact-label": "Stik",
+	"wikimediaapiportal-skin-button-about-wm-label": "O Wikimedii",
+	"wikimediaapiportal-skin-button-clear-search-label": "Počisti iskanje",
+	"wikimediaapiportal-skin-wikimedia-info": "Fundacija Wikimedia je neprofitna dobrodelna organizacija, ki si prizadeva spodbujati rast, razvoj in distribucijo prostih večjezičnih vsebin ter javnosti brezplačno zagotavljati celotno vsebino teh projektov, ki temeljijo na vikijih.",
+	"wikimediaapiportal-skin-disclaimer": "Besedilo je na voljo pod licenco [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Priznanje avtorstva-Deljenje pod enakimi pogoji]; veljajo lahko tudi dodatni pogoji. Podrobnosti so razložene na strani  [https://foundation.wikimedia.org/wiki/Terms_of_Use Pogoji uporabe].",
+	"wikimediaapiportal-skin-return-to-page-label": "Vrnitev na stran",
+	"wikimediaapiportal-skin-updated-ts-label": "Posodobljeno $1"
+}
