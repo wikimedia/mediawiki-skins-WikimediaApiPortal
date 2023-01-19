@@ -51,14 +51,19 @@ trait ComponentTestTrait {
 	}
 
 	private function getMockValueForParam( ReflectionParameter $param ): array {
-		if ( $param->isArray() ) {
+		$type = $param->getType();
+		if ( !$type ) {
+			throw new InvalidArgumentException( "No parameter type" );
+		}
+
+		$typeName = $type->getName();
+
+		if ( $typeName === 'array' ) {
 			return [ null, [] ];
 		}
 
-		$type = $param->getClass();
 		$stringValue = "VALUE:{$param->getName()}:{$param->getPosition()}";
-		if ( !$type ) {
-			// Assume string
+		if ( $typeName === 'string' ) {
 			return [ $stringValue, $stringValue ];
 		}
 
@@ -77,17 +82,17 @@ trait ComponentTestTrait {
 			[ ServiceOptions::class, 'newServiceOptions' ]
 		];
 		foreach ( $types as [ $class, $method ] ) {
-			if ( $type->getName() === $class || $type->isSubclassOf( $class ) ) {
+			if ( $typeName === $class || is_subclass_of( $typeName, $class ) ) {
 				return [ null, $this->$method() ];
 			}
 		}
 
-		if ( $type->getName() === Component::class ||
-			$type->isSubclassOf( Component::class )
+		if ( $typeName === Component::class ||
+			is_subclass_of( $typeName, Component::class )
 		) {
-			return [ $stringValue, $this->createComponentMock( $type->getName(), $stringValue ) ];
+			return [ $stringValue, $this->createComponentMock( $typeName, $stringValue ) ];
 		}
-		throw new InvalidArgumentException( "Unsupported parameter type {$type->getName()}" );
+		throw new InvalidArgumentException( "Unsupported parameter type {$typeName}" );
 	}
 
 	public function testAllComponentArgumentPassedToRender() {
