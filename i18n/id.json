@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Daud I.F. Argana",
-			"Kenrick95"
+			"Kenrick95",
+			"Rachmat04"
 		]
 	},
 	"action-edit-docs": "menyunting dokumentasi",
@@ -14,7 +15,7 @@
 	"wikimediaapiportal-skin-button-about-wm-label": "Tentang Wikimedia",
 	"wikimediaapiportal-skin-button-clear-search-label": "Bersihkan pencarian",
 	"wikimediaapiportal-skin-wikimedia-info": "Wikimedia Foundation, Inc adalah organisasi amal nirlaba yang didedikasikan untuk mendorong pertumbuhan, perkembangan dan distribusi konten bebas multibahasa, dan untuk menyedaikan konten lengkap dari proyek-proyek berbasis wiki ini kepada umum secara gratis.",
-	"wikimediaapiportal-skin-footer-links": "* Proyek Wikimedia\n** https://www.wikipedia.org/|Wikipedia\n**  https://www.wikibooks.org/|Wikibooks\n** https://www.wikiversity.org/|Wikiversity\n** https://www.wikinews.org/|Wikinews\n** https://www.wiktionary.org/|Wiktionary\n** https://www.wikisource.org/|Wikisource\n** https://www.wikiquote.org/|Wikiquote\n** https://www.wikivoyage.org/|Wikivoyage\n** https://commons.wikimedia.org/|Wikimedia Commons\n** https://www.wikidata.org/|Wikidata\n** https://species.wikimedia.org/|Wikispecies\n** https://www.mediawiki.org/|MediaWiki\n* Gerakan yang berafiliasi\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|Cabang Wikimedia\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|Organisasi Tematik Wikimedia\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|Kelompok Pengguna Wikimedia\n* Lain-lain\n** https://foundation.wikimedia.org/wiki/Terms_of_Use|Ketentuan penggunaan\n** https://foundation.wikimedia.org/wiki/Privacy_policy/|Kebijakan privasi\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|Penyangkalan\n** https://wikimediafoundation.org/accessibility-statement/|Pernyataan aksesibilitas\n** https://foundation.wikimedia.org/wiki/Cookie_statement|Pernyataan kuki\n** https://www.mediawiki.org/wiki/Code_of_Conduct|Kode etik",
+	"wikimediaapiportal-skin-footer-links": "* Proyek Wikimedia\n** https://www.wikipedia.org/|Wikipedia\n** https://www.wikibooks.org/|Wikibooks\n** https://www.wikiversity.org/|Wikiversity\n** https://www.wikinews.org/|Wikinews\n** https://www.wiktionary.org/|Wiktionary\n** https://www.wikisource.org/|Wikisource\n** https://www.wikiquote.org/|Wikiquote\n** https://www.wikivoyage.org/|Wikivoyage\n** https://commons.wikimedia.org/|Wikimedia Commons\n** https://www.wikidata.org/|Wikidata\n** https://species.wikimedia.org/|Wikispecies\n** https://www.mediawiki.org/|MediaWiki\n* Afiliasi Gerakan\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|Mitra lokal Wikimedia\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|Organisasi Tematik Wikimedia\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|Kelompok Pengguna Wikimedia \n* LAINNYA\n** https://foundation.wikimedia.org/wiki/Terms_of_Use|Ketentuan penggunaan\n** https://foundation.wikimedia.org/wiki/Privacy_policy|Kebijakan privasi\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|Penafian\n** https://wikimediafoundation.org/accessibility-statement/|Pernyataan aksesibilitas\n** https://foundation.wikimedia.org/wiki/Cookie_statement|Pernyataan kuki\n** https://www.mediawiki.org/wiki/Code_of_Conduct|Pedoman perilaku",
 	"wikimediaapiportal-skin-disclaimer": "Teks tersedia di bawah [https://creativecommons.org/licenses/by-sa/3.0/ Lisensi Atribusi-BerbagiSerupa Creative Commons]; ketentuan tambahan mungkin berlaku. Lihat [https://foundation.wikimedia.org/wiki/Terms_of_Use/id Ketentuan Penggunaan] untuk lebih jelasnya.",
 	"wikimediaapiportal-skin-return-to-page-label": "Kembali ke halaman",
 	"wikimediaapiportal-skin-updated-ts-label": "Diperbarui pada $1",
