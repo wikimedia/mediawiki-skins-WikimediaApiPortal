@@ -66,9 +66,9 @@ class UserMenuComponent extends MessageComponent {
 
 		$options->assertRequiredOptions( self::CONSTRUCTOR_OPTIONS );
 
-		if ( $user->isAnon() ) {
+		if ( $user->isAnon() || $user->isTemp() ) {
 			$this->args = [
-				'isAnon' => true,
+				'showOnlyLogin' => true,
 				'login-href' => SpecialPage::getTitleFor( 'Userlogin' )->getLocalURL( [
 					'returnto' => $title
 				] ),
@@ -108,7 +108,7 @@ class UserMenuComponent extends MessageComponent {
 		] );
 
 		$this->args = [
-			'isAnon' => false,
+			'showOnlyLogin' => false,
 			'user-menu-label' => $label,
 			'user-menu-items' => $items,
 		];

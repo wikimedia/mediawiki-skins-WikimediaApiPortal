@@ -1,7 +1,7 @@
-{{#isAnon}}
+{{#showOnlyLogin}}
 	<a class="btn wm-button wm-header-item" href="{{login-href}}">{{login-label}}</a>
-{{/isAnon}}
-{{^isAnon}}
+{{/showOnlyLogin}}
+{{^showOnlyLogin}}
 	<div class="wm-header-item wm-user-menu">
 		<div class="user-menu">
 			{{{user-menu-label}}}
@@ -12,4 +12,4 @@
 			</div>
 		</div>
 	</div>
-{{/isAnon}}
+{{/showOnlyLogin}}
