@@ -1,36 +1,46 @@
 /* Header */
 .wm-header {
 	min-height: 5.625rem;
+
 	.wm-navbar-button {
 		display: none;
 	}
+
 	.wm-header-inner {
 		max-width: 90rem;
 		margin-left: auto;
 		margin-right: auto;
 		padding: 1.25rem 6.25rem 0 6.25rem;
 	}
+
 	.wm-header-item {
 		margin: 1.25rem 0.625rem 0 0.625rem;
+
 		&.wm-notification-button {
 			margin: 1.25rem 0 0 0.625rem;
 		}
 	}
+
 	.wm-search-button {
 		margin-right: 0;
 	}
 	/* rules below can be confusing, it's due to complex default rules */
-	#mw-navigation, div.wm-dropdown {
+	#mw-navigation,
+	div.wm-dropdown {
 		background-color: transparent;
-		&#mw-navigation  {
+
+		&#mw-navigation {
 			margin-bottom: 0 !important;
 			padding: 1.25rem 0 0 0;
 		}
+
 		a.dropdown-toggle {
 			color: @color-base-10;
+
 			&:hover {
 				color: @color-base-10;
 			}
+
 			&:focus {
 				color: @color-base-10;
 				text-decoration: none;
@@ -39,25 +49,32 @@
 				background: none;
 			}
 		}
+
 		div.nav-item {
 			padding: 0 0.90625rem 0.5rem 0.90625rem;
 			white-space: nowrap;
+
 			a.oo-ui-buttonElement-button {
 				color: @color-base-10;
 				padding: 0.5625rem 0.40625rem;
 			}
+
 			&.active {
 				border-bottom: 0.125rem solid @color-base-10;
 			}
 		}
+
 		div.dropdown {
 			height: 100%;
+
 			div.wm-icon-button {
 				height: 100%;
-				&:after {
+
+				&::after {
 					border: none;
 				}
 			}
+
 			div.dropdown-menu {
 				background-color: @color-base-10;
 				padding: 0;
@@ -67,28 +84,37 @@
 				left: -0.0625rem !important; //Dynamically set, has to be !important :(
 				&.wm-dropdown-menu-auto {
 					min-width: auto;
+
 					.dropdown-item {
 						padding-right: 2.5rem;
 						padding-left: 1.25rem;
 					}
+
 					&.dropdown-menu-right {
 						.dropdown-item {
 							padding-left: 2.5rem;
 							padding-right: 1.25rem;
 						}
 					}
-
 				}
+
 				div {
 					min-width: inherit;
 				}
-				div a, a {
+
+				div a,
+				a {
 					padding: 0.625rem 1.25rem 0.625rem 1.25rem;
 					color: @color-base-90;
-					&:hover, &:active, &:focus, &:focus-within {
+
+					&:hover,
+					&:active,
+					&:focus,
+					&:focus-within {
 						background: @color-base-20 none;
 					}
 				}
+
 				&.dropdown-menu-right {
 					a {
 						text-align: right;
@@ -96,16 +122,19 @@
 				}
 			}
 		}
+
 		&.wm-dropdown {
 			.dropdown-toggle {
 				padding-right: 0.3125rem;
 				padding-left: 0.3125rem;
 			}
+
 			.dropdown-menu {
 				border: 0.0625rem solid @color-base-10;
 			}
 		}
 	}
+
 	form.mw-search {
 		margin: 1.25rem 0.625rem 0 0.625rem;
 	}

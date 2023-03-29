@@ -1,24 +1,29 @@
 form.mw-search {
 	background-color: @color-base-90;
+
 	.p-search {
 		padding-right: 0.625rem;
+
 		.wm-search-button-submit {
 			margin: 0;
 		}
-		input[name=search] {
+
+		input[ name='search' ] {
 			max-width: 18.75rem;
-			border:none;
+			border: none;
 			margin-left: 0.625rem;
 			border-radius: 0;
-			background-image:none;
-			background-color:transparent;
+			background-image: none;
+			background-color: transparent;
 			-webkit-box-shadow: none;
 			-moz-box-shadow: none;
 			box-shadow: none;
+
 			&::placeholder {
 				color: @color-base-30;
 			}
 		}
+
 		.p-search .col-1 {
 			text-align: center;
 		}
@@ -26,16 +31,20 @@ form.mw-search {
 }
 
 .suggestions .mw-searchSuggest-link {
-	.suggestions-result, .suggestions-special {
+	.suggestions-result,
+	.suggestions-special {
 		color: @color-base-90;
 		background-color: @color-base-10;
 		padding: 0.3125rem;
+
 		.special-label {
 			color: @color-base-90;
 		}
+
 		.special-query {
 			color: @color-base-80;
 		}
+
 		&:hover {
 			background-color: @color-base-20;
 		}

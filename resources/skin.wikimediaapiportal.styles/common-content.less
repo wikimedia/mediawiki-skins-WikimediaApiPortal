@@ -1,44 +1,57 @@
 .wm-content {
 	.wm-page-actions {
 		margin: 0 0 1.25rem 0;
+
 		.page-actions {
 			text-align: left;
+
 			.oo-ui-buttonWidget.selected a {
 				text-decoration: underline;
 			}
+
 			.btn-group {
 				.wm-page-actions-more {
 					background-repeat: no-repeat;
 					background-position: center;
 					background-size: 1.25rem;
-					&:after {
+
+					&::after {
 						border: none;
 						background-repeat: no-repeat;
 					}
-					&:focus, &:active, &:focus-within, &:visited {
+
+					&:focus,
+					&:active,
+					&:focus-within,
+					&:visited {
 						text-decoration: none;
 						outline: none;
 						box-shadow: none;
 					}
 				}
+
 				&.show {
 					position: relative;
+
 					.dropdown-toggle {
 						text-decoration: none;
 						outline: none;
 						box-shadow: none;
 					}
+
 					.dropdown-menu {
 						left: unset !important;
 						right: 0;
 						top: 0.3125rem !important;
 						padding: 0;
 						box-shadow: none;
+
 						.oo-ui-buttonWidget {
 							display: block;
 							margin: 0;
 							width: 100%;
 							text-align: right;
+
 							a {
 								width: inherit;
 							}
@@ -48,9 +61,11 @@
 			}
 		}
 	}
+
 	#siteNotice {
 		text-align: center;
 	}
+
 	.firstHeading {
 		border-bottom: none;
 		margin-top: 0;
@@ -61,34 +76,45 @@
 	h1 {
 		font-family: 'Charter', 'Georgia', serif;
 		font-size: 2rem;
-		font-weight: 400;
+		font-weight: normal;
 		color: @color-base-10;
 	}
-	h2, h3, h4, h5, h6 {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
 		font-weight: 600;
 		color: @color-base-10;
 	}
+
 	h2 {
 		font-size: 1.5rem;
 		border-bottom: 0.1875rem solid @color-base-80;
 		padding-bottom: 0.125rem;
 	}
+
 	h3 {
 		font-size: 1.25rem;
 	}
+
 	h4 {
 		font-size: 1.125rem;
 	}
+
 	h5 {
 		font-size: 1rem;
 	}
+
 	h6 {
 		font-size: 1rem;
 		font-weight: normal;
 	}
+
 	p {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
 		font-size: 1rem;
 		color: @color-base-10;
 	}
@@ -96,41 +122,51 @@
 	blockquote.templatequote {
 		font-family: 'Charter Italic', sans-serif;
 		font-size: 1.25rem;
+
 		.templatequitecite {
-			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
 			font-size: 0.875rem;
 		}
-		&:before {
+
+		&::before {
 			border: 0.1875rem solid @color-base-70;
 		}
 	}
+
 	figure {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
 		font-style: italic;
 		font-size: 0.813rem;
 		color: @color-base-30;
 	}
 
-	ul, ol {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
+	ul,
+	ol {
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
 		font-size: 1rem;
 		list-style-position: outside;
 		color: @color-base-10;
+
 		ul {
 			list-style-type: disc;
+
 			ul {
 				list-style-type: circle;
+
 				ul {
 					list-style-type: square;
 				}
 			}
 		}
 	}
+
 	.toc ul {
 		// This duplicates the MW style but needs to be repeated due to the above rule.
 		list-style: none;
 	}
-	code, pre {
+
+	code,
+	pre {
 		font-family: 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 		font-size: 0.875rem;
 	}
@@ -140,20 +176,25 @@
 			border: none;
 			border-radius: 0;
 		}
-		table.wikitable, table.wm-table {
+
+		table.wikitable,
+		table.wm-table {
 			&.fullwidth {
 				width: 100%;
 			}
-			th, td {
+
+			th,
+			td {
 				padding: 0.8rem;
 				border-color: @color-base-80;
 				font-size: 1rem;
 			}
+
 			th {
 				text-align: left;
 				background-color: @color-base-90;
-
 			}
+
 			td {
 				background-color: @color-base-100;
 			}
@@ -162,64 +203,80 @@
 		.jumbotron {
 			background-color: @color-base-90;
 		}
+
 		h1 {
 			margin-top: 0;
 		}
+
 		.wm-bold {
 			font-weight: 600;
 		}
+
 		.btn {
 			border: none;
 			border-radius: 0;
 			background: none;
 			box-shadow: none !important;
 			padding: 0.8rem 3rem 0.8rem 3rem;
+
 			&.btn-primary {
 				background: @color-accent-30 none;
+
 				&:hover {
 					background-color: @color-accent-50;
 				}
 			}
+
 			&.btn-secondary {
 				color: @color-accent-30;
 				background: @color-accent-90 none;
+
 				&:hover {
 					color: @color-accent-50;
 				}
 			}
+
 			&.btn-success {
 				border: 0.0625rem solid @color-green-30;
 				color: @color-green-50;
 				background: @color-green-90 none;
 			}
+
 			&.btn-danger {
 				background: @color-red-30 none;
+
 				&:hover {
 					background-color: @color-red-50;
 				}
 			}
+
 			&.btn-warning {
 				border: 0.0625rem solid @color-red-30;
 				color: @color-red-50;
 				background: @color-red-90 none;
 			}
+
 			&.btn-link {
 				color: @color-accent-30;
 				padding: 0.8rem;
 			}
 		}
+
 		.card {
 			box-shadow: none;
 			border: none;
 			border-radius: 0;
 			background: @color-accent-90 none;
+
 			&.transparent {
 				background-color: transparent;
 			}
 		}
+
 		.list-group {
 			.list-group-item {
 				border-radius: 0;
+
 				&.active {
 					background-color: @color-accent-90;
 					color: @color-accent-50;
@@ -227,60 +284,75 @@
 				}
 			}
 		}
+
 		.nav.nav-tabs {
 			margin-left: 0;
 			border: none;
+
 			.nav-item .nav-link {
 				border: 0.0625rem solid @color-base-100;
 				border-radius: 0;
 				background-color: @color-base-80;
 				color: @color-base-10;
-				&:hover, &:focus, &:visited {
+
+				&:hover,
+				&:focus,
+				&:visited {
 					color: @color-base-10;
 					text-decoration: none;
 				}
+
 				&.active {
 					background-color: @color-base-10;
 					color: @color-base-100;
 				}
 			}
 		}
+
 		.pagination .page-item {
 			&.active {
 				a {
 					background-color: @color-accent-30;
 					border-color: @color-accent-30;
 					color: @color-base-90;
+
 					&:hover {
 						background-color: @color-accent-30;
 					}
 				}
 			}
+
 			a {
 				color: @color-base-10;
+
 				&:focus {
 					box-shadow: none;
 					text-decoration: none;
 				}
+
 				&:hover {
 					background-color: @color-base-80;
 				}
 			}
 		}
+
 		.oo-ui-buttonWidget {
 			&.oo-ui-flaggedElement-primary a {
 				background-color: @color-accent-50;
+
 				&:hover {
 					background-color: #447ff5;
 				}
 			}
 		}
 	}
+
 	div.thumbinner {
 		box-sizing: content-box;
 		max-width: 100%;
 		height: auto;
 	}
+
 	div.thumb,
 	img.thumbimage {
 		max-width: 100%;

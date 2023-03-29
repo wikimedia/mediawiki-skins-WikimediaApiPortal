@@ -1,5 +1,5 @@
-@import "common-header-search.less";
-@import "common-header-logo.less";
+@import 'common-header-search.less';
+@import 'common-header-logo.less';
 
 /* Header */
 .wm-header {
@@ -8,9 +8,11 @@
 	-webkit-box-shadow: 0 0.125rem 0.125rem -0.125rem @color-base-50;
 	-moz-box-shadow: 0 0.125rem 0.125rem -0.125rem @color-base-50;
 	box-shadow: 0 0.125rem 0.125rem -0.125rem @color-base-50;
+
 	.wm-header-item {
 		line-height: 2.5rem;
 	}
+
 	.wm-header-border-box {
 		border: 0.0625rem solid @color-base-50;
 		border-radius: 0.125rem;
@@ -33,12 +35,14 @@
 			right: -0.75rem !important;
 		}
 	}
+
 	.navbar-nav {
 		.primary-nav-menu {
 			.oo-ui-buttonElement-frameless.oo-ui-labelElement:first-child {
 				margin-right: 1.15625rem;
 			}
 		}
+
 		.nav-item {
 			.oo-ui-buttonElement-frameless.oo-ui-labelElement:first-child {
 				margin-left: 0;
@@ -48,6 +52,7 @@
 
 	.wm-notification-button {
 		position: relative;
+
 		.wm-notification-count-badge {
 			position: absolute;
 			right: 0.625rem;
@@ -57,22 +62,25 @@
 			padding: 0.625rem 0.25rem 0.625rem 0.25rem;
 			line-height: 0;
 		}
+
 		a span {
 			font-size: 1.125rem;
 			left: 50% !important;
-			transform: translateX(-50%) !important;
+			transform: translateX( -50% ) !important;
 		}
 	}
 
 	.wm-search-clear-button {
 		height: 100%;
+
 		a {
 			height: inherit;
-			&:focus, &:active {
+
+			&:focus,
+			&:active {
 				border: none;
 				box-shadow: none;
 			}
 		}
-
 	}
 }
