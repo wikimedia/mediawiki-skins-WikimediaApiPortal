@@ -37,9 +37,9 @@ use MediaWiki\Skin\WikimediaApiPortal\Component\SearchFieldComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\SecondaryNavComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent;
 use MediaWiki\SpecialPage\SpecialPageFactory;
+use MediaWiki\Title\TitleFactory;
 use NamespaceInfo;
 use PageProps;
-use TitleFactory;
 use Wikimedia\Message\IMessageFormatterFactory;
 use Wikimedia\Message\MessageValue;
 

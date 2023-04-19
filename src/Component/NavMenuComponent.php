@@ -18,8 +18,8 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
+use MediaWiki\Title\TitleFactory;
 use OOUI\IconWidget;
-use TitleFactory;
 
 class NavMenuComponent extends Component {
 	/**

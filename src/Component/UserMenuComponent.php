@@ -22,11 +22,11 @@ use Html;
 use IContextSource;
 use MediaWiki\Config\ServiceOptions;
 use MediaWiki\SpecialPage\SpecialPageFactory;
+use MediaWiki\Title\TitleFactory;
 use Message;
 use OOUI\IconWidget;
 use SpecialPage;
 use Title;
-use TitleFactory;
 use User;
 use Wikimedia\Message\IMessageFormatterFactory;
 
