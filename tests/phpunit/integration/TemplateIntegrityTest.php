@@ -21,12 +21,12 @@
  */
 class TemplateIntegrityTest extends MediaWikiIntegrationTestCase {
 
-	private function getTemplateDir() {
+	private static function getTemplateDir() {
 		return __DIR__ . '/../../../components';
 	}
 
-	public function provideTemplateNames() {
-		foreach ( array_slice( scandir( $this->getTemplateDir() ), 2 ) as $filename ) {
+	public static function provideTemplateNames() {
+		foreach ( array_slice( scandir( self::getTemplateDir() ), 2 ) as $filename ) {
 			yield $filename => [ pathinfo( $filename, PATHINFO_FILENAME ) ];
 		}
 	}
@@ -37,7 +37,7 @@ class TemplateIntegrityTest extends MediaWikiIntegrationTestCase {
 	 */
 	public function testTemplateCompilable( string $templateName ) {
 		$parser = new TemplateParser(
-			$this->getTemplateDir(),
+			self::getTemplateDir(),
 			new EmptyBagOStuff()
 		);
 		$parser->enableRecursivePartials( true );
