@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"MnLsVt",
 			"Norhorn"
 		]
 	},
 	"wikimediaapiportal-skin-button-contact-label": "Επικοινωνία",
 	"wikimediaapiportal-skin-button-about-wm-label": "Σχετικά με τη Βικιπαίδεια",
 	"wikimediaapiportal-skin-button-clear-search-label": "Εκκαθάριση αναζήτησης",
+	"wikimediaapiportal-skin-disclaimer": "Το κείμενο είναι διαθέσιμο στη διεύθυνση [https://creativecommons.org/licenses/by-sa/4.0/ Creative Commons Attribution-ShareAlike License]; Μπορεί να εφαρμοστούν επιπλέον όροι. Βλέπε [https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use Terms of Use] για λεπτομέρειες.",
 	"wikimediaapiportal-skin-return-to-page-label": "Επιστροφή στη σελίδα",
 	"wikimediaapiportal-skin-updated-ts-label": "Ενημερωμένο $1"
 }
