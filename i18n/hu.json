@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hanna Tardos",
+			"Krisztina"
+		]
+	},
+	"wikimediaapiportal-skin-login-link-label": "Bejelentkezés",
+	"wikimediaapiportal-skin-button-contact-label": "Kapcsolat",
+	"wikimediaapiportal-skin-button-about-wm-label": "A Wikimediaról",
+	"wikimediaapiportal-skin-button-clear-search-label": "Keresés törlése",
+	"wikimediaapiportal-skin-return-to-page-label": "Visszatérés a laphoz",
+	"wikimediaapiportal-skin-updated-ts-label": "Frissítve $1"
+}
