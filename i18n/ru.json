@@ -4,12 +4,13 @@
 			"Okras",
 			"Pacha Tchernof",
 			"Urfiner",
-			"Kaganer"
+			"Kaganer",
+			"BerryAVGN"
 		]
 	},
 	"action-edit-docs": "править документацию",
 	"right-edit-docs": "Править документацию",
-	"wikimediaapiportal-skin-desc": "Пользовательская оболочка для Портала API Викимедиа",
+	"wikimediaapiportal-skin-desc": "Пользовательская тема оформления для Портала API Викимедиа",
 	"wikimediaapiportal-skin-site-name-main": "Викимедиа",
 	"wikimediaapiportal-jumpto-content": "Перейти к содержанию",
 	"wikimediaapiportal-skin-login-link-label": "Войти",
