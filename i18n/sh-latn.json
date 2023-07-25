@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"action-edit-docs": "uređivanje dokumentacije",
+	"right-edit-docs": "Uređivanje dokumentacije",
+	"wikimediaapiportal-skin-desc": "Prilagođena tema ​​za Programerski portal Wikimedijinog izvršničkog portala",
+	"wikimediaapiportal-jumpto-content": "Prijeđi na sadržaj",
+	"wikimediaapiportal-skin-login-link-label": "Prijavi se",
+	"wikimediaapiportal-skin-button-contact-label": "Kontakt",
+	"wikimediaapiportal-skin-button-about-wm-label": "O Wikimediji",
+	"wikimediaapiportal-skin-button-clear-search-label": "Očisti pretragu",
+	"wikimediaapiportal-skin-wikimedia-info": "Zaklada Wikimedija (The Wikimedia Foundation, Inc) neprofitna je dobrotvorna organizacija posvećena ohrabrivanju rasta, razvoja i dijeljenja slobodnoga višejezičnog sadržaja, kao i pružanju javnosti otvorenoga cjelokupnog sadržaja njenih projekata zasnovanih na wikiju, potpuno besplatno.",
+	"wikimediaapiportal-skin-return-to-page-label": "Nazad na stranicu",
+	"wikimediaapiportal-skin-updated-ts-label": "Podnovljeno $1",
+	"wikimediaapiportal-skin-search-placeholder": "Traži",
+	"tooltip-wikimediaapiportal-skin-search-title": "Traži"
+}
