@@ -5,6 +5,12 @@
 			"Robin Owain"
 		]
 	},
+	"wikimediaapiportal-jumpto-content": "Neidio i'r cynnwys",
 	"wikimediaapiportal-skin-login-link-label": "Mewngofnodi",
-	"wikimediaapiportal-skin-button-contact-label": "Cysylltu"
+	"wikimediaapiportal-skin-button-contact-label": "Cysylltu",
+	"wikimediaapiportal-skin-button-about-wm-label": "Ynglŷn â Wicimedia",
+	"wikimediaapiportal-skin-button-clear-search-label": "Clirio chwiliad",
+	"wikimediaapiportal-skin-wikimedia-info": "Mae Wikimedia Foundation, Inc yn sefydliad elusennol nid-er-elw sy'n ymroddedig i annog twf, datblygiad a dosbarthiad cynnwys amlieithog am ddim, ac i ddarparu cynnwys llawn y prosiectau wici hyn i'r cyhoedd am ddim.",
+	"wikimediaapiportal-skin-return-to-page-label": "Nôl i dudalen",
+	"wikimediaapiportal-skin-updated-ts-label": "Diweddarwyd $1"
 }
