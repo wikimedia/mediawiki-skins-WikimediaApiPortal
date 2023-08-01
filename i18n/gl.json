@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"action-edit-docs": "editar a documentación",
+	"right-edit-docs": "Editar a documentación",
+	"wikimediaapiportal-skin-desc": "Aspecto personalizado para o portal da API da Wikimedia",
+	"wikimediaapiportal-skin-site-name-sub": "Portal da API",
+	"wikimediaapiportal-jumpto-content": "Saltar ao contido",
+	"wikimediaapiportal-skin-login-link-label": "Acceder ao sistema",
+	"wikimediaapiportal-skin-button-contact-label": "Contacto",
+	"wikimediaapiportal-skin-button-about-wm-label": "Acerca da Wikimedia",
+	"wikimediaapiportal-skin-button-clear-search-label": "Limpar a busca",
+	"wikimediaapiportal-skin-wikimedia-info": "A Fundación Wikimedia, Inc é unha organización benéfica sen ánimo de lucro dedicada a fomentar o crecemento, desenvolvemento e distribución de contido gratuíto e multilingüe, e a ofrecer ao público de xeito gratuíto o contido completo destes proxectos wiki.",
+	"wikimediaapiportal-skin-footer-links": "* Proxectos da Wikimedia\n** https://www.wikipedia.org/|Galipedia\n** https://www.wikibooks.org/|Galilibros\n** https://www.wikiversity.org/|Wikiversidade\n** https://www.wikinews.org/|Wikinovas\n** https://www.wiktionary.org/|Galizionario\n** https://www.wikisource.org/|Galifontes\n** https://www.wikiquote.org/|Galicitas\n** https://www.wikivoyage.org/|Wikiviaxes\n** https://commons.wikimedia.org/|Wikimedia Commons\n** https://www.wikidata.org/|Wikidata\n** https://species.wikimedia.org/|Wikispecies\n** https://www.mediawiki.org/|MediaWiki\n* Afiliados ao movemento\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|Capítulos da Wikimedia\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|Organizacións temáticas da Wikimedia\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|Grupos de usuarios da Wikimedia\n* OUTROS\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use|Termos de uso\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy|Política de protección de datos\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:General_disclaimer|Avisos\n** https://wikimediafoundation.org/accessibility-statement/|Declaración de accesibilidade\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement|Declaración de cookies\n** https://www.mediawiki.org/wiki/Code_of_Conduct|Código de conduta",
+	"wikimediaapiportal-skin-disclaimer": "Todos os textos están dispoñibles baixo a [https://creativecommons.org/licenses/by-sa/4.0/deed.gl licenza Creative Commons recoñecemento compartir igual]; pode ser que se apliquen algunhas condicións suplementarias. Consulte os [https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use termos de uso] para obter máis información.",
+	"wikimediaapiportal-skin-return-to-page-label": "Volver á páxina",
+	"wikimediaapiportal-skin-updated-ts-label": "Actualizado o $1",
+	"wikimediaapiportal-skin-search-placeholder": "Procurar",
+	"tooltip-wikimediaapiportal-skin-search-title": "Procurar"
+}
