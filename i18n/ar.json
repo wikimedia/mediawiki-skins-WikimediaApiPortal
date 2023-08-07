@@ -3,6 +3,7 @@
 		"authors": [
 			"Asma",
 			"Meno25",
+			"عبد الإله صديقي",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
@@ -18,7 +19,7 @@
 	"wikimediaapiportal-skin-button-clear-search-label": "مسح البحث",
 	"wikimediaapiportal-skin-wikimedia-info": "مؤسسة ويكيميديا ، Inc هي منظمة خيرية غير ربحية مكرسة لتشجيع نمو وتطوير وتوزيع محتوى مجاني متعدد اللغات ، وتقديم المحتوى الكامل لهذه المشاريع القائمة على الويكي للجمهور مجانًا.",
 	"wikimediaapiportal-skin-footer-links": "* مشاريع ويكيميديا! org / | ويكي الجامعة! N ** https://www.wikinews.org/Wikinews\n .org / | ويكي مصدر! N ** https://www.wikiquote.org/Wikiquote! | wikimedia.org/ | ويكيميديا كومنز! https://meta.wikimedia.org/wiki/Wikimedia_chapters| فصول ويكيميديا! N! ** https://meta.wikimedia.org/ wiki / Wikimedia_thematic_organizations | منظمات Wikimedia Thematic! N! ** https://meta.wikimedia.org/wiki/Wikimedia_user_groups | مجموعات مستخدمي ويكيميديا! / Terms_of_Use | شروط الاستخدام! N! ** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy | سياسة الخصوصية! N! ** https: // fou ndation.wikimedia.org/wiki/Wikimedia: General_disclaimer اضغط على إخلاء المسؤولية! Policy:Cookie_statement | بيان ملفات تعريف الارتباط N! ** https://www.mediawiki.org/wiki/Code_of_Conduct | مدونة قواعد السلوك",
-	"wikimediaapiportal-skin-disclaimer": "النص متاح تحت [https://creativecommons.org/licenses/by-sa/4.0/ Creative Commons Attribution-ShareAlike License]; قد يتم تطبيق شروط إضافية. انظر [https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use Terms of Use] للتفاصيل.",
+	"wikimediaapiportal-skin-disclaimer": "النصوص متاحة تحت [https://creativecommons.org/licenses/by-sa/4.0/ رخصة المشاع الإبداعي الملزمة بنسبة العمل لمؤلفه وبترخيص الأعمال المشتقة بالمثل]، قد تُطبّق شروط إضافية. انظر [https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use شروط الاستخدام] للتفاصيل.",
 	"wikimediaapiportal-skin-return-to-page-label": "العودة إلى الصفحة",
 	"wikimediaapiportal-skin-updated-ts-label": "تم تحديث $1",
 	"wikimediaapiportal-skin-search-placeholder": "يبحث",
