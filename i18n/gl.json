@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"wikimediaapiportal-skin-site-name-sub": "Portal da API",
+	"wikimediaapiportal-jumpto-content": "Saltar ao contido",
+	"wikimediaapiportal-skin-login-link-label": "Acceder ao sistema",
+	"wikimediaapiportal-skin-button-contact-label": "Contacto",
+	"wikimediaapiportal-skin-button-about-wm-label": "Acerca da Wikimedia",
+	"wikimediaapiportal-skin-button-clear-search-label": "Limpar a busca",
+	"wikimediaapiportal-skin-wikimedia-info": "A Fundación Wikimedia, Inc é unha organización benéfica sen ánimo de lucro dedicada a fomentar o crecemento, desenvolvemento e distribución de contido gratuíto e multilingüe, e a ofrecer ao público de xeito gratuíto o contido completo destes proxectos wiki.",
+	"wikimediaapiportal-skin-return-to-page-label": "Volver á páxina",
+	"wikimediaapiportal-skin-updated-ts-label": "Actualizado o $1"
+}
