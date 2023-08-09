@@ -23,6 +23,7 @@ use MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent;
 use MediaWikiIntegrationTestCase;
 use OOUI\BlankTheme;
 use OOUI\Theme;
+use User;
 
 /**
  * @covers \MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent
@@ -69,7 +70,7 @@ class UserMenuComponentTest extends MediaWikiIntegrationTestCase {
 			$this->newContextSource(),
 			$this->getServiceContainer()->getTitleFactory(),
 			$this->getServiceContainer()->getSpecialPageFactory(),
-			$this->getTestUser()->getUser(),
+			$this->createMock( User::class ),
 			$this->getServiceContainer()->getTitleFactory()->makeTitle( NS_SPECIAL, 'Version/Test' ),
 			[]
 		);
