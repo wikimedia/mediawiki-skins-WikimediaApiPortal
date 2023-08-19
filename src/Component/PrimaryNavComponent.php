@@ -20,8 +20,8 @@ namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
 use Html;
 use MediaWiki\Skin\WikimediaApiPortal\Skin;
+use MediaWiki\Title\Title;
 use OOUI\ButtonWidget;
-use Title;
 
 class PrimaryNavComponent extends Component {
 	/**

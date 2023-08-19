@@ -20,9 +20,9 @@ namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
 use IContextSource;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Title\Title;
 use OOUI\ButtonGroupWidget;
 use OOUI\ButtonWidget;
-use Title;
 use User;
 use Wikimedia\Message\IMessageFormatterFactory;
 

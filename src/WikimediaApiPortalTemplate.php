@@ -20,7 +20,7 @@ namespace MediaWiki\Skin\WikimediaApiPortal;
 
 use BaseTemplate;
 use MediaWiki\MediaWikiServices;
-use Title;
+use MediaWiki\Title\Title;
 
 /**
  * Class WikimediaApiPortalTemplate

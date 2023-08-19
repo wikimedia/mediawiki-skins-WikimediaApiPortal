@@ -27,12 +27,12 @@ use MediaWiki\Skin\WikimediaApiPortal\Component\Component;
 use MediaWiki\Skin\WikimediaApiPortal\Skin;
 use MediaWiki\Skin\WikimediaApiPortal\Test\ComponentMockTrait;
 use MediaWiki\SpecialPage\SpecialPageFactory;
+use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 use NamespaceInfo;
 use PageProps;
 use ReflectionMethod;
 use ReflectionParameter;
-use Title;
 use User;
 use Wikimedia\Message\IMessageFormatterFactory;
 
