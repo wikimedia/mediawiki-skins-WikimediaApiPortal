@@ -22,6 +22,7 @@ use Config;
 use ExtensionRegistry;
 use Linker;
 use MediaWiki\Config\ServiceOptions;
+use MediaWiki\Page\PageProps;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Skin\WikimediaApiPortal\Component\ContentComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\FooterComponent;
@@ -39,7 +40,6 @@ use MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent;
 use MediaWiki\SpecialPage\SpecialPageFactory;
 use MediaWiki\Title\TitleFactory;
 use NamespaceInfo;
-use PageProps;
 use Wikimedia\Message\IMessageFormatterFactory;
 use Wikimedia\Message\MessageValue;
 

@@ -20,11 +20,11 @@ namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
 use IContextSource;
 use MediaWiki\Config\ServiceOptions;
+use MediaWiki\Page\PageProps;
 use MediaWiki\SpecialPage\SpecialPageFactory;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 use NamespaceInfo;
-use PageProps;
 use Wikimedia\Message\IMessageFormatterFactory;
 
 class SecondaryNavComponent extends MessageComponent {
