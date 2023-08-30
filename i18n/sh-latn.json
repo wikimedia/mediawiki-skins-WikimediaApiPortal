@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Vlad5250"
 		]
 	},
-	"action-edit-docs": "uređivanje dokumentacije",
+	"action-edit-docs": "uređujete dokumentaciju",
 	"right-edit-docs": "Uređivanje dokumentacije",
 	"wikimediaapiportal-skin-desc": "Prilagođena tema ​​za Programerski portal Wikimedijinog izvršničkog portala",
 	"wikimediaapiportal-jumpto-content": "Prijeđi na sadržaj",
