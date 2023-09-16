@@ -19,17 +19,18 @@
 
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
+use MediaWiki\Hook\SkinSubPageSubtitleHook;
 use OutputPage;
 use Skin;
 
-class Hooks {
+class Hooks implements SkinSubPageSubtitleHook {
 	/**
 	 * @param string &$subpages Subpage links HTML
 	 * @param Skin $skin
 	 * @param OutputPage $out
 	 * @return bool
 	 */
-	public static function onSkinSubPageSubtitle( &$subpages, $skin, $out ) {
+	public function onSkinSubPageSubtitle( &$subpages, $skin, $out ) {
 		return false;
 	}
 }
