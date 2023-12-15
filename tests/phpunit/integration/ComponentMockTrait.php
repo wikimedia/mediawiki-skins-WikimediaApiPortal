@@ -244,7 +244,6 @@ trait ComponentMockTrait {
 			[
 				'get',
 				'getSkin',
-				'getTrail',
 				'getPrimaryNavSidebar'
 			]
 		);
@@ -257,7 +256,6 @@ trait ComponentMockTrait {
 			}
 		);
 		$template->method( 'getSkin' )->willReturn( $this->newSkin() );
-		$template->method( 'getTrail' )->willReturn( 'trail' );
 		$template->method( 'getPrimaryNavSidebar' )->willReturn( [] );
 		$template->data['sitenotice'] = 'sitenotice';
 		$template->data['personal_urls'] = [];
