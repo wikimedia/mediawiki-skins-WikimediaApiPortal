@@ -28,12 +28,12 @@ use MediaWiki\Skin\WikimediaApiPortal\Component\Component;
 use MediaWiki\Skin\WikimediaApiPortal\Skin;
 use MediaWiki\Skin\WikimediaApiPortal\Test\ComponentMockTrait;
 use MediaWiki\SpecialPage\SpecialPageFactory;
+use MediaWiki\Title\NamespaceInfo;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
-use NamespaceInfo;
+use MediaWiki\User\User;
 use ReflectionMethod;
 use ReflectionParameter;
-use User;
 use Wikimedia\Message\IMessageFormatterFactory;
 
 trait ComponentTestTrait {

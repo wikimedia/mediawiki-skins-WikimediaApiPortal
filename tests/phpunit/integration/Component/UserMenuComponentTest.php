@@ -20,10 +20,10 @@ namespace MediaWiki\Skin\WikimediaApiPortal\Test\Component;
 
 use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent;
+use MediaWiki\User\User;
 use MediaWikiIntegrationTestCase;
 use OOUI\BlankTheme;
 use OOUI\Theme;
-use User;
 
 /**
  * @covers \MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent

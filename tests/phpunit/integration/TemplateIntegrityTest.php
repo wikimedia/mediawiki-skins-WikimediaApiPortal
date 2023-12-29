@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\Html\TemplateParser;
+
 /**
  * Makes sure all the templates in the skin are compilable.
  *

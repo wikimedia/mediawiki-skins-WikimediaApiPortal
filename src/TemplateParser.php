@@ -20,7 +20,7 @@ namespace MediaWiki\Skin\WikimediaApiPortal;
 
 use BagOStuff;
 use LightnCandy\LightnCandy;
-use TemplateParser as TemplateParserBase;
+use MediaWiki\Html\TemplateParser as TemplateParserBase;
 
 class TemplateParser extends TemplateParserBase {
 

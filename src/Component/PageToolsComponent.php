@@ -21,9 +21,9 @@ namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 use IContextSource;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use OOUI\ButtonGroupWidget;
 use OOUI\ButtonWidget;
-use User;
 use Wikimedia\Message\IMessageFormatterFactory;
 
 class PageToolsComponent extends MessageComponent {

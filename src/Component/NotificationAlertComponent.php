@@ -19,8 +19,8 @@
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
 use ExtensionRegistry;
+use MediaWiki\User\User;
 use OOUI\ButtonWidget;
-use User;
 
 class NotificationAlertComponent extends Component {
 	/**

@@ -18,16 +18,16 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
-use Html;
 use IContextSource;
 use MediaWiki\Config\ServiceOptions;
+use MediaWiki\Html\Html;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\SpecialPage\SpecialPageFactory;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
+use MediaWiki\User\User;
 use Message;
 use OOUI\IconWidget;
-use SpecialPage;
-use User;
 use Wikimedia\Message\IMessageFormatterFactory;
 
 class UserMenuComponent extends MessageComponent {

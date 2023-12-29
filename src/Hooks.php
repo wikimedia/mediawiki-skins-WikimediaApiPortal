@@ -20,7 +20,7 @@
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
 use MediaWiki\Hook\SkinSubPageSubtitleHook;
-use OutputPage;
+use MediaWiki\Output\OutputPage;
 use Skin;
 
 class Hooks implements SkinSubPageSubtitleHook {

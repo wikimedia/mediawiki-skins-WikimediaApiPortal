@@ -18,10 +18,10 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
-use Config;
 use ExtensionRegistry;
-use Linker;
+use MediaWiki\Config\Config;
 use MediaWiki\Config\ServiceOptions;
+use MediaWiki\Linker\Linker;
 use MediaWiki\Page\PageProps;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Skin\WikimediaApiPortal\Component\ContentComponent;
@@ -38,8 +38,8 @@ use MediaWiki\Skin\WikimediaApiPortal\Component\SearchFieldComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\SecondaryNavComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\UserMenuComponent;
 use MediaWiki\SpecialPage\SpecialPageFactory;
+use MediaWiki\Title\NamespaceInfo;
 use MediaWiki\Title\TitleFactory;
-use NamespaceInfo;
 use Wikimedia\Message\IMessageFormatterFactory;
 use Wikimedia\Message\MessageValue;
 

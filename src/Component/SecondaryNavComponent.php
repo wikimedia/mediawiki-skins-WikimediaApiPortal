@@ -22,9 +22,9 @@ use IContextSource;
 use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Page\PageProps;
 use MediaWiki\SpecialPage\SpecialPageFactory;
+use MediaWiki\Title\NamespaceInfo;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
-use NamespaceInfo;
 use Wikimedia\Message\IMessageFormatterFactory;
 
 class SecondaryNavComponent extends MessageComponent {

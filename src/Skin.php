@@ -18,7 +18,7 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
-use OutputPage;
+use MediaWiki\Output\OutputPage;
 use QuickTemplate;
 use SkinTemplate;
 

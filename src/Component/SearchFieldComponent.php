@@ -19,8 +19,8 @@
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
 use IContextSource;
-use Linker;
 use MediaWiki\Config\ServiceOptions;
+use MediaWiki\Linker\Linker;
 use OOUI\ButtonWidget;
 use Wikimedia\Message\IMessageFormatterFactory;
 

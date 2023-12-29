@@ -18,27 +18,27 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Test;
 
-use Config;
 use EmptyBagOStuff;
 use ExtensionRegistry;
 use IContextSource;
 use Language;
+use MediaWiki\Config\Config;
 use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Message\MessageFormatterFactory;
 use MediaWiki\Message\TextFormatter;
 use MediaWiki\Page\PageProps;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Request\WebRequest;
 use MediaWiki\Skin\WikimediaApiPortal\Skin;
 use MediaWiki\Skin\WikimediaApiPortal\TemplateParser;
 use MediaWiki\Skin\WikimediaApiPortal\WikimediaApiPortalTemplate;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\SpecialPage\SpecialPageFactory;
+use MediaWiki\Title\NamespaceInfo;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
+use MediaWiki\User\User;
 use Message;
-use NamespaceInfo;
-use SpecialPage;
-use User;
-use WebRequest;
 use Wikimedia\Message\IMessageFormatterFactory;
 use Wikimedia\Message\MessageValue;
 
