@@ -1,8 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ekminarin"
+			"Ekminarin",
+			"Patsagorn Y."
 		]
 	},
-	"wikimediaapiportal-skin-site-name-main": "วิกิมีเดีย"
+	"action-edit-docs": "แก้ไขคำอธิบายการใช้งาน",
+	"right-edit-docs": "แก้ไขคำอธิบายการใช้งาน",
+	"wikimediaapiportal-skin-desc": "สกินที่กำหนดเองสำหรับพอร์ทัล Wikimedia API",
+	"wikimediaapiportal-skin-site-name-main": "วิกิมีเดีย",
+	"wikimediaapiportal-skin-site-name-sub": "พอร์ทัล API",
+	"wikimediaapiportal-jumpto-content": "ข้ามไปเนื้อหา",
+	"wikimediaapiportal-skin-login-link-label": "เข้าสู่ระบบ",
+	"wikimediaapiportal-skin-button-contact-label": "ติดต่อ",
+	"wikimediaapiportal-skin-button-about-wm-label": "เกี่ยวกับวิกิมีเดีย",
+	"wikimediaapiportal-skin-button-clear-search-label": "ล้างการค้นหา",
+	"wikimediaapiportal-skin-wikimedia-info": "Wikimedia Foundation, Inc. เป็นองค์กรการกุศลที่ไม่แสวงหาผลกำไรที่อุทิศตนเพื่อส่งเสริมการเติบโต การพัฒนา และการเผยแพร่เนื้อหาฟรีในหลายภาษา และเพื่อมอบเนื้อหาทั้งหมดของโครงการที่ใช้วิกิเหล่านี้แก่สาธารณะโดยไม่เสียค่าใช้จ่าย",
+	"wikimediaapiportal-skin-footer-links": "* โครงการวิกิมีเดีย\n** https://www.wikipedia.org/|วิกิพีเดีย\n** https://www.wikibooks.org/|วิกิตำรา\n** https://www.wikiversity.org/|วิกิวิทยาลัย\n** https://www.wikinews.org/|วิกิข่าว\n** https://www.wiktionary.org/|วิกิพจนานุกรม\n** https://www.wikisource.org/|วิกิซอร์ซ\n** https://www.wikiquote.org/|วิกิคำคม\n** https://www.wikivoyage.org/|วิกิท่องเที่ยว\n** https://commons.wikimedia.org/|วิกิมีเดียคอมมอนส์\n** https://www.wikidata.org/|วิกิสนเทศ\n** https://species.wikimedia.org/|วิกิสปีชีส์\n** https://www.mediawiki.org/|มีเดียวิกิ\n* องค์กรที่เกี่ยวข้อง\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|คณะภาควิกิมีเดีย\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|องค์กรเฉพาะเรื่องวิกิมีเดีย\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|กลุ่มผู้ใช้วิกิมีเดีย\n* OTHER\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use|เงื่อนไขการใช้งาน\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy|นโยบายความเป็นส่วนตัว\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:General_disclaimer|ข้อปฏิเสธความรับผิดชอบ\n** https://wikimediafoundation.org/accessibility-statement/|นโยบายการเข้าถึงได้\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement|นโยบายการใช้คุกกี้\n** https://www.mediawiki.org/wiki/Code_of_Conduct|จรรณยาบรรณ",
+	"wikimediaapiportal-skin-disclaimer": "อนุญาตให้เผยแพร่ข้อความภายใต้[https://creativecommons.org/licenses/by-sa/4.0/สัญญาอนุญาตครีเอทีฟคอมมอนส์ แบบแสดงที่มา-อนุญาตแบบเดียวกัน] อาจมีเงื่อนไขอื่นเพิ่ม\nดูรายละเอียดที่[https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use ข้อกำหนดการใช้งาน]",
+	"wikimediaapiportal-skin-return-to-page-label": "กลับไปยังหน้า",
+	"wikimediaapiportal-skin-updated-ts-label": "อัปเดตเมื่อ $1",
+	"wikimediaapiportal-skin-search-placeholder": "ค้นหา",
+	"tooltip-wikimediaapiportal-skin-search-title": "ค้นหา"
 }
