@@ -1,8 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ekminarin"
+			"Ekminarin",
+			"Patsagorn Y."
 		]
 	},
-	"wikimediaapiportal-skin-site-name-main": "วิกิมีเดีย"
+	"action-edit-docs": "แก้ไขคำอธิบายการใช้งาน",
+	"right-edit-docs": "แก้ไขคำอธิบายการใช้งาน",
+	"wikimediaapiportal-skin-desc": "สกินที่กำหนดเองสำหรับพอร์ทัล Wikimedia API",
+	"wikimediaapiportal-skin-site-name-main": "วิกิมีเดีย",
+	"wikimediaapiportal-skin-site-name-sub": "พอร์ทัล API",
+	"wikimediaapiportal-jumpto-content": "ข้ามไปเนื้อหา",
+	"wikimediaapiportal-skin-login-link-label": "เข้าสู่ระบบ",
+	"wikimediaapiportal-skin-button-contact-label": "ติดต่อ",
+	"wikimediaapiportal-skin-button-about-wm-label": "เกี่ยวกับวิกิมีเดีย",
+	"wikimediaapiportal-skin-button-clear-search-label": "ล้างการค้นหา",
+	"wikimediaapiportal-skin-wikimedia-info": "Wikimedia Foundation, Inc. เป็นองค์กรการกุศลที่ไม่แสวงหาผลกำไรที่อุทิศตนเพื่อส่งเสริมการเติบโต การพัฒนา และการเผยแพร่เนื้อหาฟรีในหลายภาษา และเพื่อมอบเนื้อหาทั้งหมดของโครงการที่ใช้วิกิเหล่านี้แก่สาธารณะโดยไม่เสียค่าใช้จ่าย",
+	"wikimediaapiportal-skin-return-to-page-label": "กลับไปยังหน้า",
+	"wikimediaapiportal-skin-updated-ts-label": "อัปเดตเมื่อ $1",
+	"wikimediaapiportal-skin-search-placeholder": "ค้นหา",
+	"tooltip-wikimediaapiportal-skin-search-title": "ค้นหา"
 }
