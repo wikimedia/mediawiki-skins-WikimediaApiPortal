@@ -12,6 +12,7 @@
 		"no-jquery/no-sizzle": 0,
 		"no-jquery/variable-pattern": 0,
 		"no-unused-vars": 0,
-		"no-use-before-define": 0
+		"no-use-before-define": 0,
+		"es-x/no-resizable-and-growable-arraybuffers": "warn"
 	}
 }
