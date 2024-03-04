@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Hanna Tardos",
-			"Krisztina"
+			"Krisztina",
+			"Dj"
 		]
 	},
 	"action-edit-docs": "dokumentáció szerkesztése",
@@ -11,6 +12,7 @@
 	"wikimediaapiportal-skin-button-contact-label": "Kapcsolat",
 	"wikimediaapiportal-skin-button-about-wm-label": "A Wikimediaról",
 	"wikimediaapiportal-skin-button-clear-search-label": "Keresés törlése",
+	"wikimediaapiportal-skin-wikimedia-info": "A Wikimedia Alapítvány egy nonprofit jótékonysági szervezet, amelynek célja az ingyenes, többnyelvű tartalmak növekedésének, fejlesztésének és terjesztésének ösztönzése, valamint e wiki-alapú projektek teljes tartalmának ingyenes biztosítása a nyilvánosság számára.",
 	"wikimediaapiportal-skin-return-to-page-label": "Visszatérés a laphoz",
 	"wikimediaapiportal-skin-updated-ts-label": "Frissítve $1",
 	"wikimediaapiportal-skin-search-placeholder": "Keresés",
