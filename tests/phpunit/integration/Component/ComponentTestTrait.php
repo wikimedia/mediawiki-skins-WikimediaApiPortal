@@ -101,7 +101,7 @@ trait ComponentTestTrait {
 		$mockParams = [];
 		$expectedInOutput = [];
 		foreach ( $componentClassConstructor->getParameters() as $param ) {
-			list( $expectation, $mockParam ) = $this->getMockValueForParam( $param );
+			[ $expectation, $mockParam ] = $this->getMockValueForParam( $param );
 			$mockParams[] = $mockParam;
 			if ( $expectation !== null ) {
 				$expectedInOutput[] = $expectation;
