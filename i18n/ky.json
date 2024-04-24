@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bosogo"
+		]
+	},
+	"wikimediaapiportal-skin-site-name-main": "Викимедиа",
+	"wikimediaapiportal-skin-login-link-label": "Кирүү",
+	"wikimediaapiportal-skin-button-contact-label": "Байланыш",
+	"wikimediaapiportal-skin-button-about-wm-label": "Викимедиа тууралуу",
+	"wikimediaapiportal-skin-button-clear-search-label": "Издөө талаасын тазалоо",
+	"wikimediaapiportal-skin-return-to-page-label": "Баракка кайтуу",
+	"wikimediaapiportal-skin-updated-ts-label": "$1 жаңыртылган",
+	"wikimediaapiportal-skin-search-placeholder": "Издөө",
+	"tooltip-wikimediaapiportal-skin-search-title": "Издөө"
+}
