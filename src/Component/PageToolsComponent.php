@@ -18,7 +18,7 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
-use IContextSource;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;

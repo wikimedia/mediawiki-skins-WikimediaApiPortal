@@ -18,15 +18,15 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
-use IContextSource;
 use MediaWiki\Config\ServiceOptions;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\Html\Html;
+use MediaWiki\Message\Message;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\SpecialPage\SpecialPageFactory;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\User;
-use Message;
 use OOUI\IconWidget;
 use Wikimedia\Message\IMessageFormatterFactory;
 

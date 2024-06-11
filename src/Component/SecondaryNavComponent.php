@@ -18,8 +18,8 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
-use IContextSource;
 use MediaWiki\Config\ServiceOptions;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\Page\PageProps;
 use MediaWiki\SpecialPage\SpecialPageFactory;
 use MediaWiki\Title\NamespaceInfo;

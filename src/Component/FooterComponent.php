@@ -18,7 +18,7 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
-use IContextSource;
+use MediaWiki\Context\IContextSource;
 use Wikimedia\Message\IMessageFormatterFactory;
 
 class FooterComponent extends MessageComponent {

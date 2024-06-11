@@ -20,10 +20,11 @@ namespace MediaWiki\Skin\WikimediaApiPortal\Test;
 
 use EmptyBagOStuff;
 use ExtensionRegistry;
-use IContextSource;
 use Language;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ServiceOptions;
+use MediaWiki\Context\IContextSource;
+use MediaWiki\Message\Message;
 use MediaWiki\Message\MessageFormatterFactory;
 use MediaWiki\Message\TextFormatter;
 use MediaWiki\Page\PageProps;
@@ -38,7 +39,6 @@ use MediaWiki\Title\NamespaceInfo;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\User;
-use Message;
 use Wikimedia\Message\IMessageFormatterFactory;
 use Wikimedia\Message\MessageValue;
 

@@ -18,7 +18,7 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
-use IContextSource;
+use MediaWiki\Context\IContextSource;
 use OOUI\IconWidget;
 use Wikimedia\Message\IMessageFormatterFactory;
 
