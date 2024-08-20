@@ -23,7 +23,9 @@ use QuickTemplate;
 use SkinTemplate;
 
 class Skin extends SkinTemplate {
+	/** @var string */
 	public $skinname = 'wikimediaapiportal';
+	/** @var string */
 	public $template = WikimediaApiPortalTemplate::class;
 
 	/**
