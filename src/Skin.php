@@ -59,7 +59,7 @@ class Skin extends SkinTemplate {
 		] );
 		$output->addModules( "skin.wikimediaapiportal.scripts" );
 		if ( $this->getTitle()->isMainPage() &&
-			$this->getRequest()->getRawVal( 'action', 'view' ) === 'view' ) {
+			( $this->getRequest()->getRawVal( 'action' ) ?? 'view' ) === 'view' ) {
 			$output->addModuleStyles( [
 				"skin.wikimediaapiportal.mainpage",
 			] );

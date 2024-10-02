@@ -52,7 +52,7 @@ class WikimediaApiPortalTemplate extends BaseTemplate {
 	 * while still keeping the page names that are display nice
 	 */
 	private function setSubpageDisplayTitle() {
-		$requestedAction = $this->getSkin()->getRequest()->getRawVal( 'action', 'view' );
+		$requestedAction = $this->getSkin()->getRequest()->getRawVal( 'action' ) ?? 'view';
 		if ( $requestedAction !== 'view' ) {
 			return;
 		}

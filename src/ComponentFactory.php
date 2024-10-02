@@ -284,7 +284,7 @@ class ComponentFactory {
 			$this->messageFormatterFactory,
 			$skin,
 			$this->permissionManager,
-			$skin->getRequest()->getRawVal( 'action', 'view' ),
+			$skin->getRequest()->getRawVal( 'action' ) ?? 'view',
 			$template->get( 'content_navigation', null ),
 			$mobile
 		);
