@@ -63,7 +63,6 @@
 				"logo": false,
 				"content-links": true,
 				"content-media": true,
-				"interface-message-box": true,
 				"interface-category": true,
 				"content-tables": true,
 				"i18n-ordered-lists": true,
