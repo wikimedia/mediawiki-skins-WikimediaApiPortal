@@ -18,8 +18,8 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
-use ExtensionRegistry;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Registration\ExtensionRegistry;
 
 return [
 	'WAPSkinComponentFactory' => static function ( MediaWikiServices $services ): ComponentFactory {

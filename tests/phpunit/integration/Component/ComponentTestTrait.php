@@ -18,12 +18,12 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Test\Component;
 
-use ExtensionRegistry;
 use InvalidArgumentException;
 use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Page\PageProps;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Skin\WikimediaApiPortal\Component\Component;
 use MediaWiki\Skin\WikimediaApiPortal\Skin;
 use MediaWiki\Skin\WikimediaApiPortal\Test\ComponentMockTrait;

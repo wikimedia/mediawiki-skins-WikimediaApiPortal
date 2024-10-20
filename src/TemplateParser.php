@@ -18,9 +18,9 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
-use BagOStuff;
 use LightnCandy\LightnCandy;
 use MediaWiki\Html\TemplateParser as TemplateParserBase;
+use Wikimedia\ObjectCache\BagOStuff;
 
 class TemplateParser extends TemplateParserBase {
 

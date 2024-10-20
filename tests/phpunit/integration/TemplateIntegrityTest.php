@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Html\TemplateParser;
+use Wikimedia\ObjectCache\EmptyBagOStuff;
 
 /**
  * Makes sure all the templates in the skin are compilable.

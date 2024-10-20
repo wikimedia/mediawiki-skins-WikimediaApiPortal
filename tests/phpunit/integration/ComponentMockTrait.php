@@ -18,17 +18,16 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Test;
 
-use EmptyBagOStuff;
-use ExtensionRegistry;
-use Language;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Context\IContextSource;
+use MediaWiki\Language\Language;
 use MediaWiki\Message\Message;
 use MediaWiki\Message\MessageFormatterFactory;
 use MediaWiki\Message\TextFormatter;
 use MediaWiki\Page\PageProps;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\Skin\WikimediaApiPortal\Skin;
 use MediaWiki\Skin\WikimediaApiPortal\TemplateParser;
@@ -41,6 +40,7 @@ use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\User;
 use Wikimedia\Message\IMessageFormatterFactory;
 use Wikimedia\Message\MessageValue;
+use Wikimedia\ObjectCache\EmptyBagOStuff;
 
 trait ComponentMockTrait {
 	/**

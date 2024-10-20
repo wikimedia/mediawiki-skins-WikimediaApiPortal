@@ -18,7 +18,7 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal\Component;
 
-use ExtensionRegistry;
+use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\User\User;
 use OOUI\ButtonWidget;
 

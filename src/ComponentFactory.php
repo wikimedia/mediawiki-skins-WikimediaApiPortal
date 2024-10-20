@@ -18,12 +18,12 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
-use ExtensionRegistry;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Linker\Linker;
 use MediaWiki\Page\PageProps;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Skin\WikimediaApiPortal\Component\ContentComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\FooterComponent;
 use MediaWiki\Skin\WikimediaApiPortal\Component\LogoComponent;
