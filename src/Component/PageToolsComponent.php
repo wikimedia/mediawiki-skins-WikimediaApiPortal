@@ -55,7 +55,7 @@ class PageToolsComponent extends MessageComponent {
 	 * @param IContextSource $contextSource
 	 * @param PermissionManager $permissionManager
 	 * @param string $requestedAction
-	 * @param array $actions See SkinTemplate::buildContentNavigationUrls for structure
+	 * @param array $actions
 	 * @param bool $mobile
 	 */
 	public function __construct(
@@ -270,7 +270,6 @@ class PageToolsComponent extends MessageComponent {
 	/**
 	 * Helper for PageToolsComponent.
 	 *
-	 * @see SkinTemplate::buildContentNavigationUrls
 	 * @param array $action Data from 'content_navigation' entry
 	 * @param array $oouiOptions Override
 	 * @return ButtonWidget
