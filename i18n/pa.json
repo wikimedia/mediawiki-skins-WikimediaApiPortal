@@ -4,6 +4,15 @@
 			"Cabal"
 		]
 	},
+	"action-edit-docs": "ਲਿਖਤਾਂ ਸੋਧੋ",
+	"right-edit-docs": "ਲਿਖਤਾਂ ਸੋਧੋ",
+	"wikimediaapiportal-jumpto-content": "ਸਮੱਗਰੀ 'ਤੇ ਜਾਓ",
 	"wikimediaapiportal-skin-login-link-label": "ਦਾਖ਼ਲ ਹੋਵੋ",
-	"wikimediaapiportal-skin-updated-ts-label": "$1 ਨਵਿਆਈਆ ਗਿਆ"
+	"wikimediaapiportal-skin-button-contact-label": "ਰਾਬਤਾ",
+	"wikimediaapiportal-skin-button-about-wm-label": "ਵਿਕੀਪੀਡੀਆ ਬਾਰੇ",
+	"wikimediaapiportal-skin-button-clear-search-label": "ਖੋਜ ਸਾਫ਼ ਕਰੋ",
+	"wikimediaapiportal-skin-return-to-page-label": "ਸਫ਼ੇ ਉੱਤੇ ਵਾਪਸ ਜਾਓ",
+	"wikimediaapiportal-skin-updated-ts-label": "$1 ਨਵਿਆਈਆ ਗਿਆ",
+	"wikimediaapiportal-skin-search-placeholder": "ਖੋਜੋ",
+	"tooltip-wikimediaapiportal-skin-search-title": "ਖੋਜੋ"
 }
