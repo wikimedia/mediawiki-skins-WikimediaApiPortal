@@ -188,6 +188,8 @@ class ComponentFactory {
 		$skin = $template->getSkin();
 		$title = $skin->getTitle();
 		$sidebar = $template->getPrimaryNavSidebar();
+		// @phan-suppress-next-next-line SecurityCheck-DoubleEscaped Unclear due to lack of documentation on
+		// BaseTemplate::getSidebar().
 		return new PrimaryNavComponent(
 			$title,
 			$id,
