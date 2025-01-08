@@ -5,7 +5,8 @@
 			"Meno25",
 			"عبد الإله صديقي",
 			"محمد أحمد عبد الفتاح",
-			"LaMagiaaa"
+			"LaMagiaaa",
+			"Cigaryno"
 		]
 	},
 	"action-edit-docs": "عدل التوثيق",
@@ -23,6 +24,6 @@
 	"wikimediaapiportal-skin-disclaimer": "النصوص متاحة تحت [https://creativecommons.org/licenses/by-sa/4.0/ رخصة المشاع الإبداعي الملزمة بنسبة العمل لمؤلفه وبترخيص الأعمال المشتقة بالمثل]، قد تُطبّق شروط إضافية. انظر [https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use شروط الاستخدام] للتفاصيل.",
 	"wikimediaapiportal-skin-return-to-page-label": "العودة إلى الصفحة",
 	"wikimediaapiportal-skin-updated-ts-label": "تم تحديث $1",
-	"wikimediaapiportal-skin-search-placeholder": "يبحث",
-	"tooltip-wikimediaapiportal-skin-search-title": "يبحث"
+	"wikimediaapiportal-skin-search-placeholder": "بحث",
+	"tooltip-wikimediaapiportal-skin-search-title": "البحث"
 }
