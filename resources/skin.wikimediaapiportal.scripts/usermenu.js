@@ -15,9 +15,9 @@
  *
  * @file
  */
-$( function () {
+$( () => {
 	$( '.user-menu' ).each( function () {
-		var items = [];
+		const items = [];
 		$( this ).find( 'a' ).each( function () {
 			items.push(
 				// eslint-disable-next-line mediawiki/class-doc
@@ -30,9 +30,9 @@ $( function () {
 			);
 		} );
 
-		var tooltip =
+		const tooltip =
 			$( this ).find( '.oo-ui-icon-userAvatarOutline' )[ 0 ].title;
-		var menu = new OO.ui.ButtonMenuSelectWidget( {
+		const menu = new OO.ui.ButtonMenuSelectWidget( {
 			icon: 'userAvatarOutline',
 			framed: false,
 			title: tooltip,
@@ -42,7 +42,7 @@ $( function () {
 			}
 		} );
 
-		menu.getMenu().on( 'choose', function ( menuOption ) {
+		menu.getMenu().on( 'choose', ( menuOption ) => {
 			location.replace( menuOption.getData() );
 		} );
 

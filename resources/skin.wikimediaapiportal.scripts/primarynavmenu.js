@@ -15,9 +15,9 @@
  *
  * @file
  */
-$( function () {
+$( () => {
 	$( '.primary-nav-menu' ).each( function () {
-		var items = [];
+		const items = [];
 		$( this ).find( '.primary-nav-menu-item' ).each( function () {
 			items.push(
 				new OO.ui.MenuOptionWidget( {
@@ -27,8 +27,8 @@ $( function () {
 			);
 		} );
 
-		var label = $( this ).children().first().text();
-		var menu = new OO.ui.ButtonMenuSelectWidget( {
+		const label = $( this ).children().first().text();
+		const menu = new OO.ui.ButtonMenuSelectWidget( {
 			label: label,
 			indicator: 'down',
 			framed: false,
@@ -39,7 +39,7 @@ $( function () {
 			}
 		} );
 
-		menu.getMenu().on( 'choose', function ( menuOption ) {
+		menu.getMenu().on( 'choose', ( menuOption ) => {
 			location.replace( menuOption.getData() );
 		} );
 

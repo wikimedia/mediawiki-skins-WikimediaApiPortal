@@ -16,8 +16,8 @@
  * @file
  */
 ( function () {
-	$( function () {
-		var $header = $( '.wm-header.fixed-top:visible' );
+	$( () => {
+		const $header = $( '.wm-header.fixed-top:visible' );
 		if ( !$header.length ) {
 			return;
 		}
@@ -25,7 +25,7 @@
 			adjustScroll( $header, this.hash );
 		} );
 
-		$( window ).on( 'hashchange', function ( e ) {
+		$( window ).on( 'hashchange', ( e ) => {
 			adjustScroll( $header );
 		} );
 
@@ -34,7 +34,7 @@
 
 	function adjustScroll( $header, hash, animate ) {
 		hash = hash || window.location.hash;
-		var $target = $( hash ),
+		const $target = $( hash ),
 			headerHeight = $header.height() + 5;
 
 		if ( $target.length ) {

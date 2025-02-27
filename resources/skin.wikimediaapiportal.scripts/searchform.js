@@ -18,8 +18,8 @@
  */
 
 ( function ( d ) {
-	$( function () {
-		var $element,
+	$( () => {
+		let $element,
 			$trigger,
 			$form,
 			$clearButton,
@@ -27,7 +27,7 @@
 			$searchSubmitButton;
 
 		function searchContainer() {
-			$( '.wm-search-container' ).each( function ( key, element ) {
+			$( '.wm-search-container' ).each( ( key, element ) => {
 				if ( !$( element ).is( ':visible' ) ) {
 					return;
 				}
@@ -39,7 +39,7 @@
 				$input = $form.find( 'input[name="search"]' );
 
 				if ( $clearButton.length > 0 ) {
-					$clearButton.on( 'click', function () {
+					$clearButton.on( 'click', () => {
 						$input.val( '' );
 						if ( $trigger.length > 0 ) {
 							hideForm();
@@ -47,13 +47,13 @@
 					} );
 				}
 				if ( $trigger.length > 0 ) {
-					$trigger.on( 'click', function () {
+					$trigger.on( 'click', () => {
 						showForm();
 					} );
 				}
 
 				if ( $searchSubmitButton.length > 0 ) {
-					$searchSubmitButton.on( 'click', function () {
+					$searchSubmitButton.on( 'click', () => {
 						$form.submit();
 					} );
 				}
@@ -87,7 +87,7 @@
 		}
 
 		// When a page is resized rerun searchContainer to get the right $element for the new size
-		$( window ).resize( function () {
+		$( window ).resize( () => {
 			searchContainer();
 		} );
 
