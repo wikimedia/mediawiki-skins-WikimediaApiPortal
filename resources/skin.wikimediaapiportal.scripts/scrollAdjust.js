@@ -21,24 +21,24 @@
 		if ( !$header.length ) {
 			return;
 		}
-		$( 'a[href*="#"]:not([href="#"])' ).click( function () {
+		$( 'a[href*="#"]:not([href="#"])' ).on( 'click', function () {
 			adjustScroll( $header, this.hash );
 		} );
 
-		$( window ).on( 'hashchange', ( e ) => {
+		$( window ).on( 'hashchange', () => {
 			adjustScroll( $header );
 		} );
 
 		adjustScroll( $header );
 	} );
 
-	function adjustScroll( $header, hash, animate ) {
+	function adjustScroll( $header, hash ) {
 		hash = hash || window.location.hash;
 		const $target = $( hash ),
 			headerHeight = $header.height() + 5;
 
 		if ( $target.length ) {
-			$( 'html,body' ).animate( {
+			$( 'html, body' ).animate( {
 				scrollTop: $target.offset().top - headerHeight
 			}, 500 );
 			return false;

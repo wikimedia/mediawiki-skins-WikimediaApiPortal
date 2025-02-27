@@ -54,7 +54,7 @@
 
 				if ( $searchSubmitButton.length > 0 ) {
 					$searchSubmitButton.on( 'click', () => {
-						$form.submit();
+						$form.trigger( 'submit' );
 					} );
 				}
 
@@ -87,7 +87,7 @@
 		}
 
 		// When a page is resized rerun searchContainer to get the right $element for the new size
-		$( window ).resize( () => {
+		$( window ).on( 'resize', () => {
 			searchContainer();
 		} );
 
