@@ -162,7 +162,7 @@ class PageToolsComponent extends MessageComponent {
 					[ 'icon' => 'speechBubbles' ]
 				);
 			}
-		} elseif ( $requestedAction === 'history' ) {
+		} elseif ( $requestedAction === 'history' && isset( $actions['views']['view'] ) ) {
 			return $this->getButtonForContentAction( $actions['views']['view'], [
 				'icon' => 'arrowPrevious',
 				'label' => $this->formatMessage( 'wikimediaapiportal-skin-return-to-page-label' )
