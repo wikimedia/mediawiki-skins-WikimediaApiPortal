@@ -21,7 +21,7 @@ namespace MediaWiki\Skin\WikimediaApiPortal;
 
 use MediaWiki\Hook\SkinSubPageSubtitleHook;
 use MediaWiki\Output\OutputPage;
-use Skin;
+use MediaWiki\Skin\Skin;
 
 class Hooks implements SkinSubPageSubtitleHook {
 	/**

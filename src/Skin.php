@@ -19,8 +19,8 @@
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
 use MediaWiki\Output\OutputPage;
-use QuickTemplate;
-use SkinTemplate;
+use MediaWiki\Skin\QuickTemplate;
+use MediaWiki\Skin\SkinTemplate;
 
 class Skin extends SkinTemplate {
 	/** @var string */

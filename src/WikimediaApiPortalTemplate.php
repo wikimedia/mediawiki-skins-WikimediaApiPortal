@@ -18,8 +18,8 @@
  */
 namespace MediaWiki\Skin\WikimediaApiPortal;
 
-use BaseTemplate;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Skin\BaseTemplate;
 use MediaWiki\Title\Title;
 
 /**
