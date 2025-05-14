@@ -8,7 +8,7 @@
 		"test": "npm -s run lint",
 		"lint": "npm -s run lint:js && npm -s run lint:i18n && npm -s run lint:styles",
 		"lint:js": "eslint --cache .",
-		"lint:styles": "stylelint \"**/*.{less,css}\"",
+		"lint:styles": "stylelint --cache \"**/*.{less,css}\"",
 		"lint:i18n": "banana-checker --requireLowerCase=0 i18n/"
 	},
 	"devDependencies": {

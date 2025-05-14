@@ -19,6 +19,7 @@ sftp-config.json
 /composer.lock
 /node_modules
 /vendor
+/.stylelintcache
 
 # Operating systems
 ## Mac OS X
