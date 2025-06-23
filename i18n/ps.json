@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"action-edit-docs": "لاسوند سمول",
+	"right-edit-docs": "لاسوند سمول",
+	"wikimediaapiportal-skin-desc": "د ويکي‌رسنۍ ای‌پي‌آی تانبې لپاره دوديزه پوښۍ",
+	"wikimediaapiportal-jumpto-content": "منځپانگې ته ورتلل",
+	"wikimediaapiportal-skin-login-link-label": "ننوتل",
+	"wikimediaapiportal-skin-button-contact-label": "اړيکه",
+	"wikimediaapiportal-skin-button-about-wm-label": "د ويکي‌رسنۍ په اړه",
+	"wikimediaapiportal-skin-button-clear-search-label": "پلټل سپينول",
+	"wikimediaapiportal-skin-wikimedia-info": "ويکي‌رسنۍ بنسټ، شرکت يو ناگټندوی مرستندويه سازمان دی چې د وړيا څوژبيزې منځپانگې د ودې، پراختيا او وېش هڅولو او د دې ويکي پربنسټ پروژو بشپړې منځپانگې خلکو ته په وړيا توگه چمتو کولو ته ځانگړې شوې ده.",
+	"wikimediaapiportal-skin-return-to-page-label": "مخ ته ورستنېدل",
+	"wikimediaapiportal-skin-updated-ts-label": "$1 هممهاله‌شوی",
+	"wikimediaapiportal-skin-search-placeholder": "پلټل",
+	"tooltip-wikimediaapiportal-skin-search-title": "پلټل"
+}
