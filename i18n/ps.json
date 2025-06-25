@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"action-edit-docs": "لاسوند سمول",
+	"right-edit-docs": "لاسوند سمول",
+	"wikimediaapiportal-skin-desc": "د ويکي‌رسنۍ ای‌پي‌آی تانبې لپاره دوديزه پوښۍ",
+	"wikimediaapiportal-jumpto-content": "منځپانگې ته ورتلل",
+	"wikimediaapiportal-skin-login-link-label": "ننوتل",
+	"wikimediaapiportal-skin-button-contact-label": "اړيکه",
+	"wikimediaapiportal-skin-button-about-wm-label": "د ويکي‌رسنۍ په اړه",
+	"wikimediaapiportal-skin-button-clear-search-label": "پلټل سپينول",
+	"wikimediaapiportal-skin-wikimedia-info": "ويکي‌رسنۍ بنسټ، شرکت يو ناگټندوی مرستندويه سازمان دی چې د وړيا څوژبيزې منځپانگې د ودې، پراختيا او وېش هڅولو او د دې ويکي پربنسټ پروژو بشپړې منځپانگې خلکو ته په وړيا توگه چمتو کولو ته ځانگړې شوې ده.",
+	"wikimediaapiportal-skin-footer-links": "* ويکي‌رسنۍ پروژې\n** https://www.wikipedia.org/|ويکي‌پېډيا\n** https://www.wikibooks.org/|ويکي‌کيتابونه\n** https://www.wikiversity.org/|ويکي‌پوهنتون\n** https://www.wikinews.org/|ويکي‌خبرونه\n** https://www.wiktionary.org/|ويکي‌سيند\n** https://www.wikisource.org/|ويکي‌سرچينه\n** https://www.wikiquote.org/|ويکي‌وراشه\n** https://www.wikivoyage.org/|ويکي‌يون\n** https://commons.wikimedia.org/|ويکي‌رسنۍ ټولگړی\n** https://www.wikidata.org/|ويکي‌اومتوک\n** https://species.wikimedia.org/|ويکي‌ډولونه\n** https://www.mediawiki.org/|MediaWiki\n* Movement affiliates\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|ويکي‌رسنۍ څپرکي\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|ويکي‌رسنۍ تړلي سازمانونه\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|ويکي‌رسنۍ کارن ډلې\n* نور\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use|کارولو منښتونه\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy|پټنتيا تگلار** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:General_disclaimer|بېرته‌واگ‌اخيستنې\n** https://wikimediafoundation.org/accessibility-statement/|Accessibility statement\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement|کوکيز ويناليک\n** https://www.mediawiki.org/wiki/Code_of_Conduct|چلند تگلار",
+	"wikimediaapiportal-skin-disclaimer": "دا ليک د [https://creativecommons.org/licenses/by-sa/4.0/ ټولگړې پنځونې اړوندېدنې-ورته شريکېدنې منښتليک] له مخې خپور شوی؛ زياتي منښتونه به هم کارېدلې وي. لازيات پوهاوي لپاره [https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use کارولو منښتونه] وگورئ.",
+	"wikimediaapiportal-skin-return-to-page-label": "مخ ته ورستنېدل",
+	"wikimediaapiportal-skin-updated-ts-label": "$1 هممهاله‌شوی",
+	"wikimediaapiportal-skin-search-placeholder": "پلټل",
+	"tooltip-wikimediaapiportal-skin-search-title": "پلټل"
+}
