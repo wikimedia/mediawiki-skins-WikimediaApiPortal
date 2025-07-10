@@ -87,7 +87,7 @@ class UserMenuComponent extends MessageComponent {
 				$items[] = Html::element(
 					'a',
 					[ 'href' => $title->getLocalURL() ],
-					$specialPageObj->getDescription()
+					$specialPageObj->getDescription()->text()
 				);
 			}
 		}
