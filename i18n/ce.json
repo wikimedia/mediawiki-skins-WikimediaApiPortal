@@ -4,5 +4,15 @@
 			"Умар"
 		]
 	},
-	"wikimediaapiportal-skin-login-link-label": "Логин"
+	"right-edit-docs": "Хийца документаци",
+	"wikimediaapiportal-jumpto-content": "Чулацаман тӀегӀо",
+	"wikimediaapiportal-skin-login-link-label": "Логин",
+	"wikimediaapiportal-skin-button-contact-label": "Контактан информаци",
+	"wikimediaapiportal-skin-button-about-wm-label": "Википедех лаьцна",
+	"wikimediaapiportal-skin-button-clear-search-label": "ДӀацӀанбан лехамаш",
+	"wikimediaapiportal-skin-wikimedia-info": "Викимедиа Фонд (Wikimedia Foundation) — коммерцин йоцу организаци йу, Википедин а, кхечу Викимедиа проектийн а инфраструктура латтош йолу маьрша хаарш кхолларан а, даржоран а, цуьнан мисси йу маьрша хаарш массо а стагана тӀекхачар.",
+	"wikimediaapiportal-skin-return-to-page-label": "АгӀонан тӀе йухагӀо",
+	"wikimediaapiportal-skin-updated-ts-label": "Карладаьккхина $1",
+	"wikimediaapiportal-skin-search-placeholder": "Лаха",
+	"tooltip-wikimediaapiportal-skin-search-title": "Лаха"
 }
