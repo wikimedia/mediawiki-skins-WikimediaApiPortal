@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saurmandal"
+		]
+	},
+	"action-edit-docs": "प्रलेख सम्पादित करने",
+	"right-edit-docs": "प्रलेख सम्पादित करना",
+	"wikimediaapiportal-skin-desc": "विकिमीडिया API प्रवेशद्वार के लिए अनुकूलित स्किन",
+	"wikimediaapiportal-skin-site-name-main": "विकिमीडिया",
+	"wikimediaapiportal-skin-site-name-sub": "API प्रवेशद्वार",
+	"wikimediaapiportal-jumpto-content": "सामग्री पर जाएँ",
+	"wikimediaapiportal-skin-login-link-label": "लॉग-इन करें",
+	"wikimediaapiportal-skin-button-contact-label": "संपर्क करें",
+	"wikimediaapiportal-skin-button-about-wm-label": "विकिमीडिया के बारे में",
+	"wikimediaapiportal-skin-button-clear-search-label": "खोज साफ करें",
+	"wikimediaapiportal-skin-wikimedia-info": "विकिमीडिया संस्थान, इंक एक गैर-लाभकारी परोपकारी संगठन है जो निःशुल्क, बहुभाषी सामग्री की वृद्धि, विकास और वितरण को प्रोत्साहित करने तथा इन विकि-आधारित परियोजनाओं की पूर्ण सामग्री जनता को निःशुल्क उपलब्ध कराने के लिए समर्पित है।",
+	"wikimediaapiportal-skin-footer-links": "* विकिमीडिया परियोजनाएँ\n** https://www.wikipedia.org/|विकिपीडिया\n** https://www.wikibooks.org/|विकिपुस्तक\n** https://www.wikiversity.org/|विकिविश्वविद्यालय\n** https://www.wikinews.org/|विकिसमाचार\n** https://www.wiktionary.org/|विकिकोश\n** https://www.wikisource.org/|विकिस्रोत\n** https://www.wikiquote.org/|विकिसूक्ति\n** https://www.wikivoyage.org/|विकियात्रा\n** https://commons.wikimedia.org/|विकिमीडिया कॉमन्स\n** https://www.wikidata.org/|विकिडेटा\n** https://species.wikimedia.org/|विकिप्रजाति\n** https://www.mediawiki.org/|मीडियाविकि\n* आंदोलन के संबद्ध निकाय\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|विकिमीडिया अध्याय\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|विकिमीडिया विषयगत संगठन\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|विकिमीडिया सदस्य समूह\n* अन्य\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use|उपयोग की शर्तें\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy|गोपनीयता नीति\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:General_disclaimer|अस्वीकरण\n** https://wikimediafoundation.org/accessibility-statement/|सुलभता की अभिव्यक्ति\n** https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement|कुकी अभिव्यक्ति\n** https://www.mediawiki.org/wiki/Code_of_Conduct|आचार संहिता",
+	"wikimediaapiportal-skin-disclaimer": "टेक्स्ट [https://creativecommons.org/licenses/by-sa/4.0/deed.hi क्रिएटिव कॉमन्स श्रेय-समानसांझा लाइसेंस] के अंतर्गत उपलब्ध है; अतिरिक्त शर्तें लागू हो सकती हैं। अधिक जानकारी के लिए [https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use उपयोग की शर्तें] देखें।",
+	"wikimediaapiportal-skin-return-to-page-label": "पृष्ठ पर लौटें",
+	"wikimediaapiportal-skin-updated-ts-label": "$1 को अपडेट किया गया",
+	"wikimediaapiportal-skin-search-placeholder": "खोजें",
+	"tooltip-wikimediaapiportal-skin-search-title": "खोजें"
+}
