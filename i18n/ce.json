@@ -4,13 +4,17 @@
 			"Умар"
 		]
 	},
+	"action-edit-docs": "хийца документаци",
 	"right-edit-docs": "Хийца документаци",
+	"wikimediaapiportal-skin-desc": "Викимедиа API порталан леррина тема",
 	"wikimediaapiportal-jumpto-content": "Чулацаман тӀегӀо",
 	"wikimediaapiportal-skin-login-link-label": "Логин",
 	"wikimediaapiportal-skin-button-contact-label": "Контактан информаци",
 	"wikimediaapiportal-skin-button-about-wm-label": "Википедех лаьцна",
 	"wikimediaapiportal-skin-button-clear-search-label": "ДӀацӀанбан лехамаш",
 	"wikimediaapiportal-skin-wikimedia-info": "Викимедиа Фонд (Wikimedia Foundation) — коммерцин йоцу организаци йу, Википедин а, кхечу Викимедиа проектийн а инфраструктура латтош йолу маьрша хаарш кхолларан а, даржоран а, цуьнан мисси йу маьрша хаарш массо а стагана тӀекхачар.",
+	"wikimediaapiportal-skin-footer-links": "* Викимедиа проекташ\n** https://www.wikipedia.org/|Википеди\n** https://www.wikibooks.org/|ВикиӀамат\n** https://www.wikiversity.org/|Викиверситет\n** https://www.wikinews.org/|Викикерланаш\n** https://www.wiktionary.org/|Викидошам\n** https://www.wikisource.org/|Викихьост\n** https://www.wikiquote.org/|Викицитатник\n** https://www.wikivoyage.org/|Викигид\n** https://commons.wikimedia.org/|Викиларма\n** https://www.wikidata.org/|Викихаамаш\n** https://species.wikimedia.org/|Викиаматаш\n** https://www.mediawiki.org/|MediaWiki\n* Боламна йукъахь партнерийн организацеш\n** https://meta.wikimedia.org/wiki/Wikimedia_chapters|Викимедиа регионан организацеш\n** https://meta.wikimedia.org/wiki/Wikimedia_thematic_organizations|Викимедиа тематикин организацеш\n** https://meta.wikimedia.org/wiki/Wikimedia_user_groups|Викимедиа декъашхойн тобанаш\n* КХИДЕРГ\n** https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use|Лелоран билламаш\n** https://foundation.wikimedia.org/wiki/Policy:Privacy_policy|Конфиденциаллалин политика\n** https://foundation.wikimedia.org/wiki/Wikimedia:General_disclaimer|Жоьпалла тӀецалацар\n** https://wikimediafoundation.org/accessibility-statement|ТӀекхачаран дӀахьедар\n** https://foundation.wikimedia.org/wiki/Policy:Cookie_statement|cookie файлех дӀахьедар\n** https://www.mediawiki.org/wiki/Code_of_Conduct|Леларан кодекс",
+	"wikimediaapiportal-skin-disclaimer": "ХӀара текст лело йиш йу [https://creativecommons.org/licenses/by-sa/4.0/ Creative Commons Attribution-ShareAlike лицензица], кхин а билламаш лело тарло. Хьажа [https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use Делоран билламаш].",
 	"wikimediaapiportal-skin-return-to-page-label": "АгӀонан тӀе йухагӀо",
 	"wikimediaapiportal-skin-updated-ts-label": "Карладаьккхина $1",
 	"wikimediaapiportal-skin-search-placeholder": "Лаха",
