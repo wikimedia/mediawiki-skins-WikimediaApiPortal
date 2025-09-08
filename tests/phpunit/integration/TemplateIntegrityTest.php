@@ -1,11 +1,5 @@
 <?php
-
-use MediaWiki\Html\TemplateParser;
-use Wikimedia\ObjectCache\EmptyBagOStuff;
-
 /**
- * Makes sure all the templates in the skin are compilable.
- *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
@@ -21,6 +15,16 @@ use Wikimedia\ObjectCache\EmptyBagOStuff;
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  *
  * @file
+ */
+namespace MediaWiki\Skin\WikimediaApiPortal\Test;
+
+use MediaWiki\Html\TemplateParser;
+use MediaWikiIntegrationTestCase;
+use Wikimedia\ObjectCache\EmptyBagOStuff;
+
+/**
+ * Makes sure all the templates in the skin are compilable.
+ *
  * @coversNothing
  */
 class TemplateIntegrityTest extends MediaWikiIntegrationTestCase {
