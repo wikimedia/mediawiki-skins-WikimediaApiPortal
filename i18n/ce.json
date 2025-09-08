@@ -4,7 +4,9 @@
 			"Умар"
 		]
 	},
+	"action-edit-docs": "хийца документаци",
 	"right-edit-docs": "Хийца документаци",
+	"wikimediaapiportal-skin-desc": "Викимедиа API порталан леррина тема",
 	"wikimediaapiportal-jumpto-content": "Чулацаман тӀегӀо",
 	"wikimediaapiportal-skin-login-link-label": "Логин",
 	"wikimediaapiportal-skin-button-contact-label": "Контактан информаци",
