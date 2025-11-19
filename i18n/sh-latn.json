@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Vlad5250",
-			"Winston Sung"
+			"Winston Sung",
+			"Aca"
 		]
 	},
 	"action-edit-docs": "uređujete dokumentaciju",
@@ -14,7 +15,7 @@
 	"wikimediaapiportal-skin-button-about-wm-label": "O Wikimediji",
 	"wikimediaapiportal-skin-button-clear-search-label": "Očisti pretragu",
 	"wikimediaapiportal-skin-wikimedia-info": "Zaklada Wikimedija (The Wikimedia Foundation, Inc) neprofitna je dobrotvorna organizacija posvećena ohrabrivanju rasta, razvoja i dijeljenja slobodnoga višejezičnog sadržaja, kao i pružanju javnosti otvorenoga cjelokupnog sadržaja njenih projekata zasnovanih na wikiju, potpuno besplatno.",
-	"wikimediaapiportal-skin-disclaimer": "Tekst je dostupan pod licencom [https://creativecommons.org/licenses/by-sa/4.0/ Creative Commons Attribution-ShareAlike]; mogu se primijeniti i dodatni uslvi.\nZa više informacija pogledajte [https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use Uslove upotrebe].",
+	"wikimediaapiportal-skin-disclaimer": "Tekst je dostupan pod licencom [https://creativecommons.org/licenses/by-sa/4.0/ Creative Commons Attribution-ShareAlike]; mogu se primijeniti i dodatni uslvi.\nZa više informacija pogledajte [https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use Uslove korištenja].",
 	"wikimediaapiportal-skin-return-to-page-label": "Nazad na stranicu",
 	"wikimediaapiportal-skin-updated-ts-label": "Podnovljeno $1",
 	"wikimediaapiportal-skin-search-placeholder": "Traži",
