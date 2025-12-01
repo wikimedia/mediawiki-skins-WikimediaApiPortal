@@ -3,11 +3,13 @@
 		"authors": [
 			"01miki10",
 			"Pyscowicz",
-			"Rönttönen"
+			"Rönttönen",
+			"Samoasambia"
 		]
 	},
 	"action-edit-docs": "muokata ohjeistusta",
 	"right-edit-docs": "Muokata ohjeistusta",
+	"wikimediaapiportal-skin-desc": "Wikimedia API-portaalin mukautettu ulkoasu",
 	"wikimediaapiportal-jumpto-content": "Siirry sisältöön",
 	"wikimediaapiportal-skin-login-link-label": "Kirjaudu sisään",
 	"wikimediaapiportal-skin-button-contact-label": "Ota yhteyttä",
