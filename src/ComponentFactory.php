@@ -44,58 +44,16 @@ use Wikimedia\Message\IMessageFormatterFactory;
 use Wikimedia\Message\MessageValue;
 
 class ComponentFactory {
-	/** @var Config */
-	private $config;
-
-	/** @var IMessageFormatterFactory */
-	private $messageFormatterFactory;
-
-	/** @var TitleFactory */
-	private $titleFactory;
-
-	/** @var SpecialPageFactory */
-	private $specialPageFactory;
-
-	/** @var NamespaceInfo */
-	private $namespaceInfo;
-
-	/** @var PageProps */
-	private $pageProps;
-
-	/** @var PermissionManager */
-	private $permissionManager;
-
-	/** @var ExtensionRegistry */
-	private $extensionRegistry;
-
-	/**
-	 * @param Config $config
-	 * @param IMessageFormatterFactory $messageFormatterFactory
-	 * @param TitleFactory $titleFactory
-	 * @param SpecialPageFactory $specialPageFactory
-	 * @param NamespaceInfo $namespaceInfo
-	 * @param PageProps $pageProps
-	 * @param PermissionManager $permissionManager
-	 * @param ExtensionRegistry $extensionRegistry
-	 */
 	public function __construct(
-		Config $config,
-		IMessageFormatterFactory $messageFormatterFactory,
-		TitleFactory $titleFactory,
-		SpecialPageFactory $specialPageFactory,
-		NamespaceInfo $namespaceInfo,
-		PageProps $pageProps,
-		PermissionManager $permissionManager,
-		ExtensionRegistry $extensionRegistry
+		private readonly Config $config,
+		private readonly IMessageFormatterFactory $messageFormatterFactory,
+		private readonly TitleFactory $titleFactory,
+		private readonly SpecialPageFactory $specialPageFactory,
+		private readonly NamespaceInfo $namespaceInfo,
+		private readonly PageProps $pageProps,
+		private readonly PermissionManager $permissionManager,
+		private readonly ExtensionRegistry $extensionRegistry,
 	) {
-		$this->config = $config;
-		$this->messageFormatterFactory = $messageFormatterFactory;
-		$this->titleFactory = $titleFactory;
-		$this->specialPageFactory = $specialPageFactory;
-		$this->namespaceInfo = $namespaceInfo;
-		$this->pageProps = $pageProps;
-		$this->permissionManager = $permissionManager;
-		$this->extensionRegistry = $extensionRegistry;
 	}
 
 	/**
