@@ -149,16 +149,17 @@ class PageToolsComponent extends MessageComponent {
 		array $actions
 	): ?ButtonWidget {
 		if ( $requestedAction === 'view' ) {
+			$associated = $actions['associated-pages'] ?? [];
 			if ( $title->isTalkPage() ) {
-				if ( isset( $actions['namespaces']['main'] ) ) {
-					return $this->getButtonForContentAction( $actions['namespaces']['main'], [
+				if ( isset( $associated['main'] ) ) {
+					return $this->getButtonForContentAction( $associated['main'], [
 						'icon' => 'arrowPrevious',
 						'label' => $this->formatMessage( 'wikimediaapiportal-skin-return-to-page-label' )
 					] );
 				}
-			} elseif ( isset( $actions['namespaces']['talk'] ) ) {
+			} elseif ( isset( $associated['talk'] ) ) {
 				return $this->getButtonForContentAction(
-					$actions['namespaces']['talk'],
+					$associated['talk'],
 					[ 'icon' => 'speechBubbles' ]
 				);
 			}

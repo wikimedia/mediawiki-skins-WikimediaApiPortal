@@ -20,7 +20,14 @@
 			"args": [
 				{
 					"name": "wikimediaapiportal",
-					"bodyOnly": true
+					"bodyOnly": true,
+					"menus": [
+						"user-menu",
+						"notifications",
+						"views",
+						"actions",
+						"associated-pages"
+					]
 				}
 			]
 		}

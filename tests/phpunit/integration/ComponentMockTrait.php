@@ -250,7 +250,11 @@ trait ComponentMockTrait {
 		$template->method( 'get' )->willReturnCallback(
 			static function ( $param ) {
 				if ( $param === 'content_navigation' ) {
-					return [];
+					return [
+						'associated-pages' => [],
+						'notifications' => [],
+						'user-menu' => [],
+					];
 				}
 				return $param;
 			}
@@ -258,7 +262,6 @@ trait ComponentMockTrait {
 		$template->method( 'getSkin' )->willReturn( $this->newSkin() );
 		$template->method( 'getPrimaryNavSidebar' )->willReturn( [] );
 		$template->data['sitenotice'] = 'sitenotice';
-		$template->data['personal_urls'] = [];
 		return $template;
 	}
 
