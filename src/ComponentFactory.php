@@ -217,7 +217,8 @@ class ComponentFactory {
 		$skin = $template->getSkin();
 		$user = $skin->getUser();
 		$title = $skin->getTitle();
-		$personalUrls = $template->data['personal_urls'];
+		$menus = $template->get( 'content_navigation' );
+		$personalUrls = $menus['user-menu'];
 		return new UserMenuComponent(
 			new ServiceOptions( UserMenuComponent::CONSTRUCTOR_OPTIONS, $this->config ),
 			$this->messageFormatterFactory,
@@ -258,8 +259,10 @@ class ComponentFactory {
 		WikimediaApiPortalTemplate $template
 	): NotificationAlertComponent {
 		$user = $template->getSkin()->getUser();
-		if ( isset( $template->data['personal_urls']['notifications-alert'] ) ) {
-			$notificationAlert = $template->data['personal_urls']['notifications-alert'];
+		$menus = $template->get( 'content_navigation' );
+		$notifications = $menus['notifications'];
+		if ( isset( $notifications['notifications-alert'] ) ) {
+			$notificationAlert = $notifications['notifications-alert'];
 		} else {
 			$notificationAlert = [];
 		}
