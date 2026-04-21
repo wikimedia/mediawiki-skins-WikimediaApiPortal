@@ -2,7 +2,7 @@
 	"name": "WikimediaApiPortal",
 	"private": true,
 	"scripts": {
-		"build:bootstrap": "node-sass --output dist/ --output-style compact resources/bootstrap.scss",
+		"build:bootstrap": "sass --style=compressed --no-source-map resources/bootstrap.scss dist/bootstrap.css",
 		"build:copy": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.js dist/",
 		"build": "npm -s run build:bootstrap && npm -s run build:copy",
 		"test": "npm -s run lint",
@@ -15,7 +15,7 @@
 		"bootstrap": "4.3.1",
 		"eslint-config-wikimedia": "0.31.0",
 		"grunt-banana-checker": "0.13.0",
-		"node-sass": "^8.0.0",
+		"sass": "1.77.8",
 		"stylelint-config-wikimedia": "0.18.0"
 	}
 }
